@@ -487,6 +487,11 @@
 				color: #fff;
 			}
 
+	tr.space {
+		border-collapse: separate;
+		border-spacing: 0 10px;
+	}
+
 /* Button */
 
 	input[type="button"],
