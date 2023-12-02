@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Portfolio</title>
@@ -28,9 +23,19 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
 
-	<body class="no-sidebar">
+	<body>
 		<!-- Header -->
-		{% include '_includes/header.html' %}
+		<header id="header">
+			<h1 id="logo"><a href="/">Devp-YG</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="/">Welcome</a></li>
+					<li><a href="/portfolio.html">Portfolio</a></li>
+					<li><a href="/privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="mailto:devp.yg@gmail.com?Subject=지원문의" class="button special">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
 		<!-- Main -->
 		<article id="main">
@@ -228,6 +233,10 @@
 		</article>
 
 		<!-- Footer -->
-		{% include footer.html %}
+		<footer id="footer">
+			<ul class="copyright">
+				<li>Copyright &copy; 2023 Devp-YG All Rights Reserved.</li>
+			</ul>
+		</footer>
 	</body>
 </html>
