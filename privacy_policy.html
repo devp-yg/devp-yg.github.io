@@ -98,19 +98,7 @@
 				이 개인정보 처리방침은 앱스토어 내 애플리케이션 개시일 이후부터 적용됩니다.
 			</section>
 		</article>
-		<footer id="footer">
-			<div id="copyright-container"></div>
-
-			<script>
-				fetch('/copyright.html')
-				.then(response => response.text())
-				.then(data => {
-					document.getElementById('copyright-container').innerHTML = data;
-				})
-				.catch(error => {
-					console.error('Failed to load copyright:', error);
-				});
-			</script>
+		<footer>
 	    	</footer>
 	</body>
 </html>
