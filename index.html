@@ -10,7 +10,7 @@ layout: landing-page
 		We make mobile applications to improve a qualtiy of our lifestyle.</h2>
 		<p>The mobile applications is created
 		<br/>
-		with JAVA for Android OS and Objective-C for iOS.
+		with JAVA/Kotlin for Android OS and Objective-C/Swift for Apple OS.
 	</header>
 
 	<!-- One 
@@ -156,13 +156,19 @@ layout: landing-page
 			<h2>Thank you !!</h2>
 		<!--	<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p> -->
 		</header>
-		<footer>
-		<!--
-			<ul class="buttons">
-				<li><a href="#" class="button special">Take My Money</a></li>
-				<li><a href="#" class="button">LOL Wut</a></li>
-			</ul>
-		-->
+		<footer id="footer">
+			<div id="copyright-container"></div>
+			
+			<script>
+				fetch('/copyright.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('copyright-container').innerHTML = data;
+				})
+				.catch(error => {
+					console.error('Failed to load copyright:', error);
+				});
+			</script>
 		</footer>
 	</section>
 </article>
