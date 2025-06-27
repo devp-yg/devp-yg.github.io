@@ -255,9 +255,18 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<ul class="copyright">
-				<li>Copyright &copy; Devp-YG All Rights Reserved since 2020.</li>
-			</ul>
+			<div id="copyright-container"></div>
+			
+			<script>
+				fetch('/includes/copyright.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('copyright-container').innerHTML = data;
+				})
+				.catch(error => {
+					console.error('Failed to load copyright:', error);
+				});
+			</script>
 		</footer>
 	</body>
 </html>
