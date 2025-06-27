@@ -98,9 +98,18 @@
     </article>
 
     <footer id="footer">
-      <ul class="copyright">
-        <li>Copyright © 2020–Present Devp-YG. All rights reserved.</li>
-      </ul>
+      <div id="copyright-container"></div>
+
+			<script>
+				fetch('/copyright.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('copyright-container').innerHTML = data;
+				})
+				.catch(error => {
+					console.error('Failed to load copyright:', error);
+				});
+			</script>
     </footer>
   </body>
 </html>
