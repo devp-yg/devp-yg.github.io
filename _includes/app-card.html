@@ -1,0 +1,19 @@
+<article class="portfolio-card">
+    <div class="portfolio-card-top">
+        <img src="{{ include.app.image | relative_url }}" alt="{{ include.app.image_alt | escape }}" data-i18n-alt="apps.{{ include.app.id }}.imageAlt" loading="{{ include.loading | default: 'lazy' }}" decoding="async" width="88" height="88" />
+        <span>iOS</span>
+    </div>
+    <div class="portfolio-card-copy">
+        <h3 data-i18n="apps.{{ include.app.id }}.name">{{ include.app.name }}</h3>
+        {% if include.app.subtitle %}<small data-i18n="apps.{{ include.app.id }}.subtitle">{{ include.app.subtitle }}</small>{% endif %}
+        <p data-i18n="apps.{{ include.app.id }}.description">{{ include.app.description }}</p>
+    </div>
+    <div class="portfolio-card-actions">
+        {% if include.app.id == "movlog" %}
+            <a href="{{ '/movlog/' | relative_url }}" class="card-detail" data-i18n="common.viewIntro">소개 보기</a>
+        {% elsif include.app.series == "citybus" %}
+            <a href="{{ '/citybus/' | relative_url }}" class="card-detail" data-i18n="common.viewSeries">시리즈 보기</a>
+        {% endif %}
+        <a href="{{ include.app.store_url }}" class="store-link" target="_blank" rel="noopener noreferrer" aria-label="{{ include.app.name | escape }} App Store 페이지" data-i18n-aria-label="common.appStorePage">App Store <span aria-hidden="true">↗</span></a>
+    </div>
+</article>

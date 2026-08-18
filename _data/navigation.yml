@@ -1,0 +1,19 @@
+- label: 홈
+  key: home
+  url: /
+- label: 모든 앱
+  key: portfolio
+  url: /portfolio.html
+- label: 출시 히스토리
+  key: history
+  url: /history.html
+- label: CityBus
+  key: citybus
+  url: /citybus/
+- label: Movlog
+  key: movlog
+  url: /movlog/
+- label: 문의하기
+  key: contact
+  url: mailto:devp.yg@gmail.com?Subject=지원문의
+  style: nav-contact

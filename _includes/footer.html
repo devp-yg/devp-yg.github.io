@@ -1,15 +1,30 @@
-<!-- Footer -->
 <footer id="footer">
-    <div id="copyright-container"></div>
-    
-    <script>
-        fetch('/copyright.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('copyright-container').innerHTML = data;
-        })
-        .catch(error => {
-            console.error('Failed to load copyright:', error);
-        });
-    </script>
+    <div class="site-shell footer-grid">
+        <div>
+            <a class="site-brand footer-brand" href="{{ '/' | relative_url }}">
+                <span class="site-brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>Devp-YG</span>
+            </a>
+            <p data-i18n-html="footer.description">일상과 이동을 조금 더 편리하게 만드는<br />독립 iOS 앱 스튜디오입니다.</p>
+        </div>
+        <div class="footer-links">
+            <div>
+                <strong data-i18n="footer.products">Products</strong>
+                <a href="{{ '/movlog/' | relative_url }}">Movlog</a>
+                <a href="{{ '/citybus/' | relative_url }}">CityBus</a>
+                <a href="{{ '/portfolio.html' | relative_url }}" data-i18n="common.allApps">모든 앱</a>
+            </div>
+            <div>
+                <strong data-i18n="footer.support">Support</strong>
+                <a href="{{ '/blog.html' | relative_url }}" data-i18n="common.blog">개발 기록</a>
+                <a href="mailto:devp.yg@gmail.com?Subject=지원문의" data-i18n="common.contact" data-i18n-mail-subject="지원문의">문의하기</a>
+                <a href="{{ '/privacy_policy.html' | relative_url }}" data-i18n="common.privacy">개인정보 처리방침</a>
+                <a href="{{ '/privacy_policy_en.html' | relative_url }}" data-i18n="common.privacyEnglish">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="site-shell footer-bottom">
+        {% include copyright.html %}
+        <span data-i18n="footer.designed">Designed &amp; built in Korea.</span>
+    </div>
 </footer>

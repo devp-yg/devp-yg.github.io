@@ -1,22 +1,24 @@
 ---
 layout: default
 ---
+<article id="main">
+    <header class="special container">
+        <h2 class="post-title">{{ page.title }}</h2>
+        <p class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>{% if page.author %} · {{ page.author }}{% endif %}{% if page.meta %} · {{ page.meta }}{% endif %}
+        </p>
+    </header>
 
-    <article id="main">
-  <header class="special container">
-    <h2 class="post-title">{{ page.title }}</h2>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+    <section class="style4 wrapper container">
+        {{ content }}
+    </section>
 
-  <section class="style4 wrapper container">
-    {{ content }}
-  </section>
-    
-    <footer>
+    <footer class="container">
         {% if page.previous %}
-        <a href="{{ page.previous.url }}" class="post-prev">&larr; Previous post</a> {% endif %}
+            <a href="{{ page.previous.url | relative_url }}" class="post-prev">&larr; 이전 글</a>
+        {% endif %}
         {% if page.next %}
-        <a href="{{ page.next.url }}" class="post-next">Next post &rarr;</a> {% endif %}
+            <a href="{{ page.next.url | relative_url }}" class="post-next">다음 글 &rarr;</a>
+        {% endif %}
     </footer>
 </article>
-

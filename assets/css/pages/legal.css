@@ -1,0 +1,30 @@
+.legal-content {
+    max-width: 900px;
+    text-align: left;
+}
+
+.legal-content > h2 {
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.legal-app-list {
+    margin: 1.5em 0 2em;
+}
+
+.legal-section {
+    border-top: 1px solid rgba(124, 128, 129, 0.2);
+    padding: 1.8em 0;
+}
+
+.legal-section h3 {
+    font-size: 1.05em;
+    font-weight: 700;
+    line-height: 1.6;
+    margin: 0 0 0.7em;
+}
+
+.legal-section p {
+    line-height: 1.8;
+    margin: 0;
+}

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: 'ko' }}" data-i18n-page="{{ page.i18n_key | default: 'home' }}">
+    {% include head.html %}
 
-  {% include head.html %}
+    <body class="{{ page.body_class | default: 'page' }}">
+        <a class="skip-link" href="#main" data-i18n="common.skip">본문으로 건너뛰기</a>
+        {% include header.html %}
+        {% if page.show_banner %}
+            {% include banner.html %}
+        {% endif %}
 
-  <body class="no-sidebar">
+        <div class="page-content">
+            {{ content }}
+        </div>
 
-    {% include header.html %}
-    <div class="page-content">
-        {{ content }}
-    </div>
-    {% include footer.html %}
-
-  </body>
-
+        {% include footer.html %}
+    </body>
 </html>

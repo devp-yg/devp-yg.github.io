@@ -1,0 +1,73 @@
+---
+layout: default
+lang: ko
+i18n_key: history
+title: 출시 히스토리 | Devp-YG
+description: Devp-YG가 현재 운영 중인 iOS 애플리케이션의 출시 월을 시간순으로 소개합니다.
+permalink: /history.html
+styles:
+  - /assets/css/pages/history.css
+scripts:
+  - /assets/js/history.js
+---
+
+<main id="main" class="history-page">
+    {% assign ios_apps = site.data.apps | where: "platform", "ios" %}
+    {% assign sorted_apps = ios_apps | sort: "launched_at" | reverse %}
+
+    <header class="history-hero site-shell">
+        <p class="history-eyebrow" data-i18n="history.eyebrow" data-i18n-count="{{ ios_apps | size }}">The timeline · {{ ios_apps | size }} apps</p>
+        <h1 data-i18n-html="history.title">필요에서 시작된<br /><em>앱의 시간.</em></h1>
+        <p data-i18n="history.description">현재 운영 중인 앱들이 언제 처음 출시되었는지 기록했습니다. 작은 아이디어가 하나씩 제품이 되어온 흐름을 만나보세요.</p>
+    </header>
+
+    <section class="site-shell history-content" aria-labelledby="history-title">
+        <div class="history-intro">
+            <div>
+                <p class="history-kicker" data-i18n="history.kicker">Release history</p>
+                <h2 id="history-title" data-i18n="history.heading">앱 출시 타임라인</h2>
+            </div>
+            <div class="history-tools">
+                <p class="history-basis" data-i18n="history.basis">App Store 최초 버전 출시 기준</p>
+                <div class="history-sort" role="group" aria-label="정렬 방식" data-i18n-aria-label="history.sortLabel">
+                    <button type="button" class="history-sort-button is-active" data-history-sort="latest" aria-pressed="true" data-i18n="history.latest">최신순</button>
+                    <button type="button" class="history-sort-button" data-history-sort="oldest" aria-pressed="false" data-i18n="history.oldest">오래된순</button>
+                </div>
+            </div>
+        </div>
+
+        <ol class="history-timeline" data-history-timeline>
+            {% assign last_year = '' %}
+            {% assign last_month = '' %}
+            {% for app in sorted_apps %}
+                {% assign launch_parts = app.launched_at | split: '-' %}
+                {% assign show_year = true %}
+                {% assign show_month = true %}
+                {% if launch_parts[0] == last_year %}{% assign show_year = false %}{% endif %}
+                {% if launch_parts[0] == last_year and launch_parts[1] == last_month %}{% assign show_month = false %}{% endif %}
+                <li class="history-item" data-launch-date="{{ app.launched_at }}">
+                    <a class="history-item-link" href="{{ app.store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ app.name | escape }} App Store 페이지 열기" data-i18n-aria-label="common.appStorePage">
+                        <span class="history-marker{% unless show_month %} is-hidden{% endunless %}" data-history-marker aria-hidden="true"></span>
+                        <time class="history-date" datetime="{{ app.launched_at }}">
+                            <span data-history-year{% unless show_year %} class="is-hidden"{% endunless %}>{% if show_year %}{{ launch_parts[0] }}{% endif %}</span>
+                            <strong data-history-month{% unless show_month %} class="is-hidden"{% endunless %}><span data-history-month-number>{{ launch_parts[1] }}</span><span data-i18n="history.monthSuffix">월</span></strong>
+                        </time>
+                        <div class="history-card">
+                        <div class="history-card-main">
+                            <img src="{{ app.image | relative_url }}" alt="{{ app.image_alt | escape }}" data-i18n-alt="apps.{{ app.id }}.imageAlt" loading="lazy" decoding="async" width="68" height="68" />
+                            <div>
+                                <p class="history-card-label" data-i18n="{% if app.series == 'citybus' %}history.citybusSeries{% else %}history.iosApp{% endif %}">{% if app.series == "citybus" %}CityBus series{% else %}iOS app{% endif %}</p>
+                                <h3 data-i18n="apps.{{ app.id }}.name">{{ app.name }}</h3>
+                                {% if app.subtitle %}<p class="history-card-subtitle" data-i18n="apps.{{ app.id }}.subtitle">{{ app.subtitle }}</p>{% endif %}
+                            </div>
+                        </div>
+                        <span class="history-card-link" aria-hidden="true">App Store <span>↗</span></span>
+                        </div>
+                    </a>
+                </li>
+                {% assign last_year = launch_parts[0] %}
+                {% assign last_month = launch_parts[1] %}
+            {% endfor %}
+        </ol>
+    </section>
+</main>

@@ -1,0 +1,259 @@
+{
+  "common": {
+    "skip": "본문으로 건너뛰기",
+    "brandHome": "Devp-YG 홈",
+    "menuOpen": "메뉴 열기",
+    "menuClose": "메뉴 닫기",
+    "navigation": "주요 메뉴",
+    "languageLabel": "언어 선택",
+    "korean": "한국어",
+    "english": "English",
+    "viewMore": "자세히 보기",
+    "viewSeries": "시리즈 보기",
+    "viewIntro": "소개 보기",
+    "appStorePage": "App Store 페이지",
+    "allApps": "모든 앱",
+    "contact": "문의하기",
+    "blog": "개발 기록",
+    "privacy": "개인정보 처리방침",
+    "privacyEnglish": "Privacy Policy",
+    "history": "출시 히스토리",
+    "appStorePage": "App Store 페이지 열기"
+  },
+  "pages": {
+    "home": {
+      "title": "Devp-YG | Mobile Apps",
+      "description": "일상과 이동을 더 편리하게 만드는 Devp-YG의 모바일 애플리케이션을 소개합니다."
+    },
+    "portfolio": {
+      "title": "Portfolio | Devp-YG",
+      "description": "Devp-YG가 개발하고 운영하는 iOS 애플리케이션을 소개합니다."
+    },
+    "blog": {
+      "title": "Blog | Devp-YG",
+      "description": "Devp-YG의 앱 개발과 업데이트 기록입니다."
+    },
+    "copyright": {
+      "title": "Copyright | Devp-YG",
+      "description": "Devp-YG 웹사이트의 저작권 안내입니다."
+    },
+    "history": {
+      "title": "출시 히스토리 | Devp-YG",
+      "description": "Devp-YG가 현재 운영 중인 iOS 애플리케이션의 출시 월을 시간순으로 소개합니다."
+    },
+    "contact": {
+      "title": "Contact | Devp-YG",
+      "description": "Devp-YG 애플리케이션 문의 안내입니다."
+    },
+    "legacy": {
+      "title": "이전 페이지 | Devp-YG",
+      "description": "Devp-YG의 이전 샘플 페이지 안내입니다."
+    },
+    "citybus": {
+      "title": "CityBus | 도시별 버스 앱",
+      "description": "부산, 대전, 광주, 인천, 안동, 여수의 버스와 대중교통 정보를 한눈에 확인하는 CityBus 앱 시리즈입니다."
+    },
+    "movlog": {
+      "title": "Movlog | 당신의 이동을, 당신의 이야기로",
+      "description": "Movlog는 이동 경로와 방문 장소를 자동으로 기록하고, 나의 일상을 하나의 이야기로 돌아보게 해주는 앱입니다."
+    },
+    "privacyKo": {
+      "title": "개인정보 처리방침 | Devp-YG",
+      "description": "Devp-YG 애플리케이션의 개인정보 처리방침입니다."
+    },
+    "privacyEn": {
+      "title": "Privacy Policy | Devp-YG",
+      "description": "Privacy policy for Devp-YG applications."
+    }
+  },
+  "header": {
+    "home": "홈",
+    "portfolio": "모든 앱",
+    "history": "출시 히스토리",
+    "citybus": "CityBus",
+    "movlog": "Movlog",
+    "contact": "문의하기"
+  },
+  "footer": {
+    "description": "일상과 이동을 조금 더 편리하게 만드는<br>독립 iOS 앱 스튜디오입니다.",
+    "products": "Products",
+    "support": "Support",
+    "designed": "Designed & built in Korea."
+  },
+  "banner": {
+    "description": "Practical mobile apps for<br><strong>everyday movement and life.</strong>",
+    "explore": "앱 둘러보기"
+  },
+  "home": {
+    "heroEyebrow": "Independent iOS Studio",
+    "heroTitle": "매일의 이동을<br><em>더 가볍게.</em>",
+    "heroLead": "복잡한 정보는 단순하게, 반복되는 일은 빠르게. 일상에서 오래 쓰이는 iPhone과 iPad 앱을 만듭니다.",
+    "exploreApps": "앱 둘러보기",
+    "statsLabel": "Devp-YG 앱 현황",
+    "apps": "iOS Apps",
+    "cities": "Cities",
+    "builtNative": "Built native",
+    "visualLabel": "Movlog 앱 화면과 Devp-YG 앱 아이콘",
+    "snapqrAlt": "SnapQR 앱 아이콘",
+    "busanAlt": "부산버스 앱 아이콘",
+    "movlogScreenAlt": "Movlog 이동 기록 화면",
+    "featuredApp": "Featured app",
+    "movlogIntro": "Movlog 소개 보기",
+    "selectedProducts": "Selected products",
+    "featuredTitle": "필요한 순간에<br>바로 쓸 수 있는 앱",
+    "featuredLead": "화려한 기능보다 매일의 불편을 제대로 해결하는 데 집중합니다. 앱마다 가장 중요한 경험을 선명하게 다듬습니다.",
+    "movementJournal": "Movement journal",
+    "movlogDescription": "이동 경로와 머문 장소를 자동으로 기록하고, 평범한 하루를 나만의 이야기로 남겨보세요.",
+    "movlogInsightsAlt": "Movlog 인사이트 화면",
+    "citiesOneExperience": "6 cities, one experience",
+    "citybusDescription": "부산부터 여수까지, 내 도시의 버스 도착정보와 노선을 빠르고 간결하게 확인하세요.",
+    "findMyCity": "내 도시 찾기",
+    "everydayTools": "Everyday tools",
+    "toolsTitle": "작지만 확실한<br>생활 도구",
+    "allAppsLink": "모든 앱 보기",
+    "supportIdeas": "Support & ideas",
+    "supportTitle": "더 편한 앱을 함께 만들어가요.",
+    "supportLead": "사용 중 발견한 문제, 필요한 기능, 새로운 제안을 들려주세요.",
+    "sendEmail": "이메일 보내기"
+  },
+  "portfolio": {
+    "eyebrow": "All products · {count} apps",
+    "title": "일상의 작은 불편을<br><em>앱으로 해결합니다.</em>",
+    "lead": "이동 기록과 대중교통부터 QR 코드, 요금 계산, 통신 사용량까지. 직접 필요해서 만들고 꾸준히 운영하는 iOS 앱입니다.",
+    "ariaLabel": "iOS 애플리케이션",
+    "categoryNavLabel": "앱 분류 바로가기",
+    "categoryNavTitle": "분류별로 살펴보기",
+    "categoryKicker": "App category",
+    "categoryCount": "{count}개 앱",
+    "categories": {
+      "mobility": {
+        "label": "이동과 기록",
+        "description": "움직인 시간과 거리, 그리고 그날의 경로를 더 선명하게 남기는 앱입니다."
+      },
+      "public-transit": {
+        "label": "대중교통",
+        "description": "내 지역의 버스 도착 정보와 노선을 빠르게 확인할 수 있는 CityBus 앱입니다."
+      },
+      "everyday-tools": {
+        "label": "생활 도구",
+        "description": "일상에서 자주 확인하거나 만들어야 하는 정보를 간편하게 다루는 앱입니다."
+      }
+    }
+  },
+  "blog": {
+    "title": "개발 <strong>기록</strong>",
+    "readMore": "더 읽기",
+    "emptyTitle": "새로운 기록을 준비하고 있습니다.",
+    "emptyDescription": "앱 업데이트와 개발 이야기를 이곳에 차례로 공개합니다."
+  },
+  "copyright": {
+    "title": "Copyright",
+    "rights": "All rights reserved."
+  },
+  "history": {
+    "eyebrow": "The timeline · {count} apps",
+    "title": "필요에서 시작된<br><em>앱의 시간.</em>",
+    "description": "현재 운영 중인 앱들이 언제 처음 출시되었는지 기록했습니다. 작은 아이디어가 하나씩 제품이 되어온 흐름을 만나보세요.",
+    "kicker": "Release history",
+    "heading": "앱 출시 타임라인",
+    "basis": "App Store 최초 버전 출시 기준",
+    "sortLabel": "정렬 방식",
+    "latest": "최신순",
+    "oldest": "오래된순",
+    "monthSuffix": "월",
+    "citybusSeries": "CityBus series",
+    "iosApp": "iOS app"
+  },
+  "contact": {
+    "title": "문의하기",
+    "description": "앱 사용 중 불편한 점, 오류 제보, 기능 제안을 이메일로 보내주세요."
+  },
+  "legacy": {
+    "title": "이전 샘플 페이지입니다.",
+    "description": "현재 운영 중인 앱과 제품 소개는 포트폴리오에서 확인할 수 있습니다.",
+    "viewPortfolio": "포트폴리오 보기"
+  },
+  "citybus": {
+    "eyebrow": "CityBus Series",
+    "title": "내 도시의 버스를<br>더 쉽게 만나는 방법",
+    "description": "정류장 위치부터 도착 예정 버스, 노선과 즐겨찾기까지. 매일의 이동과 여행을 위해 도시별로 만든 버스 앱입니다.",
+    "findApp": "내 도시 앱 찾기",
+    "readStory": "개발 이야기 보기",
+    "featuresTitle": "매일 쓰는 기능을 한곳에",
+    "featuresDescription": "복잡한 교통 정보를 필요한 순간에 빠르게 확인할 수 있도록 구성했습니다.",
+    "arrivalTitle": "도착정보 확인",
+    "arrivalDescription": "주변 정류장과 버스 도착 예정 정보를 빠르게 확인합니다.",
+    "mapTitle": "지도와 노선 검색",
+    "mapDescription": "정류장 위치, 운행 노선, 경유 정류장을 지도에서 살펴봅니다.",
+    "favoriteTitle": "즐겨찾기와 여행",
+    "favoriteDescription": "자주 이용하는 정류장을 저장하고 도시의 여행 정보도 확인합니다.",
+    "citiesTitle": "당신의 도시를 선택하세요",
+    "citiesDescription": "각 지역의 교통 체계와 이용 방식에 맞춰 제공되는 CityBus 앱입니다.",
+    "finalTitle": "더 편한 이동을 시작해 보세요",
+    "finalDescription": "CityBus는 도시마다 필요한 교통 정보를 차곡차곡 만들어가고 있습니다.",
+    "allApps": "전체 앱 보기",
+    "appStoreLabel": "App Store 페이지"
+  },
+  "movlog": {
+    "eyebrow": "Movlog · Daily Movement Journal",
+    "title": "당신이 간 곳이<br><em>하나의 이야기가 됩니다.</em>",
+    "description": "Movlog는 나의 이동 일상을 조용히 기록합니다. 경로와 장소를 다시 바라보며, 평범한 하루에서 나만의 이야기를 발견해 보세요.",
+    "download": "App Store에서 다운로드",
+    "about": "Movlog 알아보기",
+    "heroAlt": "Movlog 오늘의 이동 기록 화면",
+    "aboutTitle": "당신의 하루를<br><em>한눈에 돌아보세요.</em>",
+    "aboutDescription": "이동 경로부터 방문 장소, 기록과 인사이트까지. Movlog가 쌓아가는 하루를 직접 만나보세요.",
+    "trackingLabel": "AUTOMATIC TRACKING",
+    "trackingTitle": "자동 이동 기록",
+    "trackingDescription": "경로, 거리, 이동 시간과 차량·도보 이동을 자동으로 기록합니다. 기록하는 수고는 줄이고, 하루를 돌아보는 시간은 늘려보세요.",
+    "trackingAlt": "Movlog 자동 이동 기록 화면",
+    "archiveLabel": "DAILY ARCHIVE",
+    "archiveTitle": "기록을 쉽게 찾아보세요",
+    "archiveDescription": "하루 단위로 이동 기록을 정리하고, 검색으로 원하는 날을 빠르게 찾을 수 있습니다. 그날의 기억은 메모로 함께 남겨보세요.",
+    "archiveAlt": "Movlog 일별 기록 보관함 화면",
+    "insightsLabel": "PERSONAL INSIGHTS",
+    "insightsTitle": "나만의 이동 패턴 발견",
+    "insightsDescription": "자주 간 곳과 이동 패턴을 발견하며 나의 일상을 돌아봅니다. 매일의 이동이 쌓여 나만의 지도가 됩니다.",
+    "insightsAlt": "Movlog 이동 인사이트 화면",
+    "automaticTitle": "자동으로",
+    "automaticDescription": "나의 이동 일상이 백그라운드에서 자연스럽게 기록됩니다.",
+    "personalTitle": "나만의 기록",
+    "personalDescription": "나의 경로와 장소가 타임라인이 되어 하루를 보여줍니다.",
+    "reflectiveTitle": "돌아보기",
+    "reflectiveDescription": "평범한 이동 속에서 나만의 습관과 이야기를 발견합니다.",
+    "finalTitle": "당신의 이동을,<br><em>당신의 이야기로.</em>",
+    "finalDescription": "오늘의 이동부터 기록을 시작해 보세요.",
+    "allApps": "전체 앱 보기"
+  },
+  "apps": {
+    "snapqr": { "name": "SnapQR", "description": "텍스트, URL, Wi-Fi, 연락처 정보를 손쉽게 QR 코드로 만들 수 있는 간편한 QR 생성 앱입니다.", "imageAlt": "SnapQR 앱 아이콘" },
+    "fareflow": { "name": "냥미터 - 나만의 요금제", "description": "GPS 기반으로 실시간 이동 거리와 시간을 측정하여 택시·카풀 요금을 자동으로 계산해주는 스마트 요금 미터기 앱입니다.", "imageAlt": "냥미터 앱 아이콘" },
+    "movlog": { "name": "무블로그: 당신의 이야기를 지도에 담다", "description": "Movlog는 하루의 이동 경로와 머문 장소를 자동으로 기록하고 정리해주는 앱입니다. 실시간 위치 추적을 통해 차량과 도보 이동 거리, 시간, 속도 등을 확인할 수 있으며, 지도 경로를 이미지로 저장할 수 있습니다.", "imageAlt": "Movlog 앱 아이콘" },
+    "incheon-bus": { "name": "인천 버스", "shortName": "인천버스", "subtitle": "Incheon Bus", "description": "인천광역시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.", "citybusDescription": "인천 버스 도착정보와 노선, 잔여좌석 정보를 확인하세요.", "imageAlt": "인천버스 앱 아이콘" },
+    "yeosu-bus": { "name": "여수 버스", "shortName": "여수버스", "subtitle": "Yeosu Bus", "description": "여수시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.", "citybusDescription": "여수 여행지와 일상을 연결하는 버스 정보를 확인하세요.", "imageAlt": "여수버스 앱 아이콘" },
+    "andong-bus": { "name": "안동 버스", "shortName": "안동버스", "subtitle": "Andong Bus", "description": "안동시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.", "citybusDescription": "안동 시민의 일상과 여행을 위한 버스 정보를 확인하세요.", "imageAlt": "안동버스 앱 아이콘" },
+    "gwangju-bus": { "name": "광주 버스", "shortName": "광주버스", "subtitle": "Gwangju Bus", "description": "광주광역시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.", "citybusDescription": "광주광역시 정류장, 노선과 버스 도착정보를 확인하세요.", "imageAlt": "광주버스 앱 아이콘" },
+    "busan-bus": { "name": "부산 버스", "shortName": "부산버스", "subtitle": "Busan Bus", "description": "부산광역시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.", "citybusDescription": "부산 버스 도착정보와 노선, 잔여좌석 정보를 확인하세요.", "imageAlt": "부산버스 앱 아이콘" },
+    "daejeon-bus": { "name": "대전 버스", "shortName": "대전버스", "subtitle": "Daejeon Bus", "description": "대전광역시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.", "citybusDescription": "대전 버스와 도시철도 정보를 한곳에서 확인하세요.", "imageAlt": "대전버스 앱 아이콘" },
+    "tplus-mobile": { "name": "알뜰폰 티플 실시간 사용량 위젯", "description": "티플러스 모바일의 실시간 사용량 조회 정보를 위젯으로 확인할 수 있는 앱입니다. 아이폰과 아이패드에서 사용할 수 있습니다.", "imageAlt": "티플 실시간 사용량 위젯 앱 아이콘" }
+  },
+  "privacy": {
+    "title": "개인정보 처리방침",
+    "intro": "Devp-YG에서는 다음과 같은 애플리케이션들(이하 \"Devp-YG 애플리케이션\"이라 함)을 배포합니다.",
+    "applies": "위 Devp-YG 애플리케이션들에 대한 개인정보 처리 방침은 다음과 같습니다.",
+    "articleHeading": "개인정보 처리 방침",
+    "appList": "<li>대전 버스 (Daejeon Bus) - 대전광역시</li><li>부산 버스 (Busan Bus) - 부산광역시</li><li>광주 버스 (Gwangju Bus) - 광주광역시</li><li>안동 버스 (Andong Bus) - 경상북도 안동시</li><li>여수 버스 (Yeosu Bus) - 전라남도 여수시</li><li>인천 버스 (Incheon Bus) - 인천광역시</li><li>알뜰폰 티플 실시간 사용량 위젯</li><li>무블로그: 당신의 이야기를 지도에 담다</li><li>냥미터 - 나만의 요금제</li><li>SnapQR</li><li>충남대학교 금주의 식단</li><li>충남대학교 도서관</li>",
+    "articles": [
+      { "title": "제1조(개인정보의 처리 목적)", "body": "Devp-YG 애플리케이션은 개인정보 보호법에 따라 애플리케이션의 모든 이용자들의 개인정보를 보호하고자 다음과 같은 처리방침을 준수합니다." },
+      { "title": "제2조(개인정보의 처리 및 보유 기간)", "body": "Devp-YG 애플리케이션은 개인정보를 수집하지 않으며, 개인정보 처리 및 보유하지 않습니다." },
+      { "title": "제3조(개인정보의 제3자 제공에 관한 사항)", "body": "Devp-YG 애플리케이션은 제3자에게 개인정보를 제공하지 않습니다." },
+      { "title": "제4조(개인정보처리의 위탁에 관한 사항)", "body": "Devp-YG 애플리케이션은 개인정보처리를 위탁하지 않습니다." },
+      { "title": "제5조(처리하는 개인정보의 항목)", "body": "Devp-YG 애플리케이션은 처리하는 개인정보 항목이 없습니다." },
+      { "title": "제6조(개인정보의 파기에 관한 사항)", "body": "Devp-YG 애플리케이션은 처리하는 개인정보가 없으므로 파기와 관련된 사항이 없습니다." },
+      { "title": "제7조(개인정보의 안전성 확보조치에 관한 사항)", "body": "Devp-YG 애플리케이션은 개인정보의 안정성 확보를 위해 개인정보를 수집하지 않으며, 개인정보 처리 및 보유하지 않습니다." },
+      { "title": "제8조(개인정보 자동 수집 장치의 설치∙운영 및 그 거부에 관한 사항)", "body": "Devp-YG 애플리케이션은 개인정보를 자동으로 수집하는 장치를 설치 및 운영하지 않습니다." },
+      { "title": "제9조(개인정보 보호책임자에 관한 사항)", "body": "Devp-YG 애플리케이션은 개인정보 처리에 관한 업무를 총괄해서 책임집니다." },
+      { "title": "제10조(개인정보 처리방침의 변경에 관한 사항)", "body": "이 개인정보 처리방침은 앱스토어 내 애플리케이션 개시일 이후부터 적용됩니다." }
+    ]
+  }
+}

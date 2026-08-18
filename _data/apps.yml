@@ -1,0 +1,139 @@
+- id: snapqr
+  platform: ios
+  category: everyday-tools
+  portfolio_order: 10
+  name: SnapQR
+  launched_at: 2026-05-18
+  description: 텍스트, URL, Wi-Fi, 연락처 정보를 손쉽게 QR 코드로 만들 수 있는 간편한 QR 생성 앱입니다.
+  image: /assets/images/apps/other/snapqr.png
+  image_alt: SnapQR 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id6770082242
+
+- id: fareflow
+  platform: ios
+  category: mobility
+  portfolio_order: 20
+  name: 냥미터 - 나만의 요금제
+  launched_at: 2026-05-14
+  description: GPS 기반으로 실시간 이동 거리와 시간을 측정하여 택시·카풀 요금을 자동으로 계산해주는 스마트 요금 미터기 앱입니다.
+  image: /assets/images/apps/other/fareflow.png
+  image_alt: 냥미터 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id6761998179
+
+- id: movlog
+  platform: ios
+  category: mobility
+  portfolio_order: 10
+  name: "무블로그: 당신의 이야기를 지도에 담다"
+  launched_at: 2025-05-31
+  description: Movlog는 하루의 이동 경로와 머문 장소를 자동으로 기록하고 정리해주는 앱입니다. 실시간 위치 추적을 통해 차량과 도보 이동 거리, 시간, 속도 등을 확인할 수 있으며, 지도 경로를 이미지로 저장할 수 있습니다.
+  image: /assets/images/apps/movlog/icon.png
+  image_alt: Movlog 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id6744460107
+
+- id: incheon-bus
+  platform: ios
+  category: public-transit
+  portfolio_order: 40
+  series: citybus
+  citybus_order: 4
+  name: 인천 버스
+  launched_at: 2026-08-26
+  short_name: 인천버스
+  subtitle: Incheon Bus
+  description: 인천광역시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.
+  citybus_description: 인천 버스 도착정보와 노선, 잔여좌석 정보를 확인하세요.
+  image: /assets/images/apps/citybus/incheon.png
+  image_alt: 인천버스 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/6802388006
+
+- id: yeosu-bus
+  platform: ios
+  category: public-transit
+  portfolio_order: 60
+  series: citybus
+  citybus_order: 6
+  name: 여수 버스
+  launched_at: 2023-10-21
+  short_name: 여수버스
+  subtitle: Yeosu Bus
+  description: 여수시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.
+  citybus_description: 여수 여행지와 일상을 연결하는 버스 정보를 확인하세요.
+  image: /assets/images/apps/citybus/yeosu.png
+  image_alt: 여수버스 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id6469851544
+
+- id: andong-bus
+  platform: ios
+  category: public-transit
+  portfolio_order: 50
+  series: citybus
+  citybus_order: 5
+  name: 안동 버스
+  launched_at: 2023-07-14
+  short_name: 안동버스
+  subtitle: Andong Bus
+  description: 안동시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.
+  citybus_description: 안동 시민의 일상과 여행을 위한 버스 정보를 확인하세요.
+  image: /assets/images/apps/citybus/andong.png
+  image_alt: 안동버스 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id6451151699
+
+- id: gwangju-bus
+  platform: ios
+  category: public-transit
+  portfolio_order: 30
+  series: citybus
+  citybus_order: 3
+  name: 광주 버스
+  launched_at: 2021-09-03
+  short_name: 광주버스
+  subtitle: Gwangju Bus
+  description: 광주광역시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.
+  citybus_description: 광주광역시 정류장, 노선과 버스 도착정보를 확인하세요.
+  image: /assets/images/apps/citybus/gwangju.png
+  image_alt: 광주버스 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id1584018380
+
+- id: busan-bus
+  platform: ios
+  category: public-transit
+  portfolio_order: 10
+  series: citybus
+  citybus_order: 1
+  name: 부산 버스
+  launched_at: 2021-01-06
+  short_name: 부산버스
+  subtitle: Busan Bus
+  description: 부산광역시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.
+  citybus_description: 부산 버스 도착정보와 노선, 잔여좌석 정보를 확인하세요.
+  image: /assets/images/apps/citybus/busan.png
+  image_alt: 부산버스 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id1547169837
+
+- id: daejeon-bus
+  platform: ios
+  category: public-transit
+  portfolio_order: 20
+  series: citybus
+  citybus_order: 2
+  name: 대전 버스
+  launched_at: 2020-01-17
+  short_name: 대전버스
+  subtitle: Daejeon Bus
+  description: 대전광역시 버스 정보를 제공합니다. 버스 정류장 위치, 버스 도착 예정 정보, 버스 위치, 버스 노선 검색, 즐겨찾기 기능을 제공합니다.
+  citybus_description: 대전 버스와 도시철도 정보를 한곳에서 확인하세요.
+  image: /assets/images/apps/citybus/daejeon.png
+  image_alt: 대전버스 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id1494747066
+
+- id: tplus-mobile
+  platform: ios
+  category: everyday-tools
+  portfolio_order: 20
+  name: 알뜰폰 티플 실시간 사용량 위젯
+  launched_at: 2022-12-28
+  description: 티플러스 모바일의 실시간 사용량 조회 정보를 위젯으로 확인할 수 있는 앱입니다. 아이폰과 아이패드에서 사용할 수 있습니다.
+  image: /assets/images/apps/other/tplus-mobile.png
+  image_alt: 티플 실시간 사용량 위젯 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id6444640056

@@ -1,162 +1,118 @@
 ---
 layout: landing-page
----		
-<!-- Main -->
-<article id="main">
-	<header class="special container">
-		<span class="icon fa-mobile"></span>
-		<h2><strong>Devp-YG</strong>
-		<br/>
-		We make mobile applications to improve a qualtiy of our lifestyle.</h2>
-		<p>The mobile applications is created
-		<br/>
-		with JAVA/Kotlin for Android OS and Objective-C/Swift for Apple OS.
-	</header>
+lang: ko
+i18n_key: home
+title: Devp-YG | Mobile Apps
+description: 일상과 이동을 더 편리하게 만드는 Devp-YG의 모바일 애플리케이션을 소개합니다.
+body_class: index
+styles:
+  - /assets/css/pages/home.css
+---
 
-	<!-- One 
-	<section class="wrapper style2 container special-alt">
-		<div class="row half">
-			<div class="8u">
+{% assign ios_apps = site.data.apps | where: "platform", "ios" %}
+{% assign citybus_apps = site.data.apps | where: "series", "citybus" %}
+{% assign movlog_app = site.data.apps | where: "id", "movlog" | first %}
 
-				<header>
-					<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
-				</header>
-				<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-				<footer>
-					<ul class="buttons">
-						<li><a href="#" class="button">Find Out More</a></li>
-					</ul>
-				</footer>
+<main id="main" class="home-page">
+    <section class="home-hero">
+        <div class="site-shell hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="home.heroEyebrow">Independent iOS Studio</span></p>
+                <h1 data-i18n-html="home.heroTitle">매일의 이동을<br /><em>더 가볍게.</em></h1>
+                <p class="hero-lead" data-i18n="home.heroLead">복잡한 정보는 단순하게, 반복되는 일은 빠르게. 일상에서 오래 쓰이는 iPhone과 iPad 앱을 만듭니다.</p>
+                <div class="hero-actions">
+                    <a href="#featured-apps" class="button special"><span data-i18n="home.exploreApps">앱 둘러보기</span> <span aria-hidden="true">↘</span></a>
+                    <a href="mailto:devp.yg@gmail.com?Subject=지원문의" class="button ghost" data-i18n="common.contact" data-i18n-mail-subject="지원문의">문의하기</a>
+                </div>
+                <dl class="hero-stats" aria-label="Devp-YG 앱 현황" data-i18n-aria-label="home.statsLabel">
+                    <div><dt>{{ ios_apps | size }}</dt><dd data-i18n="home.apps">iOS Apps</dd></div>
+                    <div><dt>{{ citybus_apps | size }}</dt><dd data-i18n="home.cities">Cities</dd></div>
+                    <div><dt>Swift</dt><dd data-i18n="home.builtNative">Built native</dd></div>
+                </dl>
+            </div>
 
-			</div>
-			<div class="4u skel-cell-important">
+            <div class="hero-visual" aria-label="Movlog 앱 화면과 Devp-YG 앱 아이콘" data-i18n-aria-label="home.visualLabel">
+                <div class="hero-glow"></div>
+                <div class="floating-icon icon-snapqr"><img src="{{ '/assets/images/apps/other/snapqr.png' | relative_url }}" alt="SnapQR 앱 아이콘" data-i18n-alt="home.snapqrAlt" /></div>
+                <div class="floating-icon icon-citybus"><img src="{{ '/assets/images/apps/citybus/busan.png' | relative_url }}" alt="부산버스 앱 아이콘" data-i18n-alt="home.busanAlt" /></div>
+                <div class="phone-card">
+                    <div class="phone-top"><span></span></div>
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="Movlog 이동 기록 화면" data-i18n-alt="home.movlogScreenAlt" />
+                </div>
+                <a class="now-card" href="{{ '/movlog/' | relative_url }}" aria-label="Movlog 소개 보기" data-i18n-aria-label="home.movlogIntro">
+                    <img src="{{ movlog_app.image | relative_url }}" alt="Movlog 앱 아이콘" data-i18n-alt="apps.movlog.imageAlt" />
+                    <div><small data-i18n="home.featuredApp">Featured app</small><strong>Movlog</strong></div>
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-				<ul class="featured-icons">
-					<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-					<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-					<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-					<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-					<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-					<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-				</ul>
+    <section id="featured-apps" class="home-section featured-section">
+        <div class="site-shell">
+            <div class="section-heading split-heading">
+                <div>
+                    <p class="eyebrow dark"><span class="eyebrow-dot"></span> <span data-i18n="home.selectedProducts">Selected products</span></p>
+                    <h2 data-i18n-html="home.featuredTitle">필요한 순간에<br />바로 쓸 수 있는 앱</h2>
+                </div>
+                <p data-i18n="home.featuredLead">화려한 기능보다 매일의 불편을 제대로 해결하는 데 집중합니다. 앱마다 가장 중요한 경험을 선명하게 다듬습니다.</p>
+            </div>
 
-			</div>				
-		</div>
-	</section>
-	-->
-	
-	<!-- Two 
-	<section class="wrapper style1 container special">
-		<div class="row">
-			<div class="4u">
+            <div class="product-grid">
+                <a class="product-card product-movlog" href="{{ '/movlog/' | relative_url }}">
+                    <div class="product-copy">
+                        <div class="product-icon"><img src="{{ movlog_app.image | relative_url }}" alt="" /></div>
+                        <p class="product-kicker" data-i18n="home.movementJournal">Movement journal</p>
+                        <h3>Movlog</h3>
+                        <p data-i18n="home.movlogDescription">이동 경로와 머문 장소를 자동으로 기록하고, 평범한 하루를 나만의 이야기로 남겨보세요.</p>
+                        <span class="text-link"><span data-i18n="common.viewMore">자세히 보기</span> <i aria-hidden="true">↗</i></span>
+                    </div>
+                    <div class="product-shot movlog-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/insights.png' | relative_url }}" alt="Movlog 인사이트 화면" data-i18n-alt="home.movlogInsightsAlt" loading="lazy" /></div>
+                </a>
 
-				<section>
-					<span class="icon featured fa-check"></span>
-					<header>
-						<h3>This is Something</h3>
-					</header>
-					<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-				</section>
+                <a class="product-card product-citybus" href="{{ '/citybus/' | relative_url }}">
+                    <div class="product-copy">
+                        <div class="city-icon-row" aria-hidden="true">
+                            {% for app in citybus_apps limit: 4 %}<img src="{{ app.image | relative_url }}" alt="" />{% endfor %}
+                        </div>
+                        <p class="product-kicker" data-i18n="home.citiesOneExperience">6 cities, one experience</p>
+                        <h3>CityBus</h3>
+                        <p data-i18n="home.citybusDescription">부산부터 여수까지, 내 도시의 버스 도착정보와 노선을 빠르고 간결하게 확인하세요.</p>
+                        <span class="text-link"><span data-i18n="home.findMyCity">내 도시 찾기</span> <i aria-hidden="true">↗</i></span>
+                    </div>
+                    <div class="route-art" aria-hidden="true"><span class="route-dot one"></span><span class="route-dot two"></span><span class="route-dot three"></span></div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-			</div>
-			<div class="4u">
+    <section class="home-section utility-section">
+        <div class="site-shell utility-grid">
+            <div class="utility-intro">
+                <p class="eyebrow dark"><span class="eyebrow-dot"></span> <span data-i18n="home.everydayTools">Everyday tools</span></p>
+                <h2 data-i18n-html="home.toolsTitle">작지만 확실한<br />생활 도구</h2>
+                <a href="{{ '/portfolio.html' | relative_url }}" class="text-link"><span data-i18n="home.allAppsLink">모든 앱 보기</span> <i aria-hidden="true">→</i></a>
+            </div>
+            <div class="utility-list">
+                {% assign utility_ids = "snapqr,fareflow,tplus-mobile" | split: "," %}
+                {% for utility_id in utility_ids %}
+                    {% assign utility_app = site.data.apps | where: "id", utility_id | first %}
+                    <a href="{{ utility_app.store_url }}" class="utility-item" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ utility_app.image | relative_url }}" alt="{{ utility_app.image_alt | escape }}" data-i18n-alt="apps.{{ utility_app.id }}.imageAlt" loading="lazy" />
+                        <div><h3 data-i18n="apps.{{ utility_app.id }}.name">{{ utility_app.name }}</h3><p data-i18n="apps.{{ utility_app.id }}.description">{{ utility_app.description }}</p></div>
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 
-				<section>
-					<span class="icon featured fa-check"></span>
-					<header>
-						<h3>Also Something</h3>
-					</header>
-					<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-				</section>
-
-			</div>
-			<div class="4u">
-
-				<section>
-					<span class="icon featured fa-check"></span>
-					<header>
-						<h3>Probably Something</h3>
-					</header>
-					<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-				</section>
-
-			</div>
-		</div>
-	</section>
-	-->
-	
-	<!-- Three 
-	<section class="wrapper style3 container special">
-
-		<header class="major">
-			<h2>Next look at this <strong>cool stuff</strong></h2>
-		</header>
-
-		<div class="row">
-			<div class="6u">
-
-				<section>
-					<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-					<header>
-						<h3>A Really Fast Train</h3>
-					</header>
-					<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-				</section>
-
-			</div>
-			<div class="6u">
-
-				<section>
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<header>
-						<h3>An Airport Terminal</h3>
-					</header>
-					<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-				</section>
-
-			</div>
-		</div>
-		<div class="row">
-			<div class="6u">
-
-				<section>
-					<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-					<header>
-						<h3>Hyperspace Travel</h3>
-					</header>
-					<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-				</section>
-
-			</div>
-			<div class="6u">
-
-				<section>
-					<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-					<header>
-						<h3>And Another Train</h3>
-					</header>
-					<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-				</section>
-
-			</div>
-		</div>
-
-		<footer class="major">
-			<ul class="buttons">
-				<li><a href="#" class="button">See More</a></li>
-			</ul>
-		</footer>
-
-	</section>
-	-->
-
-	<!-- CTA -->
-	<section id="cta">
-		<header>
-			<h2>Thank you !!</h2>
-		<!--	<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p> -->
-		</header>
-		<footer>
-		</footer>
-	</section>
-</article>
+    <section class="home-cta">
+        <div class="site-shell cta-inner">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="home.supportIdeas">Support &amp; ideas</span></p>
+            <h2 data-i18n="home.supportTitle">더 편한 앱을 함께 만들어가요.</h2>
+            <p data-i18n="home.supportLead">사용 중 발견한 문제, 필요한 기능, 새로운 제안을 들려주세요.</p>
+            <a href="mailto:devp.yg@gmail.com?Subject=지원문의" class="button light" data-i18n-mail-subject="지원문의"><span data-i18n="home.sendEmail">이메일 보내기</span> <span aria-hidden="true">↗</span></a>
+        </div>
+    </section>
+</main>

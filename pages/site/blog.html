@@ -1,0 +1,39 @@
+---
+layout: default
+lang: ko
+i18n_key: blog
+title: Blog | Devp-YG
+description: Devp-YG의 앱 개발과 업데이트 기록입니다.
+permalink: /blog.html
+---
+
+<article id="main">
+    <header class="special container">
+        <span class="icon fa-pencil" aria-hidden="true"></span>
+        <h2 data-i18n-html="blog.title">개발 <strong>기록</strong></h2>
+    </header>
+
+    <section class="wrapper style4 container">
+        <ul class="posts">
+            {% for post in site.posts %}
+                <li class="wrapper{% if forloop.first %} style2{% else %} style1{% endif %}">
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                    <p class="post-meta">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+                    </p>
+                    {{ post.excerpt }}
+                    <section class="special">
+                        <ul class="buttons">
+                            <li><a href="{{ post.url | relative_url }}" class="button" data-i18n="blog.readMore">더 읽기</a></li>
+                        </ul>
+                    </section>
+                </li>
+            {% else %}
+                <li class="wrapper style1">
+                    <h2 data-i18n="blog.emptyTitle">새로운 기록을 준비하고 있습니다.</h2>
+                    <p data-i18n="blog.emptyDescription">앱 업데이트와 개발 이야기를 이곳에 차례로 공개합니다.</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</article>

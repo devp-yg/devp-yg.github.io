@@ -1,31 +1,42 @@
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
+{% assign document_title = page.title | default: site.title %}
+{% assign document_description = page.description | default: site.description %}
+{% assign document_language = page.lang | default: site.lang %}
 <head>
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords" content="" />
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.dropotron.min.js"></script>
-    <script src="/js/jquery.scrolly.min.js"></script>
-    <script src="/js/jquery.scrollgress.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/skel-layers.min.js"></script>
-    <script src="/js/init.js"></script>
-    <noscript>
-        <link rel="stylesheet" href="/css/skel.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/style-wide.css" />
-        <link rel="stylesheet" href="/css/style-noscript.css" />
-    </noscript>
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ document_title | escape }}</title>
+    <meta name="description" content="{{ document_description | escape }}" />
+    <meta name="language-pack-base" content="{{ '/assets/i18n/' | relative_url }}" />
+    <meta name="i18n-page" content="{{ page.i18n_key | default: 'home' }}" />
+    <meta name="theme-color" content="#080d18" />
+    {% if page.robots %}
+        <meta name="robots" content="{{ page.robots }}" />
+    {% endif %}
+    {% if page.keywords %}
+        <meta name="keywords" content="{{ page.keywords | escape }}" />
+    {% endif %}
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="{% if document_language == 'en' %}en_US{% else %}ko_KR{% endif %}" />
+    <meta property="og:site_name" content="{{ site.title | escape }}" />
+    <meta property="og:title" content="{{ document_title | escape }}" />
+    <meta property="og:description" content="{{ document_description | escape }}" />
+    <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
+    {% if page.image %}
+        <meta property="og:image" content="{{ page.image | absolute_url }}" />
+        <meta property="og:image:alt" content="{{ document_title | escape }}" />
+    {% endif %}
+    <meta name="twitter:card" content="{{ page.twitter_card | default: 'summary' }}" />
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}" />
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    {% for stylesheet in page.styles %}
+        <link rel="stylesheet" href="{{ stylesheet | relative_url }}" />
+    {% endfor %}
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+    {% for script in page.scripts %}
+        <script src="{{ script | relative_url }}" defer></script>
+    {% endfor %}
 </head>

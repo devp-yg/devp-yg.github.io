@@ -1,14 +1,23 @@
 # Site settings
-title: Developer's YG
+title: Devp-YG | Mobile Apps
 email: devp.yg@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  This is a page for devp-yg.
-  Devp-yg develops the mobile application on iOS and AndroidOS.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" #"http://locahost:4000" # the base hostname & protocol for your site
+description: >-
+  Devp-YG develops practical mobile apps for everyday movement and life.
+lang: ko
+timezone: Asia/Seoul
+baseurl: ""
+url: "https://devp-yg.github.io"
 twitter_username: ""
-github_username:  devp-yg
+github_username: devp-yg
 copyrights_year: 2020
 
 # Build settings
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - _archive
+  - .idea
+  - .jekyll-cache
+  - README.md
+  - LICENSE
