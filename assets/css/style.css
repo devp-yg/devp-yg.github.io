@@ -24,8 +24,8 @@ html { scroll-behavior: smooth; }
 body {
     background: var(--paper);
     color: var(--ink);
-    /* Use the web font consistently, then fall back per platform. */
-    font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Segoe UI", sans-serif;
+    /* Prefer the web font, with stable Korean system-font fallbacks. */
+    font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Segoe UI", sans-serif;
     font-size: 16px;
     line-height: 1.7;
     margin: 0;
