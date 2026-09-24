@@ -1,6 +1,6 @@
 # Devp-YG Website
 
-Devp-YG의 앱 포트폴리오, 제품 소개, 개인정보처리방침, 개발 기록을 제공하는 GitHub Pages 사이트입니다.
+Devp-YG의 앱 목록, 제품 소개, 개인정보처리방침, 개발 기록을 제공하는 GitHub Pages 사이트입니다.
 
 ## Structure
 

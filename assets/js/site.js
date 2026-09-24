@@ -3,6 +3,7 @@
 
     var header = document.querySelector('[data-site-header]');
     var toggle = document.querySelector('.nav-toggle');
+    var productMenu = document.querySelector('[data-product-menu]');
     var languageButtons = document.querySelectorAll('[data-language]');
     var languageStorageKey = 'devp-yg-language';
     var packs = {};
@@ -117,6 +118,7 @@
         if (!header || !toggle) return;
         header.removeAttribute('data-open');
         toggle.setAttribute('aria-expanded', 'false');
+        if (productMenu) productMenu.removeAttribute('open');
         updateToggleLabel(false);
     }
 
@@ -131,6 +133,11 @@
         });
         document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') closeMenu();
+        });
+        document.addEventListener('click', function (event) {
+            if (productMenu && productMenu.hasAttribute('open') && !productMenu.contains(event.target)) {
+                productMenu.removeAttribute('open');
+            }
         });
         header.querySelectorAll('a').forEach(function (link) {
             link.addEventListener('click', closeMenu);

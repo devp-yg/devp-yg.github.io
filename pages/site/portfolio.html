@@ -2,7 +2,7 @@
 layout: default
 lang: ko
 i18n_key: portfolio
-title: Portfolio | Devp-YG
+title: 모든 앱 | Devp-YG
 description: Devp-YG가 개발하고 운영하는 iOS 애플리케이션을 소개합니다.
 permalink: /portfolio.html
 styles:
@@ -13,7 +13,7 @@ styles:
     {% assign ios_apps = site.data.apps | where: "platform", "ios" %}
 
     <header class="portfolio-hero site-shell">
-        <p class="portfolio-eyebrow" data-i18n="portfolio.eyebrow" data-i18n-count="{{ ios_apps | size }}">All products · {{ ios_apps | size }} apps</p>
+        <p class="portfolio-eyebrow" data-i18n="portfolio.eyebrow" data-i18n-count="{{ ios_apps | size }}">Devp-YG Apps · {{ ios_apps | size }}개</p>
         <h1 data-i18n-html="portfolio.title">일상의 작은 불편을<br /><em>앱으로 해결합니다.</em></h1>
         <p data-i18n="portfolio.lead">이동 기록과 대중교통부터 QR 코드, 요금 계산, 통신 사용량까지. 직접 필요해서 만들고 꾸준히 운영하는 iOS 앱입니다.</p>
     </header>

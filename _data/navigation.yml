@@ -1,19 +1,31 @@
-- label: 홈
-  key: home
-  url: /
-- label: 모든 앱
-  key: portfolio
-  url: /portfolio.html
-- label: 출시 히스토리
-  key: history
-  url: /history.html
-- label: 시티버스
-  key: citybus
-  url: /citybus/
-- label: 무블로그
-  key: movlog
-  url: /movlog/
-- label: 문의하기
-  key: contact
-  url: mailto:devp.yg@gmail.com?Subject=지원문의
-  style: nav-contact
+products:
+  - label: 모든 앱 보기
+    key: allApps
+    description: 운영 중인 iOS 앱을 한곳에서 살펴보세요.
+    description_key: allAppsDescription
+    url: /portfolio.html
+    mark: all
+    page_key: portfolio
+  - label: 무블로그
+    key: movlog
+    description: 이동과 방문을 자동으로 기록하는 라이프로그
+    description_key: movlogDescription
+    url: /movlog/
+    mark: movlog
+    page_key: movlog
+  - label: 시티버스
+    key: citybus
+    description: 도시별 버스와 환승·여행 정보를 한곳에
+    description_key: citybusDescription
+    url: /citybus/
+    mark: citybus
+    page_key: citybus
+
+links:
+  - label: 출시 기록
+    key: history
+    url: /history.html
+  - label: 문의하기
+    key: contact
+    url: mailto:devp.yg@gmail.com?Subject=지원문의
+    style: nav-contact

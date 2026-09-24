@@ -20,7 +20,7 @@
   },
   "pages": {
     "home": { "title": "Devp-YG | Mobile Apps", "description": "Discover Devp-YG mobile apps designed to make everyday movement and life more convenient." },
-    "portfolio": { "title": "Portfolio | Devp-YG", "description": "Explore the iOS applications developed and operated by Devp-YG." },
+    "portfolio": { "title": "All Apps | Devp-YG", "description": "Explore the iOS applications developed and operated by Devp-YG." },
     "blog": { "title": "Blog | Devp-YG", "description": "Development and update notes from Devp-YG." },
     "copyright": { "title": "Copyright | Devp-YG", "description": "Copyright information for the Devp-YG website." },
     "contact": { "title": "Contact | Devp-YG", "description": "Contact information for Devp-YG applications." },
@@ -30,7 +30,7 @@
     "movlog": { "title": "Movlog | Turn your movement into a story", "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then helps you look back through insights and achievements." },
     "privacy": { "title": "Privacy Policy | Devp-YG", "description": "Privacy policy for Devp-YG applications." }
   },
-  "header": { "home": "Home", "portfolio": "All apps", "history": "Release history", "citybus": "CityBus", "movlog": "Movlog", "contact": "Contact" },
+  "header": { "home": "Home", "portfolio": "All apps", "exploreApps": "Explore apps", "appsHeading": "Devp-YG Apps", "appsDescription": "Useful apps for everyday moments", "allApps": "View all apps", "allAppsDescription": "Browse every iOS app we currently maintain.", "movlogDescription": "A life log that records movement and visits", "citybusDescription": "Bus, transfer, and travel information by city", "history": "Release history", "citybus": "CityBus", "movlog": "Movlog", "contact": "Contact" },
   "footer": {
     "description": "An independent iOS app studio making<br>everyday movement and life a little easier.",
     "products": "Products",
@@ -71,7 +71,7 @@
     "sendEmail": "Send an email"
   },
   "portfolio": {
-    "eyebrow": "All products · {count} apps",
+    "eyebrow": "Devp-YG Apps · {count} apps",
     "title": "Solve life’s little frictions<br><em>with an app.</em>",
     "lead": "From movement logs and public transit to QR codes, fare calculations, and mobile usage. These are iOS apps we needed ourselves and continue to run.",
     "ariaLabel": "iOS applications",
@@ -111,7 +111,7 @@
     "iosApp": "iOS app"
   },
   "contact": { "title": "Contact", "description": "Please email us about problems, bug reports, or feature suggestions while using our apps." },
-  "legacy": { "title": "This is an older sample page.", "description": "Find current apps and product information in the portfolio.", "viewPortfolio": "View portfolio" },
+  "legacy": { "title": "This is an older sample page.", "description": "Find our current apps on the All Apps page.", "viewPortfolio": "View all apps" },
   "citybus": {
     "eyebrow": "CityBus Series",
     "title": "A simpler way to<br>meet your city’s buses",

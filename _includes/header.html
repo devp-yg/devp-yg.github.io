@@ -10,9 +10,44 @@
         </button>
 
         <nav id="site-navigation" class="site-navigation" aria-label="주요 메뉴" data-i18n-aria-label="common.navigation">
-            <ul>
+            <ul class="site-navigation-list">
+                <li class="nav-products">
+                    <details data-product-menu>
+                        <summary{% if page.i18n_key == 'portfolio' or page.i18n_key == 'movlog' or page.i18n_key == 'citybus' %} class="is-current"{% endif %}>
+                            <span data-i18n="header.exploreApps">앱 둘러보기</span>
+                            <i aria-hidden="true"></i>
+                        </summary>
+                        <div class="nav-products-panel">
+                            <div class="nav-products-heading">
+                                <span data-i18n="header.appsHeading">Devp-YG Apps</span>
+                                <small data-i18n="header.appsDescription">필요한 순간에 바로 쓸 수 있는 앱</small>
+                            </div>
+                            <ul class="nav-products-list">
+                                {% for item in site.data.navigation.products %}
+                                    {% assign first_character = item.url | slice: 0 %}
+                                    {% assign item_url = item.url %}
+                                    {% if first_character == '/' %}
+                                        {% assign item_url = item.url | relative_url %}
+                                    {% endif %}
+                                    <li>
+                                        <a %}%} aria-current="page" endif href="{{ item_url }}" if item.page_keypage.i18n_key == {% {%>
+                                            <span aria-hidden="true" class="nav-product-mark nav-product-mark-{{ item.mark }}">
+                                                {% if item.mark == 'all' %}<i></i><i></i><i></i><i></i>{% elsif item.mark == 'movlog' %}M{% else %}B{% endif %}
+                                            </span>
+                                            <span class="nav-product-copy">
+                                                <strong data-i18n="header.{{ item.key }}">{{ item.label }}</strong>
+                                                <small data-i18n="header.{{ item.description_key }}">{{ item.description }}</small>
+                                            </span>
+                                            <span aria-hidden="true" class="nav-product-arrow">↗</span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </details>
+                </li>
                 {% assign current_url = page.url | replace: 'index.html', '' %}
-                {% for item in site.data.navigation %}
+                {% for item in site.data.navigation.links %}
                     {% assign first_character = item.url | slice: 0 %}
                     {% assign item_url = item.url %}
                     {% if first_character == '/' %}
