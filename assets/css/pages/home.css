@@ -203,7 +203,7 @@
     text-transform: uppercase;
 }
 
-.product-card h3 { font-family: "DM Sans", "Noto Sans KR", sans-serif; font-size: clamp(2.4rem, 4vw, 3.6rem); letter-spacing: -0.055em; margin: 0 0 16px; }
+.product-card h3 { font-family: inherit; font-size: clamp(2.4rem, 4vw, 3.6rem); letter-spacing: -0.055em; margin: 0 0 16px; }
 .product-card .product-copy > p:not(.product-kicker) { line-height: 1.8; margin-bottom: 24px; max-width: 430px; }
 .product-movlog { background: #dafa58; color: #17221f; grid-template-rows: auto 1fr; }
 .product-shot { align-self: end; justify-self: center; }

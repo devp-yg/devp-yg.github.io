@@ -7,10 +7,10 @@
 - label: 출시 히스토리
   key: history
   url: /history.html
-- label: CityBus
+- label: 시티버스
   key: citybus
   url: /citybus/
-- label: Movlog
+- label: 무블로그
   key: movlog
   url: /movlog/
 - label: 문의하기

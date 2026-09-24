@@ -1,8 +1,8 @@
 ---
 layout: default
 i18n_key: movlog
-title: Movlog | 당신의 이동을, 당신의 이야기로
-description: Movlog는 이동 경로와 방문 장소를 자동으로 기록하고, 나의 일상을 하나의 이야기로 돌아보게 해주는 앱입니다.
+title: 무블로그 | 당신의 이동을, 당신의 이야기로
+description: 무블로그는 이동 경로와 방문 장소를 자동으로 기록하고, 나의 일상을 하나의 이야기로 돌아보게 해주는 앱입니다.
 keywords: Movlog, 무블로그, 이동 기록, 이동 경로 기록, 방문 기록, 일상 기록 앱
 permalink: /movlog/
 image: /assets/images/apps/movlog/icon.png
@@ -13,26 +13,26 @@ styles:
 <article id="main" class="movlog-page">
     {% assign movlog_app = site.data.apps | where: "id", "movlog" | first %}
     <section class="movlog-hero">
-        <div class="movlog-eyebrow" data-i18n="movlog.eyebrow">Movlog · Daily Movement Journal</div>
-        <h1 data-i18n-html="movlog.title">당신이 간 곳이<br /><em>하나의 이야기가 됩니다.</em></h1>
-        <p data-i18n="movlog.description">Movlog는 나의 이동 일상을 조용히 기록합니다. 경로와 장소를 다시 바라보며, 평범한 하루에서 나만의 이야기를 발견해 보세요.</p>
+        <div class="movlog-eyebrow" data-i18n="movlog.eyebrow">무블로그 · 매일의 이동 기록</div>
+        <h1 data-i18n-html="movlog.title">스쳐 가는 하루도,<br /><em>오래 남을 이야기로.</em></h1>
+        <p data-i18n="movlog.description">무블로그는 나의 이동 일상을 조용히 기록합니다. 경로와 장소를 다시 바라보며, 평범한 하루에서 나만의 이야기를 발견해 보세요.</p>
         <div class="movlog-actions">
             <a href="{{ movlog_app.store_url }}" class="button special" target="_blank" rel="noopener noreferrer" data-i18n="movlog.download">App Store에서 다운로드</a>
-            <a href="#movlog-about" class="button scrolly" data-i18n="movlog.about">Movlog 알아보기</a>
+            <a href="#movlog-about" class="button scrolly" data-i18n="movlog.about">무블로그 알아보기</a>
         </div>
         <div class="movlog-hero-shot">
-            <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="Movlog 오늘의 이동 기록 화면" data-i18n-alt="movlog.heroAlt" />
+            <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 오늘의 이동 기록 화면" data-i18n-alt="movlog.heroAlt" />
         </div>
     </section>
 
     <section id="movlog-about" class="movlog-section">
         <div class="movlog-section-header">
             <h2 data-i18n-html="movlog.aboutTitle">당신의 하루를<br /><em>한눈에 돌아보세요.</em></h2>
-            <p data-i18n="movlog.aboutDescription">이동 경로부터 방문 장소, 기록과 인사이트까지. Movlog가 쌓아가는 하루를 직접 만나보세요.</p>
+            <p data-i18n="movlog.aboutDescription">이동 경로부터 방문 장소, 기록과 인사이트까지. 무블로그가 쌓아가는 하루를 직접 만나보세요.</p>
         </div>
 
         <div class="movlog-story">
-            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="Movlog 자동 이동 기록 화면" data-i18n-alt="movlog.trackingAlt" /></div>
+            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 자동 이동 기록 화면" data-i18n-alt="movlog.trackingAlt" /></div>
             <div class="movlog-story-copy">
                 <p class="movlog-story-label" data-i18n="movlog.trackingLabel">AUTOMATIC TRACKING</p>
                 <h3 data-i18n="movlog.trackingTitle">자동 이동 기록</h3>
@@ -41,7 +41,7 @@ styles:
         </div>
 
         <div class="movlog-story reverse">
-            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/archive.png' | relative_url }}" alt="Movlog 일별 기록 보관함 화면" data-i18n-alt="movlog.archiveAlt" loading="lazy" decoding="async" /></div>
+            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/archive.png' | relative_url }}" alt="무블로그 일별 기록 보관함 화면" data-i18n-alt="movlog.archiveAlt" loading="lazy" decoding="async" /></div>
             <div class="movlog-story-copy">
                 <p class="movlog-story-label" data-i18n="movlog.archiveLabel">DAILY ARCHIVE</p>
                 <h3 data-i18n="movlog.archiveTitle">기록을 쉽게 찾아보세요</h3>
@@ -50,7 +50,7 @@ styles:
         </div>
 
         <div class="movlog-story">
-            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/insights.png' | relative_url }}" alt="Movlog 이동 인사이트 화면" data-i18n-alt="movlog.insightsAlt" loading="lazy" decoding="async" /></div>
+            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/insights.png' | relative_url }}" alt="무블로그 이동 인사이트 화면" data-i18n-alt="movlog.insightsAlt" loading="lazy" decoding="async" /></div>
             <div class="movlog-story-copy">
                 <p class="movlog-story-label" data-i18n="movlog.insightsLabel">PERSONAL INSIGHTS</p>
                 <h3 data-i18n="movlog.insightsTitle">나만의 이동 패턴 발견</h3>

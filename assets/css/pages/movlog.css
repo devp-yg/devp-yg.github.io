@@ -235,6 +235,11 @@
     color: var(--movlog-ink);
 }
 
+.movlog-final .button:not(.special) {
+    border-color: var(--movlog-paper);
+    color: var(--movlog-paper);
+}
+
 @media screen and (max-width: 760px) {
     .movlog-hero {
         padding: 64px 22px 70px;

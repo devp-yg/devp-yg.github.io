@@ -31,17 +31,17 @@ styles:
                 </dl>
             </div>
 
-            <div class="hero-visual" aria-label="Movlog 앱 화면과 Devp-YG 앱 아이콘" data-i18n-aria-label="home.visualLabel">
+            <div class="hero-visual" aria-label="무블로그 앱 화면과 Devp-YG 앱 아이콘" data-i18n-aria-label="home.visualLabel">
                 <div class="hero-glow"></div>
                 <div class="floating-icon icon-snapqr"><img src="{{ '/assets/images/apps/other/snapqr.png' | relative_url }}" alt="SnapQR 앱 아이콘" data-i18n-alt="home.snapqrAlt" /></div>
                 <div class="floating-icon icon-citybus"><img src="{{ '/assets/images/apps/citybus/busan.png' | relative_url }}" alt="부산버스 앱 아이콘" data-i18n-alt="home.busanAlt" /></div>
                 <div class="phone-card">
                     <div class="phone-top"><span></span></div>
-                    <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="Movlog 이동 기록 화면" data-i18n-alt="home.movlogScreenAlt" />
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 이동 기록 화면" data-i18n-alt="home.movlogScreenAlt" />
                 </div>
-                <a class="now-card" href="{{ '/movlog/' | relative_url }}" aria-label="Movlog 소개 보기" data-i18n-aria-label="home.movlogIntro">
-                    <img src="{{ movlog_app.image | relative_url }}" alt="Movlog 앱 아이콘" data-i18n-alt="apps.movlog.imageAlt" />
-                    <div><small data-i18n="home.featuredApp">Featured app</small><strong>Movlog</strong></div>
+                <a class="now-card" href="{{ '/movlog/' | relative_url }}" aria-label="무블로그 소개 보기" data-i18n-aria-label="home.movlogIntro">
+                    <img src="{{ movlog_app.image | relative_url }}" alt="무블로그 앱 아이콘" data-i18n-alt="apps.movlog.imageAlt" />
+                    <div><small data-i18n="home.featuredApp">Featured app</small><strong data-i18n="header.movlog">무블로그</strong></div>
                     <span aria-hidden="true">↗</span>
                 </a>
             </div>
@@ -63,11 +63,11 @@ styles:
                     <div class="product-copy">
                         <div class="product-icon"><img src="{{ movlog_app.image | relative_url }}" alt="" /></div>
                         <p class="product-kicker" data-i18n="home.movementJournal">Movement journal</p>
-                        <h3>Movlog</h3>
+                        <h3 data-i18n="header.movlog">무블로그</h3>
                         <p data-i18n="home.movlogDescription">이동 경로와 머문 장소를 자동으로 기록하고, 평범한 하루를 나만의 이야기로 남겨보세요.</p>
                         <span class="text-link"><span data-i18n="common.viewMore">자세히 보기</span> <i aria-hidden="true">↗</i></span>
                     </div>
-                    <div class="product-shot movlog-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/insights.png' | relative_url }}" alt="Movlog 인사이트 화면" data-i18n-alt="home.movlogInsightsAlt" loading="lazy" /></div>
+                    <div class="product-shot movlog-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/insights.png' | relative_url }}" alt="무블로그 인사이트 화면" data-i18n-alt="home.movlogInsightsAlt" loading="lazy" /></div>
                 </a>
 
                 <a class="product-card product-citybus" href="{{ '/citybus/' | relative_url }}">
@@ -76,7 +76,7 @@ styles:
                             {% for app in citybus_apps limit: 4 %}<img src="{{ app.image | relative_url }}" alt="" />{% endfor %}
                         </div>
                         <p class="product-kicker" data-i18n="home.citiesOneExperience">6 cities, one experience</p>
-                        <h3>CityBus</h3>
+                        <h3 data-i18n="header.citybus">시티버스</h3>
                         <p data-i18n="home.citybusDescription">부산부터 여수까지, 내 도시의 버스 도착정보와 노선을 빠르고 간결하게 확인하세요.</p>
                         <span class="text-link"><span data-i18n="home.findMyCity">내 도시 찾기</span> <i aria-hidden="true">↗</i></span>
                     </div>
