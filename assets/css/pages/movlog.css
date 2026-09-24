@@ -1,295 +1,1235 @@
 .movlog-page {
-    --movlog-ink: #17221f;
-    --movlog-muted: #6b7770;
-    --movlog-paper: #f5f7f2;
-    --movlog-line: #dce3db;
-    --movlog-lime: #dafa58;
+    --movlog-ink: #3f2b20;
+    --movlog-muted: #78675c;
+    --movlog-paper: #fff9ed;
+    --movlog-card: #fffdf7;
+    --movlog-line: rgba(63, 43, 32, 0.14);
+    --movlog-yellow: #ffbd00;
+    --movlog-coral: #ff6f61;
+    --movlog-green: #7dc51f;
     background: var(--movlog-paper);
     color: var(--movlog-ink);
+    overflow: hidden;
+}
+
+.movlog-page *,
+.movlog-page *::before,
+.movlog-page *::after {
+    box-sizing: border-box;
+}
+
+.movlog-shell {
+    margin: 0 auto;
+    max-width: 1180px;
+    width: 100%;
+}
+
+.movlog-kicker {
+    color: #9a5135;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    line-height: 1.5;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+}
+
+.movlog-page h2 {
+    color: var(--movlog-ink);
+    font-size: clamp(2.6rem, 5.3vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.065em;
+    line-height: 1.04;
+    margin: 0;
+}
+
+.movlog-page h2 em {
+    font-style: normal;
+    font-weight: 800;
+}
+
+.movlog-page p {
+    color: var(--movlog-muted);
 }
 
 .movlog-hero {
-    background: var(--movlog-paper);
-    padding: 92px 32px 86px;
+    background: radial-gradient(circle at 82% 18%, rgba(255, 189, 0, 0.25), transparent 29%), linear-gradient(145deg, #fffaf0 0%, #fff3dd 100%);
+    min-height: 760px;
+    overflow: hidden;
+    padding: 80px 32px 74px;
     position: relative;
-    text-align: center;
+}
+
+.movlog-hero::before {
+    color: rgba(63, 43, 32, 0.045);
+    content: "MOVE · REMEMBER · REPEAT";
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(6rem, 13vw, 12rem);
+    font-weight: 700;
+    left: 50%;
+    letter-spacing: -0.08em;
+    line-height: 0.78;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.movlog-hero-grid {
+    align-items: center;
+    display: grid;
+    gap: clamp(42px, 6vw, 88px);
+    grid-template-columns: minmax(0, 0.9fr) minmax(480px, 1.1fr);
+    position: relative;
+    z-index: 1;
+}
+
+.movlog-hero-copy {
+    padding: 28px 0;
+}
+
+.movlog-brand-lockup {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 46px;
+}
+
+.movlog-brand-lockup img {
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(93, 62, 43, 0.14);
+    height: 64px;
+    width: 64px;
+}
+
+.movlog-brand-lockup strong,
+.movlog-brand-lockup span {
+    display: block;
+}
+
+.movlog-brand-lockup strong {
+    color: var(--movlog-ink);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.18rem;
+    letter-spacing: -0.03em;
+}
+
+.movlog-brand-lockup span {
+    color: var(--movlog-muted);
+    font-size: 0.88rem;
+    margin-top: 2px;
 }
 
 .movlog-eyebrow {
-    color: var(--movlog-muted);
-    font-size: 0.78em;
+    align-items: center;
+    color: #9a5135;
+    display: flex;
+    font-size: 0.76rem;
     font-weight: 700;
-    letter-spacing: 0.16em;
-    margin-bottom: 24px;
+    gap: 10px;
+    letter-spacing: 0.13em;
+    margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+.movlog-eyebrow::before {
+    background: var(--movlog-coral);
+    border-radius: 999px;
+    content: "";
+    height: 8px;
+    width: 8px;
 }
 
 .movlog-hero h1 {
     color: var(--movlog-ink);
-    font-size: 4.4em;
+    font-size: clamp(3.3rem, 5vw, 5.15rem);
     font-weight: 800;
-    letter-spacing: -0.075em;
-    line-height: 1.05;
-    margin: 0 auto 24px;
-    max-width: 880px;
+    letter-spacing: -0.065em;
+    line-height: 1.02;
+    margin: 0 0 26px;
+    max-width: 650px;
 }
 
-.movlog-hero h1 em,
-.movlog-section h2 em {
-    font-family: Georgia, serif;
+.movlog-hero h1 em {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
 }
 
-.movlog-hero p {
+.movlog-hero-copy > p {
     color: var(--movlog-muted);
-    font-size: 1.08em;
-    line-height: 1.8;
-    margin: 0 auto 30px;
-    max-width: 520px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin: 0 0 32px;
+    max-width: 560px;
 }
 
 .movlog-actions {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
+    gap: 14px;
+    justify-content: flex-start;
 }
 
-.movlog-actions .button {
+.movlog-store-button {
+    align-items: center;
+    background: var(--movlog-ink);
+    border-radius: 999px;
+    color: #fff !important;
+    display: inline-flex;
+    font-size: 0.93rem;
+    font-weight: 700;
+    min-height: 52px;
+    padding: 0 24px;
+    text-decoration: none;
+    transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.movlog-store-button:hover {
+    box-shadow: 0 12px 30px rgba(63, 43, 32, 0.2);
+    transform: translateY(-2px);
+}
+
+.movlog-text-link {
+    color: var(--movlog-ink) !important;
+    font-size: 0.93rem;
+    font-weight: 700;
+    padding: 12px 8px;
+    text-decoration: none;
+}
+
+.movlog-text-link span {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 180ms ease;
+}
+
+.movlog-text-link:hover span {
+    transform: translateY(3px);
+}
+
+.movlog-meta {
+    align-items: center;
+    color: var(--movlog-muted);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.78rem;
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.movlog-meta span + span {
+    border-left: 1px solid var(--movlog-line);
+    padding-left: 18px;
+}
+
+.movlog-meta b {
+    color: var(--movlog-ink);
+    font-weight: 700;
+}
+
+.movlog-hero-visual {
+    height: 640px;
+    position: relative;
+}
+
+.movlog-orbit {
+    border: 1px solid rgba(63, 43, 32, 0.16);
+    border-radius: 50%;
+    height: 510px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    width: 510px;
+}
+
+.movlog-orbit::before,
+.movlog-orbit::after {
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+}
+
+.movlog-orbit::before {
+    background: var(--movlog-yellow);
+    height: 18px;
+    right: 62px;
+    top: 21px;
+    width: 18px;
+}
+
+.movlog-orbit::after {
+    background: var(--movlog-green);
+    bottom: 45px;
+    height: 12px;
+    left: 43px;
+    width: 12px;
+}
+
+.movlog-phone,
+.movlog-device {
+    background: #111;
+    border: 7px solid #2c211c;
+    box-shadow: 0 28px 64px rgba(72, 45, 28, 0.24);
     margin: 0;
-}
-
-.movlog-hero-shot {
-    background: #fff;
-    border: 10px solid #17221f;
-    border-radius: 34px;
-    box-shadow: 0 28px 70px rgba(23, 34, 31, 0.18);
-    margin: 62px auto 0;
-    max-width: 300px;
     overflow: hidden;
-    transform: rotate(1.5deg);
 }
 
-.movlog-hero-shot img {
+.movlog-phone {
+    border-radius: 34px;
+    position: absolute;
+    width: 238px;
+}
+
+.movlog-phone img,
+.movlog-device img {
     display: block;
     height: auto;
     width: 100%;
 }
 
-.movlog-section {
-    background: var(--movlog-paper);
-    border-top: 1px solid var(--movlog-line);
-    padding: 92px 32px;
+.movlog-phone-left {
+    left: 2%;
+    top: 112px;
+    transform: rotate(-9deg);
 }
 
-.movlog-section-header {
-    margin: 0 auto 54px;
-    max-width: 700px;
+.movlog-phone-center {
+    left: 50%;
+    top: 22px;
+    transform: translateX(-50%);
+    width: 260px;
+    z-index: 2;
+}
+
+.movlog-phone-right {
+    right: 0;
+    top: 104px;
+    transform: rotate(9deg);
+}
+
+.movlog-intro {
+    background: var(--movlog-paper);
+    padding: 142px 32px 118px;
     text-align: center;
 }
 
-.movlog-section h2 {
-    color: var(--movlog-ink);
-    font-size: 2.9em;
-    font-weight: 800;
-    letter-spacing: -0.07em;
-    line-height: 1.1;
-    margin: 0 0 18px;
-}
-
-.movlog-section-header p {
-    color: var(--movlog-muted);
-    line-height: 1.8;
-    margin: 0;
-}
-
-.movlog-story {
-    align-items: center;
-    display: grid;
-    gap: 8vw;
-    grid-template-columns: minmax(220px, 360px) minmax(0, 1fr);
-    margin: 0 auto 88px;
+.movlog-intro h2 {
+    margin: 0 auto;
     max-width: 980px;
 }
 
-.movlog-story:last-child {
-    margin-bottom: 0;
+.movlog-intro .movlog-lead {
+    font-size: 1.08rem;
+    line-height: 1.85;
+    margin: 30px auto 46px;
+    max-width: 620px;
 }
 
-.movlog-story.reverse {
-    grid-template-columns: minmax(0, 1fr) minmax(220px, 360px);
+.movlog-capabilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
-.movlog-story.reverse .movlog-story-shot {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.movlog-story.reverse .movlog-story-copy {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.movlog-story-shot {
-    background: #fff;
-    border: 8px solid var(--movlog-ink);
-    border-radius: 28px;
-    box-shadow: 14px 18px 0 var(--movlog-lime);
-    margin: 0 auto;
-    max-width: 300px;
-    overflow: hidden;
-}
-
-.movlog-story-shot img {
-    display: block;
-    width: 100%;
-}
-
-.movlog-story-copy {
-    text-align: left;
-}
-
-.movlog-story-label {
-    color: var(--movlog-muted);
-    font-size: 0.72em;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    margin-bottom: 16px;
-}
-
-.movlog-story-copy h3 {
+.movlog-capabilities span {
+    align-items: center;
+    background: var(--movlog-card);
+    border: 1px solid var(--movlog-line);
+    border-radius: 999px;
     color: var(--movlog-ink);
-    font-size: 2.2em;
+    display: inline-flex;
+    font-size: 0.88rem;
+    gap: 10px;
+    min-height: 46px;
+    padding: 0 18px;
+}
+
+.movlog-capabilities i {
+    color: #a75d3d;
+}
+
+.movlog-feature {
+    padding: 126px 32px;
+}
+
+.movlog-feature-map {
+    background: #f2e6d9;
+}
+
+.movlog-feature-archive {
+    background: var(--movlog-paper);
+}
+
+.movlog-feature-grid {
+    align-items: center;
+    display: grid;
+    gap: clamp(60px, 10vw, 150px);
+    grid-template-columns: minmax(0, 0.82fr) minmax(410px, 1.18fr);
+}
+
+.movlog-feature-grid-reverse {
+    grid-template-columns: minmax(410px, 1.18fr) minmax(0, 0.82fr);
+}
+
+.movlog-feature-copy {
+    max-width: 500px;
+}
+
+.movlog-step {
+    align-items: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    color: #a75d3d;
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    height: 38px;
+    justify-content: center;
+    margin-bottom: 44px;
+    width: 38px;
+}
+
+.movlog-feature-copy h2,
+.movlog-discovery-copy h2 {
+    font-size: clamp(2.7rem, 4.5vw, 4.5rem);
+}
+
+.movlog-feature-copy > p:not(.movlog-kicker),
+.movlog-discovery-copy > p:not(.movlog-kicker) {
+    font-size: 1rem;
+    line-height: 1.85;
+    margin: 28px 0 0;
+}
+
+.movlog-checks {
+    list-style: none;
+    margin: 34px 0 0;
+    padding: 0;
+}
+
+.movlog-checks li {
+    border-top: 1px solid rgba(63, 43, 32, 0.16);
+    color: var(--movlog-ink);
+    font-size: 0.91rem;
+    padding: 15px 0 15px 29px;
+    position: relative;
+}
+
+.movlog-checks li::before {
+    color: var(--movlog-green);
+    content: "✓";
     font-weight: 800;
-    letter-spacing: -0.06em;
-    margin: 0 0 16px;
+    left: 2px;
+    position: absolute;
 }
 
-.movlog-story-copy p:not(.movlog-story-label) {
+.movlog-device-stage {
+    min-height: 650px;
+    position: relative;
+}
+
+.movlog-device-stage-map::before {
+    background: var(--movlog-yellow);
+    border-radius: 50%;
+    content: "";
+    height: 460px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 460px;
+}
+
+.movlog-device-large {
+    border-radius: 40px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(2deg);
+    width: 302px;
+}
+
+.movlog-float-card {
+    align-items: center;
+    backdrop-filter: blur(14px);
+    background: rgba(255, 253, 247, 0.92);
+    border: 1px solid rgba(63, 43, 32, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 18px 38px rgba(63, 43, 32, 0.16);
+    color: var(--movlog-ink);
+    display: flex;
+    padding: 16px 19px;
+    position: absolute;
+    z-index: 3;
+}
+
+.movlog-float-distance {
+    align-items: flex-start;
+    flex-direction: column;
+    left: 2%;
+    top: 24%;
+}
+
+.movlog-float-distance strong {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.22rem;
+}
+
+.movlog-float-distance span,
+.movlog-float-place span {
     color: var(--movlog-muted);
-    line-height: 1.8;
-    margin: 0;
-    max-width: 460px;
+    font-size: 0.78rem;
+    margin-top: 2px;
 }
 
-.movlog-values {
+.movlog-float-place {
+    bottom: 20%;
+    gap: 10px;
+    right: 0;
+}
+
+.movlog-float-place i {
+    color: var(--movlog-green);
+    font-size: 1.25rem;
+}
+
+.movlog-device-stage-pair::before {
+    background: #e6f4bd;
+    border-radius: 44% 56% 48% 52%;
+    content: "";
+    height: 510px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-7deg);
+    width: 510px;
+}
+
+.movlog-device-back,
+.movlog-device-front {
+    border-radius: 36px;
+    position: absolute;
+    width: 268px;
+}
+
+.movlog-device-back {
+    left: 9%;
+    top: 44px;
+    transform: rotate(-8deg);
+}
+
+.movlog-device-front {
+    bottom: 16px;
+    right: 7%;
+    transform: rotate(7deg);
+    z-index: 2;
+}
+
+.movlog-inline-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 34px;
+}
+
+.movlog-inline-features span {
+    background: #f2e6d9;
+    border-radius: 999px;
+    color: var(--movlog-ink);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 9px 13px;
+}
+
+.movlog-moments {
+    background: #fffdf7;
     border-bottom: 1px solid var(--movlog-line);
     border-top: 1px solid var(--movlog-line);
+    padding: 126px 32px;
+}
+
+.movlog-section-heading {
+    align-items: end;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.movlog-section-heading h2 {
+    font-size: clamp(2.7rem, 4.5vw, 4.5rem);
+    max-width: 760px;
+}
+
+.movlog-section-heading > p {
+    flex: 0 0 320px;
+    font-size: 0.96rem;
+    line-height: 1.75;
+    margin: 0 0 6px;
+}
+
+.movlog-moment-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    max-width: 1080px;
+    gap: 14px;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.movlog-value {
-    border-right: 1px solid var(--movlog-line);
-    min-height: 210px;
+.movlog-moment-card {
+    border-radius: 28px;
+    min-height: 320px;
+    overflow: hidden;
     padding: 34px;
+    position: relative;
 }
 
-.movlog-value:last-child {
-    border-right: 0;
+.movlog-moment-card::after {
+    border: 1px solid rgba(63, 43, 32, 0.12);
+    border-radius: 50%;
+    content: "";
+    height: 220px;
+    position: absolute;
+    right: -62px;
+    top: -72px;
+    width: 220px;
 }
 
-.movlog-value small {
-    color: var(--movlog-muted);
-    font-size: 0.75em;
-    letter-spacing: 0.12em;
-}
-
-.movlog-value h3 {
+.movlog-moment-card > i {
     color: var(--movlog-ink);
-    font-size: 1.55em;
-    font-weight: 800;
-    letter-spacing: -0.05em;
-    margin: 35px 0 12px;
+    font-size: 2rem;
+    margin-bottom: 68px;
+    position: relative;
+    z-index: 1;
 }
 
-.movlog-value p {
-    color: var(--movlog-muted);
-    font-size: 0.94em;
+.movlog-moment-card > span {
+    color: rgba(63, 43, 32, 0.7);
+    display: block;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.movlog-moment-card h3 {
+    color: var(--movlog-ink);
+    font-size: 1.42rem;
+    letter-spacing: -0.04em;
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+.movlog-moment-card p {
+    color: rgba(63, 43, 32, 0.72);
+    font-size: 0.88rem;
     line-height: 1.7;
+    margin: 0;
+    max-width: 360px;
+}
+
+.movlog-moment-visit {
+    background: #dff0ad;
+    grid-column: span 7;
+}
+
+.movlog-moment-weather {
+    background: #ffd56a;
+    grid-column: span 5;
+}
+
+.movlog-moment-photo {
+    background: #ffd8d4;
+    grid-column: span 5;
+}
+
+.movlog-moment-parking {
+    background: #d9eafa;
+    grid-column: span 7;
+}
+
+.movlog-discovery {
+    background: #34241c;
+    color: #fff8e9;
+    overflow: hidden;
+    padding: 132px 32px 118px;
+}
+
+.movlog-discovery-grid {
+    align-items: center;
+    display: grid;
+    gap: clamp(60px, 10vw, 150px);
+    grid-template-columns: minmax(0, 0.8fr) minmax(460px, 1.2fr);
+}
+
+.movlog-discovery .movlog-step,
+.movlog-discovery .movlog-kicker {
+    color: #ffbd5c;
+}
+
+.movlog-discovery h2,
+.movlog-discovery h2 em {
+    color: #fff8e9;
+}
+
+.movlog-discovery-copy > p:not(.movlog-kicker) {
+    color: rgba(255, 248, 233, 0.7);
+}
+
+.movlog-insight-list {
+    margin: 38px 0 0;
+}
+
+.movlog-insight-list div {
+    border-top: 1px solid rgba(255, 248, 233, 0.16);
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 0.85fr 1.15fr;
+    padding: 17px 0;
+}
+
+.movlog-insight-list dt {
+    color: #fff8e9;
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.movlog-insight-list dd {
+    color: rgba(255, 248, 233, 0.56);
+    font-size: 0.82rem;
     margin: 0;
 }
 
-.movlog-final {
-    background: var(--movlog-ink);
-    color: var(--movlog-paper);
+.movlog-discovery-screens {
+    min-height: 660px;
+    position: relative;
+}
+
+.movlog-discovery-screens::before {
+    border: 1px solid rgba(255, 248, 233, 0.15);
+    border-radius: 50%;
+    content: "";
+    height: 520px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px;
+}
+
+.movlog-insights-device,
+.movlog-achievements-device {
+    border-color: #1e1612;
+    border-radius: 36px;
+    position: absolute;
+    width: 278px;
+}
+
+.movlog-insights-device {
+    left: 5%;
+    top: 30px;
+    transform: rotate(-7deg);
+}
+
+.movlog-achievements-device {
+    bottom: 8px;
+    right: 2%;
+    transform: rotate(7deg);
+}
+
+.movlog-gallery {
+    background: #efe1d2;
+    padding: 126px 0 118px;
+}
+
+.movlog-gallery .movlog-shell {
+    max-width: 1320px;
+}
+
+.movlog-section-heading-centered {
+    display: block;
+    padding: 0 32px;
     text-align: center;
 }
 
-.movlog-final h2,
-.movlog-final .movlog-section-header p {
-    color: var(--movlog-paper);
+.movlog-section-heading-centered h2 {
+    margin: 0 auto;
 }
 
-.movlog-final .movlog-section-header p {
-    opacity: 0.72;
+.movlog-gallery-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 10px 32px 24px;
+    scroll-padding: 32px;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: rgba(63, 43, 32, 0.3) transparent;
 }
 
-.movlog-final .button.special {
-    background: var(--movlog-lime);
-    border-color: var(--movlog-lime);
+.movlog-gallery-track figure {
+    flex: 0 0 244px;
+    margin: 0;
+    scroll-snap-align: center;
+}
+
+.movlog-gallery-track img {
+    background: #111;
+    border: 6px solid #2c211c;
+    border-radius: 32px;
+    box-shadow: 0 22px 48px rgba(63, 43, 32, 0.19);
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.movlog-gallery-track figcaption {
     color: var(--movlog-ink);
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-top: 16px;
+    text-align: center;
 }
 
-.movlog-final .button:not(.special) {
-    border-color: var(--movlog-paper);
-    color: var(--movlog-paper);
+.movlog-trust {
+    background: #f7f1e7;
+    padding: 112px 32px;
 }
 
-@media screen and (max-width: 760px) {
+.movlog-trust-grid {
+    align-items: end;
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1.1fr 0.9fr;
+}
+
+.movlog-trust i {
+    align-items: center;
+    background: var(--movlog-green);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 1.1rem;
+    height: 48px;
+    justify-content: center;
+    margin-bottom: 36px;
+    width: 48px;
+}
+
+.movlog-trust h2 {
+    font-size: clamp(2.7rem, 4.5vw, 4.6rem);
+}
+
+.movlog-trust-grid > div:last-child > p {
+    font-size: 1rem;
+    line-height: 1.85;
+    margin: 0 0 16px;
+    max-width: 470px;
+}
+
+.movlog-trust .movlog-text-link {
+    display: inline-block;
+    padding-left: 0;
+}
+
+.movlog-final {
+    background: radial-gradient(circle at 50% 0, rgba(255, 189, 0, 0.2), transparent 34%), #34241c;
+    color: #fff8e9;
+    padding: 126px 32px 132px;
+    text-align: center;
+}
+
+.movlog-final-inner > img {
+    border-radius: 26px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
+    height: 88px;
+    margin-bottom: 34px;
+    width: 88px;
+}
+
+.movlog-final .movlog-kicker {
+    color: #ffbd5c;
+}
+
+.movlog-final h2,
+.movlog-final h2 em {
+    color: #fff8e9;
+}
+
+.movlog-final h2 {
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.movlog-final-inner > p:not(.movlog-kicker) {
+    color: rgba(255, 248, 233, 0.68);
+    font-size: 1rem;
+    margin: 26px 0 32px;
+}
+
+.movlog-final .movlog-actions {
+    justify-content: center;
+}
+
+.movlog-final .movlog-store-button {
+    background: var(--movlog-yellow);
+    color: var(--movlog-ink) !important;
+}
+
+.movlog-final .movlog-text-link {
+    color: #fff8e9 !important;
+}
+
+@media screen and (max-width: 1060px) {
+    .movlog-hero-grid {
+        gap: 20px;
+        grid-template-columns: minmax(0, 0.85fr) minmax(430px, 1.15fr);
+    }
+
+    .movlog-phone {
+        width: 204px;
+    }
+
+    .movlog-phone-center {
+        width: 226px;
+    }
+
+    .movlog-feature-grid,
+    .movlog-feature-grid-reverse,
+    .movlog-discovery-grid {
+        gap: 60px;
+    }
+
+    .movlog-device-stage-pair::before,
+    .movlog-discovery-screens::before {
+        height: 430px;
+        width: 430px;
+    }
+
+    .movlog-device-back,
+    .movlog-device-front,
+    .movlog-insights-device,
+    .movlog-achievements-device {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 860px) {
     .movlog-hero {
-        padding: 64px 22px 70px;
+        padding-top: 68px;
     }
 
-    .movlog-hero h1 {
-        font-size: 2.8em;
-    }
-
-    .movlog-section {
-        padding: 70px 22px;
-    }
-
-    .movlog-section h2 {
-        font-size: 2.25em;
-    }
-
-    .movlog-story,
-    .movlog-story.reverse {
+    .movlog-hero-grid {
         display: flex;
         flex-direction: column;
-        gap: 38px;
-        margin-bottom: 72px;
     }
 
-    .movlog-story.reverse .movlog-story-shot,
-    .movlog-story.reverse .movlog-story-copy {
-        grid-column: auto;
-        grid-row: auto;
+    .movlog-hero-copy {
+        max-width: 700px;
+        width: 100%;
     }
 
-    .movlog-story-copy {
-        text-align: center;
+    .movlog-hero-visual {
+        max-width: 600px;
+        width: 100%;
     }
 
-    .movlog-story-copy p:not(.movlog-story-label) {
-        margin: 0 auto;
-    }
-
-    .movlog-values {
+    .movlog-feature-grid,
+    .movlog-feature-grid-reverse,
+    .movlog-discovery-grid,
+    .movlog-trust-grid {
         grid-template-columns: 1fr;
     }
 
-    .movlog-value {
-        border-bottom: 1px solid var(--movlog-line);
-        border-right: 0;
-        min-height: auto;
+    .movlog-feature-copy,
+    .movlog-discovery-copy {
+        max-width: 680px;
     }
 
-    .movlog-value:last-child {
-        border-bottom: 0;
+    .movlog-feature-grid-reverse .movlog-device-stage {
+        order: 2;
+    }
+
+    .movlog-discovery-screens {
+        max-width: 620px;
+        width: 100%;
+    }
+
+    .movlog-section-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .movlog-section-heading > p {
+        flex-basis: auto;
+        max-width: 560px;
+    }
+
+    .movlog-trust-grid {
+        gap: 42px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .movlog-hero {
+        min-height: auto;
+        padding: 52px 20px 68px;
+    }
+
+    .movlog-hero::before {
+        font-size: 7rem;
+        top: 71%;
+    }
+
+    .movlog-hero-grid {
+        gap: 20px;
+    }
+
+    .movlog-hero-copy {
+        padding: 0;
+    }
+
+    .movlog-brand-lockup {
+        margin-bottom: 36px;
+    }
+
+    .movlog-brand-lockup img {
+        border-radius: 17px;
+        height: 56px;
+        width: 56px;
+    }
+
+    .movlog-hero h1 {
+        font-size: clamp(2.65rem, 13vw, 3.5rem);
+    }
+
+    .movlog-hero-copy > p {
+        font-size: 1rem;
+    }
+
+    .movlog-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .movlog-store-button {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .movlog-meta {
+        gap: 12px;
+    }
+
+    .movlog-meta span + span {
+        padding-left: 12px;
+    }
+
+    .movlog-hero-visual {
+        height: 490px;
+        margin: 24px -34px 0;
+        width: calc(100% + 68px);
+    }
+
+    .movlog-orbit {
+        height: 390px;
+        width: 390px;
+    }
+
+    .movlog-phone {
+        border-radius: 25px;
+        border-width: 5px;
+        width: 170px;
+    }
+
+    .movlog-phone-left {
+        left: 3%;
+        top: 92px;
+    }
+
+    .movlog-phone-center {
+        top: 18px;
+        width: 190px;
+    }
+
+    .movlog-phone-right {
+        right: 2%;
+        top: 88px;
+    }
+
+    .movlog-intro,
+    .movlog-feature,
+    .movlog-moments,
+    .movlog-discovery,
+    .movlog-trust,
+    .movlog-final {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .movlog-intro {
+        padding-bottom: 88px;
+        padding-top: 94px;
+    }
+
+    .movlog-page h2,
+    .movlog-feature-copy h2,
+    .movlog-discovery-copy h2,
+    .movlog-section-heading h2,
+    .movlog-trust h2 {
+        font-size: clamp(2.4rem, 11vw, 3.3rem);
+    }
+
+    .movlog-capabilities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .movlog-capabilities span {
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .movlog-feature {
+        padding-bottom: 88px;
+        padding-top: 88px;
+    }
+
+    .movlog-step {
+        margin-bottom: 34px;
+    }
+
+    .movlog-device-stage,
+    .movlog-discovery-screens {
+        min-height: 520px;
+    }
+
+    .movlog-device-stage-map::before {
+        height: 340px;
+        width: 340px;
+    }
+
+    .movlog-device-large {
+        border-radius: 30px;
+        border-width: 6px;
+        width: 238px;
+    }
+
+    .movlog-float-distance {
+        left: -4px;
+        top: 22%;
+    }
+
+    .movlog-float-place {
+        bottom: 16%;
+        right: -5px;
+    }
+
+    .movlog-device-stage-pair::before,
+    .movlog-discovery-screens::before {
+        height: 330px;
+        width: 330px;
+    }
+
+    .movlog-device-back,
+    .movlog-device-front,
+    .movlog-insights-device,
+    .movlog-achievements-device {
+        border-radius: 27px;
+        border-width: 5px;
+        width: 190px;
+    }
+
+    .movlog-device-back,
+    .movlog-insights-device {
+        left: 0;
+    }
+
+    .movlog-device-front,
+    .movlog-achievements-device {
+        right: 0;
+    }
+
+    .movlog-moments {
+        padding-bottom: 88px;
+        padding-top: 88px;
+    }
+
+    .movlog-section-heading {
+        margin-bottom: 42px;
+    }
+
+    .movlog-moment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .movlog-moment-card,
+    .movlog-moment-visit,
+    .movlog-moment-weather,
+    .movlog-moment-photo,
+    .movlog-moment-parking {
+        grid-column: auto;
+        min-height: 280px;
+    }
+
+    .movlog-moment-card > i {
+        margin-bottom: 48px;
+    }
+
+    .movlog-discovery {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+
+    .movlog-insight-list div {
+        gap: 8px;
+        grid-template-columns: 1fr;
+    }
+
+    .movlog-gallery {
+        padding-bottom: 84px;
+        padding-top: 88px;
+    }
+
+    .movlog-gallery-track {
+        gap: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+        scroll-padding: 20px;
+    }
+
+    .movlog-gallery-track figure {
+        flex-basis: 210px;
+    }
+
+    .movlog-trust {
+        padding-bottom: 88px;
+        padding-top: 88px;
+    }
+
+    .movlog-final {
+        padding-bottom: 100px;
+        padding-top: 96px;
+    }
+
+    .movlog-final .movlog-actions {
+        align-items: center;
+    }
+
+    .movlog-final .movlog-store-button {
+        max-width: 320px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .movlog-page *,
+    .movlog-page *::before,
+    .movlog-page *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
     }
 }

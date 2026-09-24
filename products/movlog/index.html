@@ -2,8 +2,8 @@
 layout: default
 i18n_key: movlog
 title: 무블로그 | 당신의 이동을, 당신의 이야기로
-description: 무블로그는 이동 경로와 방문 장소를 자동으로 기록하고, 나의 일상을 하나의 이야기로 돌아보게 해주는 앱입니다.
-keywords: Movlog, 무블로그, 이동 기록, 이동 경로 기록, 방문 기록, 일상 기록 앱
+description: 무블로그는 이동 경로와 방문·체류, 주차, 날씨와 사진을 자동으로 기록하고 인사이트와 업적으로 일상을 돌아보게 해주는 앱입니다.
+keywords: Movlog, 무블로그, 이동 기록, 이동 경로 기록, 방문 기록, 라이프로그, 주차 위치, 이동 인사이트
 permalink: /movlog/
 image: /assets/images/apps/movlog/icon.png
 styles:
@@ -13,80 +13,208 @@ styles:
 <article id="main" class="movlog-page">
     {% assign movlog_app = site.data.apps | where: "id", "movlog" | first %}
     <section class="movlog-hero">
-        <div class="movlog-eyebrow" data-i18n="movlog.eyebrow">무블로그 · 매일의 이동 기록</div>
-        <h1 data-i18n-html="movlog.title">스쳐 가는 하루도,<br /><em>오래 남을 이야기로.</em></h1>
-        <p data-i18n="movlog.description">무블로그는 나의 이동 일상을 조용히 기록합니다. 경로와 장소를 다시 바라보며, 평범한 하루에서 나만의 이야기를 발견해 보세요.</p>
-        <div class="movlog-actions">
-            <a href="{{ movlog_app.store_url }}" class="button special" target="_blank" rel="noopener noreferrer" data-i18n="movlog.download">App Store에서 다운로드</a>
-            <a href="#movlog-about" class="button scrolly" data-i18n="movlog.about">무블로그 알아보기</a>
-        </div>
-        <div class="movlog-hero-shot">
-            <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 오늘의 이동 기록 화면" data-i18n-alt="movlog.heroAlt" />
-        </div>
-    </section>
-
-    <section id="movlog-about" class="movlog-section">
-        <div class="movlog-section-header">
-            <h2 data-i18n-html="movlog.aboutTitle">당신의 하루를<br /><em>한눈에 돌아보세요.</em></h2>
-            <p data-i18n="movlog.aboutDescription">이동 경로부터 방문 장소, 기록과 인사이트까지. 무블로그가 쌓아가는 하루를 직접 만나보세요.</p>
-        </div>
-
-        <div class="movlog-story">
-            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 자동 이동 기록 화면" data-i18n-alt="movlog.trackingAlt" /></div>
-            <div class="movlog-story-copy">
-                <p class="movlog-story-label" data-i18n="movlog.trackingLabel">AUTOMATIC TRACKING</p>
-                <h3 data-i18n="movlog.trackingTitle">자동 이동 기록</h3>
-                <p data-i18n="movlog.trackingDescription">경로, 거리, 이동 시간과 차량·도보 이동을 자동으로 기록합니다. 기록하는 수고는 줄이고, 하루를 돌아보는 시간은 늘려보세요.</p>
+        <div class="movlog-shell movlog-hero-grid">
+            <div class="movlog-hero-copy">
+                <div class="movlog-brand-lockup">
+                    <img src="{{ '/assets/images/apps/movlog/icon.png' | relative_url }}" alt="" width="72" height="72" />
+                    <div>
+                        <strong>Movlog</strong>
+                        <span data-i18n="movlog.appCategory">나만의 이동 라이프로그</span>
+                    </div>
+                </div>
+                <div class="movlog-eyebrow" data-i18n="movlog.eyebrow">무블로그 · 매일의 이동 기록</div>
+                <h1 data-i18n-html="movlog.title">오늘의 이동이<br /><em>나만의 이야기가 됩니다.</em></h1>
+                <p data-i18n="movlog.description">이동 경로와 머문 장소, 그날의 날씨와 사진까지. 무블로그가 당신의 하루를 자동으로 기록하고 한눈에 정리해 줍니다.</p>
+                <div class="movlog-actions">
+                    <a href="{{ movlog_app.store_url }}" class="movlog-store-button" target="_blank" rel="noopener noreferrer" data-i18n="movlog.download">App Store에서 다운로드</a>
+                    <a href="#movlog-about" class="movlog-text-link scrolly" data-i18n="movlog.about">기능 둘러보기 <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="movlog-meta" aria-label="앱 정보" data-i18n-aria-label="movlog.metaLabel">
+                    <span><b>v{{ movlog_app.version }}</b> <span data-i18n="movlog.latestVersion">최신 버전</span></span>
+                    <span><b>iOS {{ movlog_app.minimum_ios }}+</b></span>
+                    <span><b data-i18n="movlog.free">무료</b></span>
+                </div>
             </div>
-        </div>
-
-        <div class="movlog-story reverse">
-            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/archive.png' | relative_url }}" alt="무블로그 일별 기록 보관함 화면" data-i18n-alt="movlog.archiveAlt" loading="lazy" decoding="async" /></div>
-            <div class="movlog-story-copy">
-                <p class="movlog-story-label" data-i18n="movlog.archiveLabel">DAILY ARCHIVE</p>
-                <h3 data-i18n="movlog.archiveTitle">기록을 쉽게 찾아보세요</h3>
-                <p data-i18n="movlog.archiveDescription">하루 단위로 이동 기록을 정리하고, 검색으로 원하는 날을 빠르게 찾을 수 있습니다. 그날의 기억은 메모로 함께 남겨보세요.</p>
-            </div>
-        </div>
-
-        <div class="movlog-story">
-            <div class="movlog-story-shot"><img src="{{ '/assets/images/apps/movlog/screenshots/insights.png' | relative_url }}" alt="무블로그 이동 인사이트 화면" data-i18n-alt="movlog.insightsAlt" loading="lazy" decoding="async" /></div>
-            <div class="movlog-story-copy">
-                <p class="movlog-story-label" data-i18n="movlog.insightsLabel">PERSONAL INSIGHTS</p>
-                <h3 data-i18n="movlog.insightsTitle">나만의 이동 패턴 발견</h3>
-                <p data-i18n="movlog.insightsDescription">자주 간 곳과 이동 패턴을 발견하며 나의 일상을 돌아봅니다. 매일의 이동이 쌓여 나만의 지도가 됩니다.</p>
+            <div class="movlog-hero-visual" aria-label="무블로그 주요 앱 화면" data-i18n-aria-label="movlog.visualLabel">
+                <div class="movlog-orbit" aria-hidden="true"></div>
+                <figure class="movlog-phone movlog-phone-left">
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/archive.png' | relative_url }}" alt="무블로그 기록보관함 화면" data-i18n-alt="movlog.archiveAlt" />
+                </figure>
+                <figure class="movlog-phone movlog-phone-center">
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 오늘의 이동 기록 화면" data-i18n-alt="movlog.heroAlt" />
+                </figure>
+                <figure class="movlog-phone movlog-phone-right">
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/achievements.png' | relative_url }}" alt="무블로그 업적 화면" data-i18n-alt="movlog.achievementsAlt" />
+                </figure>
             </div>
         </div>
     </section>
 
-    <section class="movlog-section">
-        <div class="movlog-values">
-            <div class="movlog-value">
-                <small>01 · AUTOMATIC</small>
-                <h3 data-i18n="movlog.automaticTitle">자동으로</h3>
-                <p data-i18n="movlog.automaticDescription">나의 이동 일상이 백그라운드에서 자연스럽게 기록됩니다.</p>
-            </div>
-            <div class="movlog-value">
-                <small>02 · PERSONAL</small>
-                <h3 data-i18n="movlog.personalTitle">나만의 기록</h3>
-                <p data-i18n="movlog.personalDescription">나의 경로와 장소가 타임라인이 되어 하루를 보여줍니다.</p>
-            </div>
-            <div class="movlog-value">
-                <small>03 · REFLECTIVE</small>
-                <h3 data-i18n="movlog.reflectiveTitle">돌아보기</h3>
-                <p data-i18n="movlog.reflectiveDescription">평범한 이동 속에서 나만의 습관과 이야기를 발견합니다.</p>
+    <section id="movlog-about" class="movlog-intro">
+        <div class="movlog-shell">
+            <p class="movlog-kicker" data-i18n="movlog.introKicker">하루는 지나가도, 이야기는 남도록</p>
+            <h2 data-i18n-html="movlog.aboutTitle">기록하려고 애쓰지 않아도<br /><em>하루가 자연스럽게 쌓여요.</em></h2>
+            <p class="movlog-lead" data-i18n="movlog.aboutDescription">무블로그는 이동과 방문을 자동으로 정리합니다. 지도 위 경로와 시간순 타임라인으로 오늘을 다시 만나보세요.</p>
+            <div class="movlog-capabilities" aria-label="주요 기록 항목" data-i18n-aria-label="movlog.capabilitiesLabel">
+                <span><i class="fa fa-car" aria-hidden="true"></i><b data-i18n="movlog.capabilityDrive">차량 이동</b></span>
+                <span><i class="fa fa-male" aria-hidden="true"></i><b data-i18n="movlog.capabilityWalk">도보 이동</b></span>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i><b data-i18n="movlog.capabilityVisit">방문·체류</b></span>
+                <span><i class="fa fa-camera" aria-hidden="true"></i><b data-i18n="movlog.capabilityPhoto">사진·메모</b></span>
             </div>
         </div>
     </section>
 
-    <section class="movlog-section movlog-final">
-        <div class="movlog-section-header">
-            <h2 data-i18n-html="movlog.finalTitle">당신의 이동을,<br /><em>당신의 이야기로.</em></h2>
-            <p data-i18n="movlog.finalDescription">오늘의 이동부터 기록을 시작해 보세요.</p>
+    <section class="movlog-feature movlog-feature-map">
+        <div class="movlog-shell movlog-feature-grid">
+            <div class="movlog-feature-copy">
+                <span class="movlog-step">01</span>
+                <p class="movlog-kicker" data-i18n="movlog.trackingLabel">AUTOMATIC TRACKING</p>
+                <h2 data-i18n-html="movlog.trackingTitle">움직이는 순간부터<br /><em>자동으로 기록해요.</em></h2>
+                <p data-i18n="movlog.trackingDescription">이동 경로와 거리, 시간, 속도를 기록하고 차량과 도보를 구분합니다. 방문 장소와 주차 위치까지 하나의 하루로 이어집니다.</p>
+                <ul class="movlog-checks">
+                    <li data-i18n="movlog.trackingPoint1">별도 조작 없는 백그라운드 기록</li>
+                    <li data-i18n="movlog.trackingPoint2">속도에 따라 달라지는 지도 경로</li>
+                    <li data-i18n="movlog.trackingPoint3">날씨와 방문 이벤트를 함께 표시</li>
+                </ul>
+            </div>
+            <div class="movlog-device-stage movlog-device-stage-map">
+                <figure class="movlog-device movlog-device-large">
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 자동 이동 기록 화면" data-i18n-alt="movlog.trackingAlt" loading="lazy" decoding="async" />
+                </figure>
+                <div class="movlog-float-card movlog-float-distance"><strong>37.98 km</strong><span data-i18n="movlog.driveSummary">차량으로 이동</span></div>
+                <div class="movlog-float-card movlog-float-place"><i class="fa fa-map-marker" aria-hidden="true"></i><span data-i18n="movlog.visitSummary">머문 장소도 자동으로</span></div>
+            </div>
         </div>
-        <div class="movlog-actions">
-            <a href="{{ movlog_app.store_url }}" class="button special" target="_blank" rel="noopener noreferrer" data-i18n="movlog.download">App Store에서 다운로드</a>
-            <a href="{{ '/portfolio.html' | relative_url }}" class="button" data-i18n="movlog.allApps">전체 앱 보기</a>
+    </section>
+
+    <section class="movlog-feature movlog-feature-archive">
+        <div class="movlog-shell movlog-feature-grid movlog-feature-grid-reverse">
+            <div class="movlog-device-stage movlog-device-stage-pair">
+                <figure class="movlog-device movlog-device-back">
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/archive.png' | relative_url }}" alt="무블로그 일별 기록 보관함 화면" data-i18n-alt="movlog.archiveAlt" loading="lazy" decoding="async" />
+                </figure>
+                <figure class="movlog-device movlog-device-front">
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/details.png' | relative_url }}" alt="무블로그 하루 상세 기록 화면" data-i18n-alt="movlog.detailsAlt" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+            <div class="movlog-feature-copy">
+                <span class="movlog-step">02</span>
+                <p class="movlog-kicker" data-i18n="movlog.archiveLabel">DAILY ARCHIVE</p>
+                <h2 data-i18n-html="movlog.archiveTitle">달력에서 찾고,<br /><em>타임라인으로 기억해요.</em></h2>
+                <p data-i18n="movlog.archiveDescription">월간·연간 보관함에서 원하는 날을 빠르게 찾고, 이동·방문·사진을 시간순으로 돌아봅니다. 그날의 기억은 메모로 더해보세요.</p>
+                <div class="movlog-inline-features">
+                    <span data-i18n="movlog.archivePoint1">월간·연간 보기</span>
+                    <span data-i18n="movlog.archivePoint2">하루 메모</span>
+                    <span data-i18n="movlog.archivePoint3">사진과 장소 연결</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="movlog-moments">
+        <div class="movlog-shell">
+            <div class="movlog-section-heading">
+                <div>
+                    <p class="movlog-kicker" data-i18n="movlog.contextKicker">CONTEXT, NOT JUST COORDINATES</p>
+                    <h2 data-i18n-html="movlog.contextTitle">위치 너머의 순간까지<br /><em>더 생생하게 남겨요.</em></h2>
+                </div>
+                <p data-i18n="movlog.contextDescription">어디에 있었는지만이 아니라, 그날을 기억하게 하는 맥락도 함께 기록합니다.</p>
+            </div>
+            <div class="movlog-moment-grid">
+                <article class="movlog-moment-card movlog-moment-visit">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span data-i18n="movlog.visitLabel">방문과 체류</span>
+                    <h3 data-i18n="movlog.visitTitle">어디에서 얼마나 머물렀는지</h3>
+                    <p data-i18n="movlog.visitDescription">방문 장소와 체류 시간을 자동으로 감지해 하루의 흐름에 이어줍니다.</p>
+                </article>
+                <article class="movlog-moment-card movlog-moment-weather">
+                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                    <span data-i18n="movlog.weatherLabel">그날의 날씨</span>
+                    <h3 data-i18n="movlog.weatherTitle">기억에 날씨를 더해요</h3>
+                    <p data-i18n="movlog.weatherDescription">이동 당시의 날씨와 현재 위치의 날씨를 기록과 함께 확인합니다.</p>
+                </article>
+                <article class="movlog-moment-card movlog-moment-photo">
+                    <i class="fa fa-camera" aria-hidden="true"></i>
+                    <span data-i18n="movlog.photoLabel">사진과 장소</span>
+                    <h3 data-i18n="movlog.photoTitle">사진을 지도 위 추억으로</h3>
+                    <p data-i18n="movlog.photoDescription">사진을 방문 장소와 연결하고 이동 기록 안에서 다시 꺼내봅니다.</p>
+                </article>
+                <article class="movlog-moment-card movlog-moment-parking">
+                    <i class="fa fa-car" aria-hidden="true"></i>
+                    <span data-i18n="movlog.parkingLabel">주차 위치</span>
+                    <h3 data-i18n="movlog.parkingTitle">차를 세운 곳도 잊지 않게</h3>
+                    <p data-i18n="movlog.parkingDescription">차량 이동과 주차, 다음 방문 기록을 자연스럽게 연결합니다.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="movlog-discovery">
+        <div class="movlog-shell movlog-discovery-grid">
+            <div class="movlog-discovery-copy">
+                <span class="movlog-step">03</span>
+                <p class="movlog-kicker" data-i18n="movlog.insightsLabel">INSIGHTS &amp; ACHIEVEMENTS</p>
+                <h2 data-i18n-html="movlog.insightsTitle">쌓인 기록에서<br /><em>나만의 패턴을 발견해요.</em></h2>
+                <p data-i18n="movlog.insightsDescription">가장 멀리 이동한 날, 자주 방문한 장소, 오래 머문 곳을 살펴보세요. 이동과 방문, 사진 기록은 업적과 레벨이 되어 꾸준한 기록의 재미를 더합니다.</p>
+                <dl class="movlog-insight-list">
+                    <div><dt data-i18n="movlog.insightStat1">최다 방문 장소</dt><dd data-i18n="movlog.insightStat1Detail">반복되는 나의 생활 반경</dd></div>
+                    <div><dt data-i18n="movlog.insightStat2">이동·체류 기록</dt><dd data-i18n="movlog.insightStat2Detail">거리와 시간의 새로운 기록</dd></div>
+                    <div><dt data-i18n="movlog.insightStat3">업적과 레벨</dt><dd data-i18n="movlog.insightStat3Detail">기록할수록 커지는 성취감</dd></div>
+                </dl>
+            </div>
+            <div class="movlog-discovery-screens">
+                <figure class="movlog-device movlog-insights-device">
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/insights.png' | relative_url }}" alt="무블로그 이동 인사이트 화면" data-i18n-alt="movlog.insightsAlt" loading="lazy" decoding="async" />
+                </figure>
+                <figure class="movlog-device movlog-achievements-device">
+                    <img src="{{ '/assets/images/apps/movlog/screenshots/achievements.png' | relative_url }}" alt="무블로그 업적과 레벨 화면" data-i18n-alt="movlog.achievementsAlt" loading="lazy" decoding="async" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="movlog-gallery" aria-labelledby="movlog-gallery-title">
+        <div class="movlog-shell">
+            <div class="movlog-section-heading movlog-section-heading-centered">
+                <div>
+                    <p class="movlog-kicker" data-i18n="movlog.galleryKicker">INSIDE MOVLOG</p>
+                    <h2 id="movlog-gallery-title" data-i18n-html="movlog.galleryTitle">하루의 시작부터 돌아보기까지,<br /><em>하나의 흐름으로.</em></h2>
+                </div>
+            </div>
+            <div class="movlog-gallery-track">
+                <figure><img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 나의 하루 화면" data-i18n-alt="movlog.heroAlt" loading="lazy" decoding="async" /><figcaption data-i18n="movlog.galleryMain">오늘의 지도</figcaption></figure>
+                <figure><img src="{{ '/assets/images/apps/movlog/screenshots/archive.png' | relative_url }}" alt="무블로그 기록보관함 화면" data-i18n-alt="movlog.archiveAlt" loading="lazy" decoding="async" /><figcaption data-i18n="movlog.galleryArchive">기록보관함</figcaption></figure>
+                <figure><img src="{{ '/assets/images/apps/movlog/screenshots/details.png' | relative_url }}" alt="무블로그 하루 상세 기록 화면" data-i18n-alt="movlog.detailsAlt" loading="lazy" decoding="async" /><figcaption data-i18n="movlog.galleryDetails">하루 상세</figcaption></figure>
+                <figure><img src="{{ '/assets/images/apps/movlog/screenshots/achievements.png' | relative_url }}" alt="무블로그 업적 화면" data-i18n-alt="movlog.achievementsAlt" loading="lazy" decoding="async" /><figcaption data-i18n="movlog.galleryAchievements">업적</figcaption></figure>
+                <figure><img src="{{ '/assets/images/apps/movlog/screenshots/insights.png' | relative_url }}" alt="무블로그 인사이트 화면" data-i18n-alt="movlog.insightsAlt" loading="lazy" decoding="async" /><figcaption data-i18n="movlog.galleryInsights">인사이트</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="movlog-trust">
+        <div class="movlog-shell movlog-trust-grid">
+            <div>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <p class="movlog-kicker" data-i18n="movlog.privacyKicker">PRIVACY BY DESIGN</p>
+                <h2 data-i18n-html="movlog.privacyTitle">당신의 기록은<br /><em>당신의 것이니까.</em></h2>
+            </div>
+            <div>
+                <p data-i18n="movlog.privacyDescription">무블로그는 개인정보를 수집·처리·보관하지 않습니다. 광고를 위한 추적 없이, 하루를 기록하는 경험에 집중했습니다.</p>
+                <a href="{{ '/privacy_policy.html' | relative_url }}" class="movlog-text-link" data-i18n="movlog.privacyLink">개인정보 처리방침 보기 <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="movlog-final">
+        <div class="movlog-shell movlog-final-inner">
+            <img src="{{ '/assets/images/apps/movlog/icon.png' | relative_url }}" alt="" width="96" height="96" loading="lazy" />
+            <p class="movlog-kicker" data-i18n="movlog.finalKicker">TRACE YOUR PATH, TELL YOUR STORY</p>
+            <h2 data-i18n-html="movlog.finalTitle">오늘의 이동부터<br /><em>나만의 이야기를 시작해요.</em></h2>
+            <p data-i18n="movlog.finalDescription">무블로그는 App Store에서 무료로 다운로드할 수 있습니다.</p>
+            <div class="movlog-actions">
+                <a href="{{ movlog_app.store_url }}" class="movlog-store-button" target="_blank" rel="noopener noreferrer" data-i18n="movlog.download">App Store에서 다운로드</a>
+                <a href="{{ '/portfolio.html' | relative_url }}" class="movlog-text-link" data-i18n="movlog.allApps">전체 앱 보기 <span aria-hidden="true">↗</span></a>
+            </div>
         </div>
     </section>
 </article>
