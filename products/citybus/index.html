@@ -1,9 +1,9 @@
 ---
 layout: default
 i18n_key: citybus
-title: CityBus | 도시별 버스 앱
-description: 부산, 대전, 광주, 인천, 안동, 여수의 버스와 대중교통 정보를 한눈에 확인하는 CityBus 앱 시리즈입니다.
-keywords: 도시별 버스 앱, 버스 도착정보, 부산버스, 대전버스, 광주버스, 인천버스, 안동버스, 여수버스
+title: 시티버스 | 도시별 버스 앱
+description: 부산, 대전, 광주, 인천, 안동, 여수에서 버스와 환승, 도시철도, 여행 정보를 확인하는 시티버스 앱 시리즈입니다.
+keywords: 도시별 버스 앱, 버스 도착정보, 환승 경로, 도시철도, 관광 정보, 부산버스, 대전버스, 광주버스, 인천버스, 안동버스, 여수버스
 permalink: /citybus/
 image: /assets/images/apps/citybus/busan.png
 styles:
@@ -13,43 +13,96 @@ styles:
 <article id="main" class="citybus-page">
     {% assign citybus_apps = site.data.apps | where: "series", "citybus" | sort: "citybus_order" %}
     <section class="citybus-hero">
-        <div class="eyebrow" data-i18n="citybus.eyebrow">CityBus Series</div>
+        <div class="eyebrow" data-i18n="citybus.eyebrow">시티버스 시리즈</div>
         <h1 data-i18n-html="citybus.title">내 도시의 버스를<br />더 쉽게 만나는 방법</h1>
-        <p data-i18n="citybus.description">정류장 위치부터 도착 예정 버스, 노선과 즐겨찾기까지. 매일의 이동과 여행을 위해 도시별로 만든 버스 앱입니다.</p>
+        <p data-i18n="citybus.description">버스를 찾고, 환승하고, 도시를 여행하는 순간까지. 시티버스는 도시마다 필요한 교통 정보를 한곳에 담습니다.</p>
         <div class="citybus-actions">
             <a href="#citybus-apps" class="button special scrolly" data-i18n="citybus.findApp">내 도시 앱 찾기</a>
             <a href="{{ '/blog.html' | relative_url }}" class="button" data-i18n="citybus.readStory">개발 이야기 보기</a>
         </div>
     </section>
 
-    <section class="citybus-section">
+    <section class="citybus-section citybus-capabilities">
         <div class="citybus-section-header">
-            <h2 data-i18n="citybus.featuresTitle">매일 쓰는 기능을 한곳에</h2>
-            <p data-i18n="citybus.featuresDescription">복잡한 교통 정보를 필요한 순간에 빠르게 확인할 수 있도록 구성했습니다.</p>
+            <h2 data-i18n="citybus.featuresTitle">이동의 순간마다 필요한 정보</h2>
+            <p data-i18n="citybus.featuresDescription">시티버스의 기능은 단순한 목록이 아니라, 버스를 타고 도시를 이동하는 흐름에 맞춰 나뉩니다. 제공 범위는 도시별로 다를 수 있습니다.</p>
         </div>
         <div class="citybus-feature-grid">
-            <div class="citybus-feature">
+            <article class="citybus-feature citybus-feature-wide">
+                <div class="citybus-feature-kicker" data-i18n="citybus.arrivalKicker">01 · 바로 타기</div>
                 <span class="icon fa-clock-o" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.arrivalTitle">도착정보 확인</h3>
-                <p data-i18n="citybus.arrivalDescription">주변 정류장과 버스 도착 예정 정보를 빠르게 확인합니다.</p>
-            </div>
-            <div class="citybus-feature">
+                <h3 data-i18n="citybus.arrivalTitle">지금 탈 버스를 찾아요</h3>
+                <p data-i18n="citybus.arrivalDescription">현재 위치 주변의 정류소부터 도착 예정 시간, 운행 상태와 버스 위치까지 한 번에 확인합니다.</p>
+                <div class="citybus-feature-tags">
+                    <span data-i18n="citybus.arrivalTag1">주변 정류소</span>
+                    <span data-i18n="citybus.arrivalTag2">도착 예정</span>
+                    <span data-i18n="citybus.arrivalTag3">버스 위치</span>
+                </div>
+            </article>
+            <article class="citybus-feature citybus-feature-wide">
+                <div class="citybus-feature-kicker" data-i18n="citybus.routeKicker">02 · 미리 계획하기</div>
                 <span class="icon fa-map-marker" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.mapTitle">지도와 노선 검색</h3>
-                <p data-i18n="citybus.mapDescription">정류장 위치, 운행 노선, 경유 정류장을 지도에서 살펴봅니다.</p>
-            </div>
-            <div class="citybus-feature">
+                <h3 data-i18n="citybus.mapTitle">노선의 전체 흐름을 살펴봐요</h3>
+                <p data-i18n="citybus.mapDescription">정류소와 노선을 검색하고, 경유 정류소·운행 방향·첫차와 막차·배차 간격을 지도와 함께 확인합니다.</p>
+                <div class="citybus-feature-tags">
+                    <span data-i18n="citybus.routeTag1">노선·정류소 검색</span>
+                    <span data-i18n="citybus.routeTag2">경유 정류소</span>
+                    <span data-i18n="citybus.routeTag3">첫차·막차</span>
+                </div>
+            </article>
+            <article class="citybus-feature">
+                <div class="citybus-feature-kicker" data-i18n="citybus.transferKicker">03 · 갈아타기</div>
+                <span class="icon fa-exchange" aria-hidden="true"></span>
+                <h3 data-i18n="citybus.transferTitle">환승 경로를 확인해요</h3>
+                <p data-i18n="citybus.transferDescription">모든 버스 앱에서 출발지와 목적지를 정하면 환승 위치와 이동 구간을 지도에서 살펴봅니다.</p>
+                <div class="citybus-feature-tags">
+                    <span data-i18n="citybus.transferTag1">출발지·목적지</span>
+                    <span data-i18n="citybus.transferTag2">환승 경로</span>
+                </div>
+            </article>
+            <article class="citybus-feature">
+                <div class="citybus-feature-kicker" data-i18n="citybus.railKicker">04 · 다른 교통수단</div>
+                <span class="icon citybus-rail-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                        <path d="M7 2h10c2.76 0 5 2.24 5 5v7c0 1.66-1.34 3-3 3l2 3h-2l-2-3H7l-2 3H3l2-3c-1.66 0-3-1.34-3-3V7c0-2.76 2.24-5 5-5Zm0 2a3 3 0 0 0-3 3v3h16V7a3 3 0 0 0-3-3H7Zm-3 8v2c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-2H4Zm3 2.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Zm10 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z" />
+                    </svg>
+                </span>
+                <h3 data-i18n="citybus.railTitle">도시철도까지 이어서 봐요</h3>
+                <p data-i18n="citybus.railDescription">지원하는 도시에서는 지하철역 위치와 실시간 도착, 상·하행 시간표, 첫차·막차와 역사 정보를 함께 제공합니다.</p>
+                <div class="citybus-feature-tags">
+                    <span data-i18n="citybus.railTag1">지하철역 검색</span>
+                    <span data-i18n="citybus.railTag2">도착·시간표</span>
+                </div>
+            </article>
+            <article class="citybus-feature">
+                <div class="citybus-feature-kicker" data-i18n="citybus.travelKicker">05 · 도시 알아가기</div>
+                <span class="icon fa-compass" aria-hidden="true"></span>
+                <h3 data-i18n="citybus.travelTitle">버스에서 여행으로 이어져요</h3>
+                <p data-i18n="citybus.travelDescription">모든 버스 앱에서 관광지 위치·상세·길찾기를 지도에서 확인하고, 도시별 행사·관광 콘텐츠도 살펴봅니다.</p>
+                <div class="citybus-feature-tags">
+                    <span data-i18n="citybus.travelTag1">관광지</span>
+                    <span data-i18n="citybus.travelTag2">행사 정보</span>
+                    <span data-i18n="citybus.travelTag3">길찾기</span>
+                </div>
+            </article>
+            <article class="citybus-feature">
+                <div class="citybus-feature-kicker" data-i18n="citybus.personalKicker">06 · 나에게 맞추기</div>
                 <span class="icon fa-star" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.favoriteTitle">즐겨찾기와 여행</h3>
-                <p data-i18n="citybus.favoriteDescription">자주 이용하는 정류장을 저장하고 도시의 여행 정보도 확인합니다.</p>
-            </div>
+                <h3 data-i18n="citybus.favoriteTitle">자주 쓰는 정보를 모아둬요</h3>
+                <p data-i18n="citybus.favoriteDescription">자주 이용하는 정류소와 노선을 즐겨찾기하고 메모·도착 알림·날씨 등 나의 이동에 필요한 정보를 챙깁니다.</p>
+                <div class="citybus-feature-tags">
+                    <span data-i18n="citybus.personalTag1">즐겨찾기·메모</span>
+                    <span data-i18n="citybus.personalTag2">도착 알림</span>
+                    <span data-i18n="citybus.personalTag3">날씨</span>
+                </div>
+            </article>
         </div>
     </section>
 
     <section id="citybus-apps" class="citybus-section citybus-soft">
         <div class="citybus-section-header">
             <h2 data-i18n="citybus.citiesTitle">당신의 도시를 선택하세요</h2>
-            <p data-i18n="citybus.citiesDescription">각 지역의 교통 체계와 이용 방식에 맞춰 제공되는 CityBus 앱입니다.</p>
+            <p data-i18n="citybus.citiesDescription">기본적인 버스 정보와 환승·관광지 지도·날씨는 모든 앱에서 제공하고, 도시별로 도시철도·좌석·행사 정보 등을 더했습니다.</p>
         </div>
         <div class="citybus-app-grid">
             {% for app in citybus_apps %}
@@ -57,7 +110,7 @@ styles:
                     <img src="{{ app.image | relative_url }}" alt="{{ app.image_alt | escape }}" data-i18n-alt="apps.{{ app.id }}.imageAlt" loading="lazy" decoding="async" width="92" height="92" />
                     <h3 data-i18n="apps.{{ app.id }}.shortName">{{ app.short_name }}</h3>
                     <p data-i18n="apps.{{ app.id }}.citybusDescription">{{ app.citybus_description }}</p>
-                    <a href="{{ app.store_url }}" class="button small" aria-label="{{ app.short_name | escape }} App Store 페이지" data-i18n-aria-label="common.appStorePage">App Store</a>
+                    <a href="{{ app.store_url }}" class="button small special citybus-download-button" style="--citybus-brand: {{ app.brand_color }}; --citybus-brand-hover: {{ app.brand_color_hover }}; --citybus-brand-ink: {{ app.brand_text_color }};" aria-label="{{ app.short_name | escape }} App Store에서 다운로드" data-i18n="citybus.downloadApp" data-i18n-aria-label="citybus.downloadApp">App Store에서 다운로드</a>
                 </article>
             {% endfor %}
         </div>
@@ -66,7 +119,7 @@ styles:
     <section class="citybus-section citybus-final-cta">
         <div class="citybus-section-header">
             <h2 data-i18n-html="citybus.finalTitle">더 편한 이동을 시작해 보세요</h2>
-            <p data-i18n="citybus.finalDescription">CityBus는 도시마다 필요한 교통 정보를 차곡차곡 만들어가고 있습니다.</p>
+            <p data-i18n="citybus.finalDescription">시티버스는 도시마다 필요한 교통 정보를 차곡차곡 만들어가고 있습니다.</p>
         </div>
         <div class="citybus-actions">
             <a href="mailto:devp.yg@gmail.com?Subject=CityBus%20문의" class="button special" data-i18n="common.contact" data-i18n-mail-subject="CityBus 문의">문의하기</a>

@@ -56,7 +56,7 @@ scripts:
                         <div class="history-card-main">
                             <img src="{{ app.image | relative_url }}" alt="{{ app.image_alt | escape }}" data-i18n-alt="apps.{{ app.id }}.imageAlt" loading="lazy" decoding="async" width="68" height="68" />
                             <div>
-                                <p class="history-card-label" data-i18n="{% if app.series == 'citybus' %}history.citybusSeries{% else %}history.iosApp{% endif %}">{% if app.series == "citybus" %}CityBus series{% else %}iOS app{% endif %}</p>
+                                <p class="history-card-label" data-i18n="{% if app.series == 'citybus' %}history.citybusSeries{% else %}history.iosApp{% endif %}">{% if app.series == "citybus" %}시티버스 시리즈{% else %}iOS 앱{% endif %}</p>
                                 <h3 data-i18n="apps.{{ app.id }}.name">{{ app.name }}</h3>
                                 {% if app.subtitle %}<p class="history-card-subtitle" data-i18n="apps.{{ app.id }}.subtitle">{{ app.subtitle }}</p>{% endif %}
                             </div>
