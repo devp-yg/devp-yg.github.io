@@ -279,15 +279,41 @@ button:focus-visible {
 }
 
 .nav-product-mark-all {
-    gap: 3px;
-    grid-template-columns: repeat(2, 5px);
+    background: #eef1f7;
+    display: block;
+    overflow: hidden;
+    position: relative;
 }
 
 .nav-product-mark-all i {
-    background: currentColor;
-    border-radius: 2px;
-    height: 5px;
-    width: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 7px;
+    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.13);
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    width: 19px;
+}
+
+.nav-product-mark-all i:nth-child(1) {
+    background: #6ee7d8;
+    left: 7px;
+    transform: rotate(-13deg);
+}
+
+.nav-product-mark-all i:nth-child(2) {
+    background: #7cb8ff;
+    left: 13px;
+    top: 8px;
+    transform: rotate(-1deg);
+    z-index: 1;
+}
+
+.nav-product-mark-all i:nth-child(3) {
+    background: #27324a;
+    left: 20px;
+    transform: rotate(12deg);
+    z-index: 2;
 }
 
 .nav-product-mark-movlog {
