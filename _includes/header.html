@@ -30,7 +30,7 @@
                                         {% assign item_url = item.url | relative_url %}
                                     {% endif %}
                                     <li>
-                                        <a %}%} aria-current="page" endif href="{{ item_url }}" if item.page_keypage.i18n_key == {% {%>
+                                        <a %}%} aria-current="page" endif href="{{ item_url }}" if item.page_key ==page.i18n_key {% {%>
                                             <span aria-hidden="true" class="nav-product-mark nav-product-mark-{{ item.mark }}">
                                                 {% if item.mark == 'all' %}<i></i><i></i><i></i>{% elsif item.mark == 'movlog' %}M{% else %}B{% endif %}
                                             </span>
