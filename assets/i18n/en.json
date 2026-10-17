@@ -409,19 +409,25 @@
       "name": "Space Log - Remember This Place",
       "subtitle": "TagHere",
       "description": "Save places and their spaces, then record visits and space recognition with location and Bluetooth. Review your history by date and with a widget.",
-      "imageAlt": "TagHere app icon"
+      "imageAlt": "TagHere app icon",
+      "brandName": "Space Log",
+      "brandDescription": "Remember This Place"
     },
     "mdvista": {
       "name": "Markdam - Markdown Viewer",
       "subtitle": "Markdown Reader",
       "description": "Read Markdown comfortably on Mac, iPhone, and iPad, then save it as PDF. View tables, code, images, SVG, Mermaid diagrams, and equations offline.",
-      "imageAlt": "Markdam app icon"
+      "imageAlt": "Markdam app icon",
+      "brandName": "Markdam",
+      "brandDescription": "Markdown Viewer"
     },
     "rtvideo": {
       "name": "RTVideo",
       "subtitle": "Live Translation Captions",
       "description": "Turn audio from videos and other content playing on iPhone or iPad into translated captions. Follow the original and translation in the app or a floating PiP caption window.",
-      "imageAlt": "RTVideo app icon"
+      "imageAlt": "RTVideo app icon",
+      "brandName": "RTVideo",
+      "brandDescription": "Live Translation Captions"
     }
   },
   "taghere": {

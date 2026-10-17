@@ -34,9 +34,9 @@ products:
     url: /mdvista/
     mark: mdvista
     page_key: mdvista
-  - label: RTVideo
+  - label: 보이는말
     key: rtvideo
-    description: 재생 중인 음성을 번역 자막으로
+    description: 실시간 자막 번역
     description_key: rtvideoDescription
     url: /rtvideo/
     mark: rtvideo
