@@ -12,6 +12,7 @@
     "viewSeries": "View series",
     "viewIntro": "View introduction",
     "appStorePage": "Open App Store page",
+    "reviewPending": "Awaiting App Store review",
     "allApps": "All apps",
     "contact": "Contact",
     "blog": "Development notes",
@@ -28,9 +29,11 @@
     "history": { "title": "Release history | Devp-YG", "description": "A timeline of the first release months for Devp-YG iOS applications." },
     "citybus": { "title": "CityBus | City bus apps", "description": "The CityBus app series brings bus, transfers, urban rail, and travel information for Busan, Daejeon, Gwangju, Incheon, Andong, and Yeosu together." },
     "movlog": { "title": "Movlog | Turn your movement into a story", "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then helps you look back through insights and achievements." },
+    "taghere": { "title": "TagHere | Space Log - Remember This Place", "description": "Save places and the spaces within them, then revisit location and space recognition history by date." },
+    "mdvista": { "title": "MDVista | Markdown at a Glance", "description": "Meet MDVista, an offline Markdown reader for Mac, iPhone, and iPad that can save documents as PDF." },
     "privacy": { "title": "Privacy Policy | Devp-YG", "description": "Privacy policy for Devp-YG applications." }
   },
-  "header": { "home": "Home", "portfolio": "All apps", "exploreApps": "Explore apps", "appsHeading": "Devp-YG Apps", "appsDescription": "Useful apps for everyday moments", "allApps": "View all apps", "allAppsDescription": "Browse every iOS app we currently maintain.", "movlogDescription": "A life log that records movement and visits", "citybusDescription": "Bus, transfer, and travel information by city", "history": "Release history", "citybus": "CityBus", "movlog": "Movlog", "contact": "Contact" },
+  "header": { "home": "Home", "portfolio": "All apps", "exploreApps": "Explore apps", "appsHeading": "Devp-YG Apps", "appsDescription": "Useful apps for everyday moments", "allApps": "View all apps", "allAppsDescription": "Browse every iOS app we currently maintain.", "movlogDescription": "A life log that records movement and visits", "citybusDescription": "Bus, transfer, and travel information by city", "taghere": "TagHere", "taghereDescription": "Keep places, spaces, and visit history together", "mdvista": "MDVista", "mdvistaDescription": "A Markdown reader with PDF export", "history": "Release history", "citybus": "CityBus", "movlog": "Movlog", "contact": "Contact" },
   "footer": {
     "description": "An independent iOS app studio making<br>everyday movement and life a little easier.",
     "products": "Products",
@@ -55,12 +58,18 @@
     "movlogIntro": "View Movlog introduction",
     "selectedProducts": "Selected products",
     "featuredTitle": "Apps ready when<br>you need them",
-    "featuredLead": "We focus on solving everyday friction well, refining the most important experience in every app.",
+    "featuredLead": "We make apps for the everyday: logging movement and places, reading documents, and finding useful information.",
     "movementJournal": "Movement journal",
     "movlogDescription": "Automatically record routes and places you visit, and turn an ordinary day into your own story.",
     "movlogInsightsAlt": "Movlog insights screen",
     "citiesOneExperience": "6 cities, one experience",
     "citybusDescription": "Check bus arrivals plus transfers, urban rail, and travel information across six cities.",
+    "taghereKicker": "Place & space journal",
+    "taghereDescription": "Save places and spaces, record visits with location and Bluetooth, and look back by date.",
+    "taghereScreenAlt": "TagHere saved places list",
+    "mdvistaKicker": "Markdown, clearly",
+    "mdvistaDescription": "A reading-focused viewer for text, tables, images, and diagrams, with PDF export for the same document.",
+    "mdvistaScreenAlt": "MDVista Markdown reading screen",
     "findMyCity": "Find my city",
     "everydayTools": "Everyday tools",
     "toolsTitle": "Small tools<br>that make a difference",
@@ -73,7 +82,7 @@
   "portfolio": {
     "eyebrow": "Devp-YG Apps · {count} apps",
     "title": "Solve life’s little frictions<br><em>with an app.</em>",
-    "lead": "From movement logs and public transit to QR codes, fare calculations, and mobile usage. These are iOS apps we needed ourselves and continue to run.",
+    "lead": "We make iOS apps for recording movement and places, reading documents, and quickly checking useful everyday information.",
     "ariaLabel": "iOS applications",
     "categoryNavLabel": "App category shortcuts",
     "categoryNavTitle": "Browse by category",
@@ -91,6 +100,10 @@
       "everyday-tools": {
         "label": "Everyday tools",
         "description": "Simple tools for information you need to make or check often."
+      },
+      "reading-tools": {
+        "label": "Document reading",
+        "description": "Read Markdown text and visuals, then save the document as a PDF."
       }
     }
   },
@@ -251,7 +264,30 @@
     "gwangju-bus": { "name": "Gwangju Bus", "shortName": "Gwangju Bus", "subtitle": "Gwangju Bus", "description": "Search stops and routes, then check arrivals, stops remaining, vehicle locations, low-floor buses, transfer routes, attraction maps, and weather.", "citybusDescription": "Check Gwangju stops, routes, arrivals, stops remaining, vehicle locations, low-floor buses, transfers, an attraction map, and weather.", "imageAlt": "Gwangju Bus app icon" },
     "busan-bus": { "name": "Busan Bus", "shortName": "Busan Bus", "subtitle": "Busan Bus", "description": "Check stops, routes, and arrivals across express, regular, seat, village, and late-night buses, plus low-floor buses, remaining seats, transfer routes, attraction maps, and weather.", "citybusDescription": "Check Busan arrivals, routes, express, regular, seat, village, and late-night buses, plus low-floor buses, remaining seats, transfers, an attraction map, and weather.", "imageAlt": "Busan Bus app icon" },
     "daejeon-bus": { "name": "Daejeon Bus", "shortName": "Daejeon Bus", "subtitle": "Daejeon Bus", "description": "Search buses and subway stations together, then check arrivals, timetables, first and last services, service intervals, transfer routes, attraction maps, and weather.", "citybusDescription": "Check Daejeon bus and subway arrivals, timetables, first and last services, intervals, transfers, an attraction map, and weather.", "imageAlt": "Daejeon Bus app icon" },
-    "tplus-mobile": { "name": "Tplus real-time usage widget", "description": "Check Tplus Mobile usage information in a widget on your iPhone or iPad.", "imageAlt": "Tplus real-time usage widget app icon" }
+    "tplus-mobile": { "name": "Tplus real-time usage widget", "description": "Check Tplus Mobile usage information in a widget on your iPhone or iPad.", "imageAlt": "Tplus real-time usage widget app icon" },
+    "taghere": { "name": "Space Log - Remember This Place", "subtitle": "TagHere", "description": "Save places and their spaces, then record visits and space recognition with location and Bluetooth. Review your history by date and with a widget.", "imageAlt": "TagHere app icon" },
+    "mdvista": { "name": "MDVista - Markdown at a Glance", "subtitle": "Markdown Reader", "description": "Read Markdown comfortably on Mac, iPhone, and iPad, then save it as PDF. View tables, code, images, SVG, Mermaid diagrams, and equations offline.", "imageAlt": "MDVista app icon" }
+  },
+  "taghere": {
+    "eyebrow": "PLACE · SPACE · MEMORY", "title": "Remember the place,<br><em>and the space inside.</em>", "description": "Save home, work, and places you return to. Location and Bluetooth help record visits and recognize spaces, so you can look back at where you spent time.",
+    "privacyLink": "Privacy policy ↗", "metaPlatformLabel": "Platform", "metaPlatform": "iPhone · iPad", "metaCaptureLabel": "Recognition", "metaCapture": "Location · Bluetooth",
+    "featureEyebrow": "A PLACE HAS ITS OWN SPACES", "featureTitle": "Where you were,<br><em>and what it was like.</em>", "featureLead": "Save places and their spaces together to make location memories more specific.",
+    "feature1Title": "Save places you return to", "feature1Body": "Save home, work, or a favorite café from your current location or the map, then set its recognition radius.",
+    "feature2Title": "Tell spaces apart with Bluetooth", "feature2Body": "Add rooms or floors within a place and connect Bluetooth devices to recognize nearby spaces.",
+    "feature3Title": "Visit history by date", "feature3Body": "Review recognized places and spaces by date, and search by their names.",
+    "galleryEyebrow": "INSIDE TAGHERE", "galleryTitle": "Places, spaces, and visits<br><em>in one continuous record.</em>", "placesAlt": "Saved places in TagHere", "detailAlt": "Place detail with spaces and recognition radius", "historyAlt": "Visit history by date", "galleryPlaces": "Places to remember", "galleryDetail": "Spaces and recognition radius", "galleryHistory": "Visit history by date", "galleryNote": "Screens show sample places and history created to illustrate the app.",
+    "permissionsEyebrow": "MADE FOR YOUR PLACES", "permissionsTitle": "Permissions for place recognition", "permissionsBody": "Location detects entry to and exit from saved places. Bluetooth checks nearby registered devices to identify a space, and notifications can tell you when a visit record is complete. Background recognition depends on your permission settings.",
+    "finalEyebrow": "REMEMBER THE PLACES YOU RETURN TO", "finalTitle": "Keep the places<br><em>you want to remember.</em>", "allApps": "Explore other apps ↗"
+  },
+  "mdvista": {
+    "eyebrow": "MARKDOWN, CLEARLY", "title": "Words, images, and diagrams<br><em>made comfortable to read.</em>", "description": "Open Markdown documents on Mac, iPhone, and iPad, read them, and save them as PDF. View tables, code, local images, SVG, Mermaid diagrams, and equations offline.", "platformNote": "Mac · iPhone · iPad", "metaReadingLabel": "Reading", "metaReading": "Outline · search · display", "metaExportLabel": "Export", "metaExport": "A4 · US Letter PDF",
+    "featureEyebrow": "READ THE WHOLE DOCUMENT", "featureTitle": "Keep the structure clear.<br><em>Make reading your own.</em>", "featureLead": "Read document structure and visuals together, with reading controls and PDF export in one place.",
+    "feature1Title": "See how the document flows", "feature1Body": "Read headings, lists, quotes, tables, and code in a clear layout. Use the outline and in-document search to find a section.",
+    "feature2Title": "Images and diagrams included", "feature2Body": "View images stored with your document, safe SVG, Mermaid diagrams, and LaTeX equations.",
+    "feature3Title": "Save a readable PDF", "feature3Body": "Choose A4 or US Letter, portrait or landscape, and margins to save a multi-page PDF.",
+    "galleryEyebrow": "INSIDE MDVISTA", "galleryTitle": "From reading to saving a PDF,<br><em>stay with the document.</em>", "readerAlt": "Reading a Markdown document in MDVista", "pdfAlt": "Creating and previewing a PDF", "diagramAlt": "A document with equations and sync notation", "galleryReader": "Read a document", "galleryPDF": "Preview and save a PDF", "galleryDiagrams": "Equations and visuals",
+    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL", "localTitle": "Keep the original.<br>Read on your device.", "localBody": "MDVista is a read-only viewer. It leaves the original Markdown unchanged and does not send document contents to a server. To access relative-path images, you may need to select the folder that contains the document. Remote images are not fetched automatically.",
+    "finalEyebrow": "OPEN, READ, KEEP", "finalTitle": "Open a Markdown file.<br><em>Read and keep it.</em>", "allApps": "Explore other apps ↗"
   },
   "privacy": {
     "title": "Privacy Policy",

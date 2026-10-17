@@ -326,6 +326,16 @@ button:focus-visible {
     color: #195b9f;
 }
 
+.nav-product-mark-taghere {
+    background: #f1e7da;
+    color: #654735;
+}
+
+.nav-product-mark-mdvista {
+    background: #ebe7ff;
+    color: #5943a8;
+}
+
 .nav-product-copy {
     min-width: 0;
 }

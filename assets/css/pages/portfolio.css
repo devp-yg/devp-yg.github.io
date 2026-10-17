@@ -265,6 +265,15 @@
     transform: translate(3px, -3px);
 }
 
+.review-status {
+    background: #f0f3f7;
+    border-radius: 999px;
+    color: #596579;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 7px 10px;
+}
+
 @media (max-width: 920px) {
     .portfolio-category-heading { grid-template-columns: minmax(180px, 0.8fr) minmax(220px, 1.2fr) auto; }
     .portfolio-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

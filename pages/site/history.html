@@ -12,7 +12,7 @@ scripts:
 ---
 
 <main id="main" class="history-page">
-    {% assign ios_apps = site.data.apps | where: "platform", "ios" %}
+    {% assign ios_apps = site.data.apps | where: "platform", "ios" | where_exp: "app", "app.launched_at != nil" %}
     {% assign sorted_apps = ios_apps | sort: "launched_at" | reverse %}
 
     <header class="history-hero site-shell">

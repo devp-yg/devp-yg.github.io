@@ -223,6 +223,14 @@
 .movlog-shot img { width: 100%; }
 .product-citybus { background: #101827; color: #fff; }
 .product-citybus .product-copy > p:not(.product-kicker) { color: #aab5c7; }
+.product-taghere { background: #f1e7da; color: #34251d; grid-template-rows: auto 1fr; }
+.product-taghere .product-copy > p:not(.product-kicker) { color: #735f50; }
+.taghere-shot { background: #f7f4ef; border: 7px solid #f7f4ef; border-bottom: 0; border-radius: 32px 32px 0 0; box-shadow: 0 -10px 40px rgba(52, 37, 29, 0.14); height: 310px; overflow: hidden; transform: translateY(18px); width: 238px; }
+.taghere-shot img { display: block; width: 100%; }
+.product-mdvista { background: #ebe7ff; color: #29204c; grid-template-rows: auto 1fr; }
+.product-mdvista .product-copy > p:not(.product-kicker) { color: #655d83; }
+.mdvista-shot { background: #fff; border: 7px solid #fff; border-bottom: 0; border-radius: 32px 32px 0 0; box-shadow: 0 -10px 40px rgba(41, 32, 76, 0.16); height: 310px; overflow: hidden; transform: translateY(18px); width: 238px; }
+.mdvista-shot img { display: block; width: 100%; }
 .city-icon-row { display: flex; }
 
 .city-icon-row img {
