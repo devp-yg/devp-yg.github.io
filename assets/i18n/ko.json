@@ -38,7 +38,7 @@
     },
     "history": {
       "title": "출시 기록 | Devp-YG",
-      "description": "Devp-YG가 현재 운영 중인 iOS 애플리케이션의 출시 월을 시간순으로 소개합니다."
+      "description": "Devp-YG 앱의 출시 기록과 App Store 심사 중인 앱을 소개합니다."
     },
     "contact": {
       "title": "Contact | Devp-YG",
@@ -172,7 +172,7 @@
   "history": {
     "eyebrow": "The timeline · {count} apps",
     "title": "필요에서 시작된<br><em>앱의 시간.</em>",
-    "description": "현재 운영 중인 앱들이 언제 처음 출시되었는지 기록했습니다. 작은 아이디어가 하나씩 제품이 되어온 흐름을 만나보세요.",
+    "description": "앱이 처음 출시된 시점과 현재 App Store 심사 중인 앱을 함께 기록했습니다. 작은 아이디어가 제품이 되어온 흐름을 만나보세요.",
     "kicker": "Release history",
     "heading": "앱 출시 타임라인",
     "basis": "App Store 최초 버전 출시 기준",
@@ -181,7 +181,10 @@
     "oldest": "오래된순",
     "monthSuffix": "월",
     "citybusSeries": "시티버스 시리즈",
-    "iosApp": "iOS 앱"
+    "iosApp": "iOS 앱",
+    "pendingKicker": "출시 전 앱",
+    "pendingTitle": "App Store 심사 중",
+    "pendingDescription": "출시일이 정해지기 전인 앱도 함께 소개합니다."
   },
   "contact": {
     "title": "문의하기",

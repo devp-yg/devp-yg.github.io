@@ -79,6 +79,90 @@
     flex-direction: column;
 }
 
+.history-pending {
+    border-bottom: 1px solid var(--line);
+    margin: -8px 0 42px;
+    padding-bottom: 36px;
+}
+
+.history-pending-heading {
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.history-pending-heading h2 {
+    font-size: 1.25rem;
+    letter-spacing: -0.04em;
+    margin: 0;
+}
+
+.history-pending-heading > p {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin: 0 0 3px;
+}
+
+.history-pending-list {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.history-pending-link {
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    color: inherit;
+    display: flex;
+    gap: 15px;
+    min-height: 100px;
+    padding: 15px 18px;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.history-pending-link:hover,
+.history-pending-link:focus-visible {
+    border-color: #bcc7d9;
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+}
+
+.history-pending-link > img {
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+    flex: 0 0 58px;
+    height: 58px;
+    object-fit: cover;
+    width: 58px;
+}
+
+.history-pending-copy {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.history-pending-copy .history-card-label { margin-bottom: 4px; }
+.history-pending-copy strong { font-size: 0.98rem; letter-spacing: -0.035em; overflow-wrap: anywhere; }
+
+.history-pending-status {
+    background: rgba(255, 255, 255, .8);
+    border: 1px solid rgba(69, 56, 48, .12);
+    border-radius: 999px;
+    color: #5e534c;
+    flex: 0 0 auto;
+    font-size: 0.68rem;
+    font-weight: 750;
+    padding: 7px 10px;
+}
+
 .history-sort {
     background: #edf1f7;
     border-radius: 999px;
@@ -271,6 +355,12 @@
     .history-intro { align-items: flex-start; flex-direction: column; margin-bottom: 34px; }
     .history-tools { align-items: flex-start; margin-top: 16px; }
     .history-basis { margin-bottom: 12px; }
+    .history-pending { margin: 0 0 32px; padding-bottom: 28px; }
+    .history-pending-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .history-pending-list { grid-template-columns: 1fr; }
+    .history-pending-link { gap: 12px; padding: 13px; }
+    .history-pending-link > img { flex-basis: 52px; height: 52px; width: 52px; }
+    .history-pending-status { font-size: 0.62rem; padding: 6px 8px; }
     .history-timeline::before { left: 11px; }
     .history-item-link { gap: 5px; grid-template-columns: 22px 46px 32px minmax(0, 1fr); }
     .history-date > strong { font-size: 0.96rem; }

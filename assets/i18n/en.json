@@ -26,7 +26,7 @@
     "copyright": { "title": "Copyright | Devp-YG", "description": "Copyright information for the Devp-YG website." },
     "contact": { "title": "Contact | Devp-YG", "description": "Contact information for Devp-YG applications." },
     "legacy": { "title": "Legacy page | Devp-YG", "description": "Information about an older Devp-YG sample page." },
-    "history": { "title": "Release history | Devp-YG", "description": "A timeline of the first release months for Devp-YG iOS applications." },
+    "history": { "title": "Release history | Devp-YG", "description": "Release dates for Devp-YG apps, alongside apps awaiting App Store review." },
     "citybus": { "title": "CityBus | City bus apps", "description": "The CityBus app series brings bus, transfers, urban rail, and travel information for Busan, Daejeon, Gwangju, Incheon, Andong, and Yeosu together." },
     "movlog": { "title": "Movlog | Turn your movement into a story", "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then helps you look back through insights and achievements." },
     "taghere": { "title": "TagHere | Space Log - Remember This Place", "description": "Save places and the spaces within them, then revisit location and space recognition history by date." },
@@ -107,7 +107,7 @@
   "history": {
     "eyebrow": "The timeline · {count} apps",
     "title": "Built from a need<br><em>one app at a time.</em>",
-    "description": "See when the apps we still operate first launched, and follow the path from small ideas to products.",
+    "description": "See when our apps first launched, along with the apps currently awaiting App Store review.",
     "kicker": "Release history",
     "heading": "App release timeline",
     "basis": "Based on the first version released on the App Store",
@@ -116,7 +116,10 @@
     "oldest": "Oldest",
     "monthSuffix": "",
     "citybusSeries": "CityBus series",
-    "iosApp": "iOS app"
+    "iosApp": "iOS app",
+    "pendingKicker": "Before release",
+    "pendingTitle": "Awaiting App Store review",
+    "pendingDescription": "These apps are listed before their release dates are set."
   },
   "contact": { "title": "Contact", "description": "Please email us about problems, bug reports, or feature suggestions while using our apps." },
   "legacy": { "title": "This is an older sample page.", "description": "Find our current apps on the All Apps page.", "viewPortfolio": "View all apps" },
