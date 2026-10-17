@@ -115,20 +115,15 @@
     "movlogIntro": "무블로그 소개 보기",
     "selectedProducts": "Selected products",
     "featuredTitle": "필요한 순간에<br>바로 쓸 수 있는 앱",
-    "featuredLead": "이동과 장소의 기록부터 문서 읽기까지, 일상에서 필요한 경험을 앱으로 만듭니다.",
-    "movementJournal": "Movement journal",
+    "featuredLead": "이동과 장소 기록, 대중교통, 문서 읽기처럼 앱마다 다른 필요에 맞춰 소개합니다.",
     "movlogDescription": "이동 경로와 머문 장소를 자동으로 기록하고, 평범한 하루를 나만의 이야기로 남겨보세요.",
     "movlogInsightsAlt": "무블로그 인사이트 화면",
-    "citiesOneExperience": "6 cities, one experience",
     "citybusDescription": "부산부터 여수까지, 버스 도착정보와 환승·도시철도·여행 정보를 도시별로 확인하세요.",
-    "taghereKicker": "Place & space journal",
     "taghereDescription": "장소와 공간을 등록하고 위치와 Bluetooth로 방문을 기록해, 머문 곳을 날짜별로 돌아보세요.",
     "taghereScreenAlt": "공간기록 장소 목록 화면",
-    "mdvistaKicker": "Markdown, clearly",
     "mdvistaDescription": "글, 표, 그림과 다이어그램을 읽고, 같은 문서를 PDF로 저장하는 읽기 중심 뷰어입니다.",
     "mdvistaScreenAlt": "마크담 Markdown 문서 읽기 화면",
     "findMyCity": "내 도시 찾기",
-    "everydayTools": "Everyday tools",
     "toolsTitle": "작지만 확실한<br>생활 도구",
     "allAppsLink": "모든 앱 보기",
     "supportIdeas": "Support & ideas",
@@ -147,8 +142,8 @@
     "categoryCount": "{count}개 앱",
     "categories": {
       "mobility": {
-        "label": "이동과 기록",
-        "description": "움직인 시간과 거리, 그리고 그날의 경로를 더 선명하게 남기는 앱입니다."
+        "label": "이동과 장소 기록",
+        "description": "이동 경로와 방문한 장소, 그 안에 머문 공간을 기록하고 돌아보는 앱입니다."
       },
       "public-transit": {
         "label": "대중교통",

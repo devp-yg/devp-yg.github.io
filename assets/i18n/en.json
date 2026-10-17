@@ -58,20 +58,15 @@
     "movlogIntro": "View Movlog introduction",
     "selectedProducts": "Selected products",
     "featuredTitle": "Apps ready when<br>you need them",
-    "featuredLead": "We make apps for the everyday: logging movement and places, reading documents, and finding useful information.",
-    "movementJournal": "Movement journal",
+    "featuredLead": "Explore apps by the need they serve: movement and place logs, public transit, document reading, and everyday tools.",
     "movlogDescription": "Automatically record routes and places you visit, and turn an ordinary day into your own story.",
     "movlogInsightsAlt": "Movlog insights screen",
-    "citiesOneExperience": "6 cities, one experience",
     "citybusDescription": "Check bus arrivals plus transfers, urban rail, and travel information across six cities.",
-    "taghereKicker": "Place & space journal",
     "taghereDescription": "Save places and spaces, record visits with location and Bluetooth, and look back by date.",
     "taghereScreenAlt": "TagHere saved places list",
-    "mdvistaKicker": "Markdown, clearly",
     "mdvistaDescription": "A reading-focused viewer for text, tables, images, and diagrams, with PDF export for the same document.",
     "mdvistaScreenAlt": "Markdam Markdown reading screen",
     "findMyCity": "Find my city",
-    "everydayTools": "Everyday tools",
     "toolsTitle": "Small tools<br>that make a difference",
     "allAppsLink": "View all apps",
     "supportIdeas": "Support & ideas",
@@ -90,8 +85,8 @@
     "categoryCount": "{count} apps",
     "categories": {
       "mobility": {
-        "label": "Movement & logging",
-        "description": "Apps that make it easier to capture the time, distance, and routes behind everyday movement."
+        "label": "Movement & place logs",
+        "description": "Apps for recording movement routes, visited places, and the spaces where you spend time."
       },
       "public-transit": {
         "label": "Public transit",

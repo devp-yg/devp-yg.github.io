@@ -161,7 +161,7 @@
 
 - id: taghere
   platform: ios
-  category: everyday-tools
+  category: mobility
   portfolio_order: 30
   name: 공간기록 - 여기를 기억해
   subtitle: TagHere
