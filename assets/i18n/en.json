@@ -20,27 +20,90 @@
     "history": "Release history"
   },
   "pages": {
-    "home": { "title": "Devp-YG | Mobile Apps", "description": "Discover Devp-YG mobile apps designed to make everyday movement and life more convenient." },
-    "portfolio": { "title": "All Apps | Devp-YG", "description": "Explore the iOS applications developed and operated by Devp-YG." },
-    "blog": { "title": "Blog | Devp-YG", "description": "Development and update notes from Devp-YG." },
-    "copyright": { "title": "Copyright | Devp-YG", "description": "Copyright information for the Devp-YG website." },
-    "contact": { "title": "Contact | Devp-YG", "description": "Contact information for Devp-YG applications." },
-    "legacy": { "title": "Legacy page | Devp-YG", "description": "Information about an older Devp-YG sample page." },
-    "history": { "title": "Release history | Devp-YG", "description": "Release dates for Devp-YG apps, alongside apps awaiting App Store review." },
-    "citybus": { "title": "CityBus | City bus apps", "description": "The CityBus app series brings bus, transfers, urban rail, and travel information for Busan, Daejeon, Gwangju, Incheon, Andong, and Yeosu together." },
-    "movlog": { "title": "Movlog | Turn your movement into a story", "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then helps you look back through insights and achievements." },
-    "taghere": { "title": "TagHere | Space Log - Remember This Place", "description": "Save places and the spaces within them, then revisit location and space recognition history by date." },
-    "mdvista": { "title": "Markdam - Markdown Viewer | Devp-YG", "description": "Meet Markdam, an offline Markdown reader for Mac, iPhone, and iPad that can save documents as PDF." },
-    "privacy": { "title": "Privacy Policy | Devp-YG", "description": "Privacy policy for Devp-YG applications." }
+    "home": {
+      "title": "Devp-YG | Mobile Apps",
+      "description": "Discover Devp-YG mobile apps designed to make everyday movement and life more convenient."
+    },
+    "portfolio": {
+      "title": "All Apps | Devp-YG",
+      "description": "Explore the iOS applications developed and operated by Devp-YG."
+    },
+    "blog": {
+      "title": "Blog | Devp-YG",
+      "description": "Development and update notes from Devp-YG."
+    },
+    "copyright": {
+      "title": "Copyright | Devp-YG",
+      "description": "Copyright information for the Devp-YG website."
+    },
+    "contact": {
+      "title": "Contact | Devp-YG",
+      "description": "Contact information for Devp-YG applications."
+    },
+    "legacy": {
+      "title": "Legacy page | Devp-YG",
+      "description": "Information about an older Devp-YG sample page."
+    },
+    "history": {
+      "title": "Release history | Devp-YG",
+      "description": "Release dates for Devp-YG apps, alongside apps awaiting App Store review."
+    },
+    "citybus": {
+      "title": "CityBus | City bus apps",
+      "description": "The CityBus app series brings bus, transfers, urban rail, and travel information for Busan, Daejeon, Gwangju, Incheon, Andong, and Yeosu together."
+    },
+    "movlog": {
+      "title": "Movlog | Turn your movement into a story",
+      "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then helps you look back through insights and achievements."
+    },
+    "taghere": {
+      "title": "TagHere | Space Log - Remember This Place",
+      "description": "Save places and the spaces within them, then revisit location and space recognition history by date."
+    },
+    "mdvista": {
+      "title": "Markdam - Markdown Viewer | Devp-YG",
+      "description": "Meet Markdam, an offline Markdown reader for Mac, iPhone, and iPad that can save documents as PDF."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Devp-YG",
+      "description": "Privacy policy for Devp-YG applications."
+    },
+    "rtvideo": {
+      "title": "RTVideo - Live Translation Captions | Devp-YG",
+      "description": "Meet RTVideo, which turns audio playing in other apps into translated captions on iPhone and iPad."
+    }
   },
-  "header": { "home": "Home", "portfolio": "All apps", "exploreApps": "Explore apps", "appsHeading": "Devp-YG Apps", "appsDescription": "Useful apps for everyday moments", "allApps": "View all apps", "allAppsDescription": "Browse every iOS app we currently maintain.", "movlogDescription": "A life log that records movement and visits", "citybusDescription": "Bus, transfer, and travel information by city", "taghere": "TagHere", "taghereDescription": "Keep places, spaces, and visit history together", "mdvista": "Markdam", "mdvistaDescription": "A Markdown reader with PDF export", "history": "Release history", "citybus": "CityBus", "movlog": "Movlog", "contact": "Contact" },
+  "header": {
+    "home": "Home",
+    "portfolio": "All apps",
+    "exploreApps": "Explore apps",
+    "appsHeading": "Devp-YG Apps",
+    "appsDescription": "Useful apps for everyday moments",
+    "allApps": "View all apps",
+    "allAppsDescription": "Browse every iOS app we currently maintain.",
+    "movlogDescription": "A life log that records movement and visits",
+    "citybusDescription": "Bus, transfer, and travel information by city",
+    "taghere": "TagHere",
+    "taghereDescription": "Keep places, spaces, and visit history together",
+    "mdvista": "Markdam",
+    "mdvistaDescription": "A Markdown reader with PDF export",
+    "history": "Release history",
+    "citybus": "CityBus",
+    "movlog": "Movlog",
+    "contact": "Contact",
+    "rtvideo": "RTVideo",
+    "rtvideoDescription": "Translated captions for playing audio"
+  },
   "footer": {
     "description": "An independent iOS app studio making<br>everyday movement and life a little easier.",
     "products": "Products",
     "support": "Support",
     "designed": "Designed & built in Korea."
   },
-  "banner": { "description": "Practical mobile apps for<br><strong>everyday movement and life.</strong>", "explore": "Explore apps" },
+  "banner": {
+    "description": "Practical mobile apps for<br><strong>everyday movement and life.</strong>",
+    "explore": "Explore apps"
+  },
   "home": {
     "heroEyebrow": "Independent iOS Studio",
     "heroTitle": "Make everyday movement<br><em>feel lighter.</em>",
@@ -58,7 +121,7 @@
     "movlogIntro": "View Movlog introduction",
     "selectedProducts": "Selected products",
     "featuredTitle": "Apps ready when<br>you need them",
-    "featuredLead": "Explore apps by the need they serve: movement and place logs, public transit, document reading, and everyday tools.",
+    "featuredLead": "Explore apps for movement and place logs, public transit, document reading, live translation, and everyday tools.",
     "movlogDescription": "Automatically record routes and places you visit, and turn an ordinary day into your own story.",
     "movlogInsightsAlt": "Movlog insights screen",
     "citybusDescription": "Check bus arrivals plus transfers, urban rail, and travel information across six cities.",
@@ -72,12 +135,14 @@
     "supportIdeas": "Support & ideas",
     "supportTitle": "Let’s make apps more helpful together.",
     "supportLead": "Tell us about a problem, a feature you need, or an idea for something new.",
-    "sendEmail": "Send an email"
+    "sendEmail": "Send an email",
+    "rtvideoDescription": "Read captions in your language for audio playing in another app.",
+    "rtvideoScreenAlt": "RTVideo live translation captions screen"
   },
   "portfolio": {
     "eyebrow": "Devp-YG Apps · {count} apps",
     "title": "Solve life’s little frictions<br><em>with an app.</em>",
-    "lead": "We make iOS apps for recording movement and places, reading documents, and quickly checking useful everyday information.",
+    "lead": "We make iOS apps for recording places, translating playing audio, and reading documents.",
     "ariaLabel": "iOS applications",
     "categoryNavLabel": "App category shortcuts",
     "categoryNavTitle": "Browse by category",
@@ -99,11 +164,23 @@
       "reading-tools": {
         "label": "Document reading",
         "description": "Read Markdown text and visuals, then save the document as a PDF."
+      },
+      "translation-tools": {
+        "label": "Live translation",
+        "description": "Turn audio from playing content into captions in another language."
       }
     }
   },
-  "blog": { "title": "Development <strong>notes</strong>", "readMore": "Read more", "emptyTitle": "New notes are on the way.", "emptyDescription": "App updates and development stories will be shared here over time." },
-  "copyright": { "title": "Copyright", "rights": "All rights reserved." },
+  "blog": {
+    "title": "Development <strong>notes</strong>",
+    "readMore": "Read more",
+    "emptyTitle": "New notes are on the way.",
+    "emptyDescription": "App updates and development stories will be shared here over time."
+  },
+  "copyright": {
+    "title": "Copyright",
+    "rights": "All rights reserved."
+  },
   "history": {
     "eyebrow": "The timeline · {count} apps",
     "title": "Built from a need<br><em>one app at a time.</em>",
@@ -121,8 +198,15 @@
     "pendingTitle": "Awaiting App Store review",
     "pendingDescription": "These apps are listed before their release dates are set."
   },
-  "contact": { "title": "Contact", "description": "Please email us about problems, bug reports, or feature suggestions while using our apps." },
-  "legacy": { "title": "This is an older sample page.", "description": "Find our current apps on the All Apps page.", "viewPortfolio": "View all apps" },
+  "contact": {
+    "title": "Contact",
+    "description": "Please email us about problems, bug reports, or feature suggestions while using our apps."
+  },
+  "legacy": {
+    "title": "This is an older sample page.",
+    "description": "Find our current apps on the All Apps page.",
+    "viewPortfolio": "View all apps"
+  },
   "citybus": {
     "eyebrow": "CityBus Series",
     "title": "A simpler way to<br>meet your city’s buses",
@@ -253,57 +337,245 @@
     "allApps": "View all apps"
   },
   "apps": {
-    "snapqr": { "name": "SnapQR", "description": "A simple QR creator for turning text, URLs, Wi-Fi details, and contact information into QR codes.", "imageAlt": "SnapQR app icon" },
-    "fareflow": { "name": "FareFlow - My Fare Plan", "description": "A smart fare meter that uses GPS to measure distance and time in real time and calculate taxi or carpool fares automatically.", "imageAlt": "FareFlow app icon" },
-    "movlog": { "name": "Movlog: Put your story on the map", "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then brings your life log together through monthly and yearly archives, insights, and achievements.", "imageAlt": "Movlog app icon" },
-    "incheon-bus": { "name": "Incheon Bus", "shortName": "Incheon Bus", "subtitle": "Incheon Bus", "description": "Search stops and routes, check arrivals, bus locations, transfer routes, attraction maps and weather, first and last buses, low-floor buses, remaining seats, crowding, and event and tourism information.", "citybusDescription": "Check Incheon arrivals, routes, bus locations, first and last buses, low-floor buses, remaining seats, crowding, transfers, an attraction map, weather, and local events.", "imageAlt": "Incheon Bus app icon" },
-    "yeosu-bus": { "name": "Yeosu Bus", "shortName": "Yeosu Bus", "subtitle": "Yeosu Bus", "description": "Check Yeosu stops and routes, arrival estimates, and live bus locations, then prepare with transfer routes, an attraction map, favorites, alerts, and weather.", "citybusDescription": "Prepare for trips around Yeosu with stops, routes, arrivals, bus locations, transfers, an attraction map, weather, favorites, and alerts.", "imageAlt": "Yeosu Bus app icon" },
-    "andong-bus": { "name": "Andong Bus", "shortName": "Andong Bus", "subtitle": "Andong Bus", "description": "Check Andong stops, routes, bus locations, and arrivals, then explore transfer routes, an attraction map, weather, and local travel attractions through Andong Travel.", "citybusDescription": "Find Andong arrivals, routes, bus locations, transfers, an attraction map, weather, and local travel attractions in one place.", "imageAlt": "Andong Bus app icon" },
-    "gwangju-bus": { "name": "Gwangju Bus", "shortName": "Gwangju Bus", "subtitle": "Gwangju Bus", "description": "Search stops and routes, then check arrivals, stops remaining, vehicle locations, low-floor buses, transfer routes, attraction maps, and weather.", "citybusDescription": "Check Gwangju stops, routes, arrivals, stops remaining, vehicle locations, low-floor buses, transfers, an attraction map, and weather.", "imageAlt": "Gwangju Bus app icon" },
-    "busan-bus": { "name": "Busan Bus", "shortName": "Busan Bus", "subtitle": "Busan Bus", "description": "Check stops, routes, and arrivals across express, regular, seat, village, and late-night buses, plus low-floor buses, remaining seats, transfer routes, attraction maps, and weather.", "citybusDescription": "Check Busan arrivals, routes, express, regular, seat, village, and late-night buses, plus low-floor buses, remaining seats, transfers, an attraction map, and weather.", "imageAlt": "Busan Bus app icon" },
-    "daejeon-bus": { "name": "Daejeon Bus", "shortName": "Daejeon Bus", "subtitle": "Daejeon Bus", "description": "Search buses and subway stations together, then check arrivals, timetables, first and last services, service intervals, transfer routes, attraction maps, and weather.", "citybusDescription": "Check Daejeon bus and subway arrivals, timetables, first and last services, intervals, transfers, an attraction map, and weather.", "imageAlt": "Daejeon Bus app icon" },
-    "tplus-mobile": { "name": "Tplus real-time usage widget", "description": "Check Tplus Mobile usage information in a widget on your iPhone or iPad.", "imageAlt": "Tplus real-time usage widget app icon" },
-    "taghere": { "name": "Space Log - Remember This Place", "subtitle": "TagHere", "description": "Save places and their spaces, then record visits and space recognition with location and Bluetooth. Review your history by date and with a widget.", "imageAlt": "TagHere app icon" },
-    "mdvista": { "name": "Markdam - Markdown Viewer", "subtitle": "Markdown Reader", "description": "Read Markdown comfortably on Mac, iPhone, and iPad, then save it as PDF. View tables, code, images, SVG, Mermaid diagrams, and equations offline.", "imageAlt": "Markdam app icon" }
+    "snapqr": {
+      "name": "SnapQR",
+      "description": "A simple QR creator for turning text, URLs, Wi-Fi details, and contact information into QR codes.",
+      "imageAlt": "SnapQR app icon"
+    },
+    "fareflow": {
+      "name": "FareFlow - My Fare Plan",
+      "description": "A smart fare meter that uses GPS to measure distance and time in real time and calculate taxi or carpool fares automatically.",
+      "imageAlt": "FareFlow app icon"
+    },
+    "movlog": {
+      "name": "Movlog: Put your story on the map",
+      "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then brings your life log together through monthly and yearly archives, insights, and achievements.",
+      "imageAlt": "Movlog app icon"
+    },
+    "incheon-bus": {
+      "name": "Incheon Bus",
+      "shortName": "Incheon Bus",
+      "subtitle": "Incheon Bus",
+      "description": "Search stops and routes, check arrivals, bus locations, transfer routes, attraction maps and weather, first and last buses, low-floor buses, remaining seats, crowding, and event and tourism information.",
+      "citybusDescription": "Check Incheon arrivals, routes, bus locations, first and last buses, low-floor buses, remaining seats, crowding, transfers, an attraction map, weather, and local events.",
+      "imageAlt": "Incheon Bus app icon"
+    },
+    "yeosu-bus": {
+      "name": "Yeosu Bus",
+      "shortName": "Yeosu Bus",
+      "subtitle": "Yeosu Bus",
+      "description": "Check Yeosu stops and routes, arrival estimates, and live bus locations, then prepare with transfer routes, an attraction map, favorites, alerts, and weather.",
+      "citybusDescription": "Prepare for trips around Yeosu with stops, routes, arrivals, bus locations, transfers, an attraction map, weather, favorites, and alerts.",
+      "imageAlt": "Yeosu Bus app icon"
+    },
+    "andong-bus": {
+      "name": "Andong Bus",
+      "shortName": "Andong Bus",
+      "subtitle": "Andong Bus",
+      "description": "Check Andong stops, routes, bus locations, and arrivals, then explore transfer routes, an attraction map, weather, and local travel attractions through Andong Travel.",
+      "citybusDescription": "Find Andong arrivals, routes, bus locations, transfers, an attraction map, weather, and local travel attractions in one place.",
+      "imageAlt": "Andong Bus app icon"
+    },
+    "gwangju-bus": {
+      "name": "Gwangju Bus",
+      "shortName": "Gwangju Bus",
+      "subtitle": "Gwangju Bus",
+      "description": "Search stops and routes, then check arrivals, stops remaining, vehicle locations, low-floor buses, transfer routes, attraction maps, and weather.",
+      "citybusDescription": "Check Gwangju stops, routes, arrivals, stops remaining, vehicle locations, low-floor buses, transfers, an attraction map, and weather.",
+      "imageAlt": "Gwangju Bus app icon"
+    },
+    "busan-bus": {
+      "name": "Busan Bus",
+      "shortName": "Busan Bus",
+      "subtitle": "Busan Bus",
+      "description": "Check stops, routes, and arrivals across express, regular, seat, village, and late-night buses, plus low-floor buses, remaining seats, transfer routes, attraction maps, and weather.",
+      "citybusDescription": "Check Busan arrivals, routes, express, regular, seat, village, and late-night buses, plus low-floor buses, remaining seats, transfers, an attraction map, and weather.",
+      "imageAlt": "Busan Bus app icon"
+    },
+    "daejeon-bus": {
+      "name": "Daejeon Bus",
+      "shortName": "Daejeon Bus",
+      "subtitle": "Daejeon Bus",
+      "description": "Search buses and subway stations together, then check arrivals, timetables, first and last services, service intervals, transfer routes, attraction maps, and weather.",
+      "citybusDescription": "Check Daejeon bus and subway arrivals, timetables, first and last services, intervals, transfers, an attraction map, and weather.",
+      "imageAlt": "Daejeon Bus app icon"
+    },
+    "tplus-mobile": {
+      "name": "Tplus real-time usage widget",
+      "description": "Check Tplus Mobile usage information in a widget on your iPhone or iPad.",
+      "imageAlt": "Tplus real-time usage widget app icon"
+    },
+    "taghere": {
+      "name": "Space Log - Remember This Place",
+      "subtitle": "TagHere",
+      "description": "Save places and their spaces, then record visits and space recognition with location and Bluetooth. Review your history by date and with a widget.",
+      "imageAlt": "TagHere app icon"
+    },
+    "mdvista": {
+      "name": "Markdam - Markdown Viewer",
+      "subtitle": "Markdown Reader",
+      "description": "Read Markdown comfortably on Mac, iPhone, and iPad, then save it as PDF. View tables, code, images, SVG, Mermaid diagrams, and equations offline.",
+      "imageAlt": "Markdam app icon"
+    },
+    "rtvideo": {
+      "name": "RTVideo",
+      "subtitle": "Live Translation Captions",
+      "description": "Turn audio from videos and other content playing on iPhone or iPad into translated captions. Follow the original and translation in the app or a floating PiP caption window.",
+      "imageAlt": "RTVideo app icon"
+    }
   },
   "taghere": {
-    "eyebrow": "PLACE · SPACE · MEMORY", "title": "Remember the place,<br><em>and the space inside.</em>", "description": "Save home, work, and places you return to. Location and Bluetooth help record visits and recognize spaces, so you can look back at where you spent time.",
-    "privacyLink": "Privacy policy ↗", "metaPlatformLabel": "Platform", "metaPlatform": "iPhone · iPad", "metaCaptureLabel": "Recognition", "metaCapture": "Location · Bluetooth",
-    "featureEyebrow": "A PLACE HAS ITS OWN SPACES", "featureTitle": "Where you were,<br><em>and what it was like.</em>", "featureLead": "Save places and their spaces together to make location memories more specific.",
-    "feature1Title": "Save places you return to", "feature1Body": "Save home, work, or a favorite café from your current location or the map, then set its recognition radius.",
-    "feature2Title": "Tell spaces apart with Bluetooth", "feature2Body": "Add rooms or floors within a place and connect Bluetooth devices to recognize nearby spaces.",
-    "feature3Title": "Visit history by date", "feature3Body": "Review recognized places and spaces by date, and search by their names.",
-    "galleryEyebrow": "INSIDE TAGHERE", "galleryTitle": "Places, spaces, and visits<br><em>in one continuous record.</em>", "placesAlt": "Saved places in TagHere", "detailAlt": "Place detail with spaces and recognition radius", "historyAlt": "Visit history by date", "galleryPlaces": "Places to remember", "galleryDetail": "Spaces and recognition radius", "galleryHistory": "Visit history by date", "galleryNote": "Screens show sample places and history created to illustrate the app.",
-    "permissionsEyebrow": "MADE FOR YOUR PLACES", "permissionsTitle": "Permissions for place recognition", "permissionsBody": "Location detects entry to and exit from saved places. Bluetooth checks nearby registered devices to identify a space, and notifications can tell you when a visit record is complete. Background recognition depends on your permission settings.",
-    "finalEyebrow": "REMEMBER THE PLACES YOU RETURN TO", "finalTitle": "Keep the places<br><em>you want to remember.</em>", "allApps": "Explore other apps ↗"
+    "eyebrow": "PLACE · SPACE · MEMORY",
+    "title": "Remember the place,<br><em>and the space inside.</em>",
+    "description": "Save home, work, and places you return to. Location and Bluetooth help record visits and recognize spaces, so you can look back at where you spent time.",
+    "privacyLink": "Privacy policy ↗",
+    "metaPlatformLabel": "Platform",
+    "metaPlatform": "iPhone · iPad",
+    "metaCaptureLabel": "Recognition",
+    "metaCapture": "Location · Bluetooth",
+    "featureEyebrow": "A PLACE HAS ITS OWN SPACES",
+    "featureTitle": "Where you were,<br><em>and what it was like.</em>",
+    "featureLead": "Save places and their spaces together to make location memories more specific.",
+    "feature1Title": "Save places you return to",
+    "feature1Body": "Save home, work, or a favorite café from your current location or the map, then set its recognition radius.",
+    "feature2Title": "Tell spaces apart with Bluetooth",
+    "feature2Body": "Add rooms or floors within a place and connect Bluetooth devices to recognize nearby spaces.",
+    "feature3Title": "Visit history by date",
+    "feature3Body": "Review recognized places and spaces by date, and search by their names.",
+    "galleryEyebrow": "INSIDE TAGHERE",
+    "galleryTitle": "Places, spaces, and visits<br><em>in one continuous record.</em>",
+    "placesAlt": "Saved places in TagHere",
+    "detailAlt": "Place detail with spaces and recognition radius",
+    "historyAlt": "Visit history by date",
+    "galleryPlaces": "Places to remember",
+    "galleryDetail": "Spaces and recognition radius",
+    "galleryHistory": "Visit history by date",
+    "galleryNote": "Screens show sample places and history created to illustrate the app.",
+    "permissionsEyebrow": "MADE FOR YOUR PLACES",
+    "permissionsTitle": "Permissions for place recognition",
+    "permissionsBody": "Location detects entry to and exit from saved places. Bluetooth checks nearby registered devices to identify a space, and notifications can tell you when a visit record is complete. Background recognition depends on your permission settings.",
+    "finalEyebrow": "REMEMBER THE PLACES YOU RETURN TO",
+    "finalTitle": "Keep the places<br><em>you want to remember.</em>",
+    "allApps": "Explore other apps ↗"
   },
   "mdvista": {
-    "eyebrow": "MARKDOWN, CLEARLY", "title": "Words, images, and diagrams<br><em>made comfortable to read.</em>", "description": "Open Markdown documents on Mac, iPhone, and iPad, read them, and save them as PDF. View tables, code, local images, SVG, Mermaid diagrams, and equations offline.", "platformNote": "Mac · iPhone · iPad", "metaReadingLabel": "Reading", "metaReading": "Outline · search · display", "metaExportLabel": "Export", "metaExport": "A4 · US Letter PDF",
-    "featureEyebrow": "READ THE WHOLE DOCUMENT", "featureTitle": "Keep the structure clear.<br><em>Make reading your own.</em>", "featureLead": "Read document structure and visuals together, with reading controls and PDF export in one place.",
-    "feature1Title": "See how the document flows", "feature1Body": "Read headings, lists, quotes, tables, and code in a clear layout. Use the outline and in-document search to find a section.",
-    "feature2Title": "Images and diagrams included", "feature2Body": "View images stored with your document, safe SVG, Mermaid diagrams, and LaTeX equations.",
-    "feature3Title": "Save a readable PDF", "feature3Body": "Choose A4 or US Letter, portrait or landscape, and margins to save a multi-page PDF.",
-    "galleryEyebrow": "INSIDE MARKDAM", "galleryTitle": "From reading to saving a PDF,<br><em>stay with the document.</em>", "readerAlt": "Reading a Markdown document in Markdam", "pdfAlt": "Creating and previewing a PDF", "diagramAlt": "A document with equations and sync notation", "galleryReader": "Read a document", "galleryPDF": "Preview and save a PDF", "galleryDiagrams": "Equations and visuals",
-    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL", "localTitle": "Keep the original.<br>Read on your device.", "localBody": "Markdam is a read-only viewer. It leaves the original Markdown unchanged and does not send document contents to a server. To access relative-path images, you may need to select the folder that contains the document. Remote images are not fetched automatically.",
-    "finalEyebrow": "OPEN, READ, KEEP", "finalTitle": "Open a Markdown file.<br><em>Read and keep it.</em>", "allApps": "Explore other apps ↗"
+    "eyebrow": "MARKDOWN, CLEARLY",
+    "title": "Words, images, and diagrams<br><em>made comfortable to read.</em>",
+    "description": "Open Markdown documents on Mac, iPhone, and iPad, read them, and save them as PDF. View tables, code, local images, SVG, Mermaid diagrams, and equations offline.",
+    "platformNote": "Mac · iPhone · iPad",
+    "metaReadingLabel": "Reading",
+    "metaReading": "Outline · search · display",
+    "metaExportLabel": "Export",
+    "metaExport": "A4 · US Letter PDF",
+    "featureEyebrow": "READ THE WHOLE DOCUMENT",
+    "featureTitle": "Keep the structure clear.<br><em>Make reading your own.</em>",
+    "featureLead": "Read document structure and visuals together, with reading controls and PDF export in one place.",
+    "feature1Title": "See how the document flows",
+    "feature1Body": "Read headings, lists, quotes, tables, and code in a clear layout. Use the outline and in-document search to find a section.",
+    "feature2Title": "Images and diagrams included",
+    "feature2Body": "View images stored with your document, safe SVG, Mermaid diagrams, and LaTeX equations.",
+    "feature3Title": "Save a readable PDF",
+    "feature3Body": "Choose A4 or US Letter, portrait or landscape, and margins to save a multi-page PDF.",
+    "galleryEyebrow": "INSIDE MARKDAM",
+    "galleryTitle": "From reading to saving a PDF,<br><em>stay with the document.</em>",
+    "readerAlt": "Reading a Markdown document in Markdam",
+    "pdfAlt": "Creating and previewing a PDF",
+    "diagramAlt": "A document with equations and sync notation",
+    "galleryReader": "Read a document",
+    "galleryPDF": "Preview and save a PDF",
+    "galleryDiagrams": "Equations and visuals",
+    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL",
+    "localTitle": "Keep the original.<br>Read on your device.",
+    "localBody": "Markdam is a read-only viewer. It leaves the original Markdown unchanged and does not send document contents to a server. To access relative-path images, you may need to select the folder that contains the document. Remote images are not fetched automatically.",
+    "finalEyebrow": "OPEN, READ, KEEP",
+    "finalTitle": "Open a Markdown file.<br><em>Read and keep it.</em>",
+    "allApps": "Explore other apps ↗"
   },
   "privacy": {
     "title": "Privacy Policy",
     "intro": "Devp-YG distributes the following applications (collectively, the \"Devp-YG Applications\").",
     "applies": "This privacy policy applies to the Devp-YG Applications listed above.",
     "articleHeading": "Privacy Policy",
-    "appList": "<li>Daejeon Bus – Daejeon Metropolitan City</li><li>Busan Bus – Busan Metropolitan City</li><li>Gwangju Bus – Gwangju Metropolitan City</li><li>Andong Bus – Andong, Gyeongsangbuk-do</li><li>Yeosu Bus – Yeosu, Jeollanam-do</li><li>Incheon Bus – Incheon Metropolitan City</li><li>Tplus Mobile real-time usage widget</li><li>Movlog: Map Your Story</li><li>FareFlow</li><li>SnapQR</li><li>Space Log - Remember This Place (TagHere)</li><li>Markdam - Markdown Viewer</li>",
+    "appList": "<li>Daejeon Bus – Daejeon Metropolitan City</li><li>Busan Bus – Busan Metropolitan City</li><li>Gwangju Bus – Gwangju Metropolitan City</li><li>Andong Bus – Andong, Gyeongsangbuk-do</li><li>Yeosu Bus – Yeosu, Jeollanam-do</li><li>Incheon Bus – Incheon Metropolitan City</li><li>Tplus Mobile real-time usage widget</li><li>Movlog: Map Your Story</li><li>FareFlow</li><li>SnapQR</li><li>Space Log - Remember This Place (TagHere)</li><li>Markdam - Markdown Viewer</li><li>RTVideo - Live Translation Captions</li>",
     "articles": [
-      { "title": "Article 1 (Purpose of Personal Information Processing)", "body": "Devp-YG Applications comply with the Personal Information Protection Act and follow this policy to protect the personal information of all application users." },
-      { "title": "Article 2 (Processing and Retention Period of Personal Information)", "body": "Devp-YG Applications do not collect, process, or retain personal information." },
-      { "title": "Article 3 (Provision of Personal Information to Third Parties)", "body": "Devp-YG Applications do not provide personal information to third parties." },
-      { "title": "Article 4 (Entrustment of Personal Information Processing)", "body": "Devp-YG Applications do not outsource personal information processing." },
-      { "title": "Article 5 (Items of Personal Information Processed)", "body": "Devp-YG Applications do not process any personal information." },
-      { "title": "Article 6 (Destruction of Personal Information)", "body": "Because no personal information is collected, there are no matters related to its destruction." },
-      { "title": "Article 7 (Measures to Ensure the Security of Personal Information)", "body": "Devp-YG ensures the security of personal information by not collecting, processing, or retaining it." },
-      { "title": "Article 8 (Installation, Operation, and Refusal of Automatic Collection Devices)", "body": "Devp-YG Applications do not install or operate devices that automatically collect personal information." },
-      { "title": "Article 9 (Personal Information Protection Officer)", "body": "Devp-YG takes overall responsibility for work related to personal information processing." },
-      { "title": "Article 10 (Changes to this Privacy Policy)", "body": "This privacy policy takes effect from the date each application is released on the App Store." }
+      {
+        "title": "Article 1 (Purpose of Personal Information Processing)",
+        "body": "Devp-YG Applications comply with the Personal Information Protection Act and follow this policy to protect the personal information of all application users."
+      },
+      {
+        "title": "Article 2 (Processing and Retention Period of Personal Information)",
+        "body": "Devp-YG Applications do not collect, process, or retain personal information."
+      },
+      {
+        "title": "Article 3 (Provision of Personal Information to Third Parties)",
+        "body": "Devp-YG Applications do not provide personal information to third parties."
+      },
+      {
+        "title": "Article 4 (Entrustment of Personal Information Processing)",
+        "body": "Devp-YG Applications do not outsource personal information processing."
+      },
+      {
+        "title": "Article 5 (Items of Personal Information Processed)",
+        "body": "Devp-YG Applications do not process any personal information."
+      },
+      {
+        "title": "Article 6 (Destruction of Personal Information)",
+        "body": "Because no personal information is collected, there are no matters related to its destruction."
+      },
+      {
+        "title": "Article 7 (Measures to Ensure the Security of Personal Information)",
+        "body": "Devp-YG ensures the security of personal information by not collecting, processing, or retaining it."
+      },
+      {
+        "title": "Article 8 (Installation, Operation, and Refusal of Automatic Collection Devices)",
+        "body": "Devp-YG Applications do not install or operate devices that automatically collect personal information."
+      },
+      {
+        "title": "Article 9 (Personal Information Protection Officer)",
+        "body": "Devp-YG takes overall responsibility for work related to personal information processing."
+      },
+      {
+        "title": "Article 10 (Changes to this Privacy Policy)",
+        "body": "This privacy policy takes effect from the date each application is released on the App Store."
+      }
     ]
+  },
+  "rtvideo": {
+    "eyebrow": "LISTEN TO IT. READ IT.",
+    "title": "Audio in playback,<br><em>captions you can read.</em>",
+    "description": "RTVideo recognizes speech from video and audio playing in another app, then translates it into your chosen language. Follow along in the app or a floating PiP caption window.",
+    "privacyLink": "Privacy policy ↗",
+    "metaPlatformLabel": "Platform",
+    "metaPlatform": "iPhone · iPad",
+    "metaCompatibilityLabel": "Requires",
+    "metaCompatibility": "iOS · iPadOS 26 or later",
+    "metaDisplayLabel": "Captions",
+    "metaDisplay": "App window · PiP",
+    "metaProcessingLabel": "Processing",
+    "metaProcessing": "On-device speech and translation",
+    "captionsAlt": "RTVideo translated captions screen",
+    "featureEyebrow": "CAPTIONS FOR PLAYING AUDIO",
+    "featureTitle": "Listen to content.<br><em>Read it in your language.</em>",
+    "featureLead": "Follow the original speech and translation while playing videos, online lessons, podcasts, and other audio content.",
+    "feature1Title": "Captions from playing audio",
+    "feature1Body": "Start playback in an app that supports audio sharing and allow RTVideo to receive shared system audio. It recognizes speech and displays translated captions.",
+    "feature2Title": "Original and translation together",
+    "feature2Body": "Choose speech and translation languages, then adjust whether the original appears and how large the captions are.",
+    "feature3Title": "Captions over your content",
+    "feature3Body": "Follow translations in the app caption view or a PiP window. For supported combinations, captions can be separated by speaker.",
+    "galleryEyebrow": "INSIDE RTVIDEO",
+    "galleryTitle": "See translated captions<br><em>and the controls at a glance.</em>",
+    "originalAlt": "Original speech and speaker-separated translated captions",
+    "settingsAlt": "Language and caption display settings",
+    "galleryCaptions": "Captions translated from playback audio",
+    "galleryOriginal": "Original and speaker captions",
+    "gallerySettings": "Language and caption appearance settings",
+    "galleryNote": "Screens illustrate the features. Recognition and speaker separation depend on the audio and device support.",
+    "scopeEyebrow": "A FEW THINGS TO KNOW",
+    "scopeTitle": "Before you start",
+    "scopeBody": "Audio is received through system audio sharing. Available language pairs depend on speech recognition and translation support on your device and operating system; language models may need to download on first use. Audio may not come through if the playback app does not support sharing or the content is protected. Captions take time to recognize and translate, and are not synchronized to playback position. In app-window mode, keep RTVideo visible alongside the playback app. In PiP mode, use the floating translation caption window.",
+    "finalEyebrow": "AUDIO IN. CAPTIONS OUT.",
+    "finalTitle": "Follow the words in your content<br><em>one caption at a time.</em>",
+    "allApps": "Explore other apps ↗"
   }
 }

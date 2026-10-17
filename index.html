@@ -14,6 +14,7 @@ styles:
 {% assign movlog_app = site.data.apps | where: "id", "movlog" | first %}
 {% assign taghere_app = site.data.apps | where: "id", "taghere" | first %}
 {% assign mdvista_app = site.data.apps | where: "id", "mdvista" | first %}
+{% assign rtvideo_app = site.data.apps | where: "id", "rtvideo" | first %}
 
 <main id="main" class="home-page">
     <section class="home-hero">
@@ -105,6 +106,17 @@ styles:
                         <span class="text-link"><span data-i18n="common.viewMore">자세히 보기</span> <i aria-hidden="true">↗</i></span>
                     </div>
                     <div class="product-shot mdvista-shot"><img src="{{ '/assets/images/apps/mdvista/screenshots/reader.jpg' | relative_url }}" alt="마크담 Markdown 문서 읽기 화면" data-i18n-alt="home.mdvistaScreenAlt" loading="lazy" /></div>
+                </a>
+
+                <a class="product-card product-rtvideo" href="{{ '/rtvideo/' | relative_url }}">
+                    <div class="product-copy">
+                        <div class="product-icon"><img src="{{ rtvideo_app.image | relative_url }}" alt="" /></div>
+                        <p class="product-kicker" data-i18n="portfolio.categories.translation-tools.label">실시간 번역</p>
+                        <h3 data-i18n="apps.rtvideo.name">RTVideo</h3>
+                        <p data-i18n="home.rtvideoDescription">다른 앱에서 재생 중인 음성을 원하는 언어의 자막으로 읽어보세요.</p>
+                        <span class="text-link"><span data-i18n="common.viewMore">자세히 보기</span> <i aria-hidden="true">↗</i></span>
+                    </div>
+                    <div class="product-shot rtvideo-shot"><img src="{{ '/assets/images/apps/rtvideo/screenshots/captions.png' | relative_url }}" alt="RTVideo 실시간 번역 자막 화면" data-i18n-alt="home.rtvideoScreenAlt" loading="lazy" /></div>
                 </a>
             </div>
         </div>

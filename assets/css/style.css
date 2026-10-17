@@ -336,6 +336,11 @@ button:focus-visible {
     color: #5943a8;
 }
 
+.nav-product-mark-rtvideo {
+    background: #102b3d;
+    color: #68dfcb;
+}
+
 .nav-product-copy {
     min-width: 0;
 }

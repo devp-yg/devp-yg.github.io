@@ -67,6 +67,10 @@
     "privacy": {
       "title": "개인정보 처리방침 | Devp-YG",
       "description": "Devp-YG 애플리케이션의 개인정보 처리방침입니다."
+    },
+    "rtvideo": {
+      "title": "RTVideo - 실시간 번역 자막 | Devp-YG",
+      "description": "iPhone과 iPad에서 다른 앱의 재생 음성을 실시간으로 인식하고 번역 자막으로 보여주는 RTVideo를 소개합니다."
     }
   },
   "header": {
@@ -86,7 +90,9 @@
     "history": "출시 기록",
     "citybus": "시티버스",
     "movlog": "무블로그",
-    "contact": "문의하기"
+    "contact": "문의하기",
+    "rtvideo": "RTVideo",
+    "rtvideoDescription": "재생 중인 음성을 번역 자막으로"
   },
   "footer": {
     "description": "일상과 이동을 조금 더 편리하게 만드는<br>독립 iOS 앱 스튜디오입니다.",
@@ -115,7 +121,7 @@
     "movlogIntro": "무블로그 소개 보기",
     "selectedProducts": "Selected products",
     "featuredTitle": "필요한 순간에<br>바로 쓸 수 있는 앱",
-    "featuredLead": "이동과 장소 기록, 대중교통, 문서 읽기처럼 앱마다 다른 필요에 맞춰 소개합니다.",
+    "featuredLead": "이동과 장소 기록, 대중교통, 문서 읽기와 실시간 번역처럼 앱마다 다른 필요에 맞춰 소개합니다.",
     "movlogDescription": "이동 경로와 머문 장소를 자동으로 기록하고, 평범한 하루를 나만의 이야기로 남겨보세요.",
     "movlogInsightsAlt": "무블로그 인사이트 화면",
     "citybusDescription": "부산부터 여수까지, 버스 도착정보와 환승·도시철도·여행 정보를 도시별로 확인하세요.",
@@ -129,12 +135,14 @@
     "supportIdeas": "Support & ideas",
     "supportTitle": "더 편한 앱을 함께 만들어가요.",
     "supportLead": "사용 중 발견한 문제, 필요한 기능, 새로운 제안을 들려주세요.",
-    "sendEmail": "이메일 보내기"
+    "sendEmail": "이메일 보내기",
+    "rtvideoDescription": "다른 앱에서 재생 중인 음성을 원하는 언어의 자막으로 읽어보세요.",
+    "rtvideoScreenAlt": "RTVideo 실시간 번역 자막 화면"
   },
   "portfolio": {
     "eyebrow": "Devp-YG Apps · {count}개",
     "title": "일상의 작은 불편을<br><em>앱으로 해결합니다.</em>",
-    "lead": "이동과 장소를 기록하고, 문서를 읽고, 매일 필요한 정보를 빠르게 확인하는 iOS 앱을 만듭니다.",
+    "lead": "이동과 장소를 기록하고, 재생 음성을 번역하고, 문서를 읽는 iOS 앱을 만듭니다.",
     "ariaLabel": "iOS 애플리케이션",
     "categoryNavLabel": "앱 분류 바로가기",
     "categoryNavTitle": "분류별로 살펴보기",
@@ -156,6 +164,10 @@
       "reading-tools": {
         "label": "문서 읽기",
         "description": "Markdown 문서의 글과 시각 자료를 읽고 PDF로 저장하는 앱입니다."
+      },
+      "translation-tools": {
+        "label": "실시간 번역",
+        "description": "재생 중인 음성을 인식해 다른 언어의 자막으로 보여주는 앱입니다."
       }
     }
   },
@@ -325,59 +337,245 @@
     "allApps": "전체 앱 보기"
   },
   "apps": {
-    "snapqr": { "name": "SnapQR", "description": "텍스트, URL, Wi-Fi, 연락처 정보를 손쉽게 QR 코드로 만들 수 있는 간편한 QR 생성 앱입니다.", "imageAlt": "SnapQR 앱 아이콘" },
-    "fareflow": { "name": "냥미터 - 나만의 요금제", "description": "GPS 기반으로 실시간 이동 거리와 시간을 측정하여 택시·카풀 요금을 자동으로 계산해주는 스마트 요금 미터기 앱입니다.", "imageAlt": "냥미터 앱 아이콘" },
-    "movlog": { "name": "무블로그: 당신의 이야기를 지도에 담다", "description": "무블로그는 이동 경로와 방문·체류, 주차 위치, 날씨와 사진을 자동으로 기록하고 월간·연간 보관함, 인사이트와 업적으로 일상을 돌아보게 해주는 라이프로그 앱입니다.", "imageAlt": "무블로그 앱 아이콘" },
-    "incheon-bus": { "name": "인천 버스", "shortName": "인천버스", "subtitle": "Incheon Bus", "description": "정류소·노선 검색부터 도착 예정, 버스 위치, 환승 경로, 관광지 지도·날씨, 첫차·막차, 저상버스·잔여 좌석·혼잡도와 행사·관광 정보까지 제공합니다.", "citybusDescription": "인천의 도착·노선·버스 위치부터 첫차·막차, 저상버스·잔여 좌석·혼잡도와 환승·관광지 지도·날씨, 지역 행사 정보까지 확인하세요.", "imageAlt": "인천버스 앱 아이콘" },
-    "yeosu-bus": { "name": "여수 버스", "shortName": "여수버스", "subtitle": "Yeosu Bus", "description": "여수시 정류소와 노선, 버스 도착 예정 정보와 현재 위치를 확인하고 환승 경로·관광지 지도와 즐겨찾기·알림·날씨로 이동을 준비할 수 있습니다.", "citybusDescription": "여수의 정류소·노선·도착·버스 위치부터 환승·관광지 지도·날씨, 즐겨찾기·알림까지 여행지 이동에 필요한 정보를 준비하세요.", "imageAlt": "여수버스 앱 아이콘" },
-    "andong-bus": { "name": "안동 버스", "shortName": "안동버스", "subtitle": "Andong Bus", "description": "안동시 정류소·노선·버스 위치와 도착 정보를 확인하고, 환승 경로·관광지 지도·날씨와 안동 여행의 관광지 정보까지 살펴볼 수 있습니다.", "citybusDescription": "안동의 버스 도착·노선·버스 위치와 환승 경로·관광지 지도·날씨, 안동 여행 관광지 정보를 한곳에서 확인하세요.", "imageAlt": "안동버스 앱 아이콘" },
-    "gwangju-bus": { "name": "광주 버스", "shortName": "광주버스", "subtitle": "Gwangju Bus", "description": "정류소와 노선을 빠르게 검색하고, 도착 예정·남은 정류장·차량 위치·저상버스 정보와 환승 경로·관광지 지도·날씨를 확인할 수 있습니다.", "citybusDescription": "광주의 정류소·노선·도착·남은 정류장·차량 위치와 저상버스, 환승·관광지 지도·날씨를 확인하세요.", "imageAlt": "광주버스 앱 아이콘" },
-    "busan-bus": { "name": "부산 버스", "shortName": "부산버스", "subtitle": "Busan Bus", "description": "정류소·노선과 도착 정보를 확인하고, 급행·일반·좌석·마을·심야버스, 저상버스·잔여 좌석과 환승 경로·관광지 지도·날씨를 살펴볼 수 있습니다.", "citybusDescription": "부산의 도착·노선·급행·일반·좌석·마을·심야버스와 저상버스·잔여 좌석, 환승·관광지 지도·날씨를 확인하세요.", "imageAlt": "부산버스 앱 아이콘" },
-    "daejeon-bus": { "name": "대전 버스", "shortName": "대전버스", "subtitle": "Daejeon Bus", "description": "버스와 지하철역을 함께 검색하고, 도착·시간표·첫차·막차·운행 간격과 환승 경로·관광지 지도·날씨를 지도에서 확인할 수 있습니다.", "citybusDescription": "대전의 버스·지하철 도착과 시간표, 첫차·막차, 운행 간격과 환승·관광지 지도·날씨를 확인하세요.", "imageAlt": "대전버스 앱 아이콘" },
-    "tplus-mobile": { "name": "알뜰폰 티플 실시간 사용량 위젯", "description": "티플러스 모바일의 실시간 사용량 조회 정보를 위젯으로 확인할 수 있는 앱입니다. 아이폰과 아이패드에서 사용할 수 있습니다.", "imageAlt": "티플 실시간 사용량 위젯 앱 아이콘" },
-    "taghere": { "name": "공간기록 - 여기를 기억해", "subtitle": "TagHere", "description": "자주 가는 장소와 그 안의 공간을 등록하고, 위치와 Bluetooth 기기로 방문·공간 인식을 기록합니다. 날짜별 기록과 위젯으로 어디에 머물렀는지 돌아보세요.", "imageAlt": "공간기록 앱 아이콘" },
-    "mdvista": { "name": "마크담 - 마크다운 뷰어", "subtitle": "Markdown Reader", "description": "Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.", "imageAlt": "마크담 앱 아이콘" }
+    "snapqr": {
+      "name": "SnapQR",
+      "description": "텍스트, URL, Wi-Fi, 연락처 정보를 손쉽게 QR 코드로 만들 수 있는 간편한 QR 생성 앱입니다.",
+      "imageAlt": "SnapQR 앱 아이콘"
+    },
+    "fareflow": {
+      "name": "냥미터 - 나만의 요금제",
+      "description": "GPS 기반으로 실시간 이동 거리와 시간을 측정하여 택시·카풀 요금을 자동으로 계산해주는 스마트 요금 미터기 앱입니다.",
+      "imageAlt": "냥미터 앱 아이콘"
+    },
+    "movlog": {
+      "name": "무블로그: 당신의 이야기를 지도에 담다",
+      "description": "무블로그는 이동 경로와 방문·체류, 주차 위치, 날씨와 사진을 자동으로 기록하고 월간·연간 보관함, 인사이트와 업적으로 일상을 돌아보게 해주는 라이프로그 앱입니다.",
+      "imageAlt": "무블로그 앱 아이콘"
+    },
+    "incheon-bus": {
+      "name": "인천 버스",
+      "shortName": "인천버스",
+      "subtitle": "Incheon Bus",
+      "description": "정류소·노선 검색부터 도착 예정, 버스 위치, 환승 경로, 관광지 지도·날씨, 첫차·막차, 저상버스·잔여 좌석·혼잡도와 행사·관광 정보까지 제공합니다.",
+      "citybusDescription": "인천의 도착·노선·버스 위치부터 첫차·막차, 저상버스·잔여 좌석·혼잡도와 환승·관광지 지도·날씨, 지역 행사 정보까지 확인하세요.",
+      "imageAlt": "인천버스 앱 아이콘"
+    },
+    "yeosu-bus": {
+      "name": "여수 버스",
+      "shortName": "여수버스",
+      "subtitle": "Yeosu Bus",
+      "description": "여수시 정류소와 노선, 버스 도착 예정 정보와 현재 위치를 확인하고 환승 경로·관광지 지도와 즐겨찾기·알림·날씨로 이동을 준비할 수 있습니다.",
+      "citybusDescription": "여수의 정류소·노선·도착·버스 위치부터 환승·관광지 지도·날씨, 즐겨찾기·알림까지 여행지 이동에 필요한 정보를 준비하세요.",
+      "imageAlt": "여수버스 앱 아이콘"
+    },
+    "andong-bus": {
+      "name": "안동 버스",
+      "shortName": "안동버스",
+      "subtitle": "Andong Bus",
+      "description": "안동시 정류소·노선·버스 위치와 도착 정보를 확인하고, 환승 경로·관광지 지도·날씨와 안동 여행의 관광지 정보까지 살펴볼 수 있습니다.",
+      "citybusDescription": "안동의 버스 도착·노선·버스 위치와 환승 경로·관광지 지도·날씨, 안동 여행 관광지 정보를 한곳에서 확인하세요.",
+      "imageAlt": "안동버스 앱 아이콘"
+    },
+    "gwangju-bus": {
+      "name": "광주 버스",
+      "shortName": "광주버스",
+      "subtitle": "Gwangju Bus",
+      "description": "정류소와 노선을 빠르게 검색하고, 도착 예정·남은 정류장·차량 위치·저상버스 정보와 환승 경로·관광지 지도·날씨를 확인할 수 있습니다.",
+      "citybusDescription": "광주의 정류소·노선·도착·남은 정류장·차량 위치와 저상버스, 환승·관광지 지도·날씨를 확인하세요.",
+      "imageAlt": "광주버스 앱 아이콘"
+    },
+    "busan-bus": {
+      "name": "부산 버스",
+      "shortName": "부산버스",
+      "subtitle": "Busan Bus",
+      "description": "정류소·노선과 도착 정보를 확인하고, 급행·일반·좌석·마을·심야버스, 저상버스·잔여 좌석과 환승 경로·관광지 지도·날씨를 살펴볼 수 있습니다.",
+      "citybusDescription": "부산의 도착·노선·급행·일반·좌석·마을·심야버스와 저상버스·잔여 좌석, 환승·관광지 지도·날씨를 확인하세요.",
+      "imageAlt": "부산버스 앱 아이콘"
+    },
+    "daejeon-bus": {
+      "name": "대전 버스",
+      "shortName": "대전버스",
+      "subtitle": "Daejeon Bus",
+      "description": "버스와 지하철역을 함께 검색하고, 도착·시간표·첫차·막차·운행 간격과 환승 경로·관광지 지도·날씨를 지도에서 확인할 수 있습니다.",
+      "citybusDescription": "대전의 버스·지하철 도착과 시간표, 첫차·막차, 운행 간격과 환승·관광지 지도·날씨를 확인하세요.",
+      "imageAlt": "대전버스 앱 아이콘"
+    },
+    "tplus-mobile": {
+      "name": "알뜰폰 티플 실시간 사용량 위젯",
+      "description": "티플러스 모바일의 실시간 사용량 조회 정보를 위젯으로 확인할 수 있는 앱입니다. 아이폰과 아이패드에서 사용할 수 있습니다.",
+      "imageAlt": "티플 실시간 사용량 위젯 앱 아이콘"
+    },
+    "taghere": {
+      "name": "공간기록 - 여기를 기억해",
+      "subtitle": "TagHere",
+      "description": "자주 가는 장소와 그 안의 공간을 등록하고, 위치와 Bluetooth 기기로 방문·공간 인식을 기록합니다. 날짜별 기록과 위젯으로 어디에 머물렀는지 돌아보세요.",
+      "imageAlt": "공간기록 앱 아이콘"
+    },
+    "mdvista": {
+      "name": "마크담 - 마크다운 뷰어",
+      "subtitle": "Markdown Reader",
+      "description": "Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.",
+      "imageAlt": "마크담 앱 아이콘"
+    },
+    "rtvideo": {
+      "name": "RTVideo",
+      "subtitle": "실시간 번역 자막",
+      "description": "iPhone·iPad에서 재생 중인 영상과 오디오의 음성을 인식해 선택한 언어의 번역 자막으로 보여줍니다. 앱 창이나 PiP 자막 창에서 원문과 번역을 확인하세요.",
+      "imageAlt": "RTVideo 앱 아이콘"
+    }
   },
   "taghere": {
     "eyebrow": "PLACE · SPACE · MEMORY",
     "title": "장소를 기억하고,<br><em>그 안의 공간까지.</em>",
     "description": "집과 회사, 자주 찾는 곳을 등록해 두면 위치와 Bluetooth 기기로 방문과 공간을 기록합니다. 장소와 머문 공간을 날짜별 기록으로 다시 살펴보세요.",
-    "privacyLink": "개인정보 처리방침 ↗", "metaPlatformLabel": "플랫폼", "metaPlatform": "iPhone · iPad", "metaCaptureLabel": "기록 방식", "metaCapture": "위치 · Bluetooth",
-    "featureEyebrow": "A PLACE HAS ITS OWN SPACES", "featureTitle": "어디에 있었는지,<br><em>어떤 공간이었는지.</em>", "featureLead": "장소와 그 안의 공간을 함께 등록해 생활의 위치 기록을 더 구체적으로 남깁니다.",
-    "feature1Title": "자주 가는 장소를 등록", "feature1Body": "현재 위치나 지도에서 집, 회사, 카페처럼 기억할 장소를 저장하고 인식 반경을 설정합니다.",
-    "feature2Title": "Bluetooth로 공간 구분", "feature2Body": "장소마다 방이나 층을 공간으로 등록하고 Bluetooth 기기를 연결해 가까운 공간을 구분합니다.",
-    "feature3Title": "날짜별 방문 기록", "feature3Body": "인식된 장소와 공간을 기록 화면에서 날짜별로 확인하고, 장소·공간 이름으로 찾아볼 수 있습니다.",
-    "galleryEyebrow": "INSIDE TAGHERE", "galleryTitle": "장소와 공간, 방문 기록을<br><em>한 흐름으로 살펴보세요.</em>", "placesAlt": "공간기록의 등록 장소 목록", "detailAlt": "공간과 위치 반경이 표시된 장소 상세", "historyAlt": "날짜별 방문 기록", "galleryPlaces": "기억하고 싶은 장소", "galleryDetail": "장소 안의 공간과 인식 범위", "galleryHistory": "날짜별 방문 기록", "galleryNote": "화면에는 기능을 설명하기 위한 예시 장소와 기록이 표시되어 있습니다.",
-    "permissionsEyebrow": "MADE FOR YOUR PLACES", "permissionsTitle": "장소 인식에 필요한 권한", "permissionsBody": "위치는 등록 장소의 진입·이탈을 감지하는 데 사용합니다. Bluetooth는 주변의 등록 기기를 확인해 공간을 구분하는 데 사용하며, 알림은 방문 기록 완료를 알려줍니다. 권한 설정에 따라 백그라운드 자동 인식 범위가 달라질 수 있습니다.",
-    "finalEyebrow": "REMEMBER THE PLACES YOU RETURN TO", "finalTitle": "다시 찾을 곳을<br><em>기억해 두세요.</em>", "allApps": "다른 앱 둘러보기 ↗"
+    "privacyLink": "개인정보 처리방침 ↗",
+    "metaPlatformLabel": "플랫폼",
+    "metaPlatform": "iPhone · iPad",
+    "metaCaptureLabel": "기록 방식",
+    "metaCapture": "위치 · Bluetooth",
+    "featureEyebrow": "A PLACE HAS ITS OWN SPACES",
+    "featureTitle": "어디에 있었는지,<br><em>어떤 공간이었는지.</em>",
+    "featureLead": "장소와 그 안의 공간을 함께 등록해 생활의 위치 기록을 더 구체적으로 남깁니다.",
+    "feature1Title": "자주 가는 장소를 등록",
+    "feature1Body": "현재 위치나 지도에서 집, 회사, 카페처럼 기억할 장소를 저장하고 인식 반경을 설정합니다.",
+    "feature2Title": "Bluetooth로 공간 구분",
+    "feature2Body": "장소마다 방이나 층을 공간으로 등록하고 Bluetooth 기기를 연결해 가까운 공간을 구분합니다.",
+    "feature3Title": "날짜별 방문 기록",
+    "feature3Body": "인식된 장소와 공간을 기록 화면에서 날짜별로 확인하고, 장소·공간 이름으로 찾아볼 수 있습니다.",
+    "galleryEyebrow": "INSIDE TAGHERE",
+    "galleryTitle": "장소와 공간, 방문 기록을<br><em>한 흐름으로 살펴보세요.</em>",
+    "placesAlt": "공간기록의 등록 장소 목록",
+    "detailAlt": "공간과 위치 반경이 표시된 장소 상세",
+    "historyAlt": "날짜별 방문 기록",
+    "galleryPlaces": "기억하고 싶은 장소",
+    "galleryDetail": "장소 안의 공간과 인식 범위",
+    "galleryHistory": "날짜별 방문 기록",
+    "galleryNote": "화면에는 기능을 설명하기 위한 예시 장소와 기록이 표시되어 있습니다.",
+    "permissionsEyebrow": "MADE FOR YOUR PLACES",
+    "permissionsTitle": "장소 인식에 필요한 권한",
+    "permissionsBody": "위치는 등록 장소의 진입·이탈을 감지하는 데 사용합니다. Bluetooth는 주변의 등록 기기를 확인해 공간을 구분하는 데 사용하며, 알림은 방문 기록 완료를 알려줍니다. 권한 설정에 따라 백그라운드 자동 인식 범위가 달라질 수 있습니다.",
+    "finalEyebrow": "REMEMBER THE PLACES YOU RETURN TO",
+    "finalTitle": "다시 찾을 곳을<br><em>기억해 두세요.</em>",
+    "allApps": "다른 앱 둘러보기 ↗"
   },
   "mdvista": {
-    "eyebrow": "MARKDOWN, CLEARLY", "title": "글과 그림, 다이어그램까지<br><em>편안하게 읽으세요.</em>", "description": "Mac·iPhone·iPad에서 Markdown 문서를 열어 읽고 PDF로 저장합니다. 표, 코드, 로컬 이미지, SVG, Mermaid 다이어그램과 수식을 오프라인으로 살펴보세요.", "platformNote": "Mac · iPhone · iPad", "metaReadingLabel": "읽기", "metaReading": "목차 · 검색 · 보기 설정", "metaExportLabel": "내보내기", "metaExport": "A4 · US Letter PDF",
-    "featureEyebrow": "READ THE WHOLE DOCUMENT", "featureTitle": "구조는 선명하게,<br><em>읽기는 나답게.</em>", "featureLead": "문서의 구조와 시각 자료를 함께 보여주고, 읽기 설정과 PDF 내보내기를 한곳에 담았습니다.",
-    "feature1Title": "문서의 흐름을 한눈에", "feature1Body": "제목, 목록, 인용, 표와 코드를 정돈해 보여줍니다. 목차와 문서 내 검색으로 필요한 부분을 찾을 수 있습니다.",
-    "feature2Title": "그림과 다이어그램도 함께", "feature2Body": "문서와 함께 둔 이미지와 안전한 SVG, Mermaid 다이어그램, LaTeX 수식을 표시합니다.",
-    "feature3Title": "읽던 모습 그대로 PDF로", "feature3Body": "A4 또는 US Letter 용지, 세로·가로 방향과 여백을 정해 다중 페이지 PDF로 저장합니다.",
-    "galleryEyebrow": "INSIDE MARKDAM", "galleryTitle": "읽기부터 PDF 저장까지,<br><em>문서 작업을 이어서.</em>", "readerAlt": "마크담에서 Markdown 문서를 읽는 화면", "pdfAlt": "PDF 만들기와 미리보기 흐름", "diagramAlt": "수식과 동기화 표기가 포함된 문서", "galleryReader": "문서 읽기", "galleryPDF": "PDF 미리보기와 저장", "galleryDiagrams": "수식과 시각 자료",
-    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL", "localTitle": "원본은 그대로,<br>읽기는 기기에서", "localBody": "마크담은 읽기 중심 뷰어입니다. 원본 Markdown을 수정하지 않고 문서 내용을 서버로 보내지 않습니다. 상대 경로 이미지에 접근하려면 문서가 있는 폴더를 선택해야 할 수 있으며, 원격 이미지는 자동으로 가져오지 않습니다.",
-    "finalEyebrow": "OPEN, READ, KEEP", "finalTitle": "마크다운 문서를<br><em>읽고 간직하세요.</em>", "allApps": "다른 앱 둘러보기 ↗"
+    "eyebrow": "MARKDOWN, CLEARLY",
+    "title": "글과 그림, 다이어그램까지<br><em>편안하게 읽으세요.</em>",
+    "description": "Mac·iPhone·iPad에서 Markdown 문서를 열어 읽고 PDF로 저장합니다. 표, 코드, 로컬 이미지, SVG, Mermaid 다이어그램과 수식을 오프라인으로 살펴보세요.",
+    "platformNote": "Mac · iPhone · iPad",
+    "metaReadingLabel": "읽기",
+    "metaReading": "목차 · 검색 · 보기 설정",
+    "metaExportLabel": "내보내기",
+    "metaExport": "A4 · US Letter PDF",
+    "featureEyebrow": "READ THE WHOLE DOCUMENT",
+    "featureTitle": "구조는 선명하게,<br><em>읽기는 나답게.</em>",
+    "featureLead": "문서의 구조와 시각 자료를 함께 보여주고, 읽기 설정과 PDF 내보내기를 한곳에 담았습니다.",
+    "feature1Title": "문서의 흐름을 한눈에",
+    "feature1Body": "제목, 목록, 인용, 표와 코드를 정돈해 보여줍니다. 목차와 문서 내 검색으로 필요한 부분을 찾을 수 있습니다.",
+    "feature2Title": "그림과 다이어그램도 함께",
+    "feature2Body": "문서와 함께 둔 이미지와 안전한 SVG, Mermaid 다이어그램, LaTeX 수식을 표시합니다.",
+    "feature3Title": "읽던 모습 그대로 PDF로",
+    "feature3Body": "A4 또는 US Letter 용지, 세로·가로 방향과 여백을 정해 다중 페이지 PDF로 저장합니다.",
+    "galleryEyebrow": "INSIDE MARKDAM",
+    "galleryTitle": "읽기부터 PDF 저장까지,<br><em>문서 작업을 이어서.</em>",
+    "readerAlt": "마크담에서 Markdown 문서를 읽는 화면",
+    "pdfAlt": "PDF 만들기와 미리보기 흐름",
+    "diagramAlt": "수식과 동기화 표기가 포함된 문서",
+    "galleryReader": "문서 읽기",
+    "galleryPDF": "PDF 미리보기와 저장",
+    "galleryDiagrams": "수식과 시각 자료",
+    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL",
+    "localTitle": "원본은 그대로,<br>읽기는 기기에서",
+    "localBody": "마크담은 읽기 중심 뷰어입니다. 원본 Markdown을 수정하지 않고 문서 내용을 서버로 보내지 않습니다. 상대 경로 이미지에 접근하려면 문서가 있는 폴더를 선택해야 할 수 있으며, 원격 이미지는 자동으로 가져오지 않습니다.",
+    "finalEyebrow": "OPEN, READ, KEEP",
+    "finalTitle": "마크다운 문서를<br><em>읽고 간직하세요.</em>",
+    "allApps": "다른 앱 둘러보기 ↗"
   },
   "privacy": {
     "title": "개인정보 처리방침",
     "intro": "Devp-YG에서는 다음과 같은 애플리케이션들(이하 \"Devp-YG 애플리케이션\"이라 함)을 배포합니다.",
     "applies": "위 Devp-YG 애플리케이션들에 대한 개인정보 처리 방침은 다음과 같습니다.",
     "articleHeading": "개인정보 처리 방침",
-    "appList": "<li>대전 버스 (Daejeon Bus) - 대전광역시</li><li>부산 버스 (Busan Bus) - 부산광역시</li><li>광주 버스 (Gwangju Bus) - 광주광역시</li><li>안동 버스 (Andong Bus) - 경상북도 안동시</li><li>여수 버스 (Yeosu Bus) - 전라남도 여수시</li><li>인천 버스 (Incheon Bus) - 인천광역시</li><li>알뜰폰 티플 실시간 사용량 위젯</li><li>무블로그: 당신의 이야기를 지도에 담다</li><li>냥미터 - 나만의 요금제</li><li>SnapQR</li><li>공간기록 - 여기를 기억해</li><li>마크담 - 마크다운 뷰어</li>",
+    "appList": "<li>대전 버스 (Daejeon Bus) - 대전광역시</li><li>부산 버스 (Busan Bus) - 부산광역시</li><li>광주 버스 (Gwangju Bus) - 광주광역시</li><li>안동 버스 (Andong Bus) - 경상북도 안동시</li><li>여수 버스 (Yeosu Bus) - 전라남도 여수시</li><li>인천 버스 (Incheon Bus) - 인천광역시</li><li>알뜰폰 티플 실시간 사용량 위젯</li><li>무블로그: 당신의 이야기를 지도에 담다</li><li>냥미터 - 나만의 요금제</li><li>SnapQR</li><li>공간기록 - 여기를 기억해</li><li>마크담 - 마크다운 뷰어</li><li>RTVideo</li>",
     "articles": [
-      { "title": "제1조(개인정보의 처리 목적)", "body": "Devp-YG 애플리케이션은 개인정보 보호법에 따라 애플리케이션의 모든 이용자들의 개인정보를 보호하고자 다음과 같은 처리방침을 준수합니다." },
-      { "title": "제2조(개인정보의 처리 및 보유 기간)", "body": "Devp-YG 애플리케이션은 개인정보를 수집하지 않으며, 개인정보 처리 및 보유하지 않습니다." },
-      { "title": "제3조(개인정보의 제3자 제공에 관한 사항)", "body": "Devp-YG 애플리케이션은 제3자에게 개인정보를 제공하지 않습니다." },
-      { "title": "제4조(개인정보처리의 위탁에 관한 사항)", "body": "Devp-YG 애플리케이션은 개인정보처리를 위탁하지 않습니다." },
-      { "title": "제5조(처리하는 개인정보의 항목)", "body": "Devp-YG 애플리케이션은 처리하는 개인정보 항목이 없습니다." },
-      { "title": "제6조(개인정보의 파기에 관한 사항)", "body": "Devp-YG 애플리케이션은 처리하는 개인정보가 없으므로 파기와 관련된 사항이 없습니다." },
-      { "title": "제7조(개인정보의 안전성 확보조치에 관한 사항)", "body": "Devp-YG 애플리케이션은 개인정보의 안정성 확보를 위해 개인정보를 수집하지 않으며, 개인정보 처리 및 보유하지 않습니다." },
-      { "title": "제8조(개인정보 자동 수집 장치의 설치∙운영 및 그 거부에 관한 사항)", "body": "Devp-YG 애플리케이션은 개인정보를 자동으로 수집하는 장치를 설치 및 운영하지 않습니다." },
-      { "title": "제9조(개인정보 보호책임자에 관한 사항)", "body": "Devp-YG 애플리케이션은 개인정보 처리에 관한 업무를 총괄해서 책임집니다." },
-      { "title": "제10조(개인정보 처리방침의 변경에 관한 사항)", "body": "이 개인정보 처리방침은 앱스토어 내 애플리케이션 개시일 이후부터 적용됩니다." }
+      {
+        "title": "제1조(개인정보의 처리 목적)",
+        "body": "Devp-YG 애플리케이션은 개인정보 보호법에 따라 애플리케이션의 모든 이용자들의 개인정보를 보호하고자 다음과 같은 처리방침을 준수합니다."
+      },
+      {
+        "title": "제2조(개인정보의 처리 및 보유 기간)",
+        "body": "Devp-YG 애플리케이션은 개인정보를 수집하지 않으며, 개인정보 처리 및 보유하지 않습니다."
+      },
+      {
+        "title": "제3조(개인정보의 제3자 제공에 관한 사항)",
+        "body": "Devp-YG 애플리케이션은 제3자에게 개인정보를 제공하지 않습니다."
+      },
+      {
+        "title": "제4조(개인정보처리의 위탁에 관한 사항)",
+        "body": "Devp-YG 애플리케이션은 개인정보처리를 위탁하지 않습니다."
+      },
+      {
+        "title": "제5조(처리하는 개인정보의 항목)",
+        "body": "Devp-YG 애플리케이션은 처리하는 개인정보 항목이 없습니다."
+      },
+      {
+        "title": "제6조(개인정보의 파기에 관한 사항)",
+        "body": "Devp-YG 애플리케이션은 처리하는 개인정보가 없으므로 파기와 관련된 사항이 없습니다."
+      },
+      {
+        "title": "제7조(개인정보의 안전성 확보조치에 관한 사항)",
+        "body": "Devp-YG 애플리케이션은 개인정보의 안정성 확보를 위해 개인정보를 수집하지 않으며, 개인정보 처리 및 보유하지 않습니다."
+      },
+      {
+        "title": "제8조(개인정보 자동 수집 장치의 설치∙운영 및 그 거부에 관한 사항)",
+        "body": "Devp-YG 애플리케이션은 개인정보를 자동으로 수집하는 장치를 설치 및 운영하지 않습니다."
+      },
+      {
+        "title": "제9조(개인정보 보호책임자에 관한 사항)",
+        "body": "Devp-YG 애플리케이션은 개인정보 처리에 관한 업무를 총괄해서 책임집니다."
+      },
+      {
+        "title": "제10조(개인정보 처리방침의 변경에 관한 사항)",
+        "body": "이 개인정보 처리방침은 앱스토어 내 애플리케이션 개시일 이후부터 적용됩니다."
+      }
     ]
+  },
+  "rtvideo": {
+    "eyebrow": "LISTEN TO IT. READ IT.",
+    "title": "재생 중인 음성을<br><em>읽는 자막으로.</em>",
+    "description": "다른 앱에서 재생 중인 영상이나 오디오의 음성을 인식해 선택한 언어로 번역합니다. 콘텐츠를 보면서 앱 창이나 떠 있는 PiP 자막 창에서 번역을 확인하세요.",
+    "privacyLink": "개인정보 처리방침 ↗",
+    "metaPlatformLabel": "플랫폼",
+    "metaPlatform": "iPhone · iPad",
+    "metaCompatibilityLabel": "지원 OS",
+    "metaCompatibility": "iOS · iPadOS 26 이상",
+    "metaDisplayLabel": "자막 표시",
+    "metaDisplay": "앱 창 · PiP",
+    "metaProcessingLabel": "처리 방식",
+    "metaProcessing": "기기 내 인식·번역",
+    "captionsAlt": "RTVideo의 번역 자막 화면",
+    "featureEyebrow": "CAPTIONS FOR PLAYING AUDIO",
+    "featureTitle": "듣는 콘텐츠를<br><em>읽는 언어로.</em>",
+    "featureLead": "영상, 온라인 강의, 팟캐스트처럼 소리가 있는 콘텐츠를 재생하면서 원문과 번역을 살펴보세요.",
+    "feature1Title": "재생 음성을 자막으로",
+    "feature1Body": "오디오 공유를 지원하는 앱에서 재생을 시작하고 RTVideo의 시스템 오디오 공유를 허용하면, 음성을 인식해 번역 자막으로 보여줍니다.",
+    "feature2Title": "원문과 번역을 함께",
+    "feature2Body": "원문 언어와 번역할 언어를 선택하고, 필요에 따라 원문 표시와 자막 글자 크기를 조정할 수 있습니다.",
+    "feature3Title": "화면 위에 띄우는 자막",
+    "feature3Body": "앱 안의 자막 화면이나 PiP 창으로 번역을 확인하세요. 화자 구분을 지원하는 조합에서는 화자별로 자막을 나누어 표시합니다.",
+    "galleryEyebrow": "INSIDE RTVIDEO",
+    "galleryTitle": "번역 자막과 표시 설정을<br><em>한눈에 살펴보세요.</em>",
+    "originalAlt": "원문과 화자별 번역 자막 화면",
+    "settingsAlt": "언어와 자막 표시 설정 화면",
+    "galleryCaptions": "재생 음성을 옮긴 번역 자막",
+    "galleryOriginal": "원문과 화자별 자막",
+    "gallerySettings": "언어와 자막 모양 설정",
+    "galleryNote": "화면은 기능을 설명하기 위한 예시입니다. 실제 인식 결과와 화자 구분은 오디오와 기기 지원에 따라 달라집니다.",
+    "scopeEyebrow": "A FEW THINGS TO KNOW",
+    "scopeTitle": "사용 전에 확인해 주세요",
+    "scopeBody": "번역할 음성은 시스템 오디오 공유를 통해 전달됩니다. 사용할 수 있는 언어 조합은 기기와 운영체제의 음성 인식·번역 지원에 따라 달라지며, 처음 사용할 때 언어 모델을 내려받아야 할 수 있습니다. 재생 앱이 오디오 공유를 지원하지 않거나 콘텐츠가 보호되어 있으면 음성이 전달되지 않을 수 있습니다. 자막에는 인식·번역 지연이 있으며, 재생 위치와 직접 동기화되지 않습니다. 앱 창 모드에서는 재생 앱과 RTVideo가 함께 보이도록 두고, PiP 모드에서는 번역 자막 창을 띄워 사용합니다.",
+    "finalEyebrow": "AUDIO IN. CAPTIONS OUT.",
+    "finalTitle": "콘텐츠에 담긴 말을<br><em>자막으로 따라가세요.</em>",
+    "allApps": "다른 앱 둘러보기 ↗"
   }
 }

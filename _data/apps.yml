@@ -171,6 +171,18 @@
   image: /assets/images/apps/taghere/icon.png
   image_alt: 공간기록 앱 아이콘
 
+- id: rtvideo
+  platform: ios
+  category: translation-tools
+  portfolio_order: 10
+  name: RTVideo
+  subtitle: 실시간 번역 자막
+  review_status: pending
+  minimum_ios: "26"
+  description: iPhone·iPad에서 재생 중인 영상과 오디오의 음성을 인식해 선택한 언어의 번역 자막으로 보여줍니다. 앱 창이나 PiP 자막 창에서 원문과 번역을 확인하세요.
+  image: /assets/images/apps/rtvideo/icon.png
+  image_alt: RTVideo 앱 아이콘
+
 - id: mdvista
   platform: ios
   category: reading-tools
