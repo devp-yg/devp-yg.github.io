@@ -20,9 +20,9 @@ styles:
     <section class="home-hero">
         <div class="site-shell hero-grid">
             <div class="hero-copy">
-                <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="home.heroEyebrow">Independent iOS Studio</span></p>
-                <h1 data-i18n-html="home.heroTitle">매일의 이동을<br /><em>더 가볍게.</em></h1>
-                <p class="hero-lead" data-i18n="home.heroLead">복잡한 정보는 단순하게, 반복되는 일은 빠르게. 일상에서 오래 쓰이는 iPhone과 iPad 앱을 만듭니다.</p>
+                <p class="eyebrow"><span class="eyebrow-dot"></span> <span data-i18n="home.heroEyebrow">Independent App Studio</span></p>
+                <h1 data-i18n-html="home.heroTitle">일상 곳곳에<br />필요한 앱을<br /><em>더 편리하게.</em></h1>
+                <p class="hero-lead" data-i18n="home.heroLead">이동과 대중교통부터 문서 읽기와 번역, 생활 도구까지. 매일 필요한 순간을 더 간편하게 만드는 앱을 만듭니다.</p>
                 <div class="hero-actions">
                     <a href="#featured-apps" class="button special"><span data-i18n="home.exploreApps">앱 둘러보기</span> <span aria-hidden="true">↘</span></a>
                     <a href="mailto:devp.yg@gmail.com?Subject=지원문의" class="button ghost" data-i18n="common.contact" data-i18n-mail-subject="지원문의">문의하기</a>
@@ -34,19 +34,16 @@ styles:
                 </dl>
             </div>
 
-            <div class="hero-visual" aria-label="무블로그 앱 화면과 Devp-YG 앱 아이콘" data-i18n-aria-label="home.visualLabel">
+            <div class="hero-visual" aria-label="이동, 대중교통, 문서, 번역, 생활 도구 앱 모음" data-i18n-aria-label="home.visualLabel">
                 <div class="hero-glow"></div>
-                <div class="floating-icon icon-snapqr"><img src="{{ '/assets/images/apps/other/snapqr.png' | relative_url }}" alt="SnapQR 앱 아이콘" data-i18n-alt="home.snapqrAlt" /></div>
-                <div class="floating-icon icon-citybus"><img src="{{ '/assets/images/apps/citybus/busan.png' | relative_url }}" alt="부산버스 앱 아이콘" data-i18n-alt="home.busanAlt" /></div>
-                <div class="phone-card">
-                    <div class="phone-top"><span></span></div>
-                    <img src="{{ '/assets/images/apps/movlog/screenshots/main.png' | relative_url }}" alt="무블로그 이동 기록 화면" data-i18n-alt="home.movlogScreenAlt" />
-                </div>
-                <a class="now-card" href="{{ '/movlog/' | relative_url }}" aria-label="무블로그 소개 보기" data-i18n-aria-label="home.movlogIntro">
-                    <img src="{{ movlog_app.image | relative_url }}" alt="무블로그 앱 아이콘" data-i18n-alt="apps.movlog.imageAlt" />
-                    <div><small data-i18n="home.featuredApp">Featured app</small><strong data-i18n="header.movlog">무블로그</strong></div>
-                    <span aria-hidden="true">↗</span>
-                </a>
+                <div class="app-orbit" aria-hidden="true"></div>
+                <div class="app-cloud-label" aria-hidden="true"><span>DEVP-YG</span><strong data-i18n="home.appCloudLabel">매일을 위한 앱</strong></div>
+                <div class="floating-icon icon-movlog"><img src="{{ '/assets/images/apps/movlog/icon.png' | relative_url }}" alt="무블로그 앱 아이콘" data-i18n-alt="apps.movlog.imageAlt" /><span data-i18n="header.movlog">무블로그</span></div>
+                <div class="floating-icon icon-citybus"><img src="{{ '/assets/images/apps/citybus/busan.png' | relative_url }}" alt="부산버스 앱 아이콘" data-i18n-alt="home.busanAlt" /><span data-i18n="home.transitLabel">대중교통</span></div>
+                <div class="floating-icon icon-mdvista"><img src="{{ '/assets/images/apps/mdvista/icon.png' | relative_url }}" alt="마크담 앱 아이콘" data-i18n-alt="apps.mdvista.imageAlt" /><span data-i18n="home.readingLabel">문서 읽기</span></div>
+                <div class="floating-icon icon-rtvideo"><img src="{{ '/assets/images/apps/rtvideo/icon.png' | relative_url }}" alt="보이는말 앱 아이콘" data-i18n-alt="apps.rtvideo.imageAlt" /><span data-i18n="home.translationLabel">실시간 번역</span></div>
+                <div class="floating-icon icon-taghere"><img src="{{ '/assets/images/apps/taghere/icon.png' | relative_url }}" alt="공간기록 앱 아이콘" data-i18n-alt="apps.taghere.imageAlt" /><span data-i18n="home.placesLabel">장소 기록</span></div>
+                <div class="floating-icon icon-snapqr"><img src="{{ '/assets/images/apps/other/snapqr.png' | relative_url }}" alt="SnapQR 앱 아이콘" data-i18n-alt="home.snapqrAlt" /><span data-i18n="home.toolsLabel">생활 도구</span></div>
             </div>
         </div>
     </section>
