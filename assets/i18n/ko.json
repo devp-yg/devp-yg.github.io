@@ -61,8 +61,8 @@
       "description": "자주 가는 장소와 그 안의 공간을 등록하고, 방문과 공간 인식 기록을 날짜별로 돌아보는 공간기록 앱입니다."
     },
     "mdvista": {
-      "title": "MDVista - 마크다운을 한눈에 | Devp-YG",
-      "description": "Mac, iPhone, iPad에서 Markdown 문서를 읽고 PDF로 저장하는 오프라인 문서 뷰어 MDVista를 소개합니다."
+      "title": "마크담 - 마크다운 뷰어 | Devp-YG",
+      "description": "Mac, iPhone, iPad에서 Markdown 문서를 읽고 PDF로 저장하는 오프라인 문서 뷰어, 마크담을 소개합니다."
     },
     "privacy": {
       "title": "개인정보 처리방침 | Devp-YG",
@@ -81,7 +81,7 @@
     "citybusDescription": "도시별 버스와 환승·여행 정보를 한곳에",
     "taghere": "공간기록",
     "taghereDescription": "장소와 그 안의 공간, 방문 기록을 관리하는 앱",
-    "mdvista": "MDVista",
+    "mdvista": "마크담",
     "mdvistaDescription": "Markdown 문서를 읽고 PDF로 저장하는 뷰어",
     "history": "출시 기록",
     "citybus": "시티버스",
@@ -126,7 +126,7 @@
     "taghereScreenAlt": "공간기록 장소 목록 화면",
     "mdvistaKicker": "Markdown, clearly",
     "mdvistaDescription": "글, 표, 그림과 다이어그램을 읽고, 같은 문서를 PDF로 저장하는 읽기 중심 뷰어입니다.",
-    "mdvistaScreenAlt": "MDVista Markdown 문서 읽기 화면",
+    "mdvistaScreenAlt": "마크담 Markdown 문서 읽기 화면",
     "findMyCity": "내 도시 찾기",
     "everydayTools": "Everyday tools",
     "toolsTitle": "작지만 확실한<br>생활 도구",
@@ -338,7 +338,7 @@
     "daejeon-bus": { "name": "대전 버스", "shortName": "대전버스", "subtitle": "Daejeon Bus", "description": "버스와 지하철역을 함께 검색하고, 도착·시간표·첫차·막차·운행 간격과 환승 경로·관광지 지도·날씨를 지도에서 확인할 수 있습니다.", "citybusDescription": "대전의 버스·지하철 도착과 시간표, 첫차·막차, 운행 간격과 환승·관광지 지도·날씨를 확인하세요.", "imageAlt": "대전버스 앱 아이콘" },
     "tplus-mobile": { "name": "알뜰폰 티플 실시간 사용량 위젯", "description": "티플러스 모바일의 실시간 사용량 조회 정보를 위젯으로 확인할 수 있는 앱입니다. 아이폰과 아이패드에서 사용할 수 있습니다.", "imageAlt": "티플 실시간 사용량 위젯 앱 아이콘" },
     "taghere": { "name": "공간기록 - 여기를 기억해", "subtitle": "TagHere", "description": "자주 가는 장소와 그 안의 공간을 등록하고, 위치와 Bluetooth 기기로 방문·공간 인식을 기록합니다. 날짜별 기록과 위젯으로 어디에 머물렀는지 돌아보세요.", "imageAlt": "공간기록 앱 아이콘" },
-    "mdvista": { "name": "MDVista - 마크다운을 한눈에", "subtitle": "Markdown Reader", "description": "Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.", "imageAlt": "MDVista 앱 아이콘" }
+    "mdvista": { "name": "마크담 - 마크다운 뷰어", "subtitle": "Markdown Reader", "description": "Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.", "imageAlt": "마크담 앱 아이콘" }
   },
   "taghere": {
     "eyebrow": "PLACE · SPACE · MEMORY",
@@ -359,8 +359,8 @@
     "feature1Title": "문서의 흐름을 한눈에", "feature1Body": "제목, 목록, 인용, 표와 코드를 정돈해 보여줍니다. 목차와 문서 내 검색으로 필요한 부분을 찾을 수 있습니다.",
     "feature2Title": "그림과 다이어그램도 함께", "feature2Body": "문서와 함께 둔 이미지와 안전한 SVG, Mermaid 다이어그램, LaTeX 수식을 표시합니다.",
     "feature3Title": "읽던 모습 그대로 PDF로", "feature3Body": "A4 또는 US Letter 용지, 세로·가로 방향과 여백을 정해 다중 페이지 PDF로 저장합니다.",
-    "galleryEyebrow": "INSIDE MDVISTA", "galleryTitle": "읽기부터 PDF 저장까지,<br><em>문서 작업을 이어서.</em>", "readerAlt": "MDVista에서 Markdown 문서를 읽는 화면", "pdfAlt": "PDF 만들기와 미리보기 흐름", "diagramAlt": "수식과 동기화 표기가 포함된 문서", "galleryReader": "문서 읽기", "galleryPDF": "PDF 미리보기와 저장", "galleryDiagrams": "수식과 시각 자료",
-    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL", "localTitle": "원본은 그대로,<br>읽기는 기기에서", "localBody": "MDVista는 읽기 중심 뷰어입니다. 원본 Markdown을 수정하지 않고 문서 내용을 서버로 보내지 않습니다. 상대 경로 이미지에 접근하려면 문서가 있는 폴더를 선택해야 할 수 있으며, 원격 이미지는 자동으로 가져오지 않습니다.",
+    "galleryEyebrow": "INSIDE MARKDAM", "galleryTitle": "읽기부터 PDF 저장까지,<br><em>문서 작업을 이어서.</em>", "readerAlt": "마크담에서 Markdown 문서를 읽는 화면", "pdfAlt": "PDF 만들기와 미리보기 흐름", "diagramAlt": "수식과 동기화 표기가 포함된 문서", "galleryReader": "문서 읽기", "galleryPDF": "PDF 미리보기와 저장", "galleryDiagrams": "수식과 시각 자료",
+    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL", "localTitle": "원본은 그대로,<br>읽기는 기기에서", "localBody": "마크담은 읽기 중심 뷰어입니다. 원본 Markdown을 수정하지 않고 문서 내용을 서버로 보내지 않습니다. 상대 경로 이미지에 접근하려면 문서가 있는 폴더를 선택해야 할 수 있으며, 원격 이미지는 자동으로 가져오지 않습니다.",
     "finalEyebrow": "OPEN, READ, KEEP", "finalTitle": "마크다운 문서를<br><em>읽고 간직하세요.</em>", "allApps": "다른 앱 둘러보기 ↗"
   },
   "privacy": {
@@ -368,7 +368,7 @@
     "intro": "Devp-YG에서는 다음과 같은 애플리케이션들(이하 \"Devp-YG 애플리케이션\"이라 함)을 배포합니다.",
     "applies": "위 Devp-YG 애플리케이션들에 대한 개인정보 처리 방침은 다음과 같습니다.",
     "articleHeading": "개인정보 처리 방침",
-    "appList": "<li>대전 버스 (Daejeon Bus) - 대전광역시</li><li>부산 버스 (Busan Bus) - 부산광역시</li><li>광주 버스 (Gwangju Bus) - 광주광역시</li><li>안동 버스 (Andong Bus) - 경상북도 안동시</li><li>여수 버스 (Yeosu Bus) - 전라남도 여수시</li><li>인천 버스 (Incheon Bus) - 인천광역시</li><li>알뜰폰 티플 실시간 사용량 위젯</li><li>무블로그: 당신의 이야기를 지도에 담다</li><li>냥미터 - 나만의 요금제</li><li>SnapQR</li><li>공간기록 - 여기를 기억해</li><li>MDVista - 마크다운을 한눈에</li>",
+    "appList": "<li>대전 버스 (Daejeon Bus) - 대전광역시</li><li>부산 버스 (Busan Bus) - 부산광역시</li><li>광주 버스 (Gwangju Bus) - 광주광역시</li><li>안동 버스 (Andong Bus) - 경상북도 안동시</li><li>여수 버스 (Yeosu Bus) - 전라남도 여수시</li><li>인천 버스 (Incheon Bus) - 인천광역시</li><li>알뜰폰 티플 실시간 사용량 위젯</li><li>무블로그: 당신의 이야기를 지도에 담다</li><li>냥미터 - 나만의 요금제</li><li>SnapQR</li><li>공간기록 - 여기를 기억해</li><li>마크담 - 마크다운 뷰어</li>",
     "articles": [
       { "title": "제1조(개인정보의 처리 목적)", "body": "Devp-YG 애플리케이션은 개인정보 보호법에 따라 애플리케이션의 모든 이용자들의 개인정보를 보호하고자 다음과 같은 처리방침을 준수합니다." },
       { "title": "제2조(개인정보의 처리 및 보유 기간)", "body": "Devp-YG 애플리케이션은 개인정보를 수집하지 않으며, 개인정보 처리 및 보유하지 않습니다." },

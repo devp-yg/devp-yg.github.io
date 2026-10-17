@@ -30,10 +30,10 @@
     "citybus": { "title": "CityBus | City bus apps", "description": "The CityBus app series brings bus, transfers, urban rail, and travel information for Busan, Daejeon, Gwangju, Incheon, Andong, and Yeosu together." },
     "movlog": { "title": "Movlog | Turn your movement into a story", "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then helps you look back through insights and achievements." },
     "taghere": { "title": "TagHere | Space Log - Remember This Place", "description": "Save places and the spaces within them, then revisit location and space recognition history by date." },
-    "mdvista": { "title": "MDVista | Markdown at a Glance", "description": "Meet MDVista, an offline Markdown reader for Mac, iPhone, and iPad that can save documents as PDF." },
+    "mdvista": { "title": "Markdam - Markdown Viewer | Devp-YG", "description": "Meet Markdam, an offline Markdown reader for Mac, iPhone, and iPad that can save documents as PDF." },
     "privacy": { "title": "Privacy Policy | Devp-YG", "description": "Privacy policy for Devp-YG applications." }
   },
-  "header": { "home": "Home", "portfolio": "All apps", "exploreApps": "Explore apps", "appsHeading": "Devp-YG Apps", "appsDescription": "Useful apps for everyday moments", "allApps": "View all apps", "allAppsDescription": "Browse every iOS app we currently maintain.", "movlogDescription": "A life log that records movement and visits", "citybusDescription": "Bus, transfer, and travel information by city", "taghere": "TagHere", "taghereDescription": "Keep places, spaces, and visit history together", "mdvista": "MDVista", "mdvistaDescription": "A Markdown reader with PDF export", "history": "Release history", "citybus": "CityBus", "movlog": "Movlog", "contact": "Contact" },
+  "header": { "home": "Home", "portfolio": "All apps", "exploreApps": "Explore apps", "appsHeading": "Devp-YG Apps", "appsDescription": "Useful apps for everyday moments", "allApps": "View all apps", "allAppsDescription": "Browse every iOS app we currently maintain.", "movlogDescription": "A life log that records movement and visits", "citybusDescription": "Bus, transfer, and travel information by city", "taghere": "TagHere", "taghereDescription": "Keep places, spaces, and visit history together", "mdvista": "Markdam", "mdvistaDescription": "A Markdown reader with PDF export", "history": "Release history", "citybus": "CityBus", "movlog": "Movlog", "contact": "Contact" },
   "footer": {
     "description": "An independent iOS app studio making<br>everyday movement and life a little easier.",
     "products": "Products",
@@ -69,7 +69,7 @@
     "taghereScreenAlt": "TagHere saved places list",
     "mdvistaKicker": "Markdown, clearly",
     "mdvistaDescription": "A reading-focused viewer for text, tables, images, and diagrams, with PDF export for the same document.",
-    "mdvistaScreenAlt": "MDVista Markdown reading screen",
+    "mdvistaScreenAlt": "Markdam Markdown reading screen",
     "findMyCity": "Find my city",
     "everydayTools": "Everyday tools",
     "toolsTitle": "Small tools<br>that make a difference",
@@ -266,7 +266,7 @@
     "daejeon-bus": { "name": "Daejeon Bus", "shortName": "Daejeon Bus", "subtitle": "Daejeon Bus", "description": "Search buses and subway stations together, then check arrivals, timetables, first and last services, service intervals, transfer routes, attraction maps, and weather.", "citybusDescription": "Check Daejeon bus and subway arrivals, timetables, first and last services, intervals, transfers, an attraction map, and weather.", "imageAlt": "Daejeon Bus app icon" },
     "tplus-mobile": { "name": "Tplus real-time usage widget", "description": "Check Tplus Mobile usage information in a widget on your iPhone or iPad.", "imageAlt": "Tplus real-time usage widget app icon" },
     "taghere": { "name": "Space Log - Remember This Place", "subtitle": "TagHere", "description": "Save places and their spaces, then record visits and space recognition with location and Bluetooth. Review your history by date and with a widget.", "imageAlt": "TagHere app icon" },
-    "mdvista": { "name": "MDVista - Markdown at a Glance", "subtitle": "Markdown Reader", "description": "Read Markdown comfortably on Mac, iPhone, and iPad, then save it as PDF. View tables, code, images, SVG, Mermaid diagrams, and equations offline.", "imageAlt": "MDVista app icon" }
+    "mdvista": { "name": "Markdam - Markdown Viewer", "subtitle": "Markdown Reader", "description": "Read Markdown comfortably on Mac, iPhone, and iPad, then save it as PDF. View tables, code, images, SVG, Mermaid diagrams, and equations offline.", "imageAlt": "Markdam app icon" }
   },
   "taghere": {
     "eyebrow": "PLACE · SPACE · MEMORY", "title": "Remember the place,<br><em>and the space inside.</em>", "description": "Save home, work, and places you return to. Location and Bluetooth help record visits and recognize spaces, so you can look back at where you spent time.",
@@ -285,8 +285,8 @@
     "feature1Title": "See how the document flows", "feature1Body": "Read headings, lists, quotes, tables, and code in a clear layout. Use the outline and in-document search to find a section.",
     "feature2Title": "Images and diagrams included", "feature2Body": "View images stored with your document, safe SVG, Mermaid diagrams, and LaTeX equations.",
     "feature3Title": "Save a readable PDF", "feature3Body": "Choose A4 or US Letter, portrait or landscape, and margins to save a multi-page PDF.",
-    "galleryEyebrow": "INSIDE MDVISTA", "galleryTitle": "From reading to saving a PDF,<br><em>stay with the document.</em>", "readerAlt": "Reading a Markdown document in MDVista", "pdfAlt": "Creating and previewing a PDF", "diagramAlt": "A document with equations and sync notation", "galleryReader": "Read a document", "galleryPDF": "Preview and save a PDF", "galleryDiagrams": "Equations and visuals",
-    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL", "localTitle": "Keep the original.<br>Read on your device.", "localBody": "MDVista is a read-only viewer. It leaves the original Markdown unchanged and does not send document contents to a server. To access relative-path images, you may need to select the folder that contains the document. Remote images are not fetched automatically.",
+    "galleryEyebrow": "INSIDE MARKDAM", "galleryTitle": "From reading to saving a PDF,<br><em>stay with the document.</em>", "readerAlt": "Reading a Markdown document in Markdam", "pdfAlt": "Creating and previewing a PDF", "diagramAlt": "A document with equations and sync notation", "galleryReader": "Read a document", "galleryPDF": "Preview and save a PDF", "galleryDiagrams": "Equations and visuals",
+    "localEyebrow": "YOUR DOCUMENTS STAY LOCAL", "localTitle": "Keep the original.<br>Read on your device.", "localBody": "Markdam is a read-only viewer. It leaves the original Markdown unchanged and does not send document contents to a server. To access relative-path images, you may need to select the folder that contains the document. Remote images are not fetched automatically.",
     "finalEyebrow": "OPEN, READ, KEEP", "finalTitle": "Open a Markdown file.<br><em>Read and keep it.</em>", "allApps": "Explore other apps ↗"
   },
   "privacy": {
@@ -294,7 +294,7 @@
     "intro": "Devp-YG distributes the following applications (collectively, the \"Devp-YG Applications\").",
     "applies": "This privacy policy applies to the Devp-YG Applications listed above.",
     "articleHeading": "Privacy Policy",
-    "appList": "<li>Daejeon Bus – Daejeon Metropolitan City</li><li>Busan Bus – Busan Metropolitan City</li><li>Gwangju Bus – Gwangju Metropolitan City</li><li>Andong Bus – Andong, Gyeongsangbuk-do</li><li>Yeosu Bus – Yeosu, Jeollanam-do</li><li>Incheon Bus – Incheon Metropolitan City</li><li>Tplus Mobile real-time usage widget</li><li>Movlog: Map Your Story</li><li>FareFlow</li><li>SnapQR</li><li>Space Log - Remember This Place (TagHere)</li><li>MDVista - Markdown at a Glance</li>",
+    "appList": "<li>Daejeon Bus – Daejeon Metropolitan City</li><li>Busan Bus – Busan Metropolitan City</li><li>Gwangju Bus – Gwangju Metropolitan City</li><li>Andong Bus – Andong, Gyeongsangbuk-do</li><li>Yeosu Bus – Yeosu, Jeollanam-do</li><li>Incheon Bus – Incheon Metropolitan City</li><li>Tplus Mobile real-time usage widget</li><li>Movlog: Map Your Story</li><li>FareFlow</li><li>SnapQR</li><li>Space Log - Remember This Place (TagHere)</li><li>Markdam - Markdown Viewer</li>",
     "articles": [
       { "title": "Article 1 (Purpose of Personal Information Processing)", "body": "Devp-YG Applications comply with the Personal Information Protection Act and follow this policy to protect the personal information of all application users." },
       { "title": "Article 2 (Processing and Retention Period of Personal Information)", "body": "Devp-YG Applications do not collect, process, or retain personal information." },

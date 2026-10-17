@@ -27,7 +27,7 @@ products:
     url: /taghere/
     mark: taghere
     page_key: taghere
-  - label: MDVista
+  - label: 마크담
     key: mdvista
     description: Markdown 문서를 읽고 PDF로 저장하는 뷰어
     description_key: mdvistaDescription
