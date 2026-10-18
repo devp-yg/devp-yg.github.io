@@ -85,6 +85,7 @@
         });
         document.querySelectorAll('[data-i18n-html]').forEach(function (element) {
             var value = getValue(pack, element.getAttribute('data-i18n-html'));
+            if (Array.isArray(value)) value = value.join('');
             if (typeof value === 'string') element.innerHTML = replaceCount(value, element);
         });
         document.querySelectorAll('[data-i18n-alt]').forEach(function (element) {

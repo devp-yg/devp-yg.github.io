@@ -71,6 +71,10 @@
     "rtvideo": {
       "title": "RTVideo - Live Translation Captions | Devp-YG",
       "description": "Meet RTVideo, which turns audio playing in other apps into translated captions on iPhone and iPad."
+    },
+    "markdamPrivacy": {
+      "title": "Markdam Privacy Policy | Devp-YG",
+      "description": "Information about the processing and use of personal information by the Markdam app."
     }
   },
   "header": {
@@ -589,5 +593,62 @@
     "finalEyebrow": "AUDIO IN. CAPTIONS OUT.",
     "finalTitle": "Follow the words in your content<br><em>one caption at a time.</em>",
     "allApps": "Explore other apps ↗"
+  },
+  "markdamPrivacy": {
+    "title": "Privacy Policy",
+    "targetLabel": "Applies to",
+    "appName": "Markdam",
+    "appDescription": "Markdown viewer",
+    "platformsLabel": "Supported platforms",
+    "content": [
+      "<h2 id=\"article-1-purposes-of-processing-personal-information\">Article 1. Purposes of Processing Personal Information</h2>",
+      "<p>The app allows users to open documents of their choice, read them, and save them as PDFs. Document processing and PDF generation take place on the user’s device. The operator does not transmit or store document files or their contents on a separate server.</p>",
+      "<p>With the user’s consent, the operator uses Firebase Analytics, provided by Google LLC, to process app usage information for the following purposes:</p>",
+      "<ul>\n  <li>Identifying app installations, launches, and active usage</li>\n  <li>Analyzing feature usage and improving usability</li>\n  <li>Analyzing errors and improving app stability</li>\n</ul>",
+      "<p>The collection and use of personal information for app analytics is based on the user’s consent. Users may continue to use core features, including opening and reading documents and saving them as PDFs, without giving consent.</p>",
+      "<h2 id=\"article-2-processing-and-retention-periods\">Article 2. Processing and Retention Periods</h2>",
+      "<p>The following retention periods apply to Firebase Analytics data:</p>",
+      "<table>\n  <thead>\n    <tr>\n      <th style=\"text-align: left\">Category</th>\n      <th style=\"text-align: left\">Retention period</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"text-align: left\">Event data</td>\n      <td style=\"text-align: left\">2 months</td>\n    </tr>\n    <tr>\n      <td style=\"text-align: left\">User data</td>\n      <td style=\"text-align: left\">14 months from the user’s most recent activity</td>\n    </tr>\n  </tbody>\n</table>",
+      "<p>The retention period for user data is recalculated whenever new activity occurs. These settings apply to user-level and event-level data, but not in the same way to standard aggregated reports.</p>",
+      "<p>Users manage the retention of documents and PDF files directly on their devices or in the file storage locations they select.</p>",
+      "<h2 id=\"article-3-provision-to-third-parties-and-use-of-external-services\">Article 3. Provision to Third Parties and Use of External Services</h2>",
+      "<p>The operator does not provide personal information to third parties for their independent use. Analytics services performed by Google LLC on the operator’s behalf are described in Article 4.</p>",
+      "<p><strong>App version checks</strong></p>",
+      "<p>To check for the latest version, the app sends its bundle ID and the Store country code to Apple’s App Store lookup service. The Store country code is determined from the device’s region settings. Document contents and file information are not included in this request.</p>",
+      "<p>Apple’s <a href=\"https://www.apple.com/legal/privacy/\">Privacy Policy</a> applies to network connection information that Apple processes when handling service requests.</p>",
+      "<p><strong>Storage and sharing selected by the user</strong></p>",
+      "<p>When users select an external storage location, such as iCloud Drive, or use the operating system’s sharing feature, files are transferred to the selected service or app. The relevant service provider’s policies apply to that process.</p>",
+      "<h2 id=\"article-4-entrusted-processing-and-processing-outside-the-country\">Article 4. Entrusted Processing and Processing Outside the Country</h2>",
+      "<p>The operator entrusts app analytics to the following service provider. The “Google products and services” data-sharing setting in Google Analytics is disabled.</p>",
+      "<table>\n  <thead>\n    <tr>\n      <th style=\"text-align: left\">Category</th>\n      <th style=\"text-align: left\">Details</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"text-align: left\">Service provider</td>\n      <td style=\"text-align: left\">Google LLC</td>\n    </tr>\n    <tr>\n      <td style=\"text-align: left\">Service used</td>\n      <td style=\"text-align: left\">Firebase Analytics (Google Analytics)</td>\n    </tr>\n    <tr>\n      <td style=\"text-align: left\">Entrusted work</td>\n      <td style=\"text-align: left\">Processing app usage statistics and providing analytical results</td>\n    </tr>\n    <tr>\n      <td style=\"text-align: left\">Data processed</td>\n      <td style=\"text-align: left\">Analytics data described in Article 5</td>\n    </tr>\n    <tr>\n      <td style=\"text-align: left\">Retention period</td>\n      <td style=\"text-align: left\">As set out in Article 2</td>\n    </tr>\n  </tbody>\n</table>",
+      "<p>Analytics data is transmitted to Google’s servers through the Firebase Analytics SDK included in the app. Because Google uses global infrastructure, analytics data is processed and stored outside the country.</p>",
+      "<p>For details about data processing and safeguards, see <a href=\"https://support.google.com/analytics/answer/6004245\">Google Analytics data protection</a> and <a href=\"https://business.safety.google/adsdatatransfers/\">Google’s information about international data transfers</a>.</p>",
+      "<h2 id=\"article-5-categories-of-personal-information-processed\">Article 5. Categories of Personal Information Processed</h2>",
+      "<p>The app does not collect information intended to directly identify a person’s identity, such as a name, email address, telephone number, or member account.</p>",
+      "<p>When users consent to app analytics, the following information is processed:</p>",
+      "<table>\n  <thead>\n    <tr>\n      <th style=\"text-align: left\">Category</th>\n      <th style=\"text-align: left\">Data processed</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"text-align: left\">Identifiers</td>\n      <td style=\"text-align: left\">App instance ID and iOS Identifier for Vendor (IDFV)</td>\n    </tr>\n    <tr>\n      <td style=\"text-align: left\">App and device information</td>\n      <td style=\"text-align: left\">Technical information such as app version, operating system, and device model</td>\n    </tr>\n    <tr>\n      <td style=\"text-align: left\">Usage and diagnostic information</td>\n      <td style=\"text-align: left\">App launch and feature usage events; statistical values for document and search features; error types and codes</td>\n    </tr>\n    <tr>\n      <td style=\"text-align: left\">Approximate location information</td>\n      <td style=\"text-align: left\">Country and regional information inferred by Google Analytics from network information</td>\n    </tr>\n  </tbody>\n</table>",
+      "<p>App, device, and usage information may be analyzed in association with identifiers. The operator does not associate users’ names or contact details with analytics identifiers.</p>",
+      "<p><strong>Document contents and titles, file names and paths, and the actual text of search queries are not included in analytics data.</strong></p>",
+      "<h2 id=\"article-6-destruction-of-personal-information\">Article 6. Destruction of Personal Information</h2>",
+      "<p>Analytics data that has reached the end of its retention period is automatically deleted under Google Analytics’ scheduled deletion process. There may be a delay between the end of the retention period and deletion, depending on the service’s processing schedule.</p>",
+      "<p>If consent is withdrawn, collection of analytics data stops going forward. Data transmitted before withdrawal is not necessarily deleted immediately; it is handled according to the retention periods in Article 2 and Google Analytics’ deletion procedures.</p>",
+      "<p>The operator cannot locate an individual user’s analytics records by name or contact details. A request to delete individual records will be handled by assessing whether the relevant records can be identified and by using the deletion features provided by Google Analytics.</p>",
+      "<p>Users manage documents and PDF files using deletion features available on their devices or in their selected storage locations. Copies saved or shared with external services or other apps are subject to those services’ deletion procedures.</p>",
+      "<h2 id=\"article-7-measures-to-ensure-the-security-of-personal-information\">Article 7. Measures to Ensure the Security of Personal Information</h2>",
+      "<p>The operator manages access permissions for Firebase and Google Analytics accounts and accesses information only to the extent necessary for app analytics.</p>",
+      "<p>Analytics data is subject to security measures provided by Google Analytics, including encryption and access controls, during transmission and storage.</p>",
+      "<h2 id=\"article-8-automatic-collection-and-exercise-of-user-rights\">Article 8. Automatic Collection and Exercise of User Rights</h2>",
+      "<p><strong>Automatic collection and consent settings</strong></p>",
+      "<p>Firebase Analytics automatically collects the information described in Article 5 only when the user has given consent. Users may change their consent settings at any time under <strong>Settings → Privacy</strong> in the app. Refusing or withdrawing consent does not prevent use of the app’s core features.</p>",
+      "<p><strong>Requests for access, correction, deletion, or suspension of processing</strong></p>",
+      "<p>Users may request access to, correction or deletion of, or suspension of the processing of their personal information, and may withdraw consent. Requests may also be made by a legal representative or other duly authorized agent.</p>",
+      "<p>Requests that cannot be handled through the settings available in the app may be submitted to the email address in Article 9. The operator will verify the subject of the request and the identity or authority of the requester, and will handle the request in accordance with applicable laws. If the relevant records cannot be identified or applicable law restricts the requested action, the operator will explain the reason and any available options.</p>",
+      "<h2 id=\"article-9-privacy-officer-and-contact-information\">Article 9. Privacy Officer and Contact Information</h2>",
+      "<p>The operator oversees the processing and protection of personal information and handles related inquiries and complaints in the capacity of privacy officer.</p>",
+      "<ul>\n  <li><strong>Contact:</strong> Operator</li>\n  <li><strong>Email:</strong> <a href=\"mailto:devp.yg@gmail.com\">devp.yg@gmail.com</a></li>\n</ul>",
+      "<h2 id=\"article-10-effective-date-and-changes-to-this-policy\">Article 10. Effective Date and Changes to This Policy</h2>",
+      "<p>This policy takes effect on the release date of the app version that includes the consent feature for app analytics.</p>",
+      "<p>If the purposes or categories of processing, external services, retention periods, or methods for managing consent or exercising user rights change, the changes and their effective date will be posted on this page. Previous versions will be maintained separately. Where additional consent is required, it will be obtained before the relevant changes take effect.</p>"
+    ]
   }
 }
