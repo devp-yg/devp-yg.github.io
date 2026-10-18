@@ -523,9 +523,9 @@
     "targetLabel": "적용 대상",
     "intro": "Devp-YG에서는 다음과 같은 애플리케이션들(이하 \"Devp-YG 애플리케이션\"이라 함)을 배포합니다.",
     "applies": "위 Devp-YG 애플리케이션들에 대한 개인정보 처리 방침은 다음과 같습니다.",
-    "specificPolicies": "공간기록, 마크담과 보이는말은 앱별 개인정보 처리방침을 확인해 주세요: <a href=\"/privacy/taghere/\">공간기록</a> · <a href=\"/privacy/markdam/\">마크담</a> · <a href=\"/privacy/rtvideo/\">보이는말</a>",
+    "specificPolicies": "공간기록, 마크담, 보이는말은 각각의 개인정보 처리방침을 확인해 주세요: <a href=\"/privacy/taghere/\">공간기록</a> · <a href=\"/privacy/markdam/\">마크담</a> · <a href=\"/privacy/rtvideo/\">보이는말</a>",
     "articleHeading": "개인정보 처리 방침",
-    "appList": "<li>대전 버스 (Daejeon Bus) - 대전광역시</li><li>부산 버스 (Busan Bus) - 부산광역시</li><li>광주 버스 (Gwangju Bus) - 광주광역시</li><li>안동 버스 (Andong Bus) - 경상북도 안동시</li><li>여수 버스 (Yeosu Bus) - 전라남도 여수시</li><li>인천 버스 (Incheon Bus) - 인천광역시</li><li>알뜰폰 티플 실시간 사용량 위젯</li><li>무블로그: 당신의 이야기를 지도에 담다</li><li>냥미터 - 나만의 요금제</li><li>SnapQR</li><li>보이는말 - 실시간 자막 번역</li>",
+    "appList": "<li>대전 버스 (Daejeon Bus) - 대전광역시</li><li>부산 버스 (Busan Bus) - 부산광역시</li><li>광주 버스 (Gwangju Bus) - 광주광역시</li><li>안동 버스 (Andong Bus) - 경상북도 안동시</li><li>여수 버스 (Yeosu Bus) - 전라남도 여수시</li><li>인천 버스 (Incheon Bus) - 인천광역시</li><li>알뜰폰 티플 실시간 사용량 위젯</li><li>무블로그: 당신의 이야기를 지도에 담다</li><li>냥미터 - 나만의 요금제</li><li>SnapQR</li>",
     "articles": [
       {
         "title": "제1조(개인정보의 처리 목적)",

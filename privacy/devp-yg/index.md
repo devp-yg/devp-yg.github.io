@@ -32,10 +32,9 @@ styles:
                 <li>무블로그: 당신의 이야기를 지도에 담다</li>
                 <li>냥미터 - 나만의 요금제</li>
                 <li>SnapQR</li>
-                <li>공간기록 - 여기를 기억해</li>
             </ul>
         </div>
-        <p data-i18n-html="privacy.specificPolicies">공간기록과 마크담은 앱별 개인정보 처리방침을 확인해 주세요: <a href="/privacy/taghere/">공간기록</a> · <a href="/privacy/markdam/">마크담</a></p>
+        <p data-i18n-html="privacy.specificPolicies">공간기록, 마크담, 보이는말은 각각의 개인정보 처리방침을 확인해 주세요: <a href="/privacy/taghere/">공간기록</a> · <a href="/privacy/markdam/">마크담</a> · <a href="/privacy/rtvideo/">보이는말</a></p>
         <p data-i18n="privacy.applies">위 Devp-YG 애플리케이션들에 대한 개인정보 처리 방침은 다음과 같습니다.</p>
 
         <h2 data-i18n="privacy.articleHeading">개인정보 처리 방침</h2>
