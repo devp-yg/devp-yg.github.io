@@ -2,8 +2,8 @@
 layout: default
 lang: ko
 i18n_key: rtvideoPrivacy
-title: "개인정보 처리방침 | RTVideo"
-description: "RTVideo 앱의 개인정보 처리 및 이용에 관한 안내입니다."
+title: "개인정보 처리방침 | 보이는말"
+description: "보이는말 앱의 개인정보 처리 및 이용에 관한 안내입니다."
 permalink: /privacy/rtvideo/
 styles:
   - /assets/css/pages/legal.css
@@ -54,7 +54,7 @@ styles:
 
 <p>앱은 최신 버전을 확인하기 위해 Apple App Store 조회 서비스에 앱 번들 ID를 전송합니다.</p>
 
-<p>RTVideo는 App Store 버전 조회 요청에 현재 스토어 국가 코드도 함께 전송합니다. 음성·자막 정보는 이 요청에 포함하지 않습니다.</p>
+<p>보이는말은 App Store 버전 조회 요청에 현재 스토어 국가 코드도 함께 전송합니다. 음성·자막 정보는 이 요청에 포함하지 않습니다.</p>
 
 <p>Apple이 서비스 요청을 처리하면서 네트워크 연결 정보를 처리할 수 있으며, 자세한 내용은 <a href="https://www.apple.com/legal/privacy/kr/">Apple 개인정보 처리방침</a>을 확인해 주세요.</p>
 
@@ -64,7 +64,9 @@ styles:
 
 <h2>제4조(개인정보 처리의 위탁 및 국외 처리)</h2>
 
-<p>앱 운영자는 앱 이용 통계 분석의 목적과 이벤트를 정하고, Google LLC의 Firebase Analytics가 전달받은 정보를 분석 서비스 제공을 위해 처리합니다. Firebase Analytics(Google Analytics)의 ‘Google 제품 및 서비스’ 데이터 공유 설정은 사용하지 않습니다. 이와 별도로 Google Analytics 계정의 ‘Engagement modeling and business insights’ 설정은 사용 중이며, Google은 이 기능에서 집계·익명화한 정보를 이용한다고 안내합니다.</p>
+<p>앱 운영자는 개인정보처리자이며, 앱 이용 통계 분석을 위해 Google LLC에 분석 처리를 위탁합니다. Firebase Analytics(Google Analytics)의 ‘Google 제품 및 서비스’ 데이터 공유 설정은 사용하지 않습니다.</p>
+
+<p>현재 Google Analytics 계정에서는 ‘Engagement modeling and business insights’ 설정을 사용하고 있습니다. Google은 해당 기능에 쓰이는 정보를 집계·익명화한다고 안내합니다.</p>
 
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개인정보처리자</td><td>앱 운영자</td></tr><tr><td>수탁자</td><td>Google LLC</td></tr><tr><td>이용 서비스</td><td>Firebase Analytics(Google Analytics)</td></tr><tr><td>위탁 업무</td><td>앱 이용 통계 처리 및 분석 결과 제공</td></tr><tr><td>처리 항목</td><td>제5조의 앱 이용 분석 정보</td></tr><tr><td>보유기간</td><td>제2조의 기준 적용</td></tr></tbody></table>
 
