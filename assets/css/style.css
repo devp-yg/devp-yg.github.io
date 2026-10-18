@@ -244,7 +244,7 @@ button:focus-visible {
 
 .nav-products-list {
     display: grid;
-    gap: 4px;
+    gap: 5px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -252,36 +252,45 @@ button:focus-visible {
 
 .nav-products-list a {
     align-items: center;
-    border-radius: 16px;
+    border: 1px solid transparent;
+    border-radius: 17px;
     display: grid;
-    gap: 12px;
-    grid-template-columns: 44px minmax(0, 1fr) auto;
-    padding: 11px 12px;
+    gap: 13px;
+    grid-template-columns: 46px minmax(0, 1fr) auto;
+    padding: 10px 11px;
+    transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
 .nav-products-list a:hover,
 .nav-products-list a[aria-current="page"] {
-    background: #f3f6fa;
+    background: linear-gradient(110deg, #f3f7fc, #f8faff);
+    border-color: #e8eef6;
+}
+
+.nav-products-list a:hover {
+    transform: translateX(2px);
 }
 
 .nav-product-mark {
     align-items: center;
     background: #eaf0f7;
-    border-radius: 13px;
+    border: 1px solid rgba(28, 42, 64, 0.06);
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(22, 38, 60, 0.08);
     color: var(--ink);
     display: grid;
     font-family: "DM Sans", sans-serif;
     font-size: 0.82rem;
     font-weight: 800;
-    height: 44px;
+    height: 46px;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    width: 44px;
+    width: 46px;
 }
 
 .nav-product-mark > img {
-    border-radius: 11px;
+    border-radius: 13px;
     display: block;
     height: 100%;
     object-fit: cover;
@@ -332,36 +341,37 @@ button:focus-visible {
 }
 
 .nav-product-mark-citybus {
-    background: #e1efff;
-    color: #195b9f;
+    background: radial-gradient(circle at 24% 15%, #377ab3, #163c64 72%);
+    color: #d5f4ff;
 }
 
-.nav-product-mark-citybus img {
-    border: 1.5px solid #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.18);
-    height: 27px;
-    left: 2px;
+.nav-citybus-symbol {
+    fill: rgba(117, 229, 231, 0.14);
+    height: 34px;
+    margin: auto;
+    stroke: #b7f7f2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+    width: 34px;
+}
+
+.nav-citybus-count {
+    align-items: center;
+    background: #fff;
+    border: 1px solid rgba(22, 60, 100, 0.18);
+    border-radius: 99px;
+    bottom: 2px;
+    color: #17436c;
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.56rem;
+    height: 16px;
+    justify-content: center;
+    line-height: 1;
     position: absolute;
-    top: 8px;
-    width: 27px;
-}
-
-.nav-product-mark-citybus img:nth-child(1) {
-    transform: rotate(-13deg);
-}
-
-.nav-product-mark-citybus img:nth-child(2) {
-    left: 9px;
-    top: 6px;
-    transform: rotate(-1deg);
-    z-index: 1;
-}
-
-.nav-product-mark-citybus img:nth-child(3) {
-    left: 16px;
-    transform: rotate(11deg);
-    z-index: 2;
+    right: 1px;
+    width: 16px;
 }
 
 .nav-product-mark-taghere {
