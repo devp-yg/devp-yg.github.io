@@ -3,3 +3,8 @@ _site/
 .jekyll-cache/
 .idea/
 .DS_Store
+
+# Local privacy-policy planning and draft scaffold; publish only finalized pages.
+_data/privacy_apps.yml
+_drafts/privacy/
+_includes/privacy/
