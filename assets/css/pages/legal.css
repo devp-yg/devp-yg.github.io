@@ -13,8 +13,7 @@
 }
 
 .legal-section {
-    border-top: 1px solid rgba(124, 128, 129, 0.2);
-    padding: 1.8em 0;
+    margin: 2.2em 0 0;
 }
 
 .legal-section h3 {
@@ -35,7 +34,8 @@
     line-height: 1.8;
 }
 
-.app-policy-content > h2 {
+.app-policy-content > h2,
+.app-policy-content .legal-section > h3 {
     margin: 2.2em 0 0.8em;
     padding-bottom: 0.55em;
     border-bottom: 1px solid rgba(124, 128, 129, 0.24);
@@ -53,7 +53,8 @@
     background: rgba(124, 128, 129, 0.055);
 }
 
-.app-policy-content .policy-app-target p {
+.app-policy-content .policy-app-target p,
+.policy-app-target-row {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -61,8 +62,29 @@
     margin: 0;
 }
 
+.policy-app-target--compact {
+    padding-block: 0.65em;
+}
+
+.policy-app-target-row {
+    line-height: 1.6;
+}
+
 .policy-app-target strong {
     color: #25292c;
+}
+
+.policy-app-target .legal-app-list {
+    margin: 0.75em 0 0;
+    padding-left: 1.25em;
+}
+
+.app-policy-content .legal-section > h3 {
+    margin-top: 0;
+}
+
+.app-policy-content .legal-section > p:last-child {
+    margin-bottom: 0;
 }
 
 .app-policy-content > .policy-app-target + h2 {
@@ -76,7 +98,8 @@
 
 .app-policy-content > p,
 .app-policy-content > ul,
-.app-policy-content > ol {
+.app-policy-content > ol,
+.app-policy-content .legal-section > p {
     text-align: justify;
     text-align-last: start;
     text-justify: inter-character;
@@ -128,7 +151,8 @@
 
     .app-policy-content > p,
     .app-policy-content > ul,
-    .app-policy-content > ol {
+    .app-policy-content > ol,
+    .app-policy-content .legal-section > p {
         word-break: normal;
     }
 
