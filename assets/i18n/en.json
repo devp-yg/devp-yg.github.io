@@ -142,6 +142,8 @@
     "movlogDescription": "Automatically record routes and places you visit, and turn an ordinary day into your own story.",
     "movlogInsightsAlt": "Movlog insights screen",
     "citybusDescription": "Check bus arrivals plus transfers, urban rail, and travel information across six cities.",
+    "arrivalPreviewLabel": "Live arrival information",
+    "arrivalPreviewMinutes": "min to arrival",
     "taghereDescription": "Save places and spaces, record visits with location and Bluetooth, and look back by date.",
     "taghereScreenAlt": "TagHere saved places list",
     "markdamDescription": "A reading-focused viewer for text, tables, images, and diagrams, with PDF export for the same document.",

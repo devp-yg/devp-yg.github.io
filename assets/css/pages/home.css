@@ -234,31 +234,111 @@
 
 .city-icon-row img:first-child { margin-left: 0; }
 
-.route-art {
-    background:
-        radial-gradient(circle at 30% 20%, rgba(94, 234, 212, 0.18), transparent 25%),
-        linear-gradient(145deg, transparent 47.5%, var(--mint) 48%, var(--mint) 50%, transparent 50.5%);
+.arrival-art {
+    background: radial-gradient(ellipse at 72% 88%, rgba(94, 234, 212, 0.2), transparent 58%);
     bottom: 0;
-    height: 290px;
-    left: 0;
-    opacity: 0.85;
+    height: 245px;
+    overflow: hidden;
     position: absolute;
+    right: 0;
     width: 100%;
 }
 
-.route-art::after {
-    border: 2px solid rgba(96, 165, 250, 0.75);
-    border-radius: 45% 55% 35% 65%;
-    content: "";
-    inset: 35px 60px -80px 120px;
+.arrival-art-orbit {
+    border: 1px solid rgba(94, 234, 212, 0.16);
+    border-radius: 50%;
+    height: 430px;
     position: absolute;
-    transform: rotate(-11deg);
+    right: -105px;
+    top: 38px;
+    transform: rotate(-18deg);
+    width: 430px;
 }
 
-.route-dot { background: var(--mint); border: 5px solid #101827; border-radius: 50%; box-shadow: 0 0 0 2px var(--mint); height: 18px; position: absolute; width: 18px; z-index: 1; }
-.route-dot.one { left: 20%; top: 56%; }
-.route-dot.two { left: 51%; top: 39%; }
-.route-dot.three { right: 17%; top: 20%; }
+.arrival-art-orbit::before,
+.arrival-art-orbit::after {
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 50%;
+    content: "";
+    inset: 34px;
+    position: absolute;
+}
+
+.arrival-art-orbit::after { inset: 76px; }
+
+.arrival-preview {
+    background: linear-gradient(145deg, rgba(30, 48, 67, 0.96), rgba(19, 32, 49, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 22px;
+    bottom: 30px;
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28), inset 0 1px rgba(255, 255, 255, 0.06);
+    padding: 17px 20px 16px;
+    position: absolute;
+    right: clamp(24px, 5vw, 50px);
+    width: min(390px, calc(100% - 48px));
+}
+
+.arrival-preview-heading {
+    align-items: center;
+    color: #a8b7c9;
+    display: flex;
+    font-size: 0.72rem;
+    font-weight: 600;
+    gap: 9px;
+    margin-bottom: 13px;
+}
+
+.arrival-live-dot {
+    background: var(--mint);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(94, 234, 212, 0.12);
+    height: 6px;
+    width: 6px;
+}
+
+.arrival-preview-details { align-items: center; display: flex; gap: 16px; }
+.arrival-bus-number { color: #fff; font: 700 1.8rem/1 "DM Sans", sans-serif; letter-spacing: -0.06em; }
+
+.arrival-bus-icon {
+    height: 34px;
+    margin-right: auto;
+    position: relative;
+    width: 58px;
+}
+
+.arrival-bus-icon::before {
+    background: var(--mint);
+    border-radius: 9px 9px 5px 5px;
+    content: "";
+    height: 24px;
+    left: 3px;
+    position: absolute;
+    top: 2px;
+    width: 52px;
+}
+
+.arrival-bus-icon::after {
+    background: linear-gradient(90deg, #183d46 0 42%, transparent 42% 48%, #183d46 48% 90%, transparent 90%);
+    border-radius: 4px 4px 1px 1px;
+    content: "";
+    height: 8px;
+    left: 9px;
+    position: absolute;
+    top: 7px;
+    width: 40px;
+}
+
+.arrival-bus-icon i { background: #142234; border: 2px solid #6ee7d1; border-radius: 50%; bottom: 1px; height: 9px; position: absolute; width: 9px; z-index: 1; }
+.arrival-bus-icon i:nth-child(1) { left: 10px; }
+.arrival-bus-icon i:nth-child(2) { right: 10px; }
+.arrival-bus-icon i:nth-child(3) { display: none; }
+
+.arrival-time { align-items: baseline; color: #a8b7c9; display: flex; gap: 4px; white-space: nowrap; }
+.arrival-time strong { color: #fff; font-size: 1.65rem; letter-spacing: -0.06em; }
+.arrival-time span { font-size: 0.72rem; }
+
+.arrival-preview-progress { background: rgba(255, 255, 255, 0.1); border-radius: 99px; height: 3px; margin-top: 15px; overflow: hidden; }
+.arrival-preview-progress span { background: var(--mint); border-radius: inherit; display: block; height: 100%; width: 68%; }
 
 .utility-section { background: #fff; }
 .utility-grid { display: grid; gap: 8vw; grid-template-columns: 0.72fr 1.28fr; }

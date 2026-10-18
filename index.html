@@ -91,7 +91,18 @@ styles:
                         <p data-i18n="home.citybusDescription">부산부터 여수까지, 내 도시의 버스 도착정보와 노선을 빠르고 간결하게 확인하세요.</p>
                         <span class="text-link"><span data-i18n="home.findMyCity">내 도시 찾기</span> <i aria-hidden="true">↗</i></span>
                     </div>
-                    <div class="route-art" aria-hidden="true"><span class="route-dot one"></span><span class="route-dot two"></span><span class="route-dot three"></span></div>
+                    <div class="arrival-art" aria-hidden="true">
+                        <div class="arrival-art-orbit"></div>
+                        <div class="arrival-preview">
+                            <div class="arrival-preview-heading"><span class="arrival-live-dot"></span><span data-i18n="home.arrivalPreviewLabel">실시간 도착 정보</span></div>
+                            <div class="arrival-preview-details">
+                                <span class="arrival-bus-number">1003</span>
+                                <span class="arrival-bus-icon"><i></i><i></i><i></i></span>
+                                <span class="arrival-time"><strong>3</strong><span data-i18n="home.arrivalPreviewMinutes">분 후 도착</span></span>
+                            </div>
+                            <div class="arrival-preview-progress"><span></span></div>
+                        </div>
+                    </div>
                 </a>
 
                 <a class="product-card product-markdam" href="{{ '/markdam/' | relative_url }}">
