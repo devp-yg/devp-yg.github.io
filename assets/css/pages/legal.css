@@ -28,3 +28,102 @@
     line-height: 1.8;
     margin: 0;
 }
+
+.app-policy-content {
+    max-width: 960px;
+    color: #45494c;
+    line-height: 1.8;
+}
+
+.app-policy-content > h2 {
+    margin: 2.2em 0 0.8em;
+    padding-bottom: 0.55em;
+    border-bottom: 1px solid rgba(124, 128, 129, 0.24);
+    color: #25292c;
+    font-size: 1.25em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.policy-app-target {
+    margin: 0 0 2em;
+    padding: 1.1em 1.35em;
+    border: 1px solid rgba(124, 128, 129, 0.2);
+    border-radius: 0.6em;
+    background: rgba(124, 128, 129, 0.055);
+}
+
+.policy-app-target p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em 1.2em;
+    margin: 0;
+}
+
+.policy-app-target strong {
+    min-width: 5.2em;
+    color: #25292c;
+}
+
+.app-policy-content p {
+    margin: 0 0 1em;
+    line-height: 1.85;
+}
+
+.app-policy-content > h2 + p {
+    margin-top: 0;
+}
+
+.app-policy-content table {
+    width: 100%;
+    margin: 1.35em 0 1.6em;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: 1px solid rgba(124, 128, 129, 0.24);
+    border-radius: 0.55em;
+    font-size: 0.94em;
+    line-height: 1.7;
+}
+
+.app-policy-content th,
+.app-policy-content td {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid rgba(124, 128, 129, 0.18);
+    text-align: left;
+    vertical-align: top;
+}
+
+.app-policy-content th {
+    background: rgba(124, 128, 129, 0.1);
+    color: #25292c;
+    font-weight: 700;
+}
+
+.app-policy-content tr:last-child td {
+    border-bottom: 0;
+}
+
+.app-policy-content a {
+    overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 736px) {
+    .app-policy-content {
+        padding-right: 1.25em;
+        padding-left: 1.25em;
+    }
+
+    .policy-app-target {
+        padding: 0.95em 1em;
+    }
+
+    .app-policy-content table {
+        font-size: 0.86em;
+    }
+
+    .app-policy-content th,
+    .app-policy-content td {
+        padding: 0.7em 0.65em;
+    }
+}
