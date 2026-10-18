@@ -28,12 +28,12 @@ products:
     mark: taghere
     page_key: taghere
   - label: 마크담
-    key: mdvista
+    key: markdam
     description: Markdown 문서를 읽고 PDF로 저장하는 뷰어
-    description_key: mdvistaDescription
-    url: /mdvista/
-    mark: mdvista
-    page_key: mdvista
+    description_key: markdamDescription
+    url: /markdam/
+    mark: markdam
+    page_key: markdam
   - label: 보이는말
     key: rtvideo
     description: 실시간 자막 번역

@@ -14,7 +14,7 @@ Devp-YG의 앱 목록, 제품 소개, 개인정보처리방침, 개발 기록을
 ├── products/       # Product landing pages
 │   ├── citybus/
 │   ├── movlog/
-│   ├── mdvista/
+│   ├── markdam/
 │   ├── rtvideo/
 │   └── taghere/
 ├── index.html      # Site entry page

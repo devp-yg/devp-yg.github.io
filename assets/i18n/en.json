@@ -60,7 +60,7 @@
       "title": "TagHere | Space Log - Remember This Place",
       "description": "Save places and the spaces within them, then revisit location and space recognition history by date."
     },
-    "mdvista": {
+    "markdam": {
       "title": "Markdam - Markdown Viewer | Devp-YG",
       "description": "Meet Markdam, an offline Markdown reader for Mac, iPhone, and iPad that can save documents as PDF."
     },
@@ -85,8 +85,8 @@
     "citybusDescription": "Bus, transfer, and travel information by city",
     "taghere": "TagHere",
     "taghereDescription": "Keep places, spaces, and visit history together",
-    "mdvista": "Markdam",
-    "mdvistaDescription": "A Markdown reader with PDF export",
+    "markdam": "Markdam",
+    "markdamDescription": "A Markdown reader with PDF export",
     "history": "Release history",
     "citybus": "CityBus",
     "movlog": "Movlog",
@@ -132,8 +132,8 @@
     "citybusDescription": "Check bus arrivals plus transfers, urban rail, and travel information across six cities.",
     "taghereDescription": "Save places and spaces, record visits with location and Bluetooth, and look back by date.",
     "taghereScreenAlt": "TagHere saved places list",
-    "mdvistaDescription": "A reading-focused viewer for text, tables, images, and diagrams, with PDF export for the same document.",
-    "mdvistaScreenAlt": "Markdam Markdown reading screen",
+    "markdamDescription": "A reading-focused viewer for text, tables, images, and diagrams, with PDF export for the same document.",
+    "markdamScreenAlt": "Markdam Markdown reading screen",
     "findMyCity": "Find my city",
     "toolsTitle": "Small tools<br>that make a difference",
     "allAppsLink": "View all apps",
@@ -418,7 +418,7 @@
       "brandName": "Space Log",
       "brandDescription": "Remember This Place"
     },
-    "mdvista": {
+    "markdam": {
       "name": "Markdam - Markdown Viewer",
       "subtitle": "Markdown Reader",
       "description": "Read Markdown comfortably on Mac, iPhone, and iPad, then save it as PDF. View tables, code, images, SVG, Mermaid diagrams, and equations offline.",
@@ -469,7 +469,7 @@
     "finalTitle": "Keep the places<br><em>you want to remember.</em>",
     "allApps": "Explore other apps ↗"
   },
-  "mdvista": {
+  "markdam": {
     "eyebrow": "MARKDOWN, CLEARLY",
     "title": "Words, images, and diagrams<br><em>made comfortable to read.</em>",
     "description": "Open Markdown documents on Mac, iPhone, and iPad, read them, and save them as PDF. View tables, code, local images, SVG, Mermaid diagrams, and equations offline.",
@@ -505,49 +505,49 @@
   "privacy": {
     "title": "Privacy Policy",
     "intro": "Devp-YG distributes the following applications (collectively, the \"Devp-YG Applications\").",
-    "applies": "This privacy policy applies to the Devp-YG Applications listed above.",
+    "applies": "This policy applies across the Devp-YG Applications listed below. The information processed may vary by app feature and service; please also review the in-app notices and privacy disclosures on the app’s App Store product page.",
     "articleHeading": "Privacy Policy",
     "appList": "<li>Daejeon Bus – Daejeon Metropolitan City</li><li>Busan Bus – Busan Metropolitan City</li><li>Gwangju Bus – Gwangju Metropolitan City</li><li>Andong Bus – Andong, Gyeongsangbuk-do</li><li>Yeosu Bus – Yeosu, Jeollanam-do</li><li>Incheon Bus – Incheon Metropolitan City</li><li>Tplus Mobile real-time usage widget</li><li>Movlog: Map Your Story</li><li>FareFlow</li><li>SnapQR</li><li>Space Log - Remember This Place (TagHere)</li><li>Markdam - Markdown Viewer</li><li>RTVideo - Live Translation Captions</li>",
     "articles": [
       {
         "title": "Article 1 (Purpose of Personal Information Processing)",
-        "body": "Devp-YG Applications comply with the Personal Information Protection Act and follow this policy to protect the personal information of all application users."
+        "body": "Devp-YG Applications process information as needed to provide and operate the apps, improve features and diagnose errors, check for updates, and provide advertising in apps that include ads. Processing purposes and data items may vary with each app’s features and services."
       },
       {
         "title": "Article 2 (Processing and Retention Period of Personal Information)",
-        "body": "Devp-YG Applications do not collect, process, or retain personal information."
+        "body": "Usage events from apps that use Firebase Analytics are stored in the associated Google Analytics property and automatically deleted according to its user- and event-level data retention setting. For a standard property, this period can be set to 2 or 14 months, and data is deleted monthly after the selected period. This setting applies to user- and event-level data used in Explorations and similar reports; it does not apply to standard aggregated reports. Devp-YG can manage retention only through the settings available for each app’s linked Google Analytics property and does not separately set or directly manage Google’s service-operation or backup retention. The current setting must be checked in each app’s Google Analytics property. Retention by other external services follows their policies and settings."
       },
       {
         "title": "Article 3 (Provision of Personal Information to Third Parties)",
-        "body": "Devp-YG Applications do not provide personal information to third parties."
+        "body": "Devp-YG does not sell personal information. When necessary to provide and operate app features, relevant information may be sent to Google services used by an app, such as Firebase Analytics and Google Mobile Ads, and to Apple services used to check for app updates. For example, an update lookup sends the app identifier and storefront region to Apple. For apps that use analytics, the developer views aggregate reports provided by Analytics and does not use those reports to identify individual users. Services and information processed may vary by app."
       },
       {
         "title": "Article 4 (Entrustment of Personal Information Processing)",
-        "body": "Devp-YG Applications do not outsource personal information processing."
+        "body": "Where an app uses these services, Google LLC processes app usage analytics through Firebase Analytics and provides or measures ads through Google Mobile Ads. Apple processes app update lookup requests. Each provider processes information as needed to deliver its service; retention periods and processing terms depend on the applicable service settings and policies. The developer views aggregate Analytics results, not individual users’ raw event records or information such as their real names that directly identifies them."
       },
       {
         "title": "Article 5 (Items of Personal Information Processed)",
-        "body": "Devp-YG Applications do not process any personal information."
+        "body": "Depending on the app and service settings, providers may process app launch, feature usage, and error events; technical information such as app version, operating system version, device model, language, and region; an app-installation-level analytics identifier; and information used to deliver or measure ads. For apps that use analytics, the developer views only aggregate Analytics reports and cannot identify an individual user from those reports. Markdam - Markdown Viewer does not collect or store user account information or document files on developer-operated servers. Firebase Analytics may receive events such as app launch; document opening source and format; word-count and heading-count bands; whether warnings occurred; search-length band and whether a search matched; feature usage and predefined error codes; and PDF export options. Document contents, file names or paths, raw search terms, and raw error messages are not sent to Analytics. Firebase Analytics may process an app-installation-level identifier and technical information for analytics; this identifier is different from the advertising identifier (IDFA). Apple’s tracking permission setting controls cross-app tracking and personalized advertising using IDFA. If tracking is not allowed, IDFA-based cross-app tracking and personalized advertising are not allowed; other processing needed for analytics or contextual ads may occur separately. See each app’s notices for information entered in or processed by other apps."
       },
       {
         "title": "Article 6 (Destruction of Personal Information)",
-        "body": "Because no personal information is collected, there are no matters related to its destruction."
+        "body": "Information stored only on a device can be removed using the app’s deletion features or other removal methods provided by that app, such as deleting the app. Firebase Analytics data is subject to Google Analytics retention settings and policies. Markdam - Markdown Viewer does not combine analytics events with account details or real names that directly identify users. Therefore, the developer cannot locate and delete a specific user’s analytics records using only an aggregate report or email address. Google Analytics provides a deletion request mechanism using a Firebase app-instance ID, but the current app does not provide a feature for users to retrieve that ID and request deletion of their individual analytics data. Deletion or restriction requests may be sent to the email in Article 9; we will explain what can be handled based on the information that can be identified and the external service’s capabilities. Information that must be retained by law is kept separately for the required period and then deleted."
       },
       {
         "title": "Article 7 (Measures to Ensure the Security of Personal Information)",
-        "body": "Devp-YG ensures the security of personal information by not collecting, processing, or retaining it."
+        "body": "Devp-YG manages access to information within the scope needed for its processing purposes and protects information through agreements and service settings with external providers. However, no method of transmission over the internet or electronic storage can be guaranteed to be completely secure."
       },
       {
         "title": "Article 8 (Installation, Operation, and Refusal of Automatic Collection Devices)",
-        "body": "Devp-YG Applications do not install or operate devices that automatically collect personal information."
+        "body": "Some apps may automatically process app usage events and technical information through analytics SDKs such as Firebase Analytics or through advertising SDKs. Markdam - Markdown Viewer uses Firebase Analytics for usage statistics; the developer views only aggregate reports and cannot identify individual users from them. Document contents, file names or paths, and raw search terms are not sent to Analytics. The current Markdam app does not provide an in-app setting to stop Analytics collection or delete individual analytics data. The Firebase SDK includes a collection control, but this app does not currently expose it to users. Apple’s tracking permission controls cross-app tracking and personalized advertising using IDFA; Markdam does not use Analytics for IDFA-based ad tracking. Send deletion or restriction requests to devp.yg@gmail.com. If the user’s analytics record cannot be identified, we cannot guarantee deletion of an individual record and will explain what can be identified and processed."
       },
       {
         "title": "Article 9 (Personal Information Protection Officer)",
-        "body": "Devp-YG takes overall responsibility for work related to personal information processing."
+        "body": "For questions about privacy processing, or to request access, deletion, or restriction of processing, contact the Devp-YG privacy contact at devp.yg@gmail.com."
       },
       {
         "title": "Article 10 (Changes to this Privacy Policy)",
-        "body": "This privacy policy takes effect from the date each application is released on the App Store."
+        "body": "This policy takes effect on October 18, 2026. If processing purposes, data items, external services, or how users exercise their rights change, we will publish the changes and their effective date on this page."
       }
     ]
   },

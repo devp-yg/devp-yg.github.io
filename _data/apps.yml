@@ -182,7 +182,7 @@
   image: /assets/images/apps/rtvideo/icon.png
   image_alt: 보이는말 앱 아이콘
 
-- id: mdvista
+- id: markdam
   platform: ios
   category: reading-tools
   portfolio_order: 10
@@ -191,5 +191,5 @@
   review_status: pending
   minimum_ios: "17"
   description: Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.
-  image: /assets/images/apps/mdvista/icon.png
+  image: /assets/images/apps/markdam/icon.png
   image_alt: 마크담 앱 아이콘

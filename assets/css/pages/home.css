@@ -139,7 +139,7 @@
 .app-cloud-label strong { color: #fff; font-size: clamp(1.45rem, 2.6vw, 2rem); letter-spacing: -0.06em; margin-top: 5px; white-space: nowrap; }
 .icon-movlog { left: 33%; top: 2%; }
 .icon-citybus { animation-delay: -2.2s; right: 1%; top: 22%; }
-.icon-mdvista { animation-delay: -1.2s; right: 1%; bottom: 17%; }
+.icon-markdam { animation-delay: -1.2s; right: 1%; bottom: 17%; }
 .icon-rtvideo { animation-delay: -3.1s; left: 34%; bottom: 0; }
 .icon-taghere { animation-delay: -2.6s; left: 1%; bottom: 18%; }
 .icon-snapqr { animation-delay: -0.8s; left: 1%; top: 22%; }
@@ -212,15 +212,15 @@
 .product-taghere .product-copy > p:not(.product-kicker) { color: #735f50; }
 .taghere-shot { background: #f7f4ef; border: 7px solid #f7f4ef; border-bottom: 0; border-radius: 32px 32px 0 0; box-shadow: 0 -10px 40px rgba(52, 37, 29, 0.14); height: 310px; overflow: hidden; transform: translateY(18px); width: 238px; }
 .taghere-shot img { display: block; width: 100%; }
-.product-mdvista { background: #ebe7ff; color: #29204c; grid-template-rows: auto 1fr; }
+.product-markdam { background: #ebe7ff; color: #29204c; grid-template-rows: auto 1fr; }
 .product-rtvideo { background: #102b3d; color: #f1fbff; grid-template-rows: auto 1fr; }
 .product-rtvideo .product-copy > p:not(.product-kicker) { color: #a8c1cc; }
 .product-rtvideo .product-kicker { color: #68dfcb; }
 .rtvideo-shot { background: #07101e; border: 7px solid #07101e; border-bottom: 0; border-radius: 32px 32px 0 0; box-shadow: 0 -10px 40px rgba(7, 16, 30, 0.28); height: 310px; overflow: hidden; transform: translateY(18px); width: 238px; }
 .rtvideo-shot img { display: block; width: 100%; }
-.product-mdvista .product-copy > p:not(.product-kicker) { color: #655d83; }
-.mdvista-shot { background: #fff; border: 7px solid #fff; border-bottom: 0; border-radius: 32px 32px 0 0; box-shadow: 0 -10px 40px rgba(41, 32, 76, 0.16); height: 310px; overflow: hidden; transform: translateY(18px); width: 238px; }
-.mdvista-shot img { display: block; width: 100%; }
+.product-markdam .product-copy > p:not(.product-kicker) { color: #655d83; }
+.markdam-shot { background: #fff; border: 7px solid #fff; border-bottom: 0; border-radius: 32px 32px 0 0; box-shadow: 0 -10px 40px rgba(41, 32, 76, 0.16); height: 310px; overflow: hidden; transform: translateY(18px); width: 238px; }
+.markdam-shot img { display: block; width: 100%; }
 .city-icon-row { display: flex; }
 
 .city-icon-row img {

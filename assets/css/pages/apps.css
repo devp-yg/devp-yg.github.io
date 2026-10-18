@@ -1,9 +1,9 @@
 .app-page { --app-accent: #805c43; --app-ink: #30231c; --app-muted: #78695f; background: #fbfaf8; color: var(--app-ink); }
-.app-page-mdvista { --app-accent: #5943a8; --app-ink: #292044; --app-muted: #706987; background: #fbfaff; }
+.app-page-markdam { --app-accent: #5943a8; --app-ink: #292044; --app-muted: #706987; background: #fbfaff; }
 .app-page-rtvideo { --app-accent: #4ed9c2; --app-ink: #102331; --app-muted: #667986; background: #f8fbfc; }
 .app-shell { margin: 0 auto; max-width: 1240px; padding-left: 28px; padding-right: 28px; }
 .app-hero { background: radial-gradient(circle at 82% 16%, rgba(208, 173, 135, .22), transparent 27%), linear-gradient(135deg, #f2e8dc 0%, #fbfaf8 62%); overflow: hidden; padding: 78px 0 82px; }
-.app-page-mdvista .app-hero { background: radial-gradient(circle at 82% 16%, rgba(157, 139, 226, .22), transparent 27%), linear-gradient(135deg, #ebe7ff 0%, #fbfaff 62%); }
+.app-page-markdam .app-hero { background: radial-gradient(circle at 82% 16%, rgba(157, 139, 226, .22), transparent 27%), linear-gradient(135deg, #ebe7ff 0%, #fbfaff 62%); }
 .app-page-rtvideo .app-hero { background: radial-gradient(circle at 82% 16%, rgba(78, 217, 194, .2), transparent 27%), linear-gradient(135deg, #e5f6f5 0%, #f8fbfc 62%); }
 .app-hero-grid { align-items: center; display: grid; gap: clamp(44px, 7vw, 100px); grid-template-columns: minmax(0, 1fr) minmax(300px, .78fr); }
 .app-hero-copy { max-width: 640px; }
@@ -37,7 +37,7 @@
 .app-feature-grid h3 { font-size: 1.15rem; letter-spacing: -.04em; margin: 28px 0 10px; }
 .app-feature-grid p, .app-info-copy p { color: var(--app-muted); font-size: .9rem; line-height: 1.8; margin: 0; }
 .app-gallery-section { background: #f1eee9; padding: 105px 0 112px; }
-.app-page-mdvista .app-gallery-section { background: #f0eef8; }
+.app-page-markdam .app-gallery-section { background: #f0eef8; }
 .app-page-rtvideo .app-gallery-section { background: #eaf2f4; }
 .app-gallery-grid { display: grid; gap: 25px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .app-gallery-grid figure { margin: 0; }
@@ -49,11 +49,11 @@
 .app-info-copy { max-width: 650px; }
 .app-info-copy .app-secondary-link { display: inline-block; margin-top: 20px; }
 .app-final { background: #35271f; color: #fff; padding: 90px 0; }
-.app-page-mdvista .app-final { background: #292044; }
+.app-page-markdam .app-final { background: #292044; }
 .app-page-rtvideo .app-final { background: #102331; }
 .app-final h2 { font-size: clamp(2.8rem, 5vw, 4.8rem); letter-spacing: -.07em; line-height: 1.02; margin: 0 0 28px; }
 .app-final h2 em { color: #d9ad87; }
-.app-page-mdvista .app-final h2 em { color: #b7a9ff; }
+.app-page-markdam .app-final h2 em { color: #b7a9ff; }
 .app-page-rtvideo .app-final h2 em { color: #4ed9c2; }
 .app-final .app-review-badge { margin-right: 15px; }
 .app-final-link { color: rgba(255,255,255,.8); display: inline-block; margin-top: 18px; }

@@ -13,7 +13,7 @@ styles:
 {% assign citybus_apps = site.data.apps | where: "series", "citybus" %}
 {% assign movlog_app = site.data.apps | where: "id", "movlog" | first %}
 {% assign taghere_app = site.data.apps | where: "id", "taghere" | first %}
-{% assign mdvista_app = site.data.apps | where: "id", "mdvista" | first %}
+{% assign markdam_app = site.data.apps | where: "id", "markdam" | first %}
 {% assign rtvideo_app = site.data.apps | where: "id", "rtvideo" | first %}
 
 <main id="main" class="home-page">
@@ -40,7 +40,7 @@ styles:
                 <div class="app-cloud-label" aria-hidden="true"><span>DEVP-YG</span><strong data-i18n="home.appCloudLabel">매일을 위한 앱</strong></div>
                 <div class="floating-icon icon-movlog"><img src="{{ '/assets/images/apps/movlog/icon.png' | relative_url }}" alt="무블로그 앱 아이콘" data-i18n-alt="apps.movlog.imageAlt" /><span data-i18n="header.movlog">무블로그</span></div>
                 <div class="floating-icon icon-citybus"><img src="{{ '/assets/images/apps/citybus/busan.png' | relative_url }}" alt="부산버스 앱 아이콘" data-i18n-alt="home.busanAlt" /><span data-i18n="home.transitLabel">대중교통</span></div>
-                <div class="floating-icon icon-mdvista"><img src="{{ '/assets/images/apps/mdvista/icon.png' | relative_url }}" alt="마크담 앱 아이콘" data-i18n-alt="apps.mdvista.imageAlt" /><span data-i18n="home.readingLabel">문서 읽기</span></div>
+                <div class="floating-icon icon-markdam"><img src="{{ '/assets/images/apps/markdam/icon.png' | relative_url }}" alt="마크담 앱 아이콘" data-i18n-alt="apps.markdam.imageAlt" /><span data-i18n="home.readingLabel">문서 읽기</span></div>
                 <div class="floating-icon icon-rtvideo"><img src="{{ '/assets/images/apps/rtvideo/icon.png' | relative_url }}" alt="보이는말 앱 아이콘" data-i18n-alt="apps.rtvideo.imageAlt" /><span data-i18n="home.translationLabel">실시간 번역</span></div>
                 <div class="floating-icon icon-taghere"><img src="{{ '/assets/images/apps/taghere/icon.png' | relative_url }}" alt="공간기록 앱 아이콘" data-i18n-alt="apps.taghere.imageAlt" /><span data-i18n="home.placesLabel">장소 기록</span></div>
                 <div class="floating-icon icon-snapqr"><img src="{{ '/assets/images/apps/other/snapqr.png' | relative_url }}" alt="SnapQR 앱 아이콘" data-i18n-alt="home.snapqrAlt" /><span data-i18n="home.toolsLabel">생활 도구</span></div>
@@ -94,15 +94,15 @@ styles:
                     <div class="route-art" aria-hidden="true"><span class="route-dot one"></span><span class="route-dot two"></span><span class="route-dot three"></span></div>
                 </a>
 
-                <a class="product-card product-mdvista" href="{{ '/mdvista/' | relative_url }}">
+                <a class="product-card product-markdam" href="{{ '/markdam/' | relative_url }}">
                     <div class="product-copy">
-                        <div class="product-icon"><img src="{{ mdvista_app.image | relative_url }}" alt="" /></div>
+                        <div class="product-icon"><img src="{{ markdam_app.image | relative_url }}" alt="" /></div>
                         <p class="product-kicker" data-i18n="portfolio.categories.reading-tools.label">문서 읽기</p>
-                        <h3 data-i18n="apps.mdvista.name">마크담</h3>
-                        <p data-i18n="home.mdvistaDescription">글, 표, 그림과 다이어그램을 읽고, 같은 문서를 PDF로 저장하는 읽기 중심 뷰어입니다.</p>
+                        <h3 data-i18n="apps.markdam.name">마크담</h3>
+                        <p data-i18n="home.markdamDescription">글, 표, 그림과 다이어그램을 읽고, 같은 문서를 PDF로 저장하는 읽기 중심 뷰어입니다.</p>
                         <span class="text-link"><span data-i18n="common.viewMore">자세히 보기</span> <i aria-hidden="true">↗</i></span>
                     </div>
-                    <div class="product-shot mdvista-shot"><img src="{{ '/assets/images/apps/mdvista/screenshots/reader.jpg' | relative_url }}" alt="마크담 Markdown 문서 읽기 화면" data-i18n-alt="home.mdvistaScreenAlt" loading="lazy" /></div>
+                    <div class="product-shot markdam-shot"><img src="{{ '/assets/images/apps/markdam/screenshots/reader.jpg' | relative_url }}" alt="마크담 Markdown 문서 읽기 화면" data-i18n-alt="home.markdamScreenAlt" loading="lazy" /></div>
                 </a>
 
                 <a class="product-card product-rtvideo" href="{{ '/rtvideo/' | relative_url }}">
