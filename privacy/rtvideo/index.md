@@ -66,8 +66,6 @@ styles:
 
 <p>앱 운영자는 개인정보처리자이며, 앱 이용 통계 분석을 위해 Google LLC에 분석 처리를 위탁합니다. Firebase Analytics(Google Analytics)의 ‘Google 제품 및 서비스’ 데이터 공유 설정은 사용하지 않습니다.</p>
 
-<p>현재 Google Analytics 계정에서는 ‘Engagement modeling and business insights’ 설정을 사용하고 있습니다. Google은 해당 기능에 쓰이는 정보를 집계·익명화한다고 안내합니다.</p>
-
 <table><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody><tr><td>개인정보처리자</td><td>앱 운영자</td></tr><tr><td>수탁자</td><td>Google LLC</td></tr><tr><td>이용 서비스</td><td>Firebase Analytics(Google Analytics)</td></tr><tr><td>위탁 업무</td><td>앱 이용 통계 처리 및 분석 결과 제공</td></tr><tr><td>처리 항목</td><td>제5조의 앱 이용 분석 정보</td></tr><tr><td>보유기간</td><td>제2조의 기준 적용</td></tr></tbody></table>
 
 <p>이용자가 동의한 앱 이용 분석 정보는 Firebase Analytics를 통해 Google에 전달됩니다. Google의 글로벌 인프라를 이용하므로 분석 정보는 국외에서 처리·보관됩니다.</p>
