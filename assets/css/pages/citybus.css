@@ -34,7 +34,7 @@
 
 .citybus-hero .eyebrow {
     color: var(--citybus-cyan);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.16em;
@@ -137,7 +137,7 @@
 
 .citybus-feature-kicker {
     color: #7890ab;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.08em;

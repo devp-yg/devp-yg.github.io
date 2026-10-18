@@ -140,7 +140,7 @@ styles:
             <div class="utility-list">
                 {% assign utility_apps = site.data.apps | where: "category", "everyday-tools" | sort: "portfolio_order" %}
                 {% for utility_app in utility_apps %}
-                    <a href="{{ utility_app.store_url }}" class="utility-item" target="_blank" rel="noopener noreferrer">
+                    <a href="{{ utility_app.intro_url | default: utility_app.store_url | relative_url }}" class="utility-item"{% unless utility_app.intro_url %} target="_blank" rel="noopener noreferrer"{% endunless %}>
                         <img src="{{ utility_app.image | relative_url }}" alt="{{ utility_app.image_alt | escape }}" data-i18n-alt="apps.{{ utility_app.id }}.imageAlt" loading="lazy" />
                         <div><h3 data-i18n="apps.{{ utility_app.id }}.name">{{ utility_app.name }}</h3><p data-i18n="apps.{{ utility_app.id }}.description">{{ utility_app.description }}</p></div>
                         <span aria-hidden="true">↗</span>
