@@ -12,20 +12,21 @@ styles:
 <article id="main">
   <header class="special container">
     <span class="icon fa-tablet" aria-hidden="true"></span>
-    <h2><strong>개인정보 처리방침</strong></h2>
+    <h2><strong data-i18n="tagherePrivacy.title">개인정보 처리방침</strong></h2>
   </header>
 
   <section class="wrapper style1 container legal-content app-policy-content">
-    <div class="policy-app-target policy-app-target--compact" aria-label="적용 대상">
-      <span class="policy-app-target-label">적용 대상</span>
+    <div class="policy-app-target policy-app-target--compact" aria-label="적용 대상" data-i18n-aria-label="tagherePrivacy.targetLabel">
+      <span class="policy-app-target-label" data-i18n="tagherePrivacy.targetLabel">적용 대상</span>
       <div class="policy-app-target-details">
-        <strong class="policy-app-target-name">공간기록</strong>
-        <span class="policy-app-target-description">여기를 기억해</span>
+        <strong class="policy-app-target-name" data-i18n="tagherePrivacy.appName">공간기록</strong>
+        <span class="policy-app-target-description" data-i18n="tagherePrivacy.appDescription">여기를 기억해</span>
       </div>
-      <ul class="policy-app-platforms" aria-label="지원 플랫폼">
+      <ul class="policy-app-platforms" aria-label="지원 플랫폼" data-i18n-aria-label="tagherePrivacy.platformsLabel">
         <li>iOS</li>
       </ul>
     </div>
+    <div data-i18n-html="tagherePrivacy.content">
     {% capture policy_content %}
 ## 제1조(개인정보의 처리 목적)
 
@@ -60,7 +61,7 @@ Apple이 서비스 요청 과정에서 처리하는 네트워크 연결 정보�
 
 **지도 및 주소 검색**
 
-이용자가 현재 위치 확인, 지도에서 장소 선택 또는 주소 검색 기능을 사용하면 앱은 Apple의 Core Location·MapKit 서비스를 이용합니다. 이때 Apple이 요청 처리를 위해 위치 좌표, 검색어 또는 네트워크 연결 정보를 처리할 수 있으며, Apple의 개인정보 처리방침이 적용됩니다. 지도 기능을 사용하지 않고 장소 정보를 직접 입력할 수 있습니다.
+앱은 장소 등록 화면의 지도 표시, 현재 위치 확인, 장소 선택 및 주소 검색을 위해 Apple의 Core Location·MapKit 서비스를 이용합니다. 이때 Apple이 요청 처리를 위해 지도 영역·선택 위치의 좌표, 검색어 또는 네트워크 연결 정보를 처리할 수 있으며, Apple의 개인정보 처리방침이 적용됩니다.
 
 ## 제4조(개인정보 처리의 위탁 및 국외 처리)
 
@@ -135,5 +136,6 @@ Firebase Analytics는 이용자가 동의한 경우에만 제5조의 분석 정�
 처리 목적·항목, 외부 서비스, 보유기간 또는 동의·권리 행사 방법이 변경되면 변경 내용과 적용일을 이 페이지에 안내합니다. 변경 전 방침은 별도 이력으로 관리하며, 추가 동의가 필요한 사항은 적용 전에 별도로 동의를 받습니다.
     {% endcapture %}
     {{ policy_content | markdownify }}
+    </div>
   </section>
 </article>
