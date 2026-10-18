@@ -46,28 +46,40 @@
 }
 
 .policy-app-target {
-    margin: 0 0 2em;
-    padding: 1.1em 1.35em;
+    margin: 0 0 1.5em;
+    padding: 0.8em 1em;
     border: 1px solid rgba(124, 128, 129, 0.2);
     border-radius: 0.6em;
     background: rgba(124, 128, 129, 0.055);
 }
 
-.policy-app-target p {
+.app-policy-content .policy-app-target p {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35em 1.2em;
+    align-items: baseline;
+    gap: 0.25em 0.8em;
     margin: 0;
 }
 
 .policy-app-target strong {
-    min-width: 5.2em;
     color: #25292c;
+}
+
+.app-policy-content > .policy-app-target + h2 {
+    margin-top: 0;
 }
 
 .app-policy-content p {
     margin: 0 0 1em;
     line-height: 1.85;
+}
+
+.app-policy-content > p,
+.app-policy-content > ul,
+.app-policy-content > ol {
+    text-align: justify;
+    text-align-last: start;
+    text-justify: inter-character;
 }
 
 .app-policy-content > h2 + p {
@@ -114,8 +126,10 @@
         padding-left: 1.25em;
     }
 
-    .policy-app-target {
-        padding: 0.95em 1em;
+    .app-policy-content > p,
+    .app-policy-content > ul,
+    .app-policy-content > ol {
+        word-break: normal;
     }
 
     .app-policy-content table {
