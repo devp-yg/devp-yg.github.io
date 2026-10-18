@@ -15,8 +15,16 @@ styles:
   </header>
 
   <section class="wrapper style1 container legal-content app-policy-content">
-    <div class="policy-app-target policy-app-target--compact">
-      <div class="policy-app-target-row"><strong>적용 대상</strong><span>마크담 - 마크다운 뷰어 (iOS, macOS)</span></div>
+    <div class="policy-app-target policy-app-target--compact" aria-label="적용 대상">
+      <span class="policy-app-target-label">적용 대상</span>
+      <div class="policy-app-target-details">
+        <strong class="policy-app-target-name">마크담</strong>
+        <span class="policy-app-target-description">마크다운 뷰어</span>
+      </div>
+      <ul class="policy-app-platforms" aria-label="지원 플랫폼">
+        <li>iOS</li>
+        <li>macOS</li>
+      </ul>
     </div>
     {% capture policy_content %}
 ## 제1조(개인정보의 처리 목적)

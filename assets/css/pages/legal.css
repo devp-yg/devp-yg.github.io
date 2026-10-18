@@ -63,15 +63,62 @@
 }
 
 .policy-app-target--compact {
-    padding-block: 0.65em;
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr) max-content;
+    align-items: center;
+    gap: 0.55em 1em;
+    padding: 1em 1.1em;
 }
 
-.policy-app-target-row {
-    line-height: 1.6;
+.policy-app-target-label {
+    padding: 0.35em 0.7em;
+    border-radius: 999px;
+    background: #eaf0f7;
+    color: var(--muted, #657086);
+    font-size: 0.78em;
+    font-weight: 700;
+    line-height: 1.4;
+    white-space: nowrap;
 }
 
-.policy-app-target strong {
-    color: #25292c;
+.policy-app-target-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2em 0.6em;
+    min-width: 0;
+    line-height: 1.55;
+}
+
+.policy-app-target-name {
+    color: var(--ink, #0b1120);
+    font-size: 1.05em;
+    font-weight: 700;
+}
+
+.policy-app-target-description {
+    color: var(--muted, #657086);
+    font-size: 0.92em;
+}
+
+.policy-app-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.policy-app-platforms li {
+    padding: 0.32em 0.65em;
+    border: 1px solid var(--line, #dfe4ee);
+    border-radius: 999px;
+    background: var(--surface, #fff);
+    color: #3d475b;
+    font-size: 0.78em;
+    font-weight: 600;
+    line-height: 1.35;
 }
 
 .policy-app-target .legal-app-list {
@@ -163,5 +210,16 @@
     .app-policy-content th,
     .app-policy-content td {
         padding: 0.7em 0.65em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .policy-app-target--compact {
+        grid-template-columns: max-content minmax(0, 1fr);
+        column-gap: 0.75em;
+    }
+
+    .policy-app-platforms {
+        grid-column: 2;
     }
 }
