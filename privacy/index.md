@@ -18,7 +18,7 @@ styles:
   <section class="wrapper style1 container legal-content app-policy-content">
     <p>앱에 적용되는 개인정보 처리방침을 선택해 확인하세요.</p>
     <ul class="legal-app-list">
-      <li><a href="{{ '/privacy_policy.html' | relative_url }}">Devp-YG 공용 개인정보 처리방침</a></li>
+      <li><a href="{{ '/privacy/devp-yg/' | relative_url }}">Devp-YG 공용 개인정보 처리방침</a></li>
       <li><a href="{{ '/privacy/markdam/' | relative_url }}">마크담 개인정보 처리방침</a></li>
       <li><a href="{{ '/privacy/taghere/' | relative_url }}">공간기록 개인정보 처리방침</a></li>
     </ul>

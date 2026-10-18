@@ -26,7 +26,7 @@ Public addresses are preserved with Jekyll `permalink` settings:
 
 - `/portfolio.html`
 - `/history.html`
-- `/privacy_policy.html`
+- `/privacy/devp-yg/`
 - `/citybus/`
 - `/movlog/`
 - `/contact.html`
