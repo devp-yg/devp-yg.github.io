@@ -32,7 +32,15 @@
                                     <li>
                                         <a href="{{ item_url }}"{% if item.page_key == page.i18n_key %} aria-current="page"{% endif %}>
                                             <span aria-hidden="true" class="nav-product-mark nav-product-mark-{{ item.mark }}">
-                                                {% if item.mark == 'all' %}<i></i><i></i><i></i>{% elsif item.mark == 'movlog' or item.mark == 'markdam' %}M{% elsif item.mark == 'taghere' %}T{% elsif item.mark == 'rtvideo' %}R{% else %}B{% endif %}
+                                                {% if item.mark == 'all' %}
+                                                    <i></i><i></i><i></i>
+                                                {% elsif item.mark == 'citybus' %}
+                                                    <img src="{{ '/assets/images/apps/citybus/busan.png' | relative_url }}" alt="" />
+                                                    <img src="{{ '/assets/images/apps/citybus/daejeon.png' | relative_url }}" alt="" />
+                                                    <img src="{{ '/assets/images/apps/citybus/incheon.png' | relative_url }}" alt="" />
+                                                {% else %}
+                                                    <img src="{{ '/assets/images/apps/' | append: item.mark | append: '/icon.png' | relative_url }}" alt="" />
+                                                {% endif %}
                                             </span>
                                             <span class="nav-product-copy">
                                                 <strong data-i18n="header.{{ item.key }}">{{ item.label }}</strong>
