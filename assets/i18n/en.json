@@ -504,6 +504,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
+    "targetLabel": "Applies to",
     "intro": "Devp-YG distributes the following applications (collectively, the \"Devp-YG Applications\").",
     "applies": "The privacy policy for the Devp-YG Applications listed above is as follows.",
     "articleHeading": "Privacy Policy",

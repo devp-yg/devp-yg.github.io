@@ -503,6 +503,7 @@
   },
   "privacy": {
     "title": "개인정보 처리방침",
+    "targetLabel": "적용 대상",
     "intro": "Devp-YG에서는 다음과 같은 애플리케이션들(이하 \"Devp-YG 애플리케이션\"이라 함)을 배포합니다.",
     "applies": "위 Devp-YG 애플리케이션들에 대한 개인정보 처리 방침은 다음과 같습니다.",
     "articleHeading": "개인정보 처리 방침",

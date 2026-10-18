@@ -70,6 +70,47 @@
     padding: 1em 1.1em;
 }
 
+.policy-app-target--shared {
+    padding: 1em 1.1em 1.1em;
+}
+
+.policy-app-target-heading {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    align-items: baseline;
+    gap: 0.55em 1em;
+}
+
+.app-policy-content .policy-app-target .policy-app-target-intro {
+    display: block;
+    margin: 0;
+    color: var(--ink, #0b1120);
+    line-height: 1.6;
+}
+
+.policy-app-apps {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45em 0.6em;
+    margin: 0.9em 0 0 !important;
+    padding: 0.85em 0 0 !important;
+    border-top: 1px solid var(--line, #dfe4ee);
+    list-style: none;
+}
+
+.policy-app-apps li {
+    min-width: 0;
+    margin: 0;
+    padding: 0.5em 0.75em;
+    border: 1px solid var(--line, #dfe4ee);
+    border-radius: 0.55em;
+    background: rgba(255, 255, 255, 0.75);
+    color: #3d475b;
+    font-size: 0.9em;
+    line-height: 1.55;
+    list-style: none;
+}
+
 .policy-app-target-label {
     padding: 0.35em 0.7em;
     border-radius: 999px;
@@ -221,5 +262,24 @@
 
     .policy-app-platforms {
         grid-column: 2;
+    }
+
+    .policy-app-target-heading {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.65em;
+    }
+
+    .policy-app-target-heading .policy-app-target-label {
+        flex: 0 0 auto;
+    }
+
+    .policy-app-target-heading .policy-app-target-intro {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .policy-app-apps {
+        grid-template-columns: 1fr;
     }
 }
