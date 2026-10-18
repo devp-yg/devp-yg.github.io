@@ -144,9 +144,11 @@
     "citybusDescription": "부산부터 여수까지, 버스 도착정보와 환승·도시철도·여행 정보를 도시별로 확인하세요.",
     "arrivalPreviewLabel": "실시간 도착 정보",
     "arrivalPreviewMinutes": "분 후 도착",
-    "taghereDescription": "장소와 공간을 등록하고 위치와 Bluetooth로 방문을 기록해, 머문 곳을 날짜별로 돌아보세요.",
+    "taghereName": "공간기록",
+    "taghereDescription": "‘여기를 기억해’라는 이름처럼, 장소와 공간을 등록하고 위치와 Bluetooth로 방문을 기록해 머문 곳을 날짜별로 돌아보세요.",
     "taghereScreenAlt": "공간기록 장소 목록 화면",
-    "markdamDescription": "글, 표, 그림과 다이어그램을 읽고, 같은 문서를 PDF로 저장하는 읽기 중심 뷰어입니다.",
+    "markdamName": "마크담",
+    "markdamDescription": "마크다운 뷰어로 글, 표, 그림과 다이어그램을 읽고, 같은 문서를 PDF로 저장할 수 있습니다.",
     "markdamScreenAlt": "마크담 Markdown 문서 읽기 화면",
     "findMyCity": "내 도시 찾기",
     "toolsTitle": "작지만 확실한<br>생활 도구",
@@ -155,7 +157,8 @@
     "supportTitle": "더 편한 앱을 함께 만들어가요.",
     "supportLead": "사용 중 발견한 문제, 필요한 기능, 새로운 제안을 들려주세요.",
     "sendEmail": "이메일 보내기",
-    "rtvideoDescription": "다른 앱에서 재생 중인 음성을 원하는 언어의 자막으로 읽어보세요.",
+    "rtvideoName": "보이는말",
+    "rtvideoDescription": "실시간 자막 번역 앱입니다. 다른 앱에서 재생 중인 음성을 원하는 언어의 자막으로 읽어보세요.",
     "rtvideoScreenAlt": "보이는말 실시간 자막 번역 화면"
   },
   "portfolio": {

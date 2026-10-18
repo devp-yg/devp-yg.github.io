@@ -144,9 +144,11 @@
     "citybusDescription": "Check bus arrivals plus transfers, urban rail, and travel information across six cities.",
     "arrivalPreviewLabel": "Live arrival information",
     "arrivalPreviewMinutes": "min to arrival",
-    "taghereDescription": "Save places and spaces, record visits with location and Bluetooth, and look back by date.",
+    "taghereName": "Space Log",
+    "taghereDescription": "Remember this place and the spaces within it. Save places, record visits with location and Bluetooth, and look back by date."
     "taghereScreenAlt": "TagHere saved places list",
-    "markdamDescription": "A reading-focused viewer for text, tables, images, and diagrams, with PDF export for the same document.",
+    "markdamName": "Markdam",
+    "markdamDescription": "A Markdown viewer for reading text, tables, images, and diagrams, with PDF export for the same document."
     "markdamScreenAlt": "Markdam Markdown reading screen",
     "findMyCity": "Find my city",
     "toolsTitle": "Small tools<br>that make a difference",
@@ -155,7 +157,8 @@
     "supportTitle": "Let’s make apps more helpful together.",
     "supportLead": "Tell us about a problem, a feature you need, or an idea for something new.",
     "sendEmail": "Send an email",
-    "rtvideoDescription": "Read captions in your language for audio playing in another app.",
+    "rtvideoName": "RTVideo",
+    "rtvideoDescription": "Live translation captions for audio playing in another app. Read along in your preferred language."
     "rtvideoScreenAlt": "RTVideo live translation captions screen"
   },
   "portfolio": {
