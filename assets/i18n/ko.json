@@ -104,7 +104,7 @@
     "movlog": "무블로그",
     "contact": "문의하기",
     "rtvideo": "보이는말",
-    "rtvideoDescription": "실시간 자막 번역"
+    "rtvideoDescription": "음성을 실시간으로 번역해 자막으로 표시"
   },
   "footer": {
     "description": "일상과 이동을 조금 더 편리하게 만드는<br>독립 iOS 앱 스튜디오입니다.",

@@ -104,7 +104,7 @@
     "movlog": "Movlog",
     "contact": "Contact",
     "rtvideo": "RTVideo",
-    "rtvideoDescription": "Translated captions for playing audio"
+    "rtvideoDescription": "Translates speech into captions in real time"
   },
   "footer": {
     "description": "An independent iOS app studio making<br>everyday movement and life a little easier.",
