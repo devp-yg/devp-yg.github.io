@@ -1,0 +1,59 @@
+---
+layout: default
+lang: ko
+i18n_key: fareflow
+title: 냥미터 | Devp-YG
+description: GPS로 이동 거리와 시간을 실시간으로 측정하고 택시·카풀 요금을 자동으로 계산합니다. 냥미터와 함께 이동의 흐름을 요금으로 확인해보세요.
+permalink: /fareflow/
+image: /assets/images/apps/other/fareflow.png
+styles:
+  - /assets/css/pages/apps.css
+---
+
+<main id="main" class="app-page app-page-fareflow">
+    {% assign product = site.data.apps | where: "id", "fareflow" | first %}
+    <section class="app-hero">
+        <div class="app-shell app-hero-grid">
+            <div class="app-hero-copy">
+                <a class="app-back-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="common.allApps">모든 앱</a>
+                <div class="app-brand-lockup"><img src="{{ product.image | relative_url }}" alt="" width="62" height="62" /><div><strong data-i18n="fareflow.brandName">냥미터</strong><span data-i18n="fareflow.brandDescription">나만의 요금제 · FareFlow</span></div></div>
+                <p class="app-eyebrow" data-i18n="fareflow.eyebrow">YOUR TRIP, YOUR FARE</p><h1 data-i18n-html="fareflow.title">움직인 만큼,<br><em>내 요금제로 계산해요.</em></h1><p class="app-lead" data-i18n="fareflow.description">GPS로 이동 거리와 시간을 실시간으로 측정하고 택시·카풀 요금을 자동으로 계산합니다. 냥미터와 함께 이동의 흐름을 요금으로 확인해보세요.</p>
+                <div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadApp">App Store에서 다운로드</a><a class="app-secondary-link" href="#fareflow-features" data-i18n="common.browseFeatures">기능 둘러보기 ↓</a></div>
+                <dl class="app-meta"><div><dt data-i18n="fareflow.meta1Label">측정 방식</dt><dd data-i18n="fareflow.meta1">GPS · 이동 거리 · 시간</dd></div><div><dt data-i18n="fareflow.meta2Label">활용</dt><dd data-i18n="fareflow.meta2">택시 · 카풀 요금 계산</dd></div></dl>
+            </div>
+            <figure class="app-tool-visual" aria-label="이동 거리와 시간에 따른 요금 구성 예시" data-i18n-aria-label="fareflow.visualLabel"><h2 data-i18n="fareflow.visualTitle">이동을 요금으로, 한눈에</h2><div class="app-trip-line" aria-hidden="true"><span></span><i class="fa fa-car"></i><span></span></div><dl class="app-fare-receipt"><div><dt data-i18n="fareflow.receiptBase">기본 요금</dt><dd>₩3,000</dd></div><div><dt data-i18n="fareflow.receiptDistance">거리 요금</dt><dd>₩1,000</dd></div><div><dt data-i18n="fareflow.receiptTime">시간 요금</dt><dd>₩500</dd></div><div><dt data-i18n="fareflow.receiptTotal">계산된 요금</dt><dd>₩4,500</dd></div></dl><figcaption data-i18n="fareflow.visualNote">요금 구성을 설명하는 예시이며 실제 앱 화면이나 적용 요금이 아닙니다.</figcaption></figure>
+        </div>
+    </section>
+
+    <section id="fareflow-features" class="app-feature-section">
+        <div class="app-shell">
+            <header class="app-section-heading"><p class="app-eyebrow" data-i18n="fareflow.featureEyebrow">FOLLOW THE TRIP</p><h2 data-i18n-html="fareflow.featureTitle">거리와 시간을 따라,<br><em>요금도 함께.</em></h2><p data-i18n="fareflow.featureLead">이동 중 확인해야 하는 거리, 시간, 요금을 하나의 흐름으로 연결합니다.</p></header>
+            <div class="app-feature-grid"><article><span>01</span><h3 data-i18n="fareflow.feature1Title">GPS 기반 이동 거리</h3><p data-i18n="fareflow.feature1Body">이동하는 동안 GPS를 기반으로 거리를 실시간 측정합니다. 지금까지 얼마나 이동했는지 확인해보세요.</p></article>
+                <article><span>02</span><h3 data-i18n="fareflow.feature2Title">이동 시간도 함께</h3><p data-i18n="fareflow.feature2Body">거리와 함께 이동 시간을 측정합니다. 이동에 걸린 시간을 요금 계산에 함께 반영합니다.</p></article>
+                <article><span>03</span><h3 data-i18n="fareflow.feature3Title">나만의 요금 계산</h3><p data-i18n="fareflow.feature3Body">택시나 카풀처럼 요금을 계산해야 하는 이동에 활용해보세요. 이동 거리와 시간에 따라 요금을 자동으로 계산합니다.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-flow-section">
+        <div class="app-shell">
+            <header class="app-section-heading"><p class="app-eyebrow" data-i18n="fareflow.flowEyebrow">FROM DEPARTURE TO ARRIVAL</p><h2 data-i18n-html="fareflow.flowTitle">출발부터 도착까지,<br><em>이동을 따라 계산해요.</em></h2></header>
+            <ol class="app-flow-list"><li><span class="app-flow-number">01</span><div><h3 data-i18n="fareflow.step1Title">내 요금제로 준비</h3><p data-i18n="fareflow.step1Body">이동에 사용할 요금제를 준비합니다.</p></div></li>
+                <li><span class="app-flow-number">02</span><div><h3 data-i18n="fareflow.step2Title">이동 거리와 시간 측정</h3><p data-i18n="fareflow.step2Body">GPS를 기반으로 이동 거리와 시간을 실시간으로 측정합니다.</p></div></li>
+                <li><span class="app-flow-number">03</span><div><h3 data-i18n="fareflow.step3Title">계산된 요금 확인</h3><p data-i18n="fareflow.step3Body">측정한 거리와 시간에 따라 자동으로 계산된 요금을 확인합니다.</p></div></li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="app-info-section">
+        <div class="app-shell app-info-grid"><div><p class="app-eyebrow" data-i18n="fareflow.infoEyebrow">MADE FOR YOUR JOURNEY</p><h2 data-i18n="fareflow.infoTitle">내 이동에 맞는
+요금 확인 도구.</h2></div><div class="app-info-copy"><p data-i18n="fareflow.infoBody">택시 요금을 살펴보거나 함께 이동한 카풀의 요금을 계산할 때. 냥미터는 이동 거리와 시간을 기준으로 요금을 확인할 수 있게 도와줍니다.</p></div></div>
+    </section>
+
+    <section class="app-final">
+        <div class="app-shell">
+            <p class="app-eyebrow" data-i18n="fareflow.finalEyebrow">LET THE METER FOLLOW</p><h2 data-i18n-html="fareflow.finalTitle">다음 이동에는<br><em>냥미터와 함께.</em></h2>
+            <div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadApp">App Store에서 다운로드</a><a class="app-final-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="common.allApps">모든 앱</a></div>
+        </div>
+    </section>
+</main>

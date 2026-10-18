@@ -1,0 +1,59 @@
+---
+layout: default
+lang: ko
+i18n_key: snapqr
+title: SnapQR | Devp-YG
+description: 짧은 메모부터 웹사이트 주소, Wi-Fi 접속 정보와 연락처까지. SnapQR로 필요한 정보를 간편하게 QR 코드로 만들어보세요.
+permalink: /snapqr/
+image: /assets/images/apps/other/snapqr.png
+styles:
+  - /assets/css/pages/apps.css
+---
+
+<main id="main" class="app-page app-page-snapqr">
+    {% assign product = site.data.apps | where: "id", "snapqr" | first %}
+    <section class="app-hero">
+        <div class="app-shell app-hero-grid">
+            <div class="app-hero-copy">
+                <a class="app-back-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="common.allApps">모든 앱</a>
+                <div class="app-brand-lockup"><img src="{{ product.image | relative_url }}" alt="" width="62" height="62" /><div><strong data-i18n="snapqr.brandName">SnapQR</strong><span data-i18n="snapqr.brandDescription">간편한 QR 코드 생성</span></div></div>
+                <p class="app-eyebrow" data-i18n="snapqr.eyebrow">A SMALL CODE, A SIMPLE CONNECTION</p><h1 data-i18n-html="snapqr.title">전하고 싶은 정보를<br><em>하나의 QR 코드로.</em></h1><p class="app-lead" data-i18n="snapqr.description">짧은 메모부터 웹사이트 주소, Wi-Fi 접속 정보와 연락처까지. SnapQR로 필요한 정보를 간편하게 QR 코드로 만들어보세요.</p>
+                <div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadApp">App Store에서 다운로드</a><a class="app-secondary-link" href="#snapqr-features" data-i18n="common.browseFeatures">기능 둘러보기 ↓</a></div>
+                <dl class="app-meta"><div><dt data-i18n="snapqr.meta1Label">만들 수 있는 정보</dt><dd data-i18n="snapqr.meta1">텍스트 · URL · Wi-Fi · 연락처</dd></div><div><dt data-i18n="snapqr.meta2Label">플랫폼</dt><dd data-i18n="snapqr.meta2">iOS</dd></div></dl>
+            </div>
+            <figure class="app-tool-visual" aria-label="SnapQR로 만들 수 있는 QR 코드 종류" data-i18n-aria-label="snapqr.visualLabel"><h2 data-i18n="snapqr.visualTitle">무엇을 담아볼까요?</h2><div class="app-qr-options"><div><i class="fa fa-font" aria-hidden="true"></i><span data-i18n="snapqr.type1">텍스트</span></div><div><i class="fa fa-link" aria-hidden="true"></i><span data-i18n="snapqr.type2">웹사이트</span></div><div><i class="fa fa-wifi" aria-hidden="true"></i><span data-i18n="snapqr.type3">Wi-Fi</span></div><div><i class="fa fa-user" aria-hidden="true"></i><span data-i18n="snapqr.type4">연락처</span></div></div><div class="app-qr-hub" aria-hidden="true"><img src="/assets/images/apps/other/snapqr.png" alt="" width="88" height="88" /><span>QR</span></div><figcaption data-i18n="snapqr.visualNote">전할 정보에 맞는 유형을 선택하세요.</figcaption></figure>
+        </div>
+    </section>
+
+    <section id="snapqr-features" class="app-feature-section">
+        <div class="app-shell">
+            <header class="app-section-heading"><p class="app-eyebrow" data-i18n="snapqr.featureEyebrow">FOUR WAYS TO CONNECT</p><h2 data-i18n-html="snapqr.featureTitle">필요한 정보에 맞춰,<br><em>알맞은 QR 코드를.</em></h2><p data-i18n="snapqr.featureLead">입력할 정보가 달라도 만드는 과정은 간단하게. 자주 전하는 정보를 QR 코드 한 장에 담습니다.</p></header>
+            <div class="app-feature-grid"><article><span>01</span><h3 data-i18n="snapqr.feature1Title">글과 링크를 간편하게</h3><p data-i18n="snapqr.feature1Body">텍스트나 URL을 입력해 QR 코드로 만듭니다. 짧은 안내 문구나 방문할 웹사이트를 전할 때 활용해보세요.</p></article>
+                <article><span>02</span><h3 data-i18n="snapqr.feature2Title">Wi-Fi 접속 정보를 한곳에</h3><p data-i18n="snapqr.feature2Body">Wi-Fi 정보를 QR 코드에 담습니다. 접속 정보를 안내해야 하는 순간에 필요한 코드를 만들어보세요.</p></article>
+                <article><span>03</span><h3 data-i18n="snapqr.feature3Title">연락처도 QR 코드로</h3><p data-i18n="snapqr.feature3Body">연락처 정보를 담은 QR 코드를 만듭니다. 사람을 만나는 자리에서 필요한 정보를 간결하게 준비해보세요.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-flow-section">
+        <div class="app-shell">
+            <header class="app-section-heading"><p class="app-eyebrow" data-i18n="snapqr.flowEyebrow">FROM INFORMATION TO QR</p><h2 data-i18n-html="snapqr.flowTitle">정보를 고르고, 입력하고,<br><em>QR 코드로 완성하세요.</em></h2></header>
+            <ol class="app-flow-list"><li><span class="app-flow-number">01</span><div><h3 data-i18n="snapqr.step1Title">유형 선택</h3><p data-i18n="snapqr.step1Body">텍스트, URL, Wi-Fi, 연락처 중 담을 정보의 유형을 고릅니다.</p></div></li>
+                <li><span class="app-flow-number">02</span><div><h3 data-i18n="snapqr.step2Title">정보 입력</h3><p data-i18n="snapqr.step2Body">선택한 유형에 맞는 내용을 입력하고 다시 확인합니다.</p></div></li>
+                <li><span class="app-flow-number">03</span><div><h3 data-i18n="snapqr.step3Title">QR 코드 생성</h3><p data-i18n="snapqr.step3Body">입력한 정보를 QR 코드로 만들어 필요한 순간에 활용합니다.</p></div></li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="app-info-section">
+        <div class="app-shell app-info-grid"><div><p class="app-eyebrow" data-i18n="snapqr.infoEyebrow">A LITTLE TOOL FOR EVERYDAY</p><h2 data-i18n="snapqr.infoTitle">작은 안내부터
+새로운 만남까지.</h2></div><div class="app-info-copy"><p data-i18n="snapqr.infoBody">카페의 Wi-Fi 안내, 웹사이트 주소, 행사장의 짧은 안내 문구, 새로 만난 사람에게 전할 연락처. 매번 길게 설명하던 정보를 작은 QR 코드로 정리해보세요.</p></div></div>
+    </section>
+
+    <section class="app-final">
+        <div class="app-shell">
+            <p class="app-eyebrow" data-i18n="snapqr.finalEyebrow">MAKE YOUR NEXT CONNECTION</p><h2 data-i18n-html="snapqr.finalTitle">다음에 전할 정보는<br><em>QR 코드에 담아보세요.</em></h2>
+            <div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadApp">App Store에서 다운로드</a><a class="app-final-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="common.allApps">모든 앱</a></div>
+        </div>
+    </section>
+</main>

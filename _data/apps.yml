@@ -1,4 +1,5 @@
 - id: snapqr
+  intro_url: /snapqr/
   platform: ios
   category: everyday-tools
   portfolio_order: 10
@@ -10,6 +11,7 @@
   store_url: https://apps.apple.com/kr/app/id6770082242
 
 - id: fareflow
+  intro_url: /fareflow/
   platform: ios
   category: mobility
   portfolio_order: 20
@@ -21,6 +23,7 @@
   store_url: https://apps.apple.com/kr/app/id6761998179
 
 - id: movlog
+  intro_url: /movlog/
   platform: ios
   category: mobility
   portfolio_order: 10
@@ -160,6 +163,7 @@
   store_url: https://apps.apple.com/kr/app/id6444640056
 
 - id: taghere
+  intro_url: /taghere/
   platform: ios
   category: mobility
   portfolio_order: 30
@@ -172,6 +176,7 @@
   image_alt: 공간기록 앱 아이콘
 
 - id: rtvideo
+  intro_url: /rtvideo/
   platform: ios
   category: translation-tools
   portfolio_order: 10
@@ -183,6 +188,8 @@
   image_alt: 보이는말 앱 아이콘
 
 - id: markdam
+  platforms: [iOS, macOS]
+  intro_url: /markdam/
   platform: ios
   category: reading-tools
   portfolio_order: 10

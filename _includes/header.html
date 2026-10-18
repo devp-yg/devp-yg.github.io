@@ -13,7 +13,7 @@
             <ul class="site-navigation-list">
                 <li class="nav-products">
                     <details data-product-menu>
-                        <summary{% if page.i18n_key == 'portfolio' or page.i18n_key == 'movlog' or page.i18n_key == 'citybus' or page.i18n_key == 'taghere' or page.i18n_key == 'markdam' or page.i18n_key == 'rtvideo' %} class="is-current"{% endif %}>
+                        <summary{% if page.i18n_key == 'portfolio' or page.i18n_key == 'movlog' or page.i18n_key == 'citybus' or page.i18n_key == 'taghere' or page.i18n_key == 'markdam' or page.i18n_key == 'rtvideo' or page.i18n_key == 'snapqr' or page.i18n_key == 'fareflow' %} class="is-current"{% endif %}>
                             <span data-i18n="header.exploreApps">앱 둘러보기</span>
                             <i aria-hidden="true"></i>
                         </summary>
@@ -41,6 +41,8 @@
                                                         <circle cx="16" cy="34" r="2.5" /><circle cx="32" cy="34" r="2.5" />
                                                     </svg>
                                                     <b class="nav-citybus-count">6</b>
+                                                {% elsif item.image %}
+                                                    <img src="{{ item.image | relative_url }}" alt="" />
                                                 {% else %}
                                                     <img src="{{ '/assets/images/apps/' | append: item.mark | append: '/icon.png' | relative_url }}" alt="" />
                                                 {% endif %}

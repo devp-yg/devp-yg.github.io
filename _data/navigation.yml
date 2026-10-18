@@ -1,7 +1,7 @@
 products:
   - label: 모든 앱 보기
     key: allApps
-    description: 운영 중인 iOS 앱을 한곳에서 살펴보세요.
+    description: 운영 중인 iOS·macOS 앱을 한곳에서 살펴보세요.
     description_key: allAppsDescription
     url: /portfolio.html
     mark: all
@@ -41,6 +41,22 @@ products:
     url: /rtvideo/
     mark: rtvideo
     page_key: rtvideo
+  - label: SnapQR
+    key: snapqr
+    description: 간편한 QR 코드 생성
+    description_key: snapqrDescription
+    url: /snapqr/
+    mark: snapqr
+    image: /assets/images/apps/other/snapqr.png
+    page_key: snapqr
+  - label: 냥미터
+    key: fareflow
+    description: GPS 기반 거리·시간·요금 계산
+    description_key: fareflowDescription
+    url: /fareflow/
+    mark: fareflow
+    image: /assets/images/apps/other/fareflow.png
+    page_key: fareflow
 
 links:
   - label: 출시 기록

@@ -17,7 +17,9 @@
     "contact": "문의하기",
     "blog": "개발 기록",
     "privacy": "개인정보 처리방침",
-    "history": "출시 기록"
+    "history": "출시 기록",
+    "downloadApp": "App Store에서 다운로드",
+    "browseFeatures": "기능 둘러보기 ↓"
   },
   "pages": {
     "home": {
@@ -83,6 +85,14 @@
     "privacyIndex": {
       "title": "개인정보 처리방침 | Devp-YG",
       "description": "Devp-YG 앱별 개인정보 처리방침을 확인할 수 있습니다."
+    },
+    "snapqr": {
+      "title": "SnapQR | Devp-YG",
+      "description": "짧은 메모부터 웹사이트 주소, Wi-Fi 접속 정보와 연락처까지. SnapQR로 필요한 정보를 간편하게 QR 코드로 만들어보세요."
+    },
+    "fareflow": {
+      "title": "냥미터 | Devp-YG",
+      "description": "GPS로 이동 거리와 시간을 실시간으로 측정하고 택시·카풀 요금을 자동으로 계산합니다. 냥미터와 함께 이동의 흐름을 요금으로 확인해보세요."
     }
   },
   "header": {
@@ -92,7 +102,7 @@
     "appsHeading": "Devp-YG Apps",
     "appsDescription": "필요한 순간에 바로 쓸 수 있는 앱",
     "allApps": "모든 앱 보기",
-    "allAppsDescription": "운영 중인 iOS 앱을 한곳에서 살펴보세요.",
+    "allAppsDescription": "운영 중인 iOS·macOS 앱을 한곳에서 살펴보세요.",
     "movlogDescription": "이동과 방문을 자동으로 기록하는 라이프로그",
     "citybusDescription": "도시별 버스와 환승·여행 정보를 한곳에",
     "taghere": "공간기록",
@@ -104,7 +114,11 @@
     "movlog": "무블로그",
     "contact": "문의하기",
     "rtvideo": "보이는말",
-    "rtvideoDescription": "음성을 실시간으로 번역해 자막으로 표시"
+    "rtvideoDescription": "음성을 실시간으로 번역해 자막으로 표시",
+    "snapqr": "SnapQR",
+    "snapqrDescription": "간편한 QR 코드 생성",
+    "fareflow": "냥미터",
+    "fareflowDescription": "GPS 기반 거리·시간·요금 계산"
   },
   "footer": {
     "description": "일상과 이동을 조금 더 편리하게 만드는<br>독립 iOS 앱 스튜디오입니다.",
@@ -164,8 +178,8 @@
   "portfolio": {
     "eyebrow": "Devp-YG Apps · {count}개",
     "title": "일상의 작은 불편을<br><em>앱으로 해결합니다.</em>",
-    "lead": "이동과 장소를 기록하고, 재생 음성을 번역하고, 문서를 읽는 iOS 앱을 만듭니다.",
-    "ariaLabel": "iOS 애플리케이션",
+    "lead": "이동과 장소를 기록하고, 재생 음성을 번역하고, 문서를 읽는 iOS·macOS 앱을 만듭니다.",
+    "ariaLabel": "iOS 및 macOS 애플리케이션",
     "categoryNavLabel": "앱 분류 바로가기",
     "categoryNavTitle": "분류별로 살펴보기",
     "categoryKicker": "App category",
@@ -774,5 +788,85 @@
       "<p>이 방침은 앱 이용 분석 동의 기능이 포함된 버전의 출시일부터 적용합니다.</p>",
       "<p>처리 목적·항목, 외부 서비스, 보유기간 또는 동의 관리 방법이 변경되면 변경 내용과 적용일을 이 페이지에 안내합니다. 변경 전 방침은 별도 이력으로 관리하며, 추가 동의가 필요한 변경은 적용 전에 동의를 받습니다.</p>"
     ]
+  },
+  "snapqr": {
+    "brandName": "SnapQR",
+    "brandDescription": "간편한 QR 코드 생성",
+    "eyebrow": "A SMALL CODE, A SIMPLE CONNECTION",
+    "title": "전하고 싶은 정보를<br><em>하나의 QR 코드로.</em>",
+    "description": "짧은 메모부터 웹사이트 주소, Wi-Fi 접속 정보와 연락처까지. SnapQR로 필요한 정보를 간편하게 QR 코드로 만들어보세요.",
+    "meta1Label": "만들 수 있는 정보",
+    "meta1": "텍스트 · URL · Wi-Fi · 연락처",
+    "meta2Label": "플랫폼",
+    "meta2": "iOS",
+    "visualLabel": "SnapQR로 만들 수 있는 QR 코드 종류",
+    "visualTitle": "무엇을 담아볼까요?",
+    "visualNote": "전할 정보에 맞는 유형을 선택하세요.",
+    "type1": "텍스트",
+    "type2": "웹사이트",
+    "type3": "Wi-Fi",
+    "type4": "연락처",
+    "featureEyebrow": "FOUR WAYS TO CONNECT",
+    "featureTitle": "필요한 정보에 맞춰,<br><em>알맞은 QR 코드를.</em>",
+    "featureLead": "입력할 정보가 달라도 만드는 과정은 간단하게. 자주 전하는 정보를 QR 코드 한 장에 담습니다.",
+    "feature1Title": "글과 링크를 간편하게",
+    "feature1Body": "텍스트나 URL을 입력해 QR 코드로 만듭니다. 짧은 안내 문구나 방문할 웹사이트를 전할 때 활용해보세요.",
+    "feature2Title": "Wi-Fi 접속 정보를 한곳에",
+    "feature2Body": "Wi-Fi 정보를 QR 코드에 담습니다. 접속 정보를 안내해야 하는 순간에 필요한 코드를 만들어보세요.",
+    "feature3Title": "연락처도 QR 코드로",
+    "feature3Body": "연락처 정보를 담은 QR 코드를 만듭니다. 사람을 만나는 자리에서 필요한 정보를 간결하게 준비해보세요.",
+    "flowEyebrow": "FROM INFORMATION TO QR",
+    "flowTitle": "정보를 고르고, 입력하고,<br><em>QR 코드로 완성하세요.</em>",
+    "step1Title": "유형 선택",
+    "step1Body": "텍스트, URL, Wi-Fi, 연락처 중 담을 정보의 유형을 고릅니다.",
+    "step2Title": "정보 입력",
+    "step2Body": "선택한 유형에 맞는 내용을 입력하고 다시 확인합니다.",
+    "step3Title": "QR 코드 생성",
+    "step3Body": "입력한 정보를 QR 코드로 만들어 필요한 순간에 활용합니다.",
+    "infoEyebrow": "A LITTLE TOOL FOR EVERYDAY",
+    "infoTitle": "작은 안내부터\n새로운 만남까지.",
+    "infoBody": "카페의 Wi-Fi 안내, 웹사이트 주소, 행사장의 짧은 안내 문구, 새로 만난 사람에게 전할 연락처. 매번 길게 설명하던 정보를 작은 QR 코드로 정리해보세요.",
+    "finalEyebrow": "MAKE YOUR NEXT CONNECTION",
+    "finalTitle": "다음에 전할 정보는<br><em>QR 코드에 담아보세요.</em>"
+  },
+  "fareflow": {
+    "brandName": "냥미터",
+    "brandDescription": "나만의 요금제 · FareFlow",
+    "eyebrow": "YOUR TRIP, YOUR FARE",
+    "title": "움직인 만큼,<br><em>내 요금제로 계산해요.</em>",
+    "description": "GPS로 이동 거리와 시간을 실시간으로 측정하고 택시·카풀 요금을 자동으로 계산합니다. 냥미터와 함께 이동의 흐름을 요금으로 확인해보세요.",
+    "meta1Label": "측정 방식",
+    "meta1": "GPS · 이동 거리 · 시간",
+    "meta2Label": "활용",
+    "meta2": "택시 · 카풀 요금 계산",
+    "visualLabel": "이동 거리와 시간에 따른 요금 구성 예시",
+    "visualTitle": "이동을 요금으로, 한눈에",
+    "visualNote": "요금 구성을 설명하는 예시이며 실제 앱 화면이나 적용 요금이 아닙니다.",
+    "receiptBase": "기본 요금",
+    "receiptDistance": "거리 요금",
+    "receiptTime": "시간 요금",
+    "receiptTotal": "계산된 요금",
+    "featureEyebrow": "FOLLOW THE TRIP",
+    "featureTitle": "거리와 시간을 따라,<br><em>요금도 함께.</em>",
+    "featureLead": "이동 중 확인해야 하는 거리, 시간, 요금을 하나의 흐름으로 연결합니다.",
+    "feature1Title": "GPS 기반 이동 거리",
+    "feature1Body": "이동하는 동안 GPS를 기반으로 거리를 실시간 측정합니다. 지금까지 얼마나 이동했는지 확인해보세요.",
+    "feature2Title": "이동 시간도 함께",
+    "feature2Body": "거리와 함께 이동 시간을 측정합니다. 이동에 걸린 시간을 요금 계산에 함께 반영합니다.",
+    "feature3Title": "나만의 요금 계산",
+    "feature3Body": "택시나 카풀처럼 요금을 계산해야 하는 이동에 활용해보세요. 이동 거리와 시간에 따라 요금을 자동으로 계산합니다.",
+    "flowEyebrow": "FROM DEPARTURE TO ARRIVAL",
+    "flowTitle": "출발부터 도착까지,<br><em>이동을 따라 계산해요.</em>",
+    "step1Title": "내 요금제로 준비",
+    "step1Body": "이동에 사용할 요금제를 준비합니다.",
+    "step2Title": "이동 거리와 시간 측정",
+    "step2Body": "GPS를 기반으로 이동 거리와 시간을 실시간으로 측정합니다.",
+    "step3Title": "계산된 요금 확인",
+    "step3Body": "측정한 거리와 시간에 따라 자동으로 계산된 요금을 확인합니다.",
+    "infoEyebrow": "MADE FOR YOUR JOURNEY",
+    "infoTitle": "내 이동에 맞는\n요금 확인 도구.",
+    "infoBody": "택시 요금을 살펴보거나 함께 이동한 카풀의 요금을 계산할 때. 냥미터는 이동 거리와 시간을 기준으로 요금을 확인할 수 있게 도와줍니다.",
+    "finalEyebrow": "LET THE METER FOLLOW",
+    "finalTitle": "다음 이동에는<br><em>냥미터와 함께.</em>"
   }
 }

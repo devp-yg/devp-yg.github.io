@@ -17,7 +17,9 @@
     "contact": "Contact",
     "blog": "Development notes",
     "privacy": "Privacy Policy",
-    "history": "Release history"
+    "history": "Release history",
+    "downloadApp": "Download on the App Store",
+    "browseFeatures": "Explore features ↓"
   },
   "pages": {
     "home": {
@@ -83,6 +85,14 @@
     "privacyIndex": {
       "title": "Privacy Policies | Devp-YG",
       "description": "Find the privacy policy that applies to each Devp-YG app."
+    },
+    "snapqr": {
+      "title": "SnapQR | Devp-YG",
+      "description": "From a short note or website link to Wi-Fi details and contact information, SnapQR makes it simple to create the QR code you need."
+    },
+    "fareflow": {
+      "title": "FareFlow | Devp-YG",
+      "description": "Measure distance and time in real time with GPS, and calculate taxi or carpool fares automatically. Follow your trip with FareFlow."
     }
   },
   "header": {
@@ -92,7 +102,7 @@
     "appsHeading": "Devp-YG Apps",
     "appsDescription": "Useful apps for everyday moments",
     "allApps": "View all apps",
-    "allAppsDescription": "Browse every iOS app we currently maintain.",
+    "allAppsDescription": "Explore our iOS and macOS apps in one place.",
     "movlogDescription": "A life log that records movement and visits",
     "citybusDescription": "Bus, transfer, and travel information by city",
     "taghere": "TagHere",
@@ -104,7 +114,11 @@
     "movlog": "Movlog",
     "contact": "Contact",
     "rtvideo": "RTVideo",
-    "rtvideoDescription": "Translates speech into captions in real time"
+    "rtvideoDescription": "Translates speech into captions in real time",
+    "snapqr": "SnapQR",
+    "snapqrDescription": "Simple QR code creation",
+    "fareflow": "FareFlow",
+    "fareflowDescription": "GPS distance, time, and fare meter"
   },
   "footer": {
     "description": "An independent iOS app studio making<br>everyday movement and life a little easier.",
@@ -164,8 +178,8 @@
   "portfolio": {
     "eyebrow": "Devp-YG Apps · {count} apps",
     "title": "Solve life’s little frictions<br><em>with an app.</em>",
-    "lead": "We make iOS apps for recording places, translating playing audio, and reading documents.",
-    "ariaLabel": "iOS applications",
+    "lead": "We make iOS and macOS apps for recording places, translating playing audio, and reading documents.",
+    "ariaLabel": "iOS and macOS applications",
     "categoryNavLabel": "App category shortcuts",
     "categoryNavTitle": "Browse by category",
     "categoryKicker": "App category",
@@ -775,5 +789,85 @@
       "<p>This policy takes effect on the release date of the app version that includes the app analytics consent feature.</p>",
       "<p>If the purposes or categories of processing, external services, retention periods, or consent management methods change, the changes and their effective date will be posted on this page. Previous versions will be maintained separately. Where a change requires additional consent, it will be obtained before the change takes effect.</p>"
     ]
+  },
+  "snapqr": {
+    "brandName": "SnapQR",
+    "brandDescription": "Simple QR code creator",
+    "eyebrow": "A SMALL CODE, A SIMPLE CONNECTION",
+    "title": "Turn information into<br><em>a single QR code.</em>",
+    "description": "From a short note or website link to Wi-Fi details and contact information, SnapQR makes it simple to create the QR code you need.",
+    "meta1Label": "Supported content",
+    "meta1": "Text · URLs · Wi-Fi · Contacts",
+    "meta2Label": "Platform",
+    "meta2": "iOS",
+    "visualLabel": "Types of QR codes you can create with SnapQR",
+    "visualTitle": "What would you like to share?",
+    "visualNote": "Choose a type to match your information.",
+    "type1": "Text",
+    "type2": "Website",
+    "type3": "Wi-Fi",
+    "type4": "Contact",
+    "featureEyebrow": "FOUR WAYS TO CONNECT",
+    "featureTitle": "The right QR code<br><em>for your information.</em>",
+    "featureLead": "Different types of information, one simple idea. Put the details you often share into a QR code.",
+    "feature1Title": "Text and links made simple",
+    "feature1Body": "Create a QR code from text or a URL. Use it to pass along a short message or a website to visit.",
+    "feature2Title": "Wi-Fi details in one place",
+    "feature2Body": "Put Wi-Fi information into a QR code, ready for the next time you need to explain how to connect.",
+    "feature3Title": "Contacts as a QR code",
+    "feature3Body": "Create a QR code with contact information. Prepare the details you want to pass along when meeting someone.",
+    "flowEyebrow": "FROM INFORMATION TO QR",
+    "flowTitle": "Choose, enter,<br><em>and create.</em>",
+    "step1Title": "Choose a type",
+    "step1Body": "Pick text, a URL, Wi-Fi details, or contact information.",
+    "step2Title": "Enter the details",
+    "step2Body": "Fill in the information for your chosen type and check it.",
+    "step3Title": "Create your QR code",
+    "step3Body": "Turn the information into a QR code for the moment you need it.",
+    "infoEyebrow": "A LITTLE TOOL FOR EVERYDAY",
+    "infoTitle": "For everyday details\nand new connections.",
+    "infoBody": "Wi-Fi details at a café, a website address, a short event message, or contact information for someone new. Bring the details together in a small QR code.",
+    "finalEyebrow": "MAKE YOUR NEXT CONNECTION",
+    "finalTitle": "Your next connection<br><em>starts with a QR code.</em>"
+  },
+  "fareflow": {
+    "brandName": "FareFlow",
+    "brandDescription": "My Fare Plan",
+    "eyebrow": "YOUR TRIP, YOUR FARE",
+    "title": "Your journey,<br><em>your fare plan.</em>",
+    "description": "Measure distance and time in real time with GPS, and calculate taxi or carpool fares automatically. Follow your trip with FareFlow.",
+    "meta1Label": "Measurement",
+    "meta1": "GPS · Distance · Time",
+    "meta2Label": "Use cases",
+    "meta2": "Taxi · Carpool fares",
+    "visualLabel": "Illustration of fare components based on distance and time",
+    "visualTitle": "From trip to fare, at a glance",
+    "visualNote": "An example of fare components, not an app screenshot or an actual tariff.",
+    "receiptBase": "Base fare",
+    "receiptDistance": "Distance fare",
+    "receiptTime": "Time fare",
+    "receiptTotal": "Calculated fare",
+    "featureEyebrow": "FOLLOW THE TRIP",
+    "featureTitle": "As distance and time add up,<br><em>your fare follows.</em>",
+    "featureLead": "Connect the distance, time, and fare you want to check during a trip.",
+    "feature1Title": "GPS distance tracking",
+    "feature1Body": "Measure distance in real time using GPS as you move. See how far your journey has taken you.",
+    "feature2Title": "Time travels with you",
+    "feature2Body": "Track journey time alongside distance, and include it in the fare calculation.",
+    "feature3Title": "Your own fare calculation",
+    "feature3Body": "Use it for trips where you need a taxi or carpool fare. Calculate the fare automatically from distance and time.",
+    "flowEyebrow": "FROM DEPARTURE TO ARRIVAL",
+    "flowTitle": "From departure to arrival,<br><em>follow the fare.</em>",
+    "step1Title": "Prepare your fare plan",
+    "step1Body": "Prepare the fare plan for your journey.",
+    "step2Title": "Measure the journey",
+    "step2Body": "Use GPS to measure distance and time in real time.",
+    "step3Title": "Check the calculated fare",
+    "step3Body": "See the fare calculated automatically from the measured distance and time.",
+    "infoEyebrow": "MADE FOR YOUR JOURNEY",
+    "infoTitle": "A fare tool\nfor your journey.",
+    "infoBody": "Whether you are checking a taxi fare or calculating the cost of a shared carpool trip, FareFlow helps you check a fare based on distance and time.",
+    "finalEyebrow": "LET THE METER FOLLOW",
+    "finalTitle": "Take FareFlow<br><em>on your next trip.</em>"
   }
 }

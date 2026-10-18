@@ -1,7 +1,7 @@
 <article class="portfolio-card">
     <div class="portfolio-card-top">
         <img src="{{ include.app.image | relative_url }}" alt="{{ include.app.image_alt | escape }}" data-i18n-alt="apps.{{ include.app.id }}.imageAlt" loading="{{ include.loading | default: 'lazy' }}" decoding="async" width="88" height="88" />
-        <span>iOS</span>
+        <div class="portfolio-platforms">{% if include.app.platforms %}{% for platform in include.app.platforms %}<span>{{ platform }}</span>{% endfor %}{% else %}<span>iOS</span>{% endif %}</div>
     </div>
     <div class="portfolio-card-copy">
         <h3 data-i18n="apps.{{ include.app.id }}.name">{{ include.app.name }}</h3>
@@ -9,14 +9,8 @@
         <p data-i18n="apps.{{ include.app.id }}.description">{{ include.app.description }}</p>
     </div>
     <div class="portfolio-card-actions">
-        {% if include.app.id == "movlog" %}
-            <a href="{{ '/movlog/' | relative_url }}" class="card-detail" data-i18n="common.viewIntro">소개 보기</a>
-        {% elsif include.app.id == "taghere" %}
-            <a href="{{ '/taghere/' | relative_url }}" class="card-detail" data-i18n="common.viewIntro">소개 보기</a>
-        {% elsif include.app.id == "markdam" %}
-            <a href="{{ '/markdam/' | relative_url }}" class="card-detail" data-i18n="common.viewIntro">소개 보기</a>
-        {% elsif include.app.id == "rtvideo" %}
-            <a href="{{ '/rtvideo/' | relative_url }}" class="card-detail" data-i18n="common.viewIntro">소개 보기</a>
+        {% if include.app.intro_url %}
+            <a href="{{ include.app.intro_url | relative_url }}" class="card-detail" data-i18n="common.viewIntro">소개 보기</a>
         {% elsif include.app.series == "citybus" %}
             <a href="{{ '/citybus/' | relative_url }}" class="card-detail" data-i18n="common.viewSeries">시리즈 보기</a>
         {% endif %}

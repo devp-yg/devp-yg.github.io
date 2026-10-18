@@ -10,7 +10,7 @@
 
 .portfolio-eyebrow {
     color: var(--mint-dark);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -95,7 +95,7 @@
     background: #edf1f7;
     border-radius: 999px;
     color: var(--muted);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.7rem;
     line-height: 1;
     padding: 4px 6px;
@@ -121,7 +121,7 @@
 
 .portfolio-category-kicker {
     color: var(--mint-dark);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -147,7 +147,7 @@
 
 .portfolio-category-count {
     color: var(--muted);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.78rem;
     font-weight: 700;
     white-space: nowrap;
@@ -196,10 +196,18 @@
     background: #edf1f7;
     border-radius: 999px;
     color: var(--muted);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.68rem;
     font-weight: 700;
     padding: 6px 10px;
+}
+
+.portfolio-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-end;
+    margin-left: 12px;
 }
 
 .portfolio-card-copy {
