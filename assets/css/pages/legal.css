@@ -35,6 +35,7 @@
 }
 
 .app-policy-content > h2,
+.app-policy-content [data-i18n-html] > h2,
 .app-policy-content .legal-section > h3 {
     margin: 2.2em 0 0.8em;
     padding-bottom: 0.55em;
@@ -176,6 +177,10 @@
 }
 
 .app-policy-content > .policy-app-target + h2 {
+    margin-top: 0;
+}
+
+.app-policy-content > .policy-app-target + [data-i18n-html] > h2:first-child {
     margin-top: 0;
 }
 
