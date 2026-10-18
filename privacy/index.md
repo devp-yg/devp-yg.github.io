@@ -21,6 +21,7 @@ styles:
       <li><a href="{{ '/privacy/devp-yg/' | relative_url }}">Devp-YG 공용 개인정보 처리방침</a></li>
       <li><a href="{{ '/privacy/markdam/' | relative_url }}">마크담 개인정보 처리방침</a></li>
       <li><a href="{{ '/privacy/taghere/' | relative_url }}">공간기록 개인정보 처리방침</a></li>
+      <li><a href="{{ '/privacy/rtvideo/' | relative_url }}">보이는말 (RTVideo) 개인정보 처리방침</a></li>
     </ul>
   </section>
 </article>
