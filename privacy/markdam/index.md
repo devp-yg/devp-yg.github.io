@@ -27,6 +27,9 @@ styles:
         <li>macOS</li>
       </ul>
     </div>
-    <div data-i18n-html="markdamPrivacy.content"></div>
+    <div data-i18n-html="markdamPrivacy.content">
+      {% capture policy_fallback %}{% include markdam-policy-ko.md %}{% endcapture %}
+      {{ policy_fallback | markdownify }}
+    </div>
   </section>
 </article>

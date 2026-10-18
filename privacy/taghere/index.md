@@ -1,6 +1,7 @@
 ---
 layout: default
 lang: ko
+i18n_key: tagherePrivacy
 title: "공간기록 개인정보 처리방침 | Devp-YG"
 description: "앱의 개인정보 처리 및 이용에 관한 안내입니다."
 permalink: /privacy/taghere/
