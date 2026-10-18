@@ -722,8 +722,8 @@
   "rtvideoPrivacy": {
     "title": "개인정보 처리방침",
     "targetLabel": "적용 대상",
-    "appName": "보이는말 - 실시간 자막 번역",
-    "appDescription": "실시간 음성 자막 및 번역",
+    "appName": "보이는말",
+    "appDescription": "실시간 자막 번역",
     "platformsLabel": "지원 플랫폼",
     "content": [
       "<h2>제1조(개인정보의 처리 목적)</h2>",

@@ -19,8 +19,8 @@ styles:
     <div class="policy-app-target policy-app-target--compact" aria-label="적용 대상" data-i18n-aria-label="rtvideoPrivacy.targetLabel">
       <span class="policy-app-target-label" data-i18n="rtvideoPrivacy.targetLabel">적용 대상</span>
       <div class="policy-app-target-details">
-        <strong class="policy-app-target-name" data-i18n="rtvideoPrivacy.appName">보이는말 - 실시간 자막 번역</strong>
-        <span class="policy-app-target-description" data-i18n="rtvideoPrivacy.appDescription">실시간 음성 자막 및 번역</span>
+        <strong class="policy-app-target-name" data-i18n="rtvideoPrivacy.appName">보이는말</strong>
+        <span class="policy-app-target-description" data-i18n="rtvideoPrivacy.appDescription">실시간 자막 번역</span>
       </div>
       <ul class="policy-app-platforms" aria-label="지원 플랫폼" data-i18n-aria-label="rtvideoPrivacy.platformsLabel">
         <li>iOS</li>

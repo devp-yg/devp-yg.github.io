@@ -723,7 +723,7 @@
   "rtvideoPrivacy": {
     "title": "Privacy Policy",
     "targetLabel": "Scope",
-    "appName": "RTVideo - Real-Time Captions and Translation",
+    "appName": "RTVideo",
     "appDescription": "Real-time speech captions and translation",
     "platformsLabel": "Platforms",
     "content": [
