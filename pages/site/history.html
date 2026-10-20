@@ -80,25 +80,28 @@ scripts:
                 {% assign show_month = true %}
                 {% if launch_parts[0] == last_year %}{% assign show_year = false %}{% endif %}
                 {% if launch_parts[0] == last_year and launch_parts[1] == last_month %}{% assign show_month = false %}{% endif %}
+                {% assign intro_url = app.intro_url %}
+                {% if app.series == "citybus" %}{% assign intro_url = "/citybus/" %}{% endif %}
                 <li class="history-item" data-launch-date="{{ app.launched_at }}">
-                    <a class="history-item-link" href="{{ app.store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ app.name | escape }} App Store 페이지 열기" data-i18n-aria-label="common.appStorePage">
+                    <div class="history-item-link">
                         <span class="history-marker{% unless show_month %} is-hidden{% endunless %}" data-history-marker aria-hidden="true"></span>
                         <time class="history-date" datetime="{{ app.launched_at }}">
                             <span data-history-year{% unless show_year %} class="is-hidden"{% endunless %}>{% if show_year %}{{ launch_parts[0] }}{% endif %}</span>
                             <strong data-history-month{% unless show_month %} class="is-hidden"{% endunless %}><span data-history-month-number>{{ launch_parts[1] }}</span><span data-i18n="history.monthSuffix">월</span></strong>
                         </time>
                         <div class="history-card">
-                        <div class="history-card-main">
+                        {% if intro_url %}<a class="history-card-main history-card-main-link" href="{{ intro_url | relative_url }}">{% else %}<div class="history-card-main">{% endif %}
                             <img src="{{ app.image | relative_url }}" alt="{{ app.image_alt | escape }}" data-i18n-alt="apps.{{ app.id }}.imageAlt" loading="lazy" decoding="async" width="68" height="68" />
                             <div>
                                 <p class="history-card-label"><span data-i18n="history.iosApp">iOS 앱</span>{% if app.series == "citybus" %}<span aria-hidden="true"> · </span><span data-i18n="history.citybusSeries">시티버스 시리즈</span>{% endif %}</p>
                                 <h3 data-i18n="apps.{{ app.id }}.name">{{ app.name }}</h3>
                                 {% if app.subtitle %}<p class="history-card-subtitle" data-i18n="apps.{{ app.id }}.subtitle">{{ app.subtitle }}</p>{% endif %}
+                                {% if intro_url %}<span class="history-card-intro-link" data-i18n="common.viewIntro">소개 보기</span>{% endif %}
                             </div>
+                        {% if intro_url %}</a>{% else %}</div>{% endif %}
+                        {% if app.store_url %}<a class="history-card-link" href="{{ app.store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ app.name | escape }} App Store 페이지 열기" data-i18n-aria-label="common.appStorePage">App Store <span aria-hidden="true">↗</span></a>{% endif %}
                         </div>
-                        <span class="history-card-link" aria-hidden="true">App Store <span>↗</span></span>
-                        </div>
-                    </a>
+                    </div>
                 </li>
                 {% assign last_year = launch_parts[0] %}
                 {% assign last_month = launch_parts[1] %}
