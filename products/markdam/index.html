@@ -16,10 +16,10 @@ styles:
             <div class="app-hero-copy">
                 <a class="app-back-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="common.allApps">모든 앱</a>
                 <div class="app-brand-lockup"><img src="{{ '/assets/images/apps/markdam/icon.png' | relative_url }}" alt="" /><div><strong data-i18n="apps.markdam.brandName">마크담</strong><span data-i18n="apps.markdam.brandDescription">마크다운 뷰어</span></div></div>
-                <p class="app-eyebrow" data-i18n="markdam.eyebrow">MARKDOWN, CLEARLY</p>
+                <p class="app-eyebrow" data-i18n="markdam.eyebrow">Markdown, clearly</p>
                 <h1 data-i18n-html="markdam.title">글과 그림, 다이어그램까지<br><em>편안하게 읽으세요.</em></h1>
                 <p class="app-lead" data-i18n="markdam.description">Mac·iPhone·iPad에서 Markdown 문서를 열어 읽고 PDF로 저장합니다. 표, 코드, 로컬 이미지, SVG, Mermaid 다이어그램과 수식을 오프라인으로 살펴보세요.</p>
-                <div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadIOSApp">iOS 앱 다운로드</a>{% if product.macos_review_status == "pending" %}<span class="app-review-badge" data-i18n="common.macosReviewPending">macOS App Store 심사 중</span>{% endif %}<span class="app-platform-note" data-i18n="markdam.platformNote">Mac · iPhone · iPad</span></div>
+                <div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadIOSApp">iOS 앱 다운로드</a>{% if product.macos_review_status == "pending" %}<span class="platform-review"><span class="platform-review-name">macOS</span><span class="app-review-badge" data-i18n="common.reviewPending">App Store 심사 중</span></span>{% endif %}<span class="app-platform-note" data-i18n="markdam.platformNote">Mac · iPhone · iPad</span></div>
                 <dl class="app-meta"><div><dt data-i18n="markdam.metaReadingLabel">읽기</dt><dd data-i18n="markdam.metaReading">목차 · 검색 · 보기 설정</dd></div><div><dt data-i18n="markdam.metaExportLabel">내보내기</dt><dd data-i18n="markdam.metaExport">A4 · US Letter PDF</dd></div></dl>
             </div>
             <figure class="app-hero-shot"><img src="{{ '/assets/images/apps/markdam/screenshots/reader.jpg' | relative_url }}" alt="마크담에서 Markdown 문서를 읽는 화면" data-i18n-alt="markdam.readerAlt" /></figure>
@@ -38,7 +38,7 @@ styles:
     </section>
 
     <section class="app-gallery-section">
-        <div class="app-shell"><header class="app-section-heading"><p class="app-eyebrow" data-i18n="markdam.galleryEyebrow">INSIDE MARKDAM</p><h2 data-i18n-html="markdam.galleryTitle">읽기부터 PDF 저장까지,<br><em>문서 작업을 이어서.</em></h2></header>
+        <div class="app-shell"><header class="app-section-heading"><p class="app-eyebrow" data-i18n="markdam.galleryEyebrow">Inside Markdam</p><h2 data-i18n-html="markdam.galleryTitle">읽기부터 PDF 저장까지,<br><em>문서 작업을 이어서.</em></h2></header>
             <div class="app-gallery-grid">
                 <figure><img src="{{ '/assets/images/apps/markdam/screenshots/reader.jpg' | relative_url }}" alt="Markdown 문서 읽기 화면" data-i18n-alt="markdam.readerAlt" loading="lazy" /><figcaption data-i18n="markdam.galleryReader">문서 읽기</figcaption></figure>
                 <figure><img src="{{ '/assets/images/apps/markdam/screenshots/pdf.jpg' | relative_url }}" alt="PDF 만들기와 미리보기 흐름" data-i18n-alt="markdam.pdfAlt" loading="lazy" /><figcaption data-i18n="markdam.galleryPDF">PDF 미리보기와 저장</figcaption></figure>
@@ -49,5 +49,5 @@ styles:
 
     <section class="app-info-section"><div class="app-shell app-info-grid"><div><p class="app-eyebrow" data-i18n="markdam.localEyebrow">YOUR DOCUMENTS STAY LOCAL</p><h2 data-i18n-html="markdam.localTitle">원본은 그대로,<br />읽기는 기기에서</h2></div><div class="app-info-copy"><p data-i18n="markdam.localBody">마크담은 읽기 중심 뷰어입니다. 원본 Markdown을 수정하지 않고 문서 내용을 서버로 보내지 않습니다. 상대 경로 이미지에 접근하려면 문서가 있는 폴더를 선택해야 할 수 있으며, 원격 이미지는 자동으로 가져오지 않습니다.</p></div></div></section>
 
-    <section class="app-final"><div class="app-shell"><p class="app-eyebrow" data-i18n="markdam.finalEyebrow">OPEN, READ, KEEP</p><h2 data-i18n-html="markdam.finalTitle">마크다운 문서를<br><em>읽고 간직하세요.</em></h2><div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadIOSApp">iOS 앱 다운로드</a>{% if product.macos_review_status == "pending" %}<span class="app-review-badge" data-i18n="common.macosReviewPending">macOS App Store 심사 중</span>{% endif %}<a class="app-final-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="markdam.allApps">다른 앱 둘러보기 ↗</a></div></div></section>
+    <section class="app-final"><div class="app-shell"><p class="app-eyebrow" data-i18n="markdam.finalEyebrow">OPEN, READ, KEEP</p><h2 data-i18n-html="markdam.finalTitle">마크다운 문서를<br><em>읽고 간직하세요.</em></h2><div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadIOSApp">iOS 앱 다운로드</a>{% if product.macos_review_status == "pending" %}<span class="platform-review"><span class="platform-review-name">macOS</span><span class="app-review-badge" data-i18n="common.reviewPending">App Store 심사 중</span></span>{% endif %}<a class="app-final-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="markdam.allApps">다른 앱 둘러보기 ↗</a></div></div></section>
 </main>

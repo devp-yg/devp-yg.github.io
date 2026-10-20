@@ -40,7 +40,6 @@
     letter-spacing: 0.16em;
     margin-bottom: 26px;
     position: relative;
-    text-transform: uppercase;
     z-index: 1;
 }
 
@@ -142,7 +141,6 @@
     font-weight: 700;
     letter-spacing: 0.08em;
     margin-bottom: 22px;
-    text-transform: uppercase;
 }
 
 .citybus-feature .icon {

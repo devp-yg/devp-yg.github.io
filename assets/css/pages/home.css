@@ -45,7 +45,6 @@
     gap: 10px;
     letter-spacing: 0.14em;
     margin-bottom: 24px;
-    text-transform: uppercase;
 }
 
 .eyebrow-dot {
@@ -89,7 +88,7 @@
 .hero-stats { display: flex; gap: clamp(22px, 4vw, 48px); margin: 58px 0 0; }
 .hero-stats div { border-left: 1px solid rgba(255, 255, 255, 0.16); padding-left: 17px; }
 .hero-stats dt { color: #fff; font-family: var(--font-readable); font-size: 1.05rem; font-weight: 700; line-height: 1.2; }
-.hero-stats dd { color: #77849a; font-size: 0.72rem; margin: 5px 0 0; text-transform: uppercase; }
+.hero-stats dd { color: #77849a; font-size: 0.72rem; margin: 5px 0 0; }
 
 .hero-visual { height: min(620px, 69vh); min-height: 510px; position: relative; }
 
@@ -185,7 +184,6 @@
     letter-spacing: 0.1em;
     margin: 28px 0 8px;
     opacity: 0.62;
-    text-transform: uppercase;
 }
 
 .product-card h3 { font-family: inherit; font-size: clamp(2.4rem, 4vw, 3.6rem); letter-spacing: -0.055em; margin: 0 0 16px; }

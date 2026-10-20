@@ -63,6 +63,15 @@ button:focus-visible {
     width: var(--shell);
 }
 
+.platform-review {
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.platform-review-name { font-size: 0.78rem; font-weight: 700; }
+
 .skip-link {
     background: var(--mint);
     border-radius: 0 0 10px 10px;
@@ -237,7 +246,6 @@ button:focus-visible {
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
 }
 
 .nav-products-heading small {
@@ -596,7 +604,6 @@ ul.posts > li h2 { font-size: 1.45rem; letter-spacing: -0.035em; }
     font-size: 0.78rem;
     letter-spacing: 0.08em;
     margin-bottom: 4px;
-    text-transform: uppercase;
 }
 
 .footer-links a { color: #9da7b8; font-size: 0.9rem; transition: color 180ms ease; }
