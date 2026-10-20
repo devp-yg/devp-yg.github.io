@@ -97,9 +97,9 @@ scripts:
                                 <h3 data-i18n="apps.{{ app.id }}.name">{{ app.name }}</h3>
                                 {% if app.subtitle %}<p class="history-card-subtitle" data-i18n="apps.{{ app.id }}.subtitle">{{ app.subtitle }}</p>{% endif %}
                             </div>
+                            {% if intro_url %}<span class="history-card-intro-arrow" aria-hidden="true">→</span>{% endif %}
                         {% if intro_url %}</a>{% else %}</div>{% endif %}
                         <div class="history-card-actions">
-                            {% if intro_url %}<a class="history-card-action history-card-intro-action" href="{{ intro_url | relative_url }}"><span data-i18n="common.viewIntro">소개 보기</span><span class="history-action-arrow" aria-hidden="true">↗</span></a>{% endif %}
                             {% if app.store_url %}<a class="history-card-action history-card-store-action" href="{{ app.store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ app.name | escape }} App Store 페이지 열기" data-i18n-aria-label="common.appStorePage">App Store <span class="history-action-arrow" aria-hidden="true">↗</span></a>{% endif %}
                         </div>
                         </div>

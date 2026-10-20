@@ -303,6 +303,7 @@
 .history-card-main-link {
     color: inherit;
     flex: 1 0 auto;
+    justify-content: space-between;
     text-decoration: none;
 }
 
@@ -345,6 +346,29 @@
     margin: 3px 0 0;
 }
 
+.history-card-intro-arrow {
+    align-items: center;
+    background: #f4f6f8;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--mint-dark);
+    display: inline-flex;
+    flex: 0 0 38px;
+    font-size: 1.15rem;
+    height: 38px;
+    justify-content: center;
+    margin-left: 16px;
+    transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+    width: 38px;
+}
+
+.history-card-main-link:hover .history-card-intro-arrow {
+    background: var(--mint-dark);
+    border-color: var(--mint-dark);
+    color: #fff;
+    transform: translateX(2px);
+}
+
 .history-card-actions {
     align-items: center;
     border-top: 1px solid var(--line);
@@ -369,18 +393,6 @@
     text-decoration: none;
     transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
     white-space: nowrap;
-}
-
-.history-card-intro-action {
-    background: #f4f6f8;
-    border-color: var(--line);
-    color: var(--ink);
-}
-
-.history-card-intro-action:hover {
-    background: #e9edf2;
-    border-color: #c9d1dc;
-    transform: translateY(-1px);
 }
 
 .history-card-store-action {
@@ -424,4 +436,5 @@
     .history-card-main img { flex-basis: 56px; height: 56px; width: 56px; }
     .history-card-actions { justify-content: stretch; }
     .history-card-action { flex: 1 1 auto; }
+    .history-card-intro-arrow { flex-basis: 34px; height: 34px; margin-left: 8px; width: 34px; }
 }
