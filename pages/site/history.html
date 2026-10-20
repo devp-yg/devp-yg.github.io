@@ -14,7 +14,9 @@ scripts:
 <main id="main" class="history-page">
     {% assign all_ios_apps = site.data.apps | where: "platform", "ios" %}
     {% assign ios_apps = all_ios_apps | where_exp: "app", "app.launched_at != nil" %}
-    {% assign pending_apps = all_ios_apps | where_exp: "app", "app.review_status == 'pending' or app.macos_review_status == 'pending'" %}
+    {% assign pending_ios_apps = all_ios_apps | where: "review_status", "pending" %}
+    {% assign pending_macos_apps = all_ios_apps | where: "macos_review_status", "pending" %}
+    {% assign pending_apps = pending_ios_apps | concat: pending_macos_apps | uniq %}
     {% assign sorted_apps = ios_apps | sort: "launched_at" | reverse %}
 
     <header class="history-hero site-shell">
