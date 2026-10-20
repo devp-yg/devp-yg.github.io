@@ -17,7 +17,10 @@
         {% if include.app.review_status == "pending" %}
             <span class="review-status" data-i18n="common.reviewPending">App Store 심사 중</span>
         {% elsif include.app.store_url %}
-            <a href="{{ include.app.store_url }}" class="store-link" target="_blank" rel="noopener noreferrer" aria-label="{{ include.app.name | escape }} App Store 페이지" data-i18n-aria-label="common.appStorePage">App Store <span aria-hidden="true">↗</span></a>
+            <a href="{{ include.app.store_url }}" class="store-link" target="_blank" rel="noopener noreferrer" aria-label="{{ include.app.name | escape }} App Store 페이지" data-i18n-aria-label="common.appStorePage">{% if include.app.platforms contains 'macOS' %}iOS {% endif %}App Store <span aria-hidden="true">↗</span></a>
+        {% endif %}
+        {% if include.app.macos_review_status == "pending" %}
+            <span class="review-status" data-i18n="common.macosReviewPending">macOS App Store 심사 중</span>
         {% endif %}
     </div>
 </article>

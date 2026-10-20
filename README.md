@@ -36,6 +36,7 @@ Public addresses are preserved with Jekyll `permalink` settings:
 ## Content updates
 
 - 앱 이름, 설명, 아이콘, 스토어 주소와 소개 페이지 경로(`intro_url`), 복수 플랫폼 표기(`platforms`)는 `_data/apps.yml`에서 관리합니다. 새 앱에는 사용자가 앱으로 하려는 일을 기준으로 `category`와 `portfolio_order`를 함께 지정합니다.
+- iOS 최초 출시일은 `launched_at`, 심사 상태는 `review_status`로 관리합니다. iOS 출시 후 macOS만 심사 중인 앱은 `macos_review_status: pending`으로 구분합니다.
 - 전체 앱 화면의 상위 분류와 노출 순서는 `_data/app_categories.yml`에서 관리합니다. 분류는 제품의 기능 하나보다 사용 목적을 기준으로 넓고 오래 유지하며, `series`(예: CityBus)는 별도로 관리합니다. 메인 화면의 앱 소개도 같은 분류명을 사용하고, 소개 페이지가 있는 제품은 상세 카드로, 간단한 생활 도구는 생활 도구 목록으로 보여줍니다. 생활 도구 목록은 분류 데이터에서 자동으로 구성됩니다. 새 분류를 추가할 때는 두 언어팩의 `portfolio.categories`에 이름과 설명도 추가합니다.
 - 공통 문서 구조는 `_layouts/default.html`, 내비게이션은 `_data/navigation.yml`에서 관리합니다.
 - 한국어·영어 문구는 `assets/i18n/ko.json`, `assets/i18n/en.json` 언어팩에서 관리하며, 헤더의 `KO / EN` 전환 버튼으로 전체 페이지에 적용됩니다. 선택 언어는 브라우저의 `localStorage`에 저장됩니다.

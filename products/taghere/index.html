@@ -10,6 +10,7 @@ styles:
 ---
 
 <main id="main" class="app-page app-page-taghere">
+    {% assign product = site.data.apps | where: "id", "taghere" | first %}
     <section class="app-hero">
         <div class="app-shell app-hero-grid">
             <div class="app-hero-copy">
@@ -18,7 +19,7 @@ styles:
                 <p class="app-eyebrow" data-i18n="taghere.eyebrow">PLACE · SPACE · MEMORY</p>
                 <h1 data-i18n-html="taghere.title">장소를 기억하고,<br><em>그 안의 공간까지.</em></h1>
                 <p class="app-lead" data-i18n="taghere.description">집과 회사, 자주 찾는 곳을 등록해 두면 위치와 Bluetooth 기기로 방문과 공간을 기록합니다. 장소와 머문 공간을 날짜별 기록으로 다시 살펴보세요.</p>
-                <div class="app-hero-actions"><span class="app-review-badge" data-i18n="common.reviewPending">App Store 심사 중</span><a class="app-secondary-link" href="{{ '/privacy/taghere/' | relative_url }}" data-i18n="taghere.privacyLink">개인정보 처리방침 ↗</a></div>
+                <div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadApp">App Store에서 다운로드</a><a class="app-secondary-link" href="{{ '/privacy/taghere/' | relative_url }}" data-i18n="taghere.privacyLink">개인정보 처리방침 ↗</a></div>
                 <dl class="app-meta"><div><dt data-i18n="taghere.metaPlatformLabel">플랫폼</dt><dd data-i18n="taghere.metaPlatform">iPhone · iPad</dd></div><div><dt data-i18n="taghere.metaCaptureLabel">기록 방식</dt><dd data-i18n="taghere.metaCapture">위치 · Bluetooth</dd></div></dl>
             </div>
             <figure class="app-hero-shot"><img src="{{ '/assets/images/apps/taghere/screenshots/places.jpg' | relative_url }}" alt="공간기록의 등록 장소 목록" data-i18n-alt="taghere.placesAlt" /></figure>
@@ -49,5 +50,5 @@ styles:
 
     <section class="app-info-section"><div class="app-shell app-info-grid"><div><p class="app-eyebrow" data-i18n="taghere.permissionsEyebrow">MADE FOR YOUR PLACES</p><h2 data-i18n="taghere.permissionsTitle">장소 인식에 필요한 권한</h2></div><div class="app-info-copy"><p data-i18n="taghere.permissionsBody">위치는 등록 장소의 진입·이탈을 감지하는 데 사용합니다. Bluetooth는 주변의 등록 기기를 확인해 공간을 구분하는 데 사용하며, 알림은 방문 기록 완료를 알려줍니다. 권한 설정에 따라 백그라운드 자동 인식 범위가 달라질 수 있습니다.</p><a class="app-secondary-link" href="{{ '/privacy/taghere/' | relative_url }}" data-i18n="taghere.privacyLink">개인정보 처리방침 ↗</a></div></div></section>
 
-    <section class="app-final"><div class="app-shell"><p class="app-eyebrow" data-i18n="taghere.finalEyebrow">REMEMBER THE PLACES YOU RETURN TO</p><h2 data-i18n-html="taghere.finalTitle">다시 찾을 곳을<br><em>기억해 두세요.</em></h2><span class="app-review-badge" data-i18n="common.reviewPending">App Store 심사 중</span><a class="app-final-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="taghere.allApps">다른 앱 둘러보기 ↗</a></div></section>
+    <section class="app-final"><div class="app-shell"><p class="app-eyebrow" data-i18n="taghere.finalEyebrow">REMEMBER THE PLACES YOU RETURN TO</p><h2 data-i18n-html="taghere.finalTitle">다시 찾을 곳을<br><em>기억해 두세요.</em></h2><div class="app-hero-actions"><a class="app-store-button" href="{{ product.store_url }}" target="_blank" rel="noopener noreferrer" data-i18n="common.downloadApp">App Store에서 다운로드</a><a class="app-final-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="taghere.allApps">다른 앱 둘러보기 ↗</a></div></div></section>
 </main>

@@ -169,11 +169,12 @@
   portfolio_order: 30
   name: 공간기록 - 여기를 기억해
   subtitle: TagHere
-  review_status: pending
+  launched_at: 2026-10-20
   minimum_ios: "17"
   description: 자주 가는 장소와 그 안의 공간을 등록하고, 위치와 Bluetooth 기기로 방문·공간 인식을 기록합니다. 날짜별 기록과 위젯으로 어디에 머물렀는지 돌아보세요.
   image: /assets/images/apps/taghere/icon.png
   image_alt: 공간기록 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id6822787818
 
 - id: rtvideo
   intro_url: /rtvideo/
@@ -195,8 +196,10 @@
   portfolio_order: 10
   name: 마크담 - 마크다운 뷰어
   subtitle: Markdown Reader
-  review_status: pending
+  launched_at: 2026-10-20
+  macos_review_status: pending
   minimum_ios: "17"
   description: Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.
   image: /assets/images/apps/markdam/icon.png
   image_alt: 마크담 앱 아이콘
+  store_url: https://apps.apple.com/kr/app/id6823810921

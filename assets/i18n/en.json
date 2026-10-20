@@ -13,6 +13,8 @@
     "viewIntro": "View introduction",
     "appStorePage": "Open App Store page",
     "reviewPending": "Awaiting App Store review",
+    "macosReviewPending": "macOS awaiting App Store review",
+    "downloadIOSApp": "Download for iOS",
     "allApps": "All apps",
     "contact": "Contact",
     "blog": "Development notes",
@@ -230,9 +232,10 @@
     "monthSuffix": "",
     "citybusSeries": "CityBus series",
     "iosApp": "iOS app",
-    "pendingKicker": "Before release",
+    "macosApp": "macOS app",
+    "pendingKicker": "Coming soon",
     "pendingTitle": "Awaiting App Store review",
-    "pendingDescription": "These apps are listed before their release dates are set."
+    "pendingDescription": "Apps and platform versions currently awaiting App Store review."
   },
   "contact": {
     "title": "Contact",
