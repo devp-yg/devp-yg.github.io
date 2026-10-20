@@ -221,8 +221,8 @@
 
 .history-item-link:has(.history-card-main-link:hover) .history-card,
 .history-item-link:has(.history-card-main-link:focus-visible) .history-card,
-.history-item-link:has(.history-card-link:hover) .history-card,
-.history-item-link:has(.history-card-link:focus-visible) .history-card {
+.history-item-link:has(.history-card-action:hover) .history-card,
+.history-item-link:has(.history-card-action:focus-visible) .history-card {
     border-color: #bcc7d9;
     box-shadow: var(--shadow);
     transform: translateY(-3px);
@@ -281,23 +281,16 @@
 }
 
 .history-card {
-    align-items: center;
+    align-items: stretch;
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 22px;
     display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 18px;
     min-height: 116px;
     padding: 20px 24px 20px 20px;
     transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
-}
-
-.history-item-link:hover .history-card,
-.history-item-link:focus-visible .history-card {
-    border-color: #bcc7d9;
-    box-shadow: var(--shadow);
-    transform: translateY(-3px);
 }
 
 .history-card-main {
@@ -308,16 +301,13 @@
 }
 
 .history-card-main-link {
-    border-radius: 14px;
     color: inherit;
-    flex: 1 1 auto;
-    margin: -8px 0 -8px -8px;
-    padding: 8px;
+    flex: 1 0 auto;
     text-decoration: none;
 }
 
 .history-card-main-link:focus-visible,
-.history-card-link:focus-visible {
+.history-card-action:focus-visible {
     outline: 3px solid var(--mint-dark);
     outline-offset: 3px;
 }
@@ -355,31 +345,62 @@
     margin: 3px 0 0;
 }
 
-.history-card-intro-link {
-    color: var(--mint-dark);
-    display: inline-block;
-    font-size: 0.72rem;
-    font-weight: 700;
-    margin-top: 8px;
+.history-card-actions {
+    align-items: center;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-top: 14px;
 }
 
-.history-card-link {
-    color: var(--muted);
-    flex: 0 0 auto;
-    font-size: 0.78rem;
+.history-card-action {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    display: inline-flex;
+    font-size: 0.76rem;
     font-weight: 700;
+    gap: 8px;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 16px;
     text-decoration: none;
+    transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
     white-space: nowrap;
 }
 
-.history-card-link span {
+.history-card-intro-action {
+    background: #f4f6f8;
+    border-color: var(--line);
+    color: var(--ink);
+}
+
+.history-card-intro-action:hover {
+    background: #e9edf2;
+    border-color: #c9d1dc;
+    transform: translateY(-1px);
+}
+
+.history-card-store-action {
+    background: var(--ink);
+    color: #fff;
+}
+
+.history-card-store-action:hover {
+    background: #263247;
+    transform: translateY(-1px);
+}
+
+.history-action-arrow {
     display: inline-block;
-    margin-left: 5px;
+    font-size: 0.88rem;
     transition: transform 180ms ease;
 }
 
-.history-card-link:hover span {
-    transform: translate(3px, -3px);
+.history-card-action:hover .history-action-arrow {
+    transform: translate(2px, -2px);
 }
 
 @media (max-width: 620px) {
@@ -398,9 +419,9 @@
     .history-item-link { gap: 5px; grid-template-columns: 22px 46px 32px minmax(0, 1fr); }
     .history-date > strong { font-size: 0.96rem; }
     .history-date > span { font-size: 0.62rem; }
-    .history-card { align-items: flex-start; flex-direction: column; gap: 14px; padding: 16px; }
+    .history-card { gap: 14px; padding: 16px; }
     .history-card-main { gap: 13px; }
-    .history-card-main-link { margin: -8px; max-width: calc(100% + 16px); }
     .history-card-main img { flex-basis: 56px; height: 56px; width: 56px; }
-    .history-card-link { border-top: 1px solid var(--line); padding-top: 12px; width: 100%; }
+    .history-card-actions { justify-content: stretch; }
+    .history-card-action { flex: 1 1 auto; }
 }
