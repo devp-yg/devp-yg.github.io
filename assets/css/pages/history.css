@@ -78,90 +78,6 @@
     flex-direction: column;
 }
 
-.history-pending {
-    border-bottom: 1px solid var(--line);
-    margin: -8px 0 42px;
-    padding-bottom: 36px;
-}
-
-.history-pending-heading {
-    align-items: end;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.history-pending-heading h2 {
-    font-size: 1.25rem;
-    letter-spacing: -0.04em;
-    margin: 0;
-}
-
-.history-pending-heading > p {
-    color: var(--muted);
-    font-size: 0.82rem;
-    margin: 0 0 3px;
-}
-
-.history-pending-list {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.history-pending-link {
-    align-items: center;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    color: inherit;
-    display: flex;
-    gap: 15px;
-    min-height: 100px;
-    padding: 15px 18px;
-    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
-}
-
-.history-pending-link:hover,
-.history-pending-link:focus-visible {
-    border-color: #bcc7d9;
-    box-shadow: var(--shadow);
-    transform: translateY(-2px);
-}
-
-.history-pending-link > img {
-    border-radius: 15px;
-    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
-    flex: 0 0 58px;
-    height: 58px;
-    object-fit: cover;
-    width: 58px;
-}
-
-.history-pending-copy {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    min-width: 0;
-}
-
-.history-pending-copy .history-card-label { margin-bottom: 4px; }
-.history-pending-copy strong { font-size: 0.98rem; letter-spacing: -0.035em; overflow-wrap: anywhere; }
-
-.history-pending-status {
-    background: rgba(255, 255, 255, .8);
-    border: 1px solid rgba(69, 56, 48, .12);
-    border-radius: 999px;
-    color: #5e534c;
-    flex: 0 0 auto;
-    font-size: 0.68rem;
-    font-weight: 750;
-    padding: 7px 10px;
-}
-
 .history-sort {
     background: #edf1f7;
     border-radius: 999px;
@@ -278,16 +194,30 @@
     visibility: hidden;
 }
 
+.history-marker.is-pending {
+    background: #e5a83b;
+    box-shadow: 0 0 0 4px rgba(229, 168, 59, 0.14);
+}
+
+.history-date-pending {
+    align-self: center;
+    color: #a66a12;
+    font-size: 1rem;
+    font-weight: 800;
+    grid-column: 2 / span 2;
+    line-height: 1;
+    text-align: right;
+}
+
 .history-card {
-    align-items: stretch;
+    align-items: center;
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 22px;
+    border-radius: 18px;
     display: flex;
-    flex-direction: column;
     gap: 18px;
-    min-height: 116px;
-    padding: 20px 24px 20px 20px;
+    min-height: 92px;
+    padding: 14px 18px;
     transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
@@ -308,12 +238,12 @@
 }
 
 .history-card-main img {
-    border-radius: 17px;
+    border-radius: 14px;
     box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
-    flex: 0 0 68px;
-    height: 68px;
+    flex: 0 0 56px;
+    height: 56px;
     object-fit: cover;
-    width: 68px;
+    width: 56px;
 }
 
 .history-card-label {
@@ -338,12 +268,11 @@
 
 .history-card-actions {
     align-items: center;
-    border-top: 1px solid var(--line);
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    padding-top: 14px;
+    flex: 0 0 auto;
+    gap: 8px;
+    justify-content: flex-end;
 }
 
 .history-card-action {
@@ -355,22 +284,23 @@
     font-weight: 700;
     gap: 8px;
     justify-content: center;
-    min-height: 40px;
-    padding: 0 16px;
+    min-height: 36px;
+    padding: 0 13px;
     text-decoration: none;
     transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
     white-space: nowrap;
 }
 
 .history-card-intro-action {
-    background: #f4f6f8;
+    background: #fff;
     border-color: var(--line);
-    color: var(--ink);
+    color: var(--muted);
 }
 
 .history-card-intro-action:hover {
-    background: #e9edf2;
-    border-color: #c9d1dc;
+    background: #f4f6f8;
+    border-color: #cbd3df;
+    color: var(--ink);
     transform: translateY(-1px);
 }
 
@@ -382,6 +312,22 @@
 .history-card-store-action:hover {
     background: #263247;
     transform: translateY(-1px);
+}
+
+.history-review-badge {
+    align-items: center;
+    background: #fff4dc;
+    border: 1px solid #f0d69d;
+    border-radius: 999px;
+    color: #80540d;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-size: 0.68rem;
+    font-weight: 750;
+    gap: 4px;
+    min-height: 34px;
+    padding: 0 10px;
+    white-space: nowrap;
 }
 
 .history-action-arrow {
@@ -400,19 +346,16 @@
     .history-intro { align-items: flex-start; flex-direction: column; margin-bottom: 34px; }
     .history-tools { align-items: flex-start; margin-top: 16px; }
     .history-basis { margin-bottom: 12px; }
-    .history-pending { margin: 0 0 32px; padding-bottom: 28px; }
-    .history-pending-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
-    .history-pending-list { grid-template-columns: 1fr; }
-    .history-pending-link { gap: 12px; padding: 13px; }
-    .history-pending-link > img { flex-basis: 52px; height: 52px; width: 52px; }
-    .history-pending-status { font-size: 0.62rem; padding: 6px 8px; }
     .history-timeline::before { left: 11px; }
     .history-item-link { gap: 5px; grid-template-columns: 22px 46px 32px minmax(0, 1fr); }
     .history-date > strong { font-size: 0.96rem; }
     .history-date > span { font-size: 0.62rem; }
-    .history-card { gap: 14px; padding: 16px; }
-    .history-card-main { gap: 13px; }
-    .history-card-main img { flex-basis: 56px; height: 56px; width: 56px; }
-    .history-card-actions { justify-content: center; }
-    .history-card-action { flex: 1 1 auto; }
+    .history-card { align-items: flex-start; flex-direction: column; gap: 10px; padding: 13px; }
+    .history-card-main { gap: 12px; width: 100%; }
+    .history-card-main img { flex-basis: 48px; height: 48px; width: 48px; }
+    .history-card h3 { font-size: 0.94rem; }
+    .history-card-subtitle { font-size: 0.7rem; }
+    .history-card-actions { align-self: flex-end; }
+    .history-card-action { font-size: 0.68rem; min-height: 32px; padding: 0 10px; }
+    .history-review-badge { font-size: 0.62rem; min-height: 30px; padding: 0 8px; }
 }

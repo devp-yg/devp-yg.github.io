@@ -13,19 +13,26 @@
         var previousMonth = null;
 
         orderedItems.forEach(function (item) {
+            var marker = item.querySelector('[data-history-marker]');
+
+            if (item.getAttribute('data-review-pending') === 'true') {
+                marker.classList.add('is-pending');
+                return;
+            }
+
             var dateParts = item.getAttribute('data-launch-date').split('-');
             var sameYear = previousYear === dateParts[0];
             var sameMonth = sameYear && previousMonth === dateParts[1];
             var year = item.querySelector('[data-history-year]');
             var month = item.querySelector('[data-history-month]');
             var monthNumber = item.querySelector('[data-history-month-number]');
-            var marker = item.querySelector('[data-history-marker]');
 
             year.textContent = sameYear ? '' : dateParts[0];
             monthNumber.textContent = dateParts[1];
             year.classList.toggle('is-hidden', sameYear);
             month.classList.toggle('is-hidden', sameMonth);
             marker.classList.toggle('is-hidden', sameMonth);
+            marker.classList.remove('is-pending');
 
             previousYear = dateParts[0];
             previousMonth = dateParts[1];
@@ -34,6 +41,12 @@
 
     function sortHistory(order) {
         items.sort(function (first, second) {
+            var firstPending = first.getAttribute('data-review-pending') === 'true';
+            var secondPending = second.getAttribute('data-review-pending') === 'true';
+
+            if (firstPending !== secondPending) return firstPending ? -1 : 1;
+            if (firstPending) return 0;
+
             var firstDate = first.getAttribute('data-launch-date');
             var secondDate = second.getAttribute('data-launch-date');
             var result = firstDate.localeCompare(secondDate);

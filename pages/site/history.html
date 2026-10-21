@@ -15,9 +15,9 @@ scripts:
     {% assign all_ios_apps = site.data.apps | where: "platform", "ios" %}
     {% assign ios_apps = all_ios_apps | where_exp: "app", "app.launched_at != nil" %}
     {% assign pending_ios_apps = all_ios_apps | where: "review_status", "pending" %}
-    {% assign pending_macos_apps = all_ios_apps | where: "macos_review_status", "pending" %}
-    {% assign pending_apps = pending_ios_apps | concat: pending_macos_apps | uniq %}
+    {% assign pending_unreleased_apps = pending_ios_apps | where_exp: "app", "app.launched_at == nil" %}
     {% assign sorted_apps = ios_apps | sort: "launched_at" | reverse %}
+    {% assign timeline_apps = pending_unreleased_apps | concat: sorted_apps %}
 
     <header class="history-hero site-shell">
         <p class="history-eyebrow" data-i18n="history.eyebrow" data-i18n-count="{{ all_ios_apps | size }}">The timeline · {{ all_ios_apps | size }} apps</p>
@@ -40,41 +40,12 @@ scripts:
             </div>
         </div>
 
-        {% if pending_apps.size > 0 %}
-        <section class="history-pending" aria-labelledby="history-pending-title">
-            <div class="history-pending-heading">
-                <div>
-                    <p class="history-kicker" data-i18n="history.pendingKicker">출시 준비 중</p>
-                    <h2 id="history-pending-title" data-i18n="history.pendingTitle">App Store 심사 중</h2>
-                </div>
-                <p data-i18n="history.pendingDescription">App Store 심사 중인 앱과 플랫폼 버전을 소개합니다.</p>
-            </div>
-            <ul class="history-pending-list">
-                {% for app in pending_apps %}
-                <li>
-                    <a class="history-pending-link" href="{{ app.id | prepend: '/' | append: '/' | relative_url }}">
-                        <img src="{{ app.image | relative_url }}" alt="{{ app.image_alt | escape }}" data-i18n-alt="apps.{{ app.id }}.imageAlt" loading="lazy" decoding="async" width="68" height="68" />
-                        <span class="history-pending-copy">
-                            {% if app.macos_review_status == "pending" %}
-                            <span class="history-card-label" data-i18n="history.macosApp">macOS 앱</span>
-                            {% else %}
-                            <span class="history-card-label" data-i18n="history.iosApp">iOS 앱</span>
-                            {% endif %}
-                            <strong data-i18n="apps.{{ app.id }}.name">{{ app.name }}</strong>
-                            {% if app.subtitle %}<span class="history-card-subtitle" data-i18n="apps.{{ app.id }}.subtitle">{{ app.subtitle }}</span>{% endif %}
-                        </span>
-                        <span class="history-pending-status" data-i18n="common.reviewPending">App Store 심사 중</span>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
-        {% endif %}
-
         <ol class="history-timeline" data-history-timeline>
             {% assign last_year = '' %}
             {% assign last_month = '' %}
-            {% for app in sorted_apps %}
+            {% for app in timeline_apps %}
+                {% assign is_unreleased_pending = false %}
+                {% if app.launched_at == nil %}{% assign is_unreleased_pending = true %}{% endif %}
                 {% assign launch_parts = app.launched_at | split: '-' %}
                 {% assign show_year = true %}
                 {% assign show_month = true %}
@@ -82,13 +53,19 @@ scripts:
                 {% if launch_parts[0] == last_year and launch_parts[1] == last_month %}{% assign show_month = false %}{% endif %}
                 {% assign intro_url = app.intro_url %}
                 {% if app.series == "citybus" %}{% assign intro_url = "/citybus/" %}{% endif %}
-                <li class="history-item" data-launch-date="{{ app.launched_at }}">
+                <li class="history-item{% if is_unreleased_pending %} is-review-pending{% endif %}" data-launch-date="{{ app.launched_at | default: '' }}" data-review-pending="{% if is_unreleased_pending %}true{% else %}false{% endif %}">
                     <div class="history-item-link">
-                        <span class="history-marker{% unless show_month %} is-hidden{% endunless %}" data-history-marker aria-hidden="true"></span>
+                        <span class="history-marker{% if is_unreleased_pending %} is-pending{% elsif show_month == false %} is-hidden{% endif %}" data-history-marker aria-hidden="true"></span>
+                        {% if is_unreleased_pending %}
+                        <div class="history-date">
+                            <span class="history-date-pending" aria-hidden="true">—</span>
+                        </div>
+                        {% else %}
                         <time class="history-date" datetime="{{ app.launched_at }}">
                             <span data-history-year{% unless show_year %} class="is-hidden"{% endunless %}>{% if show_year %}{{ launch_parts[0] }}{% endif %}</span>
                             <strong data-history-month{% unless show_month %} class="is-hidden"{% endunless %}><span data-history-month-number>{{ launch_parts[1] }}</span><span data-i18n="history.monthSuffix">월</span></strong>
                         </time>
+                        {% endif %}
                         <div class="history-card">
                         <div class="history-card-main">
                             <img src="{{ app.image | relative_url }}" alt="{{ app.image_alt | escape }}" data-i18n-alt="apps.{{ app.id }}.imageAlt" loading="lazy" decoding="async" width="68" height="68" />
@@ -101,12 +78,16 @@ scripts:
                         <div class="history-card-actions">
                             {% if intro_url %}<a class="history-card-action history-card-intro-action" href="{{ intro_url | relative_url }}"><span data-i18n="common.viewIntro">소개 보기</span><span class="history-action-arrow" aria-hidden="true">↗</span></a>{% endif %}
                             {% if app.store_url %}<a class="history-card-action history-card-store-action" href="{{ app.store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ app.name | escape }} App Store 페이지 열기" data-i18n-aria-label="common.appStorePage">App Store <span class="history-action-arrow" aria-hidden="true">↗</span></a>{% endif %}
+                            {% if app.review_status == "pending" %}<span class="history-review-badge" data-i18n="common.reviewPending">App Store 심사 중</span>{% endif %}
+                            {% if app.macos_review_status == "pending" %}<span class="history-review-badge" data-i18n="history.macosPending">macOS 심사 중</span>{% endif %}
                         </div>
                         </div>
                     </div>
                 </li>
-                {% assign last_year = launch_parts[0] %}
-                {% assign last_month = launch_parts[1] %}
+                {% unless is_unreleased_pending %}
+                    {% assign last_year = launch_parts[0] %}
+                    {% assign last_month = launch_parts[1] %}
+                {% endunless %}
             {% endfor %}
         </ol>
     </section>

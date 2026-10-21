@@ -232,6 +232,7 @@
     "citybusSeries": "CityBus series",
     "iosApp": "iOS app",
     "macosApp": "macOS app",
+    "macosPending": "macOS in review",
     "pendingKicker": "Coming soon",
     "pendingTitle": "Awaiting App Store review",
     "pendingDescription": "Apps and platform versions currently awaiting App Store review."
