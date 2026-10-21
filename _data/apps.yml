@@ -183,6 +183,7 @@
   portfolio_order: 10
   name: 보이는말 - 실시간 자막 번역
   review_status: pending
+  review_submitted_at: 2026-10-20
   minimum_ios: "26"
   description: iPhone·iPad에서 재생 중인 영상과 오디오의 음성을 인식해 선택한 언어의 번역 자막으로 보여줍니다. 앱 창이나 PiP 자막 창에서 원문과 번역을 확인하세요.
   image: /assets/images/apps/rtvideo/icon.png
@@ -198,6 +199,7 @@
   subtitle: Markdown Reader
   launched_at: 2026-10-20
   macos_review_status: pending
+  macos_review_submitted_at: 2026-10-20
   minimum_ios: "17"
   description: Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.
   image: /assets/images/apps/markdam/icon.png
