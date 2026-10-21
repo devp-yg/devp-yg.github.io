@@ -33,11 +33,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
     {% for stylesheet in page.styles %}
-        <link rel="stylesheet" href="{{ stylesheet | relative_url }}" />
+        <link rel="stylesheet" href="{{ stylesheet | relative_url }}?v={{ site.time | date: '%s' }}" />
     {% endfor %}
     <link rel="stylesheet" href="{{ '/assets/css/typography.css' | relative_url }}" />
     <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
     {% for script in page.scripts %}
-        <script src="{{ script | relative_url }}" defer></script>
+        <script src="{{ script | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
     {% endfor %}
 </head>

@@ -224,7 +224,7 @@
     "description": "See when our apps first launched, along with the apps currently awaiting App Store review.",
     "kicker": "Release history",
     "heading": "App release timeline",
-    "basis": "Based on the first version released on the App Store",
+    "basis": "Release dates · Review submission dates",
     "sortLabel": "Sort order",
     "latest": "Newest",
     "oldest": "Oldest",
@@ -232,7 +232,8 @@
     "citybusSeries": "CityBus series",
     "iosApp": "iOS app",
     "macosApp": "macOS app",
-    "macosPending": "macOS in review",
+    "iosMacosApp": "iOS · macOS app",
+    "reviewPending": "In review",
     "pendingKicker": "Coming soon",
     "pendingTitle": "Awaiting App Store review",
     "pendingDescription": "Apps and platform versions currently awaiting App Store review."

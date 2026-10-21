@@ -1,0 +1,37 @@
+{% assign history_app = include.app %}
+{% assign history_event_date = include.event_date | date: '%Y-%m-%d' %}
+{% assign history_date_parts = history_event_date | split: '-' %}
+{% assign history_previous_parts = include.previous_date | date: '%Y-%m-%d' | split: '-' %}
+{% assign history_show_year = true %}
+{% assign history_show_month = true %}
+{% if history_date_parts[0] == history_previous_parts[0] %}{% assign history_show_year = false %}{% endif %}
+{% if history_date_parts[0] == history_previous_parts[0] and history_date_parts[1] == history_previous_parts[1] %}{% assign history_show_month = false %}{% endif %}
+{% assign history_intro_url = history_app.intro_url %}
+{% if history_app.series == 'citybus' %}{% assign history_intro_url = '/citybus/' %}{% endif %}
+<li class="history-item{% if include.is_pending %} is-review-pending{% endif %}" data-history-app="{{ history_app.id }}" data-platform="{{ include.platform }}" data-event-date="{{ history_event_date }}" data-review-pending="{% if include.is_pending %}true{% else %}false{% endif %}">
+    <div class="history-item-link">
+        <span class="history-marker{% if include.is_pending %} is-pending{% elsif history_show_month == false %} is-hidden{% endif %}" data-history-marker aria-hidden="true"></span>
+        <time class="history-date" datetime="{{ history_event_date }}" title="{{ history_event_date }}">
+            <span data-history-year{% unless history_show_year %} class="is-hidden"{% endunless %}>{% if history_show_year %}{{ history_date_parts[0] }}{% endif %}</span>
+            <strong data-history-month{% unless history_show_month %} class="is-hidden"{% endunless %}><span data-history-month-number>{{ history_date_parts[1] }}</span><span data-i18n="history.monthSuffix">월</span></strong>
+        </time>
+        <div class="history-card">
+            <div class="history-card-main">
+                <img src="{{ history_app.image | relative_url }}" alt="{{ history_app.image_alt | escape }}" data-i18n-alt="apps.{{ history_app.id }}.imageAlt" loading="lazy" decoding="async" width="56" height="56" />
+                <div>
+                    <p class="history-card-label"><span data-i18n="history.{{ include.platform_label }}">{{ include.platform_name }}</span>{% if history_app.series == 'citybus' %}<span aria-hidden="true"> · </span><span data-i18n="history.citybusSeries">시티버스 시리즈</span>{% endif %}</p>
+                    <h3 data-i18n="apps.{{ history_app.id }}.name">{{ history_app.name }}</h3>
+                    {% if history_app.subtitle %}<p class="history-card-subtitle" data-i18n="apps.{{ history_app.id }}.subtitle">{{ history_app.subtitle }}</p>{% endif %}
+                </div>
+            </div>
+            <div class="history-card-actions">
+                {% if history_intro_url %}<a class="history-card-action history-card-intro-action" href="{{ history_intro_url | relative_url }}"><span data-i18n="common.viewIntro">소개 보기</span><span class="history-action-arrow" aria-hidden="true">→</span></a>{% endif %}
+                {% if include.is_pending %}
+                <span class="history-review-badge"><span class="history-review-label-long" data-i18n="common.reviewPending">App Store 심사 중</span><span class="history-review-label-short" data-i18n="history.reviewPending">심사 중</span></span>
+                {% elsif include.store_url %}
+                <a class="history-card-action history-card-store-action" href="{{ include.store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ history_app.name | escape }} App Store 페이지 열기" data-i18n-aria-label="common.appStorePage">App Store <span class="history-action-arrow" aria-hidden="true">↗</span></a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</li>
