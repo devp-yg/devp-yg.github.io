@@ -158,7 +158,7 @@
     "apps": "iOS Apps",
     "cities": "Cities",
     "builtNative": "Built native",
-    "visualLabel": "최근 추가·출시한 앱과 프로젝트",
+    "visualLabel": "Devp-YG의 앱과 프로젝트 모음",
     "appCloudLabel": "앱과 프로젝트",
     "transitLabel": "대중교통",
     "readingLabel": "문서 읽기",
@@ -201,7 +201,8 @@
     "categoriesEyebrow": "FIND YOUR NEXT TOOL",
     "categoriesTitle": "지금 필요한 것은<br><em>무엇인가요?</em>",
     "categoriesLead": "일상에 쓰는 앱부터 개발을 돕는 도구까지, 사용 목적에 맞춰 둘러보세요.",
-    "catalogCount": "전체 {count}개 앱·프로젝트 둘러보기"
+    "catalogCount": "전체 {count}개 앱·프로젝트 둘러보기",
+    "cloudHint": "아이콘을 선택해 둘러보세요"
   },
   "portfolio": {
     "eyebrow": "Devp-YG Apps & Projects · {count}개",

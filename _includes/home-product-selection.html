@@ -1,6 +1,7 @@
 {%- comment -%}
-    New entries appear automatically. A series occupies one slot, using its newest
-    entry. home_listed_at can introduce an older product; home_hidden opts out.
+    New entries appear automatically. A series occupies one recent-card slot,
+    using its newest entry. The cloud uses the complete home_ranked_products list.
+    home_listed_at can introduce an older product; home_hidden opts out.
 {%- endcomment -%}
 {%- capture home_ranked_products -%}
     {%- for app in site.data.apps -%}

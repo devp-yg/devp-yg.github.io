@@ -9,22 +9,34 @@
     {%- assign product_external = true -%}
 {%- endif -%}
 {% if include.variant == "orbit" %}
-    <a class="floating-icon orbit-slot-{{ include.slot }}" href="{{ product_url }}"{% if product_external %} target="_blank" rel="noopener noreferrer"{% endif %}>
-        <img src="{{ product.image | relative_url }}" alt="" width="68" height="68" decoding="async" />
-        <span data-i18n="apps.{{ product.id }}.shortName">{{ product.short_name | default: product.name }}</span>
+    <a class="floating-icon" data-cloud-icon href="{{ product_url }}"{% if product_external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+        <img src="{{ product.image | relative_url }}" alt="" width="52" height="52" decoding="async" />
+        <span class="floating-icon-name" data-i18n="apps.{{ product.id }}.shortName">{{ product.short_name | default: product.name }}</span>
     </a>
 {% else %}
-    <a class="home-product-card home-product-{{ product.category }}" href="{{ product_url }}"{% if product_external %} target="_blank" rel="noopener noreferrer"{% endif %}>
-        <div class="home-product-top">
-            <img src="{{ product.image | relative_url }}" alt="" width="72" height="72" loading="lazy" decoding="async" />
-            <div class="home-product-platforms">{% if product.platforms %}{% for platform in product.platforms %}<span>{{ platform }}</span>{% endfor %}{% else %}<span>iOS</span>{% endif %}</div>
+    <a class="home-feature-card home-feature-{{ product.category }}{% if product.home_screenshot %} has-screen{% elsif product.series == 'citybus' %} has-transit-art{% endif %}" href="{{ product_url }}"{% if product_external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+        <div class="home-feature-copy">
+            <div class="home-feature-top">
+                <img src="{{ product.image | relative_url }}" alt="" width="72" height="72" loading="lazy" decoding="async" />
+                <div class="home-feature-platforms">{% if product.platforms %}{% for platform in product.platforms %}<span>{{ platform }}</span>{% endfor %}{% else %}<span>{% if product.platform == 'desktop' %}Desktop{% else %}iOS{% endif %}</span>{% endif %}</div>
+            </div>
+            <p class="home-feature-category" data-i18n="portfolio.categories.{{ product.category }}.label">{{ product_category.label | default: product.category }}</p>
+            <h3 data-i18n="apps.{{ product.id }}.shortName">{{ product.short_name | default: product.name }}</h3>
+            <p class="home-feature-description" data-i18n="apps.{{ product.id }}.description">{{ product.description }}</p>
+            <div class="home-feature-bottom">
+                {% if product.review_status == "pending" %}<span class="home-feature-status" data-i18n="common.reviewPending">App Store 심사 중</span>{% else %}<span data-i18n="common.viewMore">자세히 보기</span>{% endif %}
+                <span aria-hidden="true">↗</span>
+            </div>
         </div>
-        <p class="home-product-category" data-i18n="portfolio.categories.{{ product.category }}.label">{{ product_category.label | default: product.category }}</p>
-        <h3 data-i18n="apps.{{ product.id }}.shortName">{{ product.short_name | default: product.name }}</h3>
-        <p class="home-product-description" data-i18n="apps.{{ product.id }}.description">{{ product.description }}</p>
-        <div class="home-product-bottom">
-            {% if product.review_status == "pending" %}<span class="home-product-status" data-i18n="common.reviewPending">App Store 심사 중</span>{% else %}<span data-i18n="common.viewMore">자세히 보기</span>{% endif %}
-            <span aria-hidden="true">↗</span>
+        <div class="home-feature-visual" aria-hidden="true">
+            {% if product.home_screenshot %}
+                <img class="home-feature-screenshot" src="{{ product.home_screenshot | relative_url }}" alt="" loading="lazy" decoding="async" />
+            {% elsif product.series == 'citybus' %}
+                <div class="home-feature-city-icons">{% for city_app in site.data.apps %}{% if city_app.series == 'citybus' %}<img src="{{ city_app.image | relative_url }}" alt="" loading="lazy" />{% endif %}{% endfor %}</div>
+                <div class="home-feature-arrival"><span><i></i><span data-i18n="home.arrivalPreviewLabel">실시간 도착 정보</span></span><strong>1003</strong><b><em>3</em> <span data-i18n="home.arrivalPreviewMinutes">분 후 도착</span></b><div><i></i></div></div>
+            {% else %}
+                <div class="home-feature-icon-art"><span aria-hidden="true"></span><img src="{{ product.image | relative_url }}" alt="" loading="lazy" /></div>
+            {% endif %}
         </div>
     </a>
 {% endif %}

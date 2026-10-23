@@ -1,2 +1,2 @@
-# The orbit has six layout slots. Keep product_limit between 1 and 6.
+# Number of recent product cards. The interactive cloud shows all visible products.
 product_limit: 6

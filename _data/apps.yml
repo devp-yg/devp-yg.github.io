@@ -26,6 +26,7 @@
 
 - id: movlog
   short_name: 무블로그
+  home_screenshot: /assets/images/apps/movlog/screenshots/insights.png
   intro_url: /movlog/
   platform: ios
   category: mobility
@@ -168,6 +169,7 @@
 
 - id: taghere
   short_name: 공간기록
+  home_screenshot: /assets/images/apps/taghere/screenshots/places.jpg
   intro_url: /taghere/
   platform: ios
   category: mobility
@@ -183,6 +185,7 @@
 
 - id: rtvideo
   short_name: 보이는말
+  home_screenshot: /assets/images/apps/rtvideo/screenshots/captions.png
   intro_url: /rtvideo/
   platform: ios
   category: translation-tools
@@ -197,6 +200,7 @@
 
 - id: markdam
   short_name: 마크담
+  home_screenshot: /assets/images/apps/markdam/screenshots/reader.jpg
   platforms: [iOS, macOS]
   intro_url: /markdam/
   platform: ios
@@ -215,6 +219,7 @@
 
 - id: myaioffice
   short_name: MyAIOffice
+  home_screenshot: /assets/images/projects/myaioffice/shared-office-demo.png
   intro_url: /myaioffice/
   project_url: https://github.com/devp-yg/MyAIOffice
   platform: desktop

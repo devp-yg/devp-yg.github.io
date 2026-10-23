@@ -158,7 +158,7 @@
     "apps": "iOS Apps",
     "cities": "Cities",
     "builtNative": "Built native",
-    "visualLabel": "Recently introduced apps and projects",
+    "visualLabel": "Devp-YG apps and projects",
     "appCloudLabel": "Apps & projects",
     "transitLabel": "Public transit",
     "readingLabel": "Reading",
@@ -201,7 +201,8 @@
     "categoriesEyebrow": "FIND YOUR NEXT TOOL",
     "categoriesTitle": "What would you<br><em>like to do?</em>",
     "categoriesLead": "Find everyday apps and developer tools by what you want to accomplish.",
-    "catalogCount": "Explore all {count} apps & projects"
+    "catalogCount": "Explore all {count} apps & projects",
+    "cloudHint": "Choose an icon to explore"
   },
   "portfolio": {
     "eyebrow": "Devp-YG Apps & Projects · {count} items",
