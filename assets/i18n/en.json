@@ -66,7 +66,7 @@
     },
     "markdam": {
       "title": "Markdam - Markdown Viewer | Devp-YG",
-      "description": "Meet Markdam, an offline Markdown reader for Mac, iPhone, and iPad that can save documents as PDF."
+      "description": "Meet Markdam, an offline Markdown reader for iPhone, iPad, and Mac. Available on iOS and macOS, with PDF export."
     },
     "privacy": {
       "title": "Privacy Policy | Devp-YG",
@@ -536,12 +536,13 @@
   "markdam": {
     "eyebrow": "Markdown, clearly",
     "title": "Words, images, and diagrams<br><em>made comfortable to read.</em>",
-    "description": "Open Markdown documents on Mac, iPhone, and iPad, read them, and save them as PDF. View tables, code, local images, SVG, Mermaid diagrams, and equations offline.",
-    "platformNote": "Mac · iPhone · iPad",
+    "description": "Open Markdown documents on iPhone, iPad, and Mac, read them, and save them as PDF. Available on iOS and macOS. View tables, code, local images, SVG, Mermaid diagrams, and equations offline.",
+    "platformNote": "Available on iOS and macOS",
     "metaReadingLabel": "Reading",
     "metaReading": "Outline · search · display",
     "metaExportLabel": "Export",
     "metaExport": "A4 · US Letter PDF",
+    "metaReleaseLabel": "Released",
     "featureEyebrow": "READ THE WHOLE DOCUMENT",
     "featureTitle": "Keep the structure clear.<br><em>Make reading your own.</em>",
     "featureLead": "Read document structure and visuals together, with reading controls and PDF export in one place.",
