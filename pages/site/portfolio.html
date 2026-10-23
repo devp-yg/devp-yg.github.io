@@ -2,27 +2,27 @@
 layout: default
 lang: ko
 i18n_key: portfolio
-title: 모든 앱 | Devp-YG
-description: Devp-YG가 개발하고 운영하는 iOS 및 macOS 애플리케이션을 소개합니다.
+title: 앱과 프로젝트 | Devp-YG
+description: Devp-YG 앱과 개발 프로젝트를 한곳에서 소개합니다.
 permalink: /portfolio.html
 styles:
   - /assets/css/pages/portfolio.css
 ---
 
 <main id="main" class="portfolio-page">
-    {% assign ios_apps = site.data.apps | where: "platform", "ios" %}
+    {% assign all_apps = site.data.apps %}
 
     <header class="portfolio-hero site-shell">
-        <p class="portfolio-eyebrow" data-i18n="portfolio.eyebrow" data-i18n-count="{{ ios_apps | size }}">Devp-YG Apps · {{ ios_apps | size }}개</p>
+        <p class="portfolio-eyebrow" data-i18n="portfolio.eyebrow" data-i18n-count="{{ all_apps | size }}">Devp-YG Apps · {{ all_apps | size }}개</p>
         <h1 data-i18n-html="portfolio.title">일상의 작은 불편을<br /><em>앱으로 해결합니다.</em></h1>
         <p data-i18n="portfolio.lead">이동과 장소를 기록하고, 재생 음성을 번역하고, 문서를 읽는 iOS·macOS 앱과 로컬 도구를 만듭니다.</p>
     </header>
-    <section class="site-shell portfolio-content" aria-label="iOS 및 macOS 애플리케이션" data-i18n-aria-label="portfolio.ariaLabel">
+    <section class="site-shell portfolio-content" aria-label="앱과 개발 프로젝트" data-i18n-aria-label="portfolio.ariaLabel">
         <nav class="portfolio-category-nav" aria-label="앱 분류" data-i18n-aria-label="portfolio.categoryNavLabel">
             <p data-i18n="portfolio.categoryNavTitle">분류별로 살펴보기</p>
             <ul>
                 {% for category in site.data.app_categories %}
-                    {% assign category_apps = ios_apps | where: "category", category.id %}
+                    {% assign category_apps = all_apps | where: "category", category.id %}
                     {% if category_apps.size > 0 %}
                         <li>
                             <a href="#app-category-{{ category.id }}">
@@ -37,7 +37,7 @@ styles:
 
         {% assign rendered_apps = 0 %}
         {% for category in site.data.app_categories %}
-            {% assign category_apps = ios_apps | where: "category", category.id | sort: "portfolio_order" %}
+            {% assign category_apps = all_apps | where: "category", category.id | sort: "portfolio_order" %}
             {% if category_apps.size > 0 %}
                 <section id="app-category-{{ category.id }}" class="portfolio-category" aria-labelledby="{{ category.id }}-heading">
                     <div class="portfolio-category-heading">
@@ -63,33 +63,4 @@ styles:
         {% endfor %}
     </section>
 
-    <section class="site-shell portfolio-projects" aria-labelledby="portfolio-projects-heading">
-        <div class="portfolio-category-heading">
-            <div>
-                <p class="portfolio-category-kicker" data-i18n="portfolio.projectsKicker">Beyond apps</p>
-                <h2 id="portfolio-projects-heading" data-i18n="portfolio.projectsTitle">개발 프로젝트</h2>
-            </div>
-            <p data-i18n="portfolio.projectsDescription">앱과 함께 직접 만든 데스크톱 도구도 소개합니다.</p>
-        </div>
-        <div class="portfolio-grid">
-            <article class="portfolio-card portfolio-project-card">
-                <div class="portfolio-card-top">
-                    <div class="portfolio-project-mark" aria-hidden="true"><span>AI</span><i></i></div>
-                    <div class="portfolio-platforms">
-                        <span>macOS</span>
-                        <span>Windows</span>
-                    </div>
-                </div>
-                <div class="portfolio-card-copy">
-                    <h3>MyAIOffice</h3>
-                    <small data-i18n="portfolio.projectsMyAIOffice.subtitle">Codex 작업 현황을 보여주는 로컬 오피스</small>
-                    <p data-i18n="portfolio.projectsMyAIOffice.description">내 컴퓨터의 Codex 프로젝트와 작업 세션을 층과 공간이 있는 3D 사무실로 살펴보는 앱입니다.</p>
-                </div>
-                <div class="portfolio-card-actions">
-                    <a class="store-link" href="{{ '/myaioffice/' | relative_url }}" data-i18n="portfolio.projectsMyAIOffice.detailsLabel">자세히 보기 <span aria-hidden="true">→</span></a>
-                    <a class="store-link" href="https://github.com/devp-yg/MyAIOffice" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="portfolio.projectsMyAIOffice.githubLabel" aria-label="MyAIOffice GitHub 저장소">GitHub <span aria-hidden="true">↗</span></a>
-                </div>
-            </article>
-        </div>
-    </section>
 </main>

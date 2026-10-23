@@ -1,4 +1,4 @@
-# The order here is the order used on the all-apps page.
+# The order here is the order used on the all-products page.
 # Keep categories broad and stable; product series (for example, CityBus) belong
 # in apps.yml as a separate `series` value.
 - id: mobility
@@ -6,3 +6,4 @@
 - id: everyday-tools
 - id: reading-tools
 - id: translation-tools
+- id: developer-tools

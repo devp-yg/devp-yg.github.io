@@ -205,3 +205,17 @@
   image: /assets/images/apps/markdam/icon.png
   image_alt: 마크담 앱 아이콘
   store_url: https://apps.apple.com/kr/app/id6823810921
+
+- id: myaioffice
+  intro_url: /myaioffice/
+  project_url: https://github.com/devp-yg/MyAIOffice
+  platform: desktop
+  platforms: [macOS, Windows]
+  category: developer-tools
+  portfolio_order: 10
+  published_at: 2026-10-24
+  name: MyAIOffice
+  subtitle: Codex CLI 작업을 보여주는 로컬 오피스
+  description: Codex CLI가 프로젝트에서 파일을 읽고 코드를 만드는 흐름을 공용 오피스나 층별 타워 오피스에서 둘러보세요. 예시 데이터로 먼저 체험할 수 있습니다.
+  image: /assets/images/projects/myaioffice/icon.svg
+  image_alt: MyAIOffice 앱 아이콘

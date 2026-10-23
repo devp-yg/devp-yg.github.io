@@ -1,7 +1,7 @@
 products:
-  - label: 모든 앱 보기
+  - label: 앱·프로젝트 보기
     key: allApps
-    description: 운영 중인 iOS·macOS 앱을 한곳에서 살펴보세요.
+    description: 앱과 데스크톱 프로젝트를 한곳에서 살펴보세요.
     description_key: allAppsDescription
     url: /portfolio.html
     mark: all
@@ -57,6 +57,14 @@ products:
     mark: fareflow
     image: /assets/images/apps/other/fareflow.png
     page_key: fareflow
+  - label: MyAIOffice
+    key: myaioffice
+    description: Codex CLI 작업을 오피스처럼 둘러보는 로컬 도구
+    description_key: myaiofficeDescription
+    url: /myaioffice/
+    mark: myaioffice
+    image: /assets/images/projects/myaioffice/icon.svg
+    page_key: myaioffice
 
 links:
   - label: 출시 기록

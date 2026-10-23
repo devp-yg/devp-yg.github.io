@@ -4,8 +4,10 @@
 {% assign history_previous_parts = include.previous_date | date: '%Y-%m-%d' | split: '-' %}
 {% assign history_show_year = true %}
 {% assign history_show_month = true %}
-{% if history_date_parts[0] == history_previous_parts[0] %}{% assign history_show_year = false %}{% endif %}
-{% if history_date_parts[0] == history_previous_parts[0] and history_date_parts[1] == history_previous_parts[1] %}{% assign history_show_month = false %}{% endif %}
+{% unless include.show_full_date %}
+{% if include.previous_date != empty and history_date_parts[0] == history_previous_parts[0] %}{% assign history_show_year = false %}{% endif %}
+{% if include.previous_date != empty and history_date_parts[0] == history_previous_parts[0] and history_date_parts[1] == history_previous_parts[1] %}{% assign history_show_month = false %}{% endif %}
+{% endunless %}
 {% assign history_intro_url = history_app.intro_url %}
 {% if history_app.series == 'citybus' %}{% assign history_intro_url = '/citybus/' %}{% endif %}
 <li class="history-item{% if include.is_pending %} is-review-pending{% endif %}" data-history-app="{{ history_app.id }}" data-platform="{{ include.platform }}" data-event-date="{{ history_event_date }}" data-review-pending="{% if include.is_pending %}true{% else %}false{% endif %}">
@@ -28,6 +30,8 @@
                 {% if history_intro_url %}<a class="history-card-action history-card-intro-action" href="{{ history_intro_url | relative_url }}"><span data-i18n="common.viewIntro">소개 보기</span><span class="history-action-arrow" aria-hidden="true">→</span></a>{% endif %}
                 {% if include.is_pending %}
                 <span class="history-review-badge"><span class="history-review-label-long" data-i18n="common.reviewPending">App Store 심사 중</span><span class="history-review-label-short" data-i18n="history.reviewPending">심사 중</span></span>
+                {% elsif include.project_url %}
+                <a class="history-card-action history-card-store-action" href="{{ include.project_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ history_app.name | escape }} GitHub 저장소 열기" data-i18n-aria-label="common.githubRepository">GitHub <span class="history-action-arrow" aria-hidden="true">↗</span></a>
                 {% elsif include.store_url %}
                 <a class="history-card-action history-card-store-action" href="{{ include.store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ history_app.name | escape }} App Store 페이지 열기" data-i18n-aria-label="common.appStorePage">App Store <span class="history-action-arrow" aria-hidden="true">↗</span></a>
                 {% endif %}

@@ -20,7 +20,8 @@
     "privacy": "Privacy Policy",
     "history": "Release history",
     "downloadApp": "Download on the App Store",
-    "browseFeatures": "Explore features ↓"
+    "browseFeatures": "Explore features ↓",
+    "githubRepository": "Open GitHub repository"
   },
   "pages": {
     "home": {
@@ -28,8 +29,8 @@
       "description": "Discover Devp-YG mobile apps designed to make everyday movement and life more convenient."
     },
     "portfolio": {
-      "title": "All Apps | Devp-YG",
-      "description": "Explore the iOS applications developed and operated by Devp-YG."
+      "title": "Apps & Projects | Devp-YG",
+      "description": "Explore apps and local desktop projects built by Devp-YG."
     },
     "blog": {
       "title": "Blog | Devp-YG",
@@ -49,7 +50,7 @@
     },
     "history": {
       "title": "Release history | Devp-YG",
-      "description": "Release dates for Devp-YG apps, alongside apps awaiting App Store review."
+      "description": "Explore app releases, public developer projects, and App Store review updates."
     },
     "citybus": {
       "title": "CityBus | City bus apps",
@@ -102,12 +103,12 @@
   },
   "header": {
     "home": "Home",
-    "portfolio": "All apps",
-    "exploreApps": "Explore apps",
-    "appsHeading": "Devp-YG Apps",
-    "appsDescription": "Useful apps for everyday moments",
-    "allApps": "View all apps",
-    "allAppsDescription": "Explore our iOS and macOS apps in one place.",
+    "portfolio": "Apps & Projects",
+    "exploreApps": "Explore apps & projects",
+    "appsHeading": "Devp-YG Apps & Projects",
+    "appsDescription": "Explore apps and developer tools.",
+    "allApps": "All apps & projects",
+    "allAppsDescription": "Explore apps and desktop projects in one place.",
     "movlogDescription": "A life log that records movement and visits",
     "citybusDescription": "Bus, transfer, and travel information by city",
     "taghere": "TagHere",
@@ -123,10 +124,12 @@
     "snapqr": "SnapQR",
     "snapqrDescription": "Simple QR code creation",
     "fareflow": "FareFlow",
-    "fareflowDescription": "GPS distance, time, and fare meter"
+    "fareflowDescription": "GPS distance, time, and fare meter",
+    "myaioffice": "MyAIOffice",
+    "myaiofficeDescription": "A local office view of Codex CLI work"
   },
   "footer": {
-    "description": "An independent iOS app studio making<br>everyday movement and life a little easier.",
+    "description": "Apps and local tools for<br>everyday life and developer workflows.",
     "products": "Products",
     "support": "Support",
     "designed": "Designed & built in Korea."
@@ -136,10 +139,10 @@
     "explore": "Explore apps"
   },
   "home": {
-    "heroEyebrow": "Independent App Studio",
+    "heroEyebrow": "Independent App & Tool Studio",
     "heroTitle": "Apps for every<br>part of life,<br><em>made simpler.</em>",
-    "heroLead": "From getting around and public transit to reading, translation, and useful everyday tools, we make apps for the moments that matter each day.",
-    "exploreApps": "Explore apps",
+    "heroLead": "From getting around and reading to translation and a local tool for Codex CLI, we build things for everyday life and development.",
+    "exploreApps": "Explore apps & projects",
     "myaiofficeEyebrow": "A LITTLE OFFICE FOR CODEX",
     "myaiofficeTitle": "Watch Codex work<br><em>like a little office tour.</em>",
     "myaiofficeLead": "See how Codex CLI reads a project and writes code in a shared office or a tower office. Start by exploring the sample data.",
@@ -155,8 +158,8 @@
     "apps": "iOS Apps",
     "cities": "Cities",
     "builtNative": "Built native",
-    "visualLabel": "Apps for mobility, public transit, reading, translation, and everyday tools",
-    "appCloudLabel": "Apps for everyday",
+    "visualLabel": "Apps and local developer tools",
+    "appCloudLabel": "Apps & tools",
     "transitLabel": "Public transit",
     "readingLabel": "Reading",
     "translationLabel": "Live translation",
@@ -192,23 +195,14 @@
     "rtvideoScreenAlt": "RTVideo live translation captions screen"
   },
   "portfolio": {
-    "eyebrow": "Devp-YG Apps · {count} apps",
-    "title": "Solve life’s little frictions<br><em>with an app.</em>",
-    "lead": "We make iOS and macOS apps for recording places, translating playing audio, and reading documents, along with local tools.",
-    "ariaLabel": "iOS and macOS applications",
-    "categoryNavLabel": "App category shortcuts",
+    "eyebrow": "Devp-YG Apps & Projects · {count} items",
+    "title": "Small ideas<br><em>made useful.</em>",
+    "lead": "From apps for movement, translation, and reading to a local tool that turns Codex CLI work into an office tour.",
+    "ariaLabel": "Apps and developer projects",
+    "categoryNavLabel": "Product categories",
     "categoryNavTitle": "Browse by category",
     "categoryKicker": "App category",
-    "categoryCount": "{count} apps",
-    "projectsKicker": "Beyond apps",
-    "projectsTitle": "Development projects",
-    "projectsDescription": "A look at desktop tools built alongside our apps.",
-    "projectsMyAIOffice": {
-      "subtitle": "A local office for your Codex activity",
-      "description": "Explore Codex projects and work sessions on your computer in a 3D office organized by floors and spaces.",
-      "githubLabel": "Open the MyAIOffice GitHub repository",
-      "detailsLabel": "Learn more"
-    },
+    "categoryCount": "{count} products",
     "categories": {
       "mobility": {
         "label": "Movement & place logs",
@@ -229,6 +223,10 @@
       "translation-tools": {
         "label": "Live translation",
         "description": "Turn audio from playing content into captions in another language."
+      },
+      "developer-tools": {
+        "label": "Developer tools",
+        "description": "Local tools that help you get started and follow along with developer workflows."
       }
     }
   },
@@ -243,12 +241,12 @@
     "rights": "All rights reserved."
   },
   "history": {
-    "eyebrow": "The timeline · {count} apps",
-    "title": "Built from a need<br><em>one app at a time.</em>",
-    "description": "See when our apps first launched, along with the apps currently awaiting App Store review.",
-    "kicker": "Release history",
-    "heading": "App release timeline",
-    "basis": "Release dates · Review submission dates",
+    "eyebrow": "Releases & projects · {count} products",
+    "title": "Small ideas, growing<br><em>one release at a time.</em>",
+    "description": "Follow App Store releases and the public introductions of developer projects, along with apps currently awaiting review.",
+    "kicker": "Release & project history",
+    "heading": "App releases & project launches",
+    "basis": "Release dates · Project publication · Review submissions",
     "sortLabel": "Sort order",
     "latest": "Newest",
     "oldest": "Oldest",
@@ -260,7 +258,8 @@
     "reviewPending": "In review",
     "pendingKicker": "Coming soon",
     "pendingTitle": "Awaiting App Store review",
-    "pendingDescription": "Apps and platform versions currently awaiting App Store review."
+    "pendingDescription": "Apps and platform versions currently awaiting App Store review.",
+    "developerProject": "Public developer project"
   },
   "contact": {
     "title": "Contact",
@@ -492,6 +491,12 @@
       "imageAlt": "RTVideo app icon",
       "brandName": "RTVideo",
       "brandDescription": "Live Translation Captions"
+    },
+    "myaioffice": {
+      "name": "MyAIOffice",
+      "subtitle": "A local office view of Codex CLI work",
+      "description": "Explore how Codex CLI reads project files and writes code in a shared office or a tower with a floor for each project. Start with sample data.",
+      "imageAlt": "MyAIOffice app icon"
     }
   },
   "taghere": {
@@ -899,7 +904,7 @@
     "finalTitle": "Take FareFlow<br><em>on your next trip.</em>"
   },
   "myaioffice": {
-    "back": "← Development projects",
+    "back": "← Apps & projects",
     "eyebrow": "CODEX CLI, BUT MAKE IT COZY",
     "title": "Codex at work,<br><em>in a cozy little office.</em>",
     "lead": "Codex CLI is an AI development tool that can look through project files on your computer, edit code, and run commands. MyAIOffice turns that work into a 3D office with rooms and little coworkers. Instead of deciphering a terminal, take a friendly look at where the team is and what it is doing.",
