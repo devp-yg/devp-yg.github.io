@@ -24,6 +24,9 @@
                     <p class="history-card-label"><span data-i18n="history.{{ include.platform_label }}">{{ include.platform_name }}</span>{% if history_app.series == 'citybus' %}<span aria-hidden="true"> · </span><span data-i18n="history.citybusSeries">시티버스 시리즈</span>{% endif %}</p>
                     <h3 data-i18n="apps.{{ history_app.id }}.name">{{ history_app.name }}</h3>
                     {% if history_app.subtitle %}<p class="history-card-subtitle" data-i18n="apps.{{ history_app.id }}.subtitle">{{ history_app.subtitle }}</p>{% endif %}
+                    {% if include.ios_launch_date and include.macos_launch_date %}
+                    <p class="history-platform-dates"><span>iOS <time datetime="{{ include.ios_launch_date }}">{{ include.ios_launch_date | date: '%m/%d' }}</time></span><span>macOS <time datetime="{{ include.macos_launch_date }}">{{ include.macos_launch_date | date: '%m/%d' }}</time></span></p>
+                    {% endif %}
                 </div>
             </div>
             <div class="history-card-actions">

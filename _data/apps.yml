@@ -198,7 +198,7 @@
   name: 마크담 - 마크다운 뷰어
   subtitle: Markdown Reader
   launched_at: 2026-10-20
-  macos_review_status: pending
+  macos_launched_at: 2026-10-24
   macos_review_submitted_at: 2026-10-20
   minimum_ios: "17"
   description: Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.

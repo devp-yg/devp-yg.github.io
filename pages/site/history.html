@@ -59,20 +59,28 @@ scripts:
             {% endfor %}
             {% for event_date in release_dates %}
                 {% for app in all_ios_apps %}
-                    {% assign combine_releases = false %}
-                    {% if app.launched_at and app.macos_launched_at and app.store_url and app.macos_store_url == app.store_url and app.review_status != 'pending' and app.macos_review_status != 'pending' %}
-                        {% assign combine_releases = true %}
+                    {% assign ios_release_month = app.launched_at | slice: 0, 7 %}
+                    {% assign macos_release_month = app.macos_launched_at | slice: 0, 7 %}
+                    {% assign group_same_month_releases = false %}
+                    {% if app.launched_at and app.macos_launched_at and ios_release_month == macos_release_month and app.review_status != 'pending' and app.macos_review_status != 'pending' %}
+                        {% assign group_same_month_releases = true %}
                     {% endif %}
-                    {% if app.launched_at == event_date %}
-                        {% if combine_releases %}
-                            {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='ios-macos' platform_label='iosMacosApp' platform_name='iOS · macOS 앱' store_url=app.store_url %}
-                        {% else %}
-                            {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='ios' platform_label='iosApp' platform_name='iOS 앱' store_url=app.store_url %}
-                        {% endif %}
+                    {% assign grouped_release_date = app.launched_at %}
+                    {% if app.launched_at and app.macos_launched_at and app.macos_launched_at < app.launched_at %}
+                        {% assign grouped_release_date = app.macos_launched_at %}
+                    {% endif %}
+                    {% if app.launched_at == event_date and group_same_month_releases == false %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='ios' platform_label='iosApp' platform_name='iOS 앱' store_url=app.store_url %}
                         {% assign previous_event_date = event_date %}
                     {% endif %}
-                    {% if app.macos_launched_at == event_date and combine_releases == false %}
-                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='macos' platform_label='macosApp' platform_name='macOS 앱' store_url=app.macos_store_url %}
+                    {% if group_same_month_releases and grouped_release_date == event_date %}
+                        {% assign macos_store_url = app.macos_store_url | default: app.store_url %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='ios-macos' platform_label='iosMacosApp' platform_name='iOS · macOS 앱' store_url=macos_store_url ios_launch_date=app.launched_at macos_launch_date=app.macos_launched_at %}
+                        {% assign previous_event_date = event_date %}
+                    {% endif %}
+                    {% if app.macos_launched_at == event_date and group_same_month_releases == false %}
+                        {% assign macos_store_url = app.macos_store_url | default: app.store_url %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='macos' platform_label='macosApp' platform_name='macOS 앱' store_url=macos_store_url %}
                         {% assign previous_event_date = event_date %}
                     {% endif %}
                 {% endfor %}

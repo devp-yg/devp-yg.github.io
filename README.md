@@ -38,7 +38,7 @@ Public addresses are preserved with Jekyll `permalink` settings:
 ## Content updates
 
 - 앱과 개발 프로젝트의 이름, 설명, 아이콘, 소개 페이지 경로(`intro_url`), 복수 플랫폼 표기(`platforms`)는 `_data/apps.yml`에서 관리합니다. 새 항목에는 사용 목적을 기준으로 `category`와 `portfolio_order`를 지정합니다. 로컬 데스크톱 프로젝트는 `platform: desktop`, 공개 기록 날짜는 `published_at`, 저장소 링크는 `project_url`을 사용합니다. 이 데이터는 탐색 메뉴, 전체 제품 카드, 출시·공개 타임라인에서 함께 사용됩니다.
-- iOS 최초 출시일은 `launched_at`, 심사 상태는 `review_status`, 심사 접수일은 `review_submitted_at`으로 관리합니다. macOS는 `macos_launched_at`, `macos_review_status`, `macos_review_submitted_at`, `macos_store_url`을 사용합니다. 히스토리는 앱 출시, 프로젝트 공개, 플랫폼별 심사 카드를 구분하며, 심사 카드는 접수일 기준으로 표시합니다. 두 플랫폼 모두 출시일이 기록되고 심사 중이 아니며 스토어 주소가 같을 때만 `iOS · macOS 앱` 출시 카드로 합칩니다.
+- iOS 최초 출시일은 `launched_at`, 심사 상태는 `review_status`, 심사 접수일은 `review_submitted_at`으로 관리합니다. macOS는 `macos_launched_at`, `macos_review_status`, `macos_review_submitted_at`, `macos_store_url`을 사용합니다. 출시 월이 같은 플랫폼은 각 출시일을 함께 표시하고, 월이 다르면 타임라인 카드를 나누어 표시합니다. 심사 중 카드는 접수일 기준으로 표시합니다.
 - 전체 제품 화면의 상위 분류와 노출 순서는 `_data/app_categories.yml`에서 관리합니다. 분류는 제품의 기능 하나보다 사용 목적을 기준으로 넓고 오래 유지하며, `series`(예: CityBus)는 별도로 관리합니다. 생활 도구 목록은 해당 분류 데이터에서 자동으로 구성됩니다. 새 분류를 추가할 때는 두 언어팩의 `portfolio.categories`에 이름과 설명도 추가합니다.
 - 공통 문서 구조는 `_layouts/default.html`, 내비게이션은 `_data/navigation.yml`에서 관리합니다.
 - 한국어·영어 문구는 `assets/i18n/ko.json`, `assets/i18n/en.json` 언어팩에서 관리하며, 헤더의 `KO / EN` 전환 버튼으로 전체 페이지에 적용됩니다. 선택 언어는 브라우저의 `localStorage`에 저장됩니다.
