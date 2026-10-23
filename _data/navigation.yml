@@ -3,7 +3,7 @@ products:
     key: allApps
     description: 앱과 데스크톱 프로젝트를 한곳에서 살펴보세요.
     description_key: allAppsDescription
-    url: /portfolio.html
+    url: /portfolio/
     mark: all
     page_key: portfolio
   - label: 무블로그
@@ -69,7 +69,7 @@ products:
 links:
   - label: 출시 기록
     key: history
-    url: /history.html
+    url: /history/
   - label: 문의하기
     key: contact
     url: mailto:devp.yg@gmail.com?Subject=지원문의

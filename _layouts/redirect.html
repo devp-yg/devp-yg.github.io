@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url | escape }}" />
+    <link rel="canonical" href="{{ page.redirect_to | absolute_url | escape }}" />
+    <title>페이지 이동 | Devp-YG</title>
+</head>
+<body>
+    <p>페이지 주소가 변경되었습니다. <a href="{{ page.redirect_to | relative_url | escape }}">새 페이지로 이동 / Continue to the new page</a></p>
+    <script>
+        const destination = new URL({{ page.redirect_to | relative_url | jsonify }}, window.location.href);
+        destination.search = window.location.search;
+        destination.hash = window.location.hash;
+        window.location.replace(destination.href);
+    </script>
+</body>
+</html>

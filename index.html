@@ -158,7 +158,7 @@ styles:
             <div class="utility-intro">
                 <p class="eyebrow dark"><span class="eyebrow-dot"></span> <span data-i18n="portfolio.categories.everyday-tools.label">생활 도구</span></p>
                 <h2 data-i18n-html="home.toolsTitle">작지만 확실한<br />생활 도구</h2>
-                <a href="{{ '/portfolio.html' | relative_url }}" class="text-link"><span data-i18n="home.allAppsLink">모든 앱 보기</span> <i aria-hidden="true">→</i></a>
+                <a href="{{ '/portfolio/' | relative_url }}" class="text-link"><span data-i18n="home.allAppsLink">모든 앱 보기</span> <i aria-hidden="true">→</i></a>
             </div>
             <div class="utility-list">
                 {% assign utility_apps = site.data.apps | where: "category", "everyday-tools" | sort: "portfolio_order" %}

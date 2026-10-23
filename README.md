@@ -25,15 +25,19 @@ Devp-YG의 앱 목록, 제품 소개, 개인정보처리방침, 개발 기록을
 └── app-ads.txt     # App-ads.txt verification
 ```
 
-Public addresses are preserved with Jekyll `permalink` settings:
+User-facing pages use directory URLs defined with Jekyll `permalink` settings:
 
-- `/portfolio.html`
-- `/history.html`
+- `/portfolio/`
+- `/history/`
+- `/blog/`
+- `/copyright/`
 - `/privacy/devp-yg/`
 - `/citybus/`
 - `/myaioffice/`
 - `/movlog/`
-- `/contact.html`
+- `/contact/`
+
+The former `.html` addresses remain as redirect pages using `_layouts/redirect.html`. Internal links use the directory URLs; redirect pages keep query strings and fragments and declare the new URL as canonical. The privacy policy already uses `/privacy/devp-yg/` and retains its `/privacy_policy.html` redirect.
 
 ## Content updates
 
