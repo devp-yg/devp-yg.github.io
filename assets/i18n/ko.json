@@ -25,8 +25,8 @@
   },
   "pages": {
     "home": {
-      "title": "Devp-YG | Mobile Apps",
-      "description": "일상과 이동을 더 편리하게 만드는 Devp-YG의 모바일 애플리케이션을 소개합니다."
+      "title": "Devp-YG | Apps & Projects",
+      "description": "일상과 개발을 더 편리하게 만드는 Devp-YG의 앱과 프로젝트를 소개합니다."
     },
     "portfolio": {
       "title": "앱과 프로젝트 | Devp-YG",
@@ -139,10 +139,10 @@
     "explore": "앱 둘러보기"
   },
   "home": {
-    "heroEyebrow": "Independent App & Tool Studio",
-    "heroTitle": "일상 곳곳에<br>필요한 앱을<br><em>더 편리하게.</em>",
-    "heroLead": "이동과 대중교통부터 문서 읽기와 번역, Codex CLI를 위한 로컬 도구까지. 일상과 개발에 필요한 것을 만듭니다.",
-    "exploreApps": "앱·프로젝트 둘러보기",
+    "heroEyebrow": "Independent Software Studio",
+    "heroTitle": "일상도, 개발도.<br><em>더 편리하게.</em>",
+    "heroLead": "이동과 기록, 문서와 번역, 개발 도구까지. 필요한 순간에 도움이 되는 앱과 프로젝트를 만듭니다.",
+    "exploreApps": "새로운 제품 보기",
     "myaiofficeEyebrow": "CODEX를 위한 작은 오피스",
     "myaiofficeTitle": "코덱스가 일하는 모습을<br><em>사무실 구경하듯.</em>",
     "myaiofficeLead": "코덱스 CLI가 프로젝트를 읽고 코드를 만드는 흐름을 공용 오피스와 타워 오피스에서 둘러보세요. 예시 데이터로 먼저 체험할 수 있어요.",
@@ -158,8 +158,8 @@
     "apps": "iOS Apps",
     "cities": "Cities",
     "builtNative": "Built native",
-    "visualLabel": "앱과 로컬 개발 도구",
-    "appCloudLabel": "앱과 도구",
+    "visualLabel": "최근 추가·출시한 앱과 프로젝트",
+    "appCloudLabel": "앱과 프로젝트",
     "transitLabel": "대중교통",
     "readingLabel": "문서 읽기",
     "translationLabel": "실시간 번역",
@@ -192,7 +192,16 @@
     "supportLead": "사용 중 발견한 문제, 필요한 기능, 새로운 제안을 들려주세요.",
     "sendEmail": "이메일 보내기",
     "rtvideoDescription": "실시간 자막 번역 앱입니다. 다른 앱에서 재생 중인 음성을 원하는 언어의 자막으로 읽어보세요.",
-    "rtvideoScreenAlt": "보이는말 실시간 자막 번역 화면"
+    "rtvideoScreenAlt": "보이는말 실시간 자막 번역 화면",
+    "totalProducts": "Apps & projects",
+    "recentEyebrow": "NEW & NOTEWORTHY",
+    "recentTitle": "새롭게 만나는<br><em>앱과 프로젝트.</em>",
+    "recentLead": "최근 공개·출시한 제품과 출시를 준비 중인 앱을 살펴보세요.",
+    "allProducts": "모든 앱·프로젝트 보기",
+    "categoriesEyebrow": "FIND YOUR NEXT TOOL",
+    "categoriesTitle": "지금 필요한 것은<br><em>무엇인가요?</em>",
+    "categoriesLead": "일상에 쓰는 앱부터 개발을 돕는 도구까지, 사용 목적에 맞춰 둘러보세요.",
+    "catalogCount": "전체 {count}개 앱·프로젝트 둘러보기"
   },
   "portfolio": {
     "eyebrow": "Devp-YG Apps & Projects · {count}개",
@@ -403,17 +412,20 @@
     "snapqr": {
       "name": "SnapQR",
       "description": "텍스트, URL, Wi-Fi, 연락처 정보를 손쉽게 QR 코드로 만들 수 있는 간편한 QR 생성 앱입니다.",
-      "imageAlt": "SnapQR 앱 아이콘"
+      "imageAlt": "SnapQR 앱 아이콘",
+      "shortName": "SnapQR"
     },
     "fareflow": {
       "name": "냥미터 - 나만의 요금제",
       "description": "GPS 기반으로 실시간 이동 거리와 시간을 측정하여 택시·카풀 요금을 자동으로 계산해주는 스마트 요금 미터기 앱입니다.",
-      "imageAlt": "냥미터 앱 아이콘"
+      "imageAlt": "냥미터 앱 아이콘",
+      "shortName": "냥미터"
     },
     "movlog": {
       "name": "무블로그: 당신의 이야기를 지도에 담다",
       "description": "무블로그는 이동 경로와 방문·체류, 주차 위치, 날씨와 사진을 자동으로 기록하고 월간·연간 보관함, 인사이트와 업적으로 일상을 돌아보게 해주는 라이프로그 앱입니다.",
-      "imageAlt": "무블로그 앱 아이콘"
+      "imageAlt": "무블로그 앱 아이콘",
+      "shortName": "무블로그"
     },
     "incheon-bus": {
       "name": "인천 버스",
@@ -466,7 +478,8 @@
     "tplus-mobile": {
       "name": "알뜰폰 티플 실시간 사용량 위젯",
       "description": "티플러스 모바일의 실시간 사용량 조회 정보를 위젯으로 확인할 수 있는 앱입니다. 아이폰과 아이패드에서 사용할 수 있습니다.",
-      "imageAlt": "티플 실시간 사용량 위젯 앱 아이콘"
+      "imageAlt": "티플 실시간 사용량 위젯 앱 아이콘",
+      "shortName": "티플 사용량 위젯"
     },
     "taghere": {
       "name": "공간기록 - 여기를 기억해",
@@ -474,7 +487,8 @@
       "description": "자주 가는 장소와 그 안의 공간을 등록하고, 위치와 Bluetooth 기기로 방문·공간 인식을 기록합니다. 날짜별 기록과 위젯으로 어디에 머물렀는지 돌아보세요.",
       "imageAlt": "공간기록 앱 아이콘",
       "brandName": "공간기록",
-      "brandDescription": "여기를 기억해"
+      "brandDescription": "여기를 기억해",
+      "shortName": "공간기록"
     },
     "markdam": {
       "name": "마크담 - 마크다운 뷰어",
@@ -482,20 +496,23 @@
       "description": "Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.",
       "imageAlt": "마크담 앱 아이콘",
       "brandName": "마크담",
-      "brandDescription": "마크다운 뷰어"
+      "brandDescription": "마크다운 뷰어",
+      "shortName": "마크담"
     },
     "rtvideo": {
       "name": "보이는말 - 실시간 자막 번역",
       "description": "iPhone·iPad에서 재생 중인 영상과 오디오의 음성을 인식해 선택한 언어의 번역 자막으로 보여줍니다. 앱 창이나 PiP 자막 창에서 원문과 번역을 확인하세요.",
       "imageAlt": "보이는말 앱 아이콘",
       "brandName": "보이는말",
-      "brandDescription": "실시간 자막 번역"
+      "brandDescription": "실시간 자막 번역",
+      "shortName": "보이는말"
     },
     "myaioffice": {
       "name": "MyAIOffice",
       "subtitle": "Codex CLI 작업을 보여주는 로컬 오피스",
       "description": "Codex CLI가 프로젝트에서 파일을 읽고 코드를 만드는 흐름을 공용 오피스나 층별 타워 오피스에서 둘러보세요. 예시 데이터로 먼저 체험할 수 있습니다.",
-      "imageAlt": "MyAIOffice 앱 아이콘"
+      "imageAlt": "MyAIOffice 앱 아이콘",
+      "shortName": "MyAIOffice"
     }
   },
   "taghere": {

@@ -1,4 +1,5 @@
 - id: snapqr
+  short_name: SnapQR
   intro_url: /snapqr/
   platform: ios
   category: everyday-tools
@@ -11,6 +12,7 @@
   store_url: https://apps.apple.com/kr/app/id6770082242
 
 - id: fareflow
+  short_name: 냥미터
   intro_url: /fareflow/
   platform: ios
   category: mobility
@@ -23,6 +25,7 @@
   store_url: https://apps.apple.com/kr/app/id6761998179
 
 - id: movlog
+  short_name: 무블로그
   intro_url: /movlog/
   platform: ios
   category: mobility
@@ -152,6 +155,7 @@
   store_url: https://apps.apple.com/kr/app/id1494747066
 
 - id: tplus-mobile
+  short_name: 티플 사용량 위젯
   platform: ios
   category: everyday-tools
   portfolio_order: 20
@@ -163,6 +167,7 @@
   store_url: https://apps.apple.com/kr/app/id6444640056
 
 - id: taghere
+  short_name: 공간기록
   intro_url: /taghere/
   platform: ios
   category: mobility
@@ -177,6 +182,7 @@
   store_url: https://apps.apple.com/kr/app/id6822787818
 
 - id: rtvideo
+  short_name: 보이는말
   intro_url: /rtvideo/
   platform: ios
   category: translation-tools
@@ -190,6 +196,7 @@
   image_alt: 보이는말 앱 아이콘
 
 - id: markdam
+  short_name: 마크담
   platforms: [iOS, macOS]
   intro_url: /markdam/
   platform: ios
@@ -207,6 +214,7 @@
   store_url: https://apps.apple.com/kr/app/id6823810921
 
 - id: myaioffice
+  short_name: MyAIOffice
   intro_url: /myaioffice/
   project_url: https://github.com/devp-yg/MyAIOffice
   platform: desktop

@@ -1,0 +1,30 @@
+{%- assign product = include.product -%}
+{%- assign product_category = site.data.app_categories | where: "id", product.category | first -%}
+{%- assign product_url = product.intro_url | default: product.store_url | default: product.project_url | default: "/portfolio/" -%}
+{%- assign product_external = false -%}
+{%- assign url_start = product_url | slice: 0 -%}
+{%- if url_start == "/" -%}
+    {%- assign product_url = product_url | relative_url -%}
+{%- else -%}
+    {%- assign product_external = true -%}
+{%- endif -%}
+{% if include.variant == "orbit" %}
+    <a class="floating-icon orbit-slot-{{ include.slot }}" href="{{ product_url }}"{% if product_external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+        <img src="{{ product.image | relative_url }}" alt="" width="68" height="68" decoding="async" />
+        <span data-i18n="apps.{{ product.id }}.shortName">{{ product.short_name | default: product.name }}</span>
+    </a>
+{% else %}
+    <a class="home-product-card home-product-{{ product.category }}" href="{{ product_url }}"{% if product_external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+        <div class="home-product-top">
+            <img src="{{ product.image | relative_url }}" alt="" width="72" height="72" loading="lazy" decoding="async" />
+            <div class="home-product-platforms">{% if product.platforms %}{% for platform in product.platforms %}<span>{{ platform }}</span>{% endfor %}{% else %}<span>iOS</span>{% endif %}</div>
+        </div>
+        <p class="home-product-category" data-i18n="portfolio.categories.{{ product.category }}.label">{{ product_category.label | default: product.category }}</p>
+        <h3 data-i18n="apps.{{ product.id }}.shortName">{{ product.short_name | default: product.name }}</h3>
+        <p class="home-product-description" data-i18n="apps.{{ product.id }}.description">{{ product.description }}</p>
+        <div class="home-product-bottom">
+            {% if product.review_status == "pending" %}<span class="home-product-status" data-i18n="common.reviewPending">App Store 심사 중</span>{% else %}<span data-i18n="common.viewMore">자세히 보기</span>{% endif %}
+            <span aria-hidden="true">↗</span>
+        </div>
+    </a>
+{% endif %}

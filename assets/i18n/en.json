@@ -25,8 +25,8 @@
   },
   "pages": {
     "home": {
-      "title": "Devp-YG | Mobile Apps",
-      "description": "Discover Devp-YG mobile apps designed to make everyday movement and life more convenient."
+      "title": "Devp-YG | Apps & Projects",
+      "description": "Explore Devp-YG apps and projects for everyday life and development."
     },
     "portfolio": {
       "title": "Apps & Projects | Devp-YG",
@@ -139,10 +139,10 @@
     "explore": "Explore apps"
   },
   "home": {
-    "heroEyebrow": "Independent App & Tool Studio",
-    "heroTitle": "Apps for every<br>part of life,<br><em>made simpler.</em>",
-    "heroLead": "From getting around and reading to translation and a local tool for Codex CLI, we build things for everyday life and development.",
-    "exploreApps": "Explore apps & projects",
+    "heroEyebrow": "Independent Software Studio",
+    "heroTitle": "Everyday life.<br>Developer life.<br><em>Made easier.</em>",
+    "heroLead": "From movement and memories to documents, translation, and developer tools. Discover apps and projects that help when you need them.",
+    "exploreApps": "Explore what’s new",
     "myaiofficeEyebrow": "A LITTLE OFFICE FOR CODEX",
     "myaiofficeTitle": "Watch Codex work<br><em>like a little office tour.</em>",
     "myaiofficeLead": "See how Codex CLI reads a project and writes code in a shared office or a tower office. Start by exploring the sample data.",
@@ -158,8 +158,8 @@
     "apps": "iOS Apps",
     "cities": "Cities",
     "builtNative": "Built native",
-    "visualLabel": "Apps and local developer tools",
-    "appCloudLabel": "Apps & tools",
+    "visualLabel": "Recently introduced apps and projects",
+    "appCloudLabel": "Apps & projects",
     "transitLabel": "Public transit",
     "readingLabel": "Reading",
     "translationLabel": "Live translation",
@@ -192,7 +192,16 @@
     "supportLead": "Tell us about a problem, a feature you need, or an idea for something new.",
     "sendEmail": "Send an email",
     "rtvideoDescription": "Live translation captions for audio playing in another app. Read along in your preferred language.",
-    "rtvideoScreenAlt": "RTVideo live translation captions screen"
+    "rtvideoScreenAlt": "RTVideo live translation captions screen",
+    "totalProducts": "Apps & projects",
+    "recentEyebrow": "NEW & NOTEWORTHY",
+    "recentTitle": "Meet your next<br><em>app or tool.</em>",
+    "recentLead": "Explore recent releases, newly shared projects, and apps preparing for launch.",
+    "allProducts": "View all apps & projects",
+    "categoriesEyebrow": "FIND YOUR NEXT TOOL",
+    "categoriesTitle": "What would you<br><em>like to do?</em>",
+    "categoriesLead": "Find everyday apps and developer tools by what you want to accomplish.",
+    "catalogCount": "Explore all {count} apps & projects"
   },
   "portfolio": {
     "eyebrow": "Devp-YG Apps & Projects · {count} items",
@@ -202,7 +211,7 @@
     "categoryNavLabel": "Product categories",
     "categoryNavTitle": "Browse by category",
     "categoryKicker": "App category",
-    "categoryCount": "{count} products",
+    "categoryCount": "{count} available",
     "categories": {
       "mobility": {
         "label": "Movement & place logs",
@@ -403,17 +412,20 @@
     "snapqr": {
       "name": "SnapQR",
       "description": "A simple QR creator for turning text, URLs, Wi-Fi details, and contact information into QR codes.",
-      "imageAlt": "SnapQR app icon"
+      "imageAlt": "SnapQR app icon",
+      "shortName": "SnapQR"
     },
     "fareflow": {
       "name": "FareFlow - My Fare Plan",
       "description": "A smart fare meter that uses GPS to measure distance and time in real time and calculate taxi or carpool fares automatically.",
-      "imageAlt": "FareFlow app icon"
+      "imageAlt": "FareFlow app icon",
+      "shortName": "FareFlow"
     },
     "movlog": {
       "name": "Movlog: Put your story on the map",
       "description": "Movlog automatically records routes, visits, stays, parking, weather, and photos, then brings your life log together through monthly and yearly archives, insights, and achievements.",
-      "imageAlt": "Movlog app icon"
+      "imageAlt": "Movlog app icon",
+      "shortName": "Movlog"
     },
     "incheon-bus": {
       "name": "Incheon Bus",
@@ -466,7 +478,8 @@
     "tplus-mobile": {
       "name": "Tplus real-time usage widget",
       "description": "Check Tplus Mobile usage information in a widget on your iPhone or iPad.",
-      "imageAlt": "Tplus real-time usage widget app icon"
+      "imageAlt": "Tplus real-time usage widget app icon",
+      "shortName": "Tplus Widget"
     },
     "taghere": {
       "name": "Space Log - Remember This Place",
@@ -474,7 +487,8 @@
       "description": "Save places and their spaces, then record visits and space recognition with location and Bluetooth. Review your history by date and with a widget.",
       "imageAlt": "TagHere app icon",
       "brandName": "Space Log",
-      "brandDescription": "Remember This Place"
+      "brandDescription": "Remember This Place",
+      "shortName": "TagHere"
     },
     "markdam": {
       "name": "Markdam - Markdown Viewer",
@@ -482,7 +496,8 @@
       "description": "Read Markdown comfortably on Mac, iPhone, and iPad, then save it as PDF. View tables, code, images, SVG, Mermaid diagrams, and equations offline.",
       "imageAlt": "Markdam app icon",
       "brandName": "Markdam",
-      "brandDescription": "Markdown Viewer"
+      "brandDescription": "Markdown Viewer",
+      "shortName": "Markdam"
     },
     "rtvideo": {
       "name": "RTVideo",
@@ -490,13 +505,15 @@
       "description": "Turn audio from videos and other content playing on iPhone or iPad into translated captions. Follow the original and translation in the app or a floating PiP caption window.",
       "imageAlt": "RTVideo app icon",
       "brandName": "RTVideo",
-      "brandDescription": "Live Translation Captions"
+      "brandDescription": "Live Translation Captions",
+      "shortName": "Visible Voice"
     },
     "myaioffice": {
       "name": "MyAIOffice",
       "subtitle": "A local office view of Codex CLI work",
       "description": "Explore how Codex CLI reads project files and writes code in a shared office or a tower with a floor for each project. Start with sample data.",
-      "imageAlt": "MyAIOffice app icon"
+      "imageAlt": "MyAIOffice app icon",
+      "shortName": "MyAIOffice"
     }
   },
   "taghere": {

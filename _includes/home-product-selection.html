@@ -1,0 +1,28 @@
+{%- comment -%}
+    New entries appear automatically. A series occupies one slot, using its newest
+    entry. home_listed_at can introduce an older product; home_hidden opts out.
+{%- endcomment -%}
+{%- capture home_ranked_products -%}
+    {%- for app in site.data.apps -%}
+        {%- unless app.home_hidden -%}
+            {%- capture product_dates -%}{{ app.launched_at | date: "%Y-%m-%d" }},{{ app.published_at | date: "%Y-%m-%d" }},{{ app.review_submitted_at | date: "%Y-%m-%d" }},{{ app.macos_launched_at | date: "%Y-%m-%d" }},{{ app.home_listed_at | date: "%Y-%m-%d" }}{%- endcapture -%}
+            {%- assign latest_date = product_dates | split: "," | sort | last | default: "0000-00-00" -%}
+            {{- latest_date -}}|{{- app.id -}},
+        {%- endunless -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign home_ranked_products = home_ranked_products | split: "," | sort | reverse -%}
+{%- assign home_seen_groups = "|" -%}
+{%- capture home_product_ids -%}
+    {%- for record in home_ranked_products -%}
+        {%- assign product_id = record | split: "|" | last -%}
+        {%- assign product = site.data.apps | where: "id", product_id | first -%}
+        {%- assign group_id = product.series | default: product.id | prepend: "|" | append: "|" -%}
+        {%- unless home_seen_groups contains group_id -%}
+            {{- product.id -}},
+            {%- assign home_seen_groups = home_seen_groups | append: group_id -%}
+        {%- endunless -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign home_product_ids = home_product_ids | split: "," -%}
+{%- assign home_product_limit = site.data.home.product_limit | default: 6 | at_least: 1 | at_most: 6 -%}

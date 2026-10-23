@@ -1,0 +1,2 @@
+# The orbit has six layout slots. Keep product_limit between 1 and 6.
+product_limit: 6

@@ -1,9 +1,19 @@
-# The order here is the order used on the all-products page.
-# Keep categories broad and stable; product series (for example, CityBus) belong
-# in apps.yml as a separate `series` value.
+# Shared order and Korean fallback copy for home, navigation and portfolio.
 - id: mobility
+  label: "이동과 장소 기록"
+  description: "이동 경로와 방문한 장소, 그 안에 머문 공간을 기록하고 돌아보는 앱입니다."
 - id: public-transit
+  label: "대중교통"
+  description: "내 지역의 버스 도착·노선부터 환승·관광지 지도·날씨까지 빠르게 확인하고, 도시별 교통 정보를 살펴볼 수 있는 시티버스 앱입니다."
 - id: everyday-tools
+  label: "생활 도구"
+  description: "일상에서 자주 확인하거나 만들어야 하는 정보를 간편하게 다루는 앱입니다."
 - id: reading-tools
+  label: "문서 읽기"
+  description: "Markdown 문서의 글과 시각 자료를 읽고 PDF로 저장하는 앱입니다."
 - id: translation-tools
+  label: "실시간 번역"
+  description: "재생 중인 음성을 인식해 다른 언어의 자막으로 보여주는 앱입니다."
 - id: developer-tools
+  label: "개발 도구"
+  description: "개발 작업을 시작하고 진행 상황을 살펴볼 수 있는 로컬 도구입니다."

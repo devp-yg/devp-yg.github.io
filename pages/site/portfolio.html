@@ -26,7 +26,7 @@ styles:
                     {% if category_apps.size > 0 %}
                         <li>
                             <a href="#app-category-{{ category.id }}">
-                                <span data-i18n="portfolio.categories.{{ category.id }}.label">{{ category.id }}</span>
+                                <span data-i18n="portfolio.categories.{{ category.id }}.label">{{ category.label | default: category.id }}</span>
                                 <b aria-label="{{ category_apps.size }} apps">{{ category_apps.size }}</b>
                             </a>
                         </li>
@@ -43,9 +43,9 @@ styles:
                     <div class="portfolio-category-heading">
                         <div>
                             <p class="portfolio-category-kicker" data-i18n="portfolio.categoryKicker">App category</p>
-                            <h2 id="{{ category.id }}-heading" data-i18n="portfolio.categories.{{ category.id }}.label">{{ category.id }}</h2>
+                            <h2 id="{{ category.id }}-heading" data-i18n="portfolio.categories.{{ category.id }}.label">{{ category.label | default: category.id }}</h2>
                         </div>
-                        <p data-i18n="portfolio.categories.{{ category.id }}.description">{{ category.id }}</p>
+                        <p data-i18n="portfolio.categories.{{ category.id }}.description">{{ category.description }}</p>
                         <span class="portfolio-category-count" data-i18n="portfolio.categoryCount" data-i18n-count="{{ category_apps.size }}">{{ category_apps.size }}개 앱</span>
                     </div>
                     <div class="portfolio-grid">

@@ -13,7 +13,8 @@
             <ul class="site-navigation-list">
                 <li class="nav-products">
                     <details data-product-menu>
-                        <summary{% if page.i18n_key == 'portfolio' or page.i18n_key == 'movlog' or page.i18n_key == 'citybus' or page.i18n_key == 'taghere' or page.i18n_key == 'markdam' or page.i18n_key == 'rtvideo' or page.i18n_key == 'snapqr' or page.i18n_key == 'fareflow' or page.i18n_key == 'myaioffice' %} class="is-current"{% endif %}>
+                        {% assign current_product = site.data.apps | where: "id", page.i18n_key | first %}
+                        <summary{% if page.i18n_key == 'portfolio' or page.i18n_key == 'citybus' or current_product %} class="is-current"{% endif %}>
                             <span data-i18n="header.exploreApps">앱 둘러보기</span>
                             <i aria-hidden="true"></i>
                         </summary>
@@ -23,37 +24,25 @@
                                 <small data-i18n="header.appsDescription">필요한 순간에 바로 쓸 수 있는 앱</small>
                             </div>
                             <ul class="nav-products-list">
-                                {% for item in site.data.navigation.products %}
-                                    {% assign first_character = item.url | slice: 0 %}
-                                    {% assign item_url = item.url %}
-                                    {% if first_character == '/' %}
-                                        {% assign item_url = item.url | relative_url %}
+                                <li>
+                                    <a href="{{ '/portfolio/' | relative_url }}">
+                                        <span aria-hidden="true" class="nav-product-mark nav-product-mark-all"><i></i><i></i><i></i></span>
+                                        <span class="nav-product-copy"><strong data-i18n="header.allApps">앱·프로젝트 보기</strong><small data-i18n="header.allAppsDescription">앱과 데스크톱 프로젝트를 한곳에서 살펴보세요.</small></span>
+                                        <span aria-hidden="true" class="nav-product-arrow">↗</span>
+                                    </a>
+                                </li>
+                                {% for category in site.data.app_categories %}
+                                    {% assign category_apps = site.data.apps | where: "category", category.id | sort: "portfolio_order" %}
+                                    {% if category_apps.size > 0 %}
+                                        {% assign category_icon = category_apps | first %}
+                                        <li>
+                                            <a href="{{ '/portfolio/' | relative_url }}#app-category-{{ category.id }}">
+                                                <span aria-hidden="true" class="nav-product-mark"><img src="{{ category_icon.image | relative_url }}" alt="" /></span>
+                                                <span class="nav-product-copy"><strong data-i18n="portfolio.categories.{{ category.id }}.label">{{ category.label }}</strong><small data-i18n="portfolio.categoryCount" data-i18n-count="{{ category_apps.size }}">{{ category_apps.size }}개 제품</small></span>
+                                                <span aria-hidden="true" class="nav-product-arrow">↗</span>
+                                            </a>
+                                        </li>
                                     {% endif %}
-                                    <li>
-                                        <a href="{{ item_url }}"{% if item.page_key == page.i18n_key %} aria-current="page"{% endif %}>
-                                            <span aria-hidden="true" class="nav-product-mark nav-product-mark-{{ item.mark }}">
-                                                {% if item.mark == 'all' %}
-                                                    <i></i><i></i><i></i>
-                                                {% elsif item.mark == 'citybus' %}
-                                                    <svg class="nav-citybus-symbol" viewBox="0 0 48 48" focusable="false">
-                                                        <path d="M11 9h23a5 5 0 0 1 5 5v21H9V14a5 5 0 0 1 2-5Z" />
-                                                        <path d="M13 14h10v10H13zm13 0h9v10h-9zM9 29h30M15 35v3m18-3v3" />
-                                                        <circle cx="16" cy="34" r="2.5" /><circle cx="32" cy="34" r="2.5" />
-                                                    </svg>
-                                                    <b class="nav-citybus-count">6</b>
-                                                {% elsif item.image %}
-                                                    <img src="{{ item.image | relative_url }}" alt="" />
-                                                {% else %}
-                                                    <img src="{{ '/assets/images/apps/' | append: item.mark | append: '/icon.png' | relative_url }}" alt="" />
-                                                {% endif %}
-                                            </span>
-                                            <span class="nav-product-copy">
-                                                <strong data-i18n="header.{{ item.key }}">{{ item.label }}</strong>
-                                                <small data-i18n="header.{{ item.description_key }}">{{ item.description }}</small>
-                                            </span>
-                                            <span aria-hidden="true" class="nav-product-arrow">↗</span>
-                                        </a>
-                                    </li>
                                 {% endfor %}
                             </ul>
                         </div>
