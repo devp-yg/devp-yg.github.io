@@ -179,12 +179,20 @@
   "portfolio": {
     "eyebrow": "Devp-YG Apps · {count} apps",
     "title": "Solve life’s little frictions<br><em>with an app.</em>",
-    "lead": "We make iOS and macOS apps for recording places, translating playing audio, and reading documents.",
+    "lead": "We make iOS and macOS apps for recording places, translating playing audio, and reading documents, along with local tools.",
     "ariaLabel": "iOS and macOS applications",
     "categoryNavLabel": "App category shortcuts",
     "categoryNavTitle": "Browse by category",
     "categoryKicker": "App category",
     "categoryCount": "{count} apps",
+    "projectsKicker": "Beyond apps",
+    "projectsTitle": "Development projects",
+    "projectsDescription": "A look at desktop tools built alongside our apps.",
+    "projectsMyAIOffice": {
+      "subtitle": "A local office for your Codex activity",
+      "description": "Explore Codex projects and work sessions on your computer in a 3D office organized by floors and spaces.",
+      "githubLabel": "Open the MyAIOffice GitHub repository"
+    },
     "categories": {
       "mobility": {
         "label": "Movement & place logs",

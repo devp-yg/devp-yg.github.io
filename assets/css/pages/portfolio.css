@@ -44,6 +44,53 @@
     padding-top: 54px;
 }
 
+.portfolio-projects {
+    border-top: 1px solid var(--line);
+    margin-top: 16px;
+    padding-top: 54px;
+}
+
+.portfolio-project-card {
+    min-height: 360px;
+}
+
+.portfolio-project-mark {
+    align-items: center;
+    background: linear-gradient(145deg, #16243c, #476b80);
+    border-radius: 22px;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.13);
+    color: #e5f8ef;
+    display: flex;
+    font-family: var(--font-readable);
+    font-size: 1.35rem;
+    font-weight: 800;
+    height: 88px;
+    justify-content: center;
+    letter-spacing: -0.06em;
+    position: relative;
+    width: 88px;
+}
+
+.portfolio-project-mark::before,
+.portfolio-project-mark::after,
+.portfolio-project-mark i {
+    background: rgba(193, 231, 218, 0.82);
+    border-radius: 2px;
+    content: "";
+    height: 5px;
+    position: absolute;
+    right: 13px;
+    width: 5px;
+}
+
+.portfolio-project-mark::before { top: 16px; }
+.portfolio-project-mark::after { top: 25px; }
+.portfolio-project-mark i { top: 34px; }
+
+.portfolio-project-mark span {
+    transform: translateX(-3px);
+}
+
 .portfolio-category-nav {
     align-items: center;
     display: flex;
@@ -290,6 +337,7 @@
     .portfolio-page { padding-bottom: 80px; }
     .portfolio-hero { padding-bottom: 56px; padding-top: 72px; }
     .portfolio-content { padding-top: 34px; }
+    .portfolio-projects { margin-top: 4px; padding-top: 38px; }
     .portfolio-category-nav { align-items: flex-start; flex-direction: column; gap: 14px; }
     .portfolio-category-nav ul { justify-content: flex-start; }
     .portfolio-category { padding: 42px 0; }
