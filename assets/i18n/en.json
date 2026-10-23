@@ -94,6 +94,10 @@
     "fareflow": {
       "title": "FareFlow | Devp-YG",
       "description": "Measure distance and time in real time with GPS, and calculate taxi or carpool fares automatically. Follow your trip with FareFlow."
+    },
+    "myaioffice": {
+      "title": "MyAIOffice | Codex’s Little Office",
+      "description": "Explore Codex CLI work in a shared office or a project-by-floor tower with this local desktop tool."
     }
   },
   "header": {
@@ -191,7 +195,8 @@
     "projectsMyAIOffice": {
       "subtitle": "A local office for your Codex activity",
       "description": "Explore Codex projects and work sessions on your computer in a 3D office organized by floors and spaces.",
-      "githubLabel": "Open the MyAIOffice GitHub repository"
+      "githubLabel": "Open the MyAIOffice GitHub repository",
+      "detailsLabel": "Learn more"
     },
     "categories": {
       "mobility": {
@@ -881,5 +886,68 @@
     "infoBody": "Whether you are checking a taxi fare or calculating the cost of a shared carpool trip, FareFlow helps you check a fare based on distance and time.",
     "finalEyebrow": "LET THE METER FOLLOW",
     "finalTitle": "Take FareFlow<br><em>on your next trip.</em>"
+  },
+  "myaioffice": {
+    "back": "← Development projects",
+    "eyebrow": "CODEX CLI, BUT MAKE IT COZY",
+    "title": "Codex at work,<br><em>in a cozy little office.</em>",
+    "lead": "Codex CLI is an AI development tool that can look through project files on your computer, edit code, and run commands. MyAIOffice turns that work into a 3D office with rooms and little coworkers. Instead of deciphering a terminal, take a friendly look at where the team is and what it is doing.",
+    "github": "Explore the project on GitHub",
+    "platform": "macOS · Windows · Runs on your computer",
+    "fact1": "Work sessions → coworkers",
+    "fact2": "Projects → rooms or floors",
+    "fact3": "Conversation text stays hidden",
+    "towerAlt": "Tower Office example: characters working in rooms on separate project floors",
+    "demoPill": "Example screen",
+    "heroCaption": "Coworkers reading files and writing code on the Atlas Web floor",
+    "explainerEyebrow": "FIRST TIME WITH CODEX?",
+    "explainerTitle": "New to the terminal?<br /><em>Follow the work at a glance.</em>",
+    "explainerBody": "Ask Codex to “fix the button in this project,” and it reads files, changes code, and runs commands when needed. When several tasks are happening at once, open MyAIOffice to see who is finding information, who is writing code, and who is taking a short break. You do not need to be a developer to look around like you are visiting a little team.",
+    "stepsLabel": "How work appears in MyAIOffice",
+    "step1Title": "Give Codex a task",
+    "step1Body": "Tell it what you would like done in a project folder.",
+    "step2Title": "Watch the team get moving",
+    "step2Body": "Work sessions and helper agents each take on a role.",
+    "step3Title": "Take a look around",
+    "step3Body": "Select a room or floor to see what is happening.",
+    "officeEyebrow": "TWO WAYS TO LOOK AROUND",
+    "officeTitle": "One team, two views<br /><em>Shared Office and Tower Office</em>",
+    "officeLead": "Bring projects together in one spacious office, or give every project its own floor in a tower.",
+    "sharedAlt": "Shared Office example: several coworkers moving through one large office",
+    "sharedCaption": "Sample data · Shared Office",
+    "sharedTitle": "Together in one place: Shared Office",
+    "sharedBody": "Each room has a kind of work, such as reading files, writing code, or running commands. Follow several projects in one view, or select a room to see who is there.",
+    "sharedPoint1": "Compare work across one large office",
+    "sharedPoint2": "Select spaces to see current activity",
+    "towerCaption": "Example screen · One floor per project",
+    "towerTitle": "A floor for every project: Tower Office",
+    "towerBody": "Find projects on the floor guide as your workspace grows. Choose a floor to see that project’s rooms and coworkers, then watch them move around the office.",
+    "towerPoint1": "Organize projects by floor",
+    "towerPoint2": "Show only floors with active work",
+    "sunsetEyebrow": "A LITTLE LIGHT, A LITTLE TIME",
+    "sunsetTitle": "As the sun goes down,<br /><em>the office settles into evening.</em>",
+    "sunsetBody": "MyAIOffice estimates sunrise and sunset from your saved location and the current time. Sunlight brightens the office during the day, then the lighting softens around sunset. Leave it open for a while and watch the atmosphere change with the day.",
+    "sunsetNote": "Your location is saved in your browser. You can still explore with default times if you do not allow location access.",
+    "sunClockLabel": "Office light changing from morning to night",
+    "morning": "Morning",
+    "sunset": "Sunset",
+    "night": "Night",
+    "clockCaption": "Lighting follows local sunrise and sunset",
+    "friendlyEyebrow": "MADE TO BE EASY TO PEEK IN",
+    "friendlyTitle": "You do not need to know how to code.<br /><em>Start by looking around.</em>",
+    "friendly1Title": "Explore like a game",
+    "friendly1Body": "Select rooms, follow characters, and move the camera. There is no right answer—take your time.",
+    "friendly2Title": "Start with a sample office",
+    "friendly2Body": "DEMO mode comes with pretend projects and activity. You can try it before connecting your own Codex.",
+    "friendly3Title": "Your conversations stay off screen",
+    "friendly3Body": "MyAIOffice shows activity status only. Prompts and conversation text do not appear in the office.",
+    "localEyebrow": "YOUR WORKSPACE, YOUR COMPUTER",
+    "localTitle": "An office you can open<br /><em>right on your computer</em>",
+    "localBody": "MyAIOffice is a local tool that runs on your computer. It reads Codex projects and work-session status to create an office view, without showing conversation text. Start with the sample tour, then follow the official repository’s setup guide when you are ready.",
+    "install": "Read the README to get started",
+    "finalEyebrow": "YOUR CODE. YOUR TEAM. YOUR LITTLE OFFICE.",
+    "finalTitle": "Curious what happened today?<br /><em>Come visit the office.</em>",
+    "finalAction": "Explore MyAIOffice on GitHub",
+    "allProjects": "See other projects"
   }
 }

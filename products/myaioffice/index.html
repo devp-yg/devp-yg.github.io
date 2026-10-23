@@ -1,0 +1,89 @@
+---
+layout: default
+lang: ko
+i18n_key: myaioffice
+title: MyAIOffice - Codex의 작은 사무실 | Devp-YG
+description: Codex CLI가 프로젝트에서 일하는 모습을 공용 오피스와 층별 타워 오피스로 둘러보는 로컬 데스크톱 도구입니다.
+permalink: /myaioffice/
+styles:
+  - /assets/css/pages/myaioffice.css
+---
+
+<main id="main" class="myaioffice-page">
+    <section class="myai-hero">
+        <div class="myai-shell myai-hero-grid">
+            <div class="myai-hero-copy">
+                <a class="myai-back" href="{{ '/portfolio.html' | relative_url }}" data-i18n="myaioffice.back">← 개발 프로젝트</a>
+                <p class="myai-eyebrow" data-i18n="myaioffice.eyebrow">CODEX CLI, BUT MAKE IT COZY</p>
+                <h1 data-i18n-html="myaioffice.title">코덱스가 일하는 모습을<br><em>작은 사무실에서 만나보세요.</em></h1>
+                <p class="myai-lead" data-i18n="myaioffice.lead">Codex CLI는 컴퓨터의 프로젝트 파일을 살펴보고, 코드를 고치고, 명령을 실행하는 AI 개발 도구예요. MyAIOffice는 그 작업을 캐릭터와 방이 있는 3D 오피스로 보여줍니다. 낯선 터미널 화면 대신, 팀이 어디서 무엇을 하는지 편하게 둘러보세요.</p>
+                <div class="myai-actions">
+                    <a class="myai-primary" href="https://github.com/devp-yg/MyAIOffice" target="_blank" rel="noopener noreferrer"><span data-i18n="myaioffice.github">GitHub에서 프로젝트 보기</span><span aria-hidden="true">↗</span></a>
+                    <span class="myai-platform-note" data-i18n="myaioffice.platform">macOS · Windows · 내 컴퓨터에서 실행</span>
+                </div>
+                <div class="myai-quick-facts"><span data-i18n="myaioffice.fact1">작업 세션 → 친구들</span><span data-i18n="myaioffice.fact2">프로젝트 → 방 또는 층</span><span data-i18n="myaioffice.fact3">대화 내용은 표시하지 않아요</span></div>
+            </div>
+            <figure class="myai-hero-visual">
+                <img src="{{ '/assets/images/projects/myaioffice/tower-office-demo.jpg' | relative_url }}" alt="타워 오피스 예시 화면: 프로젝트별 층과 방에서 캐릭터들이 일하는 모습" data-i18n-alt="myaioffice.towerAlt" />
+                <figcaption><span class="myai-demo-pill" data-i18n="myaioffice.demoPill">예시 화면</span><span data-i18n="myaioffice.heroCaption">Atlas Web 층에서 자료를 읽고 코드를 만드는 친구들</span></figcaption>
+                <span class="myai-sticker" aria-hidden="true">오늘도<br />한 칸씩 ✳</span>
+            </figure>
+        </div>
+    </section>
+
+    <section class="myai-explainer">
+        <div class="myai-shell myai-explainer-grid">
+            <p class="myai-eyebrow" data-i18n="myaioffice.explainerEyebrow">FIRST TIME WITH CODEX?</p>
+            <div><h2 data-i18n-html="myaioffice.explainerTitle">터미널이 낯설어도<br /><em>일하는 흐름은 보이게.</em></h2><p data-i18n="myaioffice.explainerBody">Codex에 “이 프로젝트의 버튼을 고쳐줘”라고 부탁하면, Codex는 파일을 읽고 코드를 바꾸고 필요한 명령을 실행해요. 여러 작업이 동시에 돌아갈 때 MyAIOffice를 열면 누가 자료를 찾는지, 누가 코드를 쓰는지, 누가 잠깐 쉬는지 한눈에 보여요. 개발자가 아니어도 작은 팀을 구경하듯 살펴볼 수 있습니다.</p></div>
+        </div>
+        <div class="myai-shell myai-steps" aria-label="MyAIOffice에서 보는 작업 흐름" data-i18n-aria-label="myaioffice.stepsLabel">
+            <article><span>01</span><b data-i18n="myaioffice.step1Title">Codex에게 부탁해요</b><p data-i18n="myaioffice.step1Body">프로젝트 폴더에서 원하는 일을 말해요.</p></article>
+            <i aria-hidden="true">→</i>
+            <article><span>02</span><b data-i18n="myaioffice.step2Title">친구들이 움직여요</b><p data-i18n="myaioffice.step2Body">작업 세션과 보조 에이전트가 각자 일해요.</p></article>
+            <i aria-hidden="true">→</i>
+            <article><span>03</span><b data-i18n="myaioffice.step3Title">오피스를 둘러봐요</b><p data-i18n="myaioffice.step3Body">방과 층을 누르며 진행 상황을 살펴봐요.</p></article>
+        </div>
+    </section>
+
+    <section class="myai-office-section">
+        <div class="myai-shell">
+            <header class="myai-section-heading"><p class="myai-eyebrow" data-i18n="myaioffice.officeEyebrow">TWO WAYS TO LOOK AROUND</p><h2 data-i18n-html="myaioffice.officeTitle">같은 팀, 다른 풍경<br /><em>공용 오피스와 타워 오피스</em></h2><p data-i18n="myaioffice.officeLead">프로젝트를 하나의 넓은 사무실에 모아 볼 수도, 각 프로젝트를 건물의 층마다 나눠 볼 수도 있어요.</p></header>
+            <div class="myai-office-grid">
+                <article class="myai-office-card myai-shared-card">
+                    <figure><img src="{{ '/assets/images/projects/myaioffice/shared-office-demo.png' | relative_url }}" alt="공용 오피스 예시 화면: 하나의 넓은 사무실에서 여러 작업 친구들이 움직이는 모습" data-i18n-alt="myaioffice.sharedAlt" loading="lazy" /><figcaption data-i18n="myaioffice.sharedCaption">예시 데이터 · 공용 오피스</figcaption></figure>
+                    <div><span class="myai-mode-index">MODE 01</span><h3 data-i18n="myaioffice.sharedTitle">모두 한곳에, 공용 오피스</h3><p data-i18n="myaioffice.sharedBody">방마다 자료 읽기, 코드 작성, 명령 실행처럼 하는 일이 나뉘어요. 여러 프로젝트의 흐름을 한 화면에서 보거나, 방을 눌러 누가 있는지 살펴보세요.</p><ul><li data-i18n="myaioffice.sharedPoint1">하나의 큰 사무실에서 작업 흐름 비교</li><li data-i18n="myaioffice.sharedPoint2">공간을 눌러 현재 활동 확인</li></ul></div>
+                </article>
+                <article class="myai-office-card myai-tower-card">
+                    <figure><img src="{{ '/assets/images/projects/myaioffice/tower-office-demo.jpg' | relative_url }}" alt="타워 오피스 예시 화면: 각 프로젝트가 건물의 층으로 나뉜 모습" data-i18n-alt="myaioffice.towerAlt" loading="lazy" /><figcaption data-i18n="myaioffice.towerCaption">예시 화면 · 프로젝트마다 한 층</figcaption></figure>
+                    <div><span class="myai-mode-index">MODE 02</span><h3 data-i18n="myaioffice.towerTitle">프로젝트마다 한 층, 타워 오피스</h3><p data-i18n="myaioffice.towerBody">프로젝트가 늘어나도 층별 안내에서 바로 찾아갈 수 있어요. 층을 바꾸면 그 프로젝트의 방과 친구들이 나타나고, 오피스 안에서 이동하는 모습도 볼 수 있습니다.</p><ul><li data-i18n="myaioffice.towerPoint1">프로젝트를 층별로 정리</li><li data-i18n="myaioffice.towerPoint2">작업 중인 층만 모아보기</li></ul></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="myai-sunset-section">
+        <div class="myai-shell myai-sunset-grid">
+            <div class="myai-sunset-copy"><p class="myai-eyebrow" data-i18n="myaioffice.sunsetEyebrow">A LITTLE LIGHT, A LITTLE TIME</p><h2 data-i18n-html="myaioffice.sunsetTitle">해가 기울면<br /><em>사무실도 저녁 분위기로.</em></h2><p data-i18n="myaioffice.sunsetBody">설정한 위치와 지금 시각을 바탕으로 해 뜨고 지는 시간을 계산해요. 낮에는 햇살이 들어오고, 해 질 무렵부터 조명이 부드럽게 어두워져요. 실제 시간에 맞춰 풍경이 바뀌니 잠깐 켜두고 하루의 변화를 구경해도 좋아요.</p><div class="myai-sunset-note"><span aria-hidden="true">☀</span><span data-i18n="myaioffice.sunsetNote">위치는 브라우저에 저장돼요. 위치 권한을 허용하지 않으면 기본 시각으로도 둘러볼 수 있습니다.</span></div></div>
+            <div class="myai-sun-clock" aria-label="아침부터 밤까지 변하는 사무실 빛" data-i18n-aria-label="myaioffice.sunClockLabel">
+                <div class="myai-clock-sky"><span class="myai-sun"></span><span class="myai-moon"></span><i class="myai-star star-one">✦</i><i class="myai-star star-two">✧</i><i class="myai-star star-three">·</i><div class="myai-office-silhouette"><span></span><span></span><span></span><i class="window w1"></i><i class="window w2"></i><i class="window w3"></i><i class="window w4"></i><i class="window w5"></i><i class="window w6"></i><i class="window w7"></i></div></div>
+                <div class="myai-time-track"><span data-i18n="myaioffice.morning">아침</span><span data-i18n="myaioffice.sunset">해 질 무렵</span><span data-i18n="myaioffice.night">밤</span></div>
+                <p data-i18n="myaioffice.clockCaption">내 위치의 해 뜨고 지는 시간에 따라 조명 변화</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="myai-friendly-section">
+        <div class="myai-shell">
+            <header class="myai-section-heading"><p class="myai-eyebrow" data-i18n="myaioffice.friendlyEyebrow">MADE TO BE EASY TO PEEK IN</p><h2 data-i18n-html="myaioffice.friendlyTitle">개발을 몰라도 괜찮아요.<br /><em>그냥 구경부터 시작해요.</em></h2></header>
+            <div class="myai-friendly-grid">
+                <article><span aria-hidden="true">🎮</span><h3 data-i18n="myaioffice.friendly1Title">게임처럼 둘러보기</h3><p data-i18n="myaioffice.friendly1Body">방을 누르고, 캐릭터를 따라가고, 카메라를 움직여 보세요. 정답 없이 천천히 둘러보면 됩니다.</p></article>
+                <article><span aria-hidden="true">🧪</span><h3 data-i18n="myaioffice.friendly2Title">예시 사무실부터</h3><p data-i18n="myaioffice.friendly2Body">DEMO 모드에는 가상의 프로젝트와 작업이 준비돼 있어요. 내 Codex가 연결되지 않아도 먼저 체험할 수 있습니다.</p></article>
+                <article><span aria-hidden="true">💬</span><h3 data-i18n="myaioffice.friendly3Title">대화는 화면에 나오지 않아요</h3><p data-i18n="myaioffice.friendly3Body">무엇을 하고 있는지 상태만 보여줘요. 프롬프트나 대화 내용은 사무실에 표시하지 않습니다.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="myai-local-section"><div class="myai-shell myai-local-grid"><div><p class="myai-eyebrow" data-i18n="myaioffice.localEyebrow">YOUR WORKSPACE, YOUR COMPUTER</p><h2 data-i18n-html="myaioffice.localTitle">내 컴퓨터 안에서<br /><em>가볍게 열어보는 오피스</em></h2></div><div><p data-i18n="myaioffice.localBody">MyAIOffice는 내 컴퓨터에서 실행되는 로컬 도구예요. Codex 프로젝트와 작업 세션 상태를 읽어 사무실 풍경으로 바꾸고, 대화 내용은 화면에 보여주지 않아요. 처음이라면 예시 둘러보기로 시작하고, 준비되면 공식 저장소의 설치 안내를 따라 연결해 보세요.</p><a class="myai-text-link" href="https://github.com/devp-yg/MyAIOffice#readme" target="_blank" rel="noopener noreferrer"><span data-i18n="myaioffice.install">README에서 시작 방법 보기</span><span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="myai-final"><div class="myai-shell"><p class="myai-eyebrow" data-i18n="myaioffice.finalEyebrow">YOUR CODE. YOUR TEAM. YOUR LITTLE OFFICE.</p><h2 data-i18n-html="myaioffice.finalTitle">오늘은 무슨 일이 있었는지,<br /><em>오피스에 놀러 와서 볼까요?</em></h2><div><a class="myai-primary" href="https://github.com/devp-yg/MyAIOffice" target="_blank" rel="noopener noreferrer"><span data-i18n="myaioffice.finalAction">MyAIOffice 프로젝트 보기</span><span aria-hidden="true">↗</span></a><a class="myai-text-link" href="{{ '/portfolio.html' | relative_url }}" data-i18n="myaioffice.allProjects">다른 프로젝트도 보기</a></div></div></section>
+</main>

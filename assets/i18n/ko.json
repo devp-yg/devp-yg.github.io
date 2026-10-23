@@ -94,6 +94,10 @@
     "fareflow": {
       "title": "냥미터 | Devp-YG",
       "description": "GPS로 이동 거리와 시간을 실시간으로 측정하고 택시·카풀 요금을 자동으로 계산합니다. 냥미터와 함께 이동의 흐름을 요금으로 확인해보세요."
+    },
+    "myaioffice": {
+      "title": "MyAIOffice | Codex의 작은 사무실",
+      "description": "Codex CLI가 프로젝트에서 일하는 모습을 공용 오피스와 층별 타워 오피스로 둘러보는 로컬 데스크톱 도구입니다."
     }
   },
   "header": {
@@ -191,7 +195,8 @@
     "projectsMyAIOffice": {
       "subtitle": "Codex 작업 현황을 보여주는 로컬 오피스",
       "description": "내 컴퓨터의 Codex 프로젝트와 작업 세션을 층과 공간이 있는 3D 사무실로 살펴보는 앱입니다.",
-      "githubLabel": "MyAIOffice GitHub 저장소 열기"
+      "githubLabel": "MyAIOffice GitHub 저장소 열기",
+      "detailsLabel": "자세히 보기"
     },
     "categories": {
       "mobility": {
@@ -880,5 +885,68 @@
     "infoBody": "택시 요금을 살펴보거나 함께 이동한 카풀의 요금을 계산할 때. 냥미터는 이동 거리와 시간을 기준으로 요금을 확인할 수 있게 도와줍니다.",
     "finalEyebrow": "LET THE METER FOLLOW",
     "finalTitle": "다음 이동에는<br><em>냥미터와 함께.</em>"
+  },
+  "myaioffice": {
+    "back": "← 개발 프로젝트",
+    "eyebrow": "CODEX CLI, BUT MAKE IT COZY",
+    "title": "코덱스의 하루,<br><em>오피스에서 구경해요.</em>",
+    "lead": "Codex CLI는 컴퓨터의 프로젝트 파일을 살펴보고, 코드를 고치고, 명령을 실행하는 AI 개발 도구예요. MyAIOffice는 그 작업을 캐릭터와 방이 있는 3D 오피스로 보여줍니다. 낯선 터미널 화면 대신, 팀이 어디서 무엇을 하는지 편하게 둘러보세요.",
+    "github": "GitHub에서 프로젝트 보기",
+    "platform": "macOS · Windows · 내 컴퓨터에서 실행",
+    "fact1": "작업 세션 → 친구들",
+    "fact2": "프로젝트 → 방 또는 층",
+    "fact3": "대화 내용은 표시하지 않아요",
+    "towerAlt": "타워 오피스 예시 화면: 프로젝트별 층과 방에서 캐릭터들이 일하는 모습",
+    "demoPill": "예시 화면",
+    "heroCaption": "Atlas Web 층에서 자료를 읽고 코드를 만드는 친구들",
+    "explainerEyebrow": "FIRST TIME WITH CODEX?",
+    "explainerTitle": "터미널이 낯설어도<br /><em>일하는 흐름은 보이게.</em>",
+    "explainerBody": "Codex에 “이 프로젝트의 버튼을 고쳐줘”라고 부탁하면, Codex는 파일을 읽고 코드를 바꾸고 필요한 명령을 실행해요. 여러 작업이 동시에 돌아갈 때 MyAIOffice를 열면 누가 자료를 찾는지, 누가 코드를 쓰는지, 누가 잠깐 쉬는지 한눈에 보여요. 개발자가 아니어도 작은 팀을 구경하듯 살펴볼 수 있습니다.",
+    "stepsLabel": "MyAIOffice에서 보는 작업 흐름",
+    "step1Title": "Codex에게 부탁해요",
+    "step1Body": "프로젝트 폴더에서 원하는 일을 말해요.",
+    "step2Title": "친구들이 움직여요",
+    "step2Body": "작업 세션과 보조 에이전트가 각자 일해요.",
+    "step3Title": "오피스를 둘러봐요",
+    "step3Body": "방과 층을 누르며 진행 상황을 살펴봐요.",
+    "officeEyebrow": "TWO WAYS TO LOOK AROUND",
+    "officeTitle": "같은 팀, 다른 풍경<br /><em>공용 오피스와 타워 오피스</em>",
+    "officeLead": "프로젝트를 하나의 넓은 사무실에 모아 볼 수도, 각 프로젝트를 건물의 층마다 나눠 볼 수도 있어요.",
+    "sharedAlt": "공용 오피스 예시 화면: 하나의 넓은 사무실에서 여러 작업 친구들이 움직이는 모습",
+    "sharedCaption": "예시 데이터 · 공용 오피스",
+    "sharedTitle": "모두 한곳에, 공용 오피스",
+    "sharedBody": "방마다 자료 읽기, 코드 작성, 명령 실행처럼 하는 일이 나뉘어요. 여러 프로젝트의 흐름을 한 화면에서 보거나, 방을 눌러 누가 있는지 살펴보세요.",
+    "sharedPoint1": "하나의 큰 사무실에서 작업 흐름 비교",
+    "sharedPoint2": "공간을 눌러 현재 활동 확인",
+    "towerCaption": "예시 화면 · 프로젝트마다 한 층",
+    "towerTitle": "프로젝트마다 한 층, 타워 오피스",
+    "towerBody": "프로젝트가 늘어나도 층별 안내에서 바로 찾아갈 수 있어요. 층을 바꾸면 그 프로젝트의 방과 친구들이 나타나고, 오피스 안에서 이동하는 모습도 볼 수 있습니다.",
+    "towerPoint1": "프로젝트를 층별로 정리",
+    "towerPoint2": "작업 중인 층만 모아보기",
+    "sunsetEyebrow": "A LITTLE LIGHT, A LITTLE TIME",
+    "sunsetTitle": "해가 기울면<br /><em>사무실도 저녁 분위기로.</em>",
+    "sunsetBody": "설정한 위치와 지금 시각을 바탕으로 해 뜨고 지는 시간을 계산해요. 낮에는 햇살이 들어오고, 해 질 무렵부터 조명이 부드럽게 어두워져요. 실제 시간에 맞춰 풍경이 바뀌니 잠깐 켜두고 하루의 변화를 구경해도 좋아요.",
+    "sunsetNote": "위치는 브라우저에 저장돼요. 위치 권한을 허용하지 않으면 기본 시각으로도 둘러볼 수 있습니다.",
+    "sunClockLabel": "아침부터 밤까지 변하는 사무실 빛",
+    "morning": "아침",
+    "sunset": "해 질 무렵",
+    "night": "밤",
+    "clockCaption": "내 위치의 해 뜨고 지는 시간에 따라 조명 변화",
+    "friendlyEyebrow": "MADE TO BE EASY TO PEEK IN",
+    "friendlyTitle": "개발을 몰라도 괜찮아요.<br /><em>그냥 구경부터 시작해요.</em>",
+    "friendly1Title": "게임처럼 둘러보기",
+    "friendly1Body": "방을 누르고, 캐릭터를 따라가고, 카메라를 움직여 보세요. 정답 없이 천천히 둘러보면 됩니다.",
+    "friendly2Title": "예시 사무실부터",
+    "friendly2Body": "DEMO 모드에는 가상의 프로젝트와 작업이 준비돼 있어요. 내 Codex가 연결되지 않아도 먼저 체험할 수 있습니다.",
+    "friendly3Title": "대화는 화면에 나오지 않아요",
+    "friendly3Body": "무엇을 하고 있는지 상태만 보여줘요. 프롬프트나 대화 내용은 사무실에 표시하지 않습니다.",
+    "localEyebrow": "YOUR WORKSPACE, YOUR COMPUTER",
+    "localTitle": "내 컴퓨터 안에서<br /><em>가볍게 열어보는 오피스</em>",
+    "localBody": "MyAIOffice는 내 컴퓨터에서 실행되는 로컬 도구예요. Codex 프로젝트와 작업 세션 상태를 읽어 사무실 풍경으로 바꾸고, 대화 내용은 화면에 보여주지 않아요. 처음이라면 예시 둘러보기로 시작하고, 준비되면 공식 저장소의 설치 안내를 따라 연결해 보세요.",
+    "install": "README에서 시작 방법 보기",
+    "finalEyebrow": "YOUR CODE. YOUR TEAM. YOUR LITTLE OFFICE.",
+    "finalTitle": "오늘은 무슨 일이 있었는지,<br /><em>오피스에 놀러 와서 볼까요?</em>",
+    "finalAction": "MyAIOffice 프로젝트 보기",
+    "allProjects": "다른 프로젝트도 보기"
   }
 }
