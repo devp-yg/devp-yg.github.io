@@ -285,7 +285,6 @@
     "title": "A simpler way to<br>meet your city’s buses",
     "description": "Check when your bus will arrive, see where it is now, and explore nearby attractions. Every CityBus app includes arrival information, bus locations, transfers, and tourism features.",
     "findApp": "Find your city app",
-    "readStory": "Read the development story",
     "featuresTitle": "Familiar features in every city",
     "featuresDescription": "Change cities and keep the tools you know. Every CityBus app helps you find a bus, plan your journey, and explore the places around you.",
     "arrivalKicker": "01 · Catch a bus",
@@ -362,7 +361,6 @@
     "railMapAlt": "Daejeon Bus showing the urban rail line and station locations on a map",
     "railStationCaption": "Daejeon Bus · Station & timetable",
     "railStationAlt": "Daejeon Bus showing first and last trains, contact details, and facilities at Government Complex station",
-    "origin": "It all started with Daejeon Bus",
     "heroAlt": "The nearby stop map in Daejeon Bus, the first CityBus app"
   },
   "movlog": {
