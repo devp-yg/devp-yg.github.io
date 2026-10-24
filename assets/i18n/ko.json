@@ -514,6 +514,11 @@
       "description": "Codex CLI가 프로젝트에서 파일을 읽고 코드를 만드는 흐름을 공용 오피스나 층별 타워 오피스에서 둘러보세요. 예시 데이터로 먼저 체험할 수 있습니다.",
       "imageAlt": "MyAIOffice 앱 아이콘",
       "shortName": "MyAIOffice"
+    },
+    "citybus": {
+      "name": "시티버스",
+      "shortName": "시티버스",
+      "description": "내 도시의 버스 도착정보와 노선, 환승과 여행 정보를 확인하세요. 시티버스 소개 페이지에서 도시별 앱을 선택할 수 있습니다."
     }
   },
   "taghere": {

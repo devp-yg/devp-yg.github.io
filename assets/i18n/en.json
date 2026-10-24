@@ -515,6 +515,11 @@
       "description": "Explore how Codex CLI reads project files and writes code in a shared office or a tower with a floor for each project. Start with sample data.",
       "imageAlt": "MyAIOffice app icon",
       "shortName": "MyAIOffice"
+    },
+    "citybus": {
+      "name": "CityBus",
+      "shortName": "CityBus",
+      "description": "Check local bus arrivals, routes, transfers, and travel information. Explore the CityBus series and choose the app for your city."
     }
   },
   "taghere": {

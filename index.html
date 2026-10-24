@@ -37,8 +37,7 @@ scripts:
                 <div class="hero-glow" aria-hidden="true"></div>
                 <div class="app-orbit" aria-hidden="true"></div>
                 <div class="app-cloud-stage" data-cloud-stage>
-                    {% for record in home_ranked_products %}
-                        {% assign product_id = record | split: "|" | last %}
+                    {% for product_id in home_product_ids %}
                         {% assign product = site.data.apps | where: "id", product_id | first %}
                         {% include home-product.html product=product variant="orbit" %}
                     {% endfor %}

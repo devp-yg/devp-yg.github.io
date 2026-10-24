@@ -1,4 +1,7 @@
 {%- assign product = include.product -%}
+{%- if product.series and site.data.app_series[product.series] -%}
+    {%- assign product = site.data.app_series[product.series] -%}
+{%- endif -%}
 {%- assign product_category = site.data.app_categories | where: "id", product.category | first -%}
 {%- assign product_url = product.intro_url | default: product.store_url | default: product.project_url | default: "/portfolio/" -%}
 {%- assign product_external = false -%}
@@ -24,7 +27,7 @@
             <h3 data-i18n="apps.{{ product.id }}.shortName">{{ product.short_name | default: product.name }}</h3>
             <p class="home-feature-description" data-i18n="apps.{{ product.id }}.description">{{ product.description }}</p>
             <div class="home-feature-bottom">
-                {% if product.review_status == "pending" %}<span class="home-feature-status" data-i18n="common.reviewPending">App Store 심사 중</span>{% else %}<span data-i18n="common.viewMore">자세히 보기</span>{% endif %}
+                {% if product.review_status == "pending" %}<span class="home-feature-status" data-i18n="common.reviewPending">App Store 심사 중</span>{% elsif product.series and site.data.app_series[product.series] %}<span data-i18n="common.viewSeries">시리즈 보기</span>{% else %}<span data-i18n="common.viewMore">자세히 보기</span>{% endif %}
                 <span aria-hidden="true">↗</span>
             </div>
         </div>

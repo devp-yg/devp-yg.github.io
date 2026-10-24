@@ -1,2 +1,2 @@
-# Number of recent product cards. The interactive cloud shows all visible products.
+# Recent cards use date order; the cloud shows every product/series, shuffled per visit.
 product_limit: 6

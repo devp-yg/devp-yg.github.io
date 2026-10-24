@@ -102,7 +102,7 @@
 .app-cloud-stage:not(.is-interactive) .floating-icon:hover, .floating-icon.is-active, .floating-icon:focus-visible { background: #223e54; border-color: #8ff5df; box-shadow: 0 22px 40px rgba(0, 0, 0, 0.35), 0 0 30px rgba(94, 234, 212, 0.15); z-index: 5; }
 .floating-icon.is-active .floating-icon-name, .app-cloud-stage:not(.is-interactive) .floating-icon:hover .floating-icon-name, .floating-icon:focus-visible .floating-icon-name { opacity: 1; transform: translate(-50%, 0); }
 .app-cloud-stage.is-interactive { display: block; padding: 0; }
-.is-interactive .floating-icon { left: 0; position: absolute; top: 0; transition: transform 340ms cubic-bezier(0.2, 0.8, 0.2, 1), background 180ms ease, border-color 180ms ease; will-change: transform; }
+.is-interactive .floating-icon { left: 0; position: absolute; top: 0; transition: background 180ms ease, border-color 180ms ease; will-change: transform; }
 .app-cloud-caption { align-items: center; bottom: 4px; display: flex; flex-direction: column; gap: 5px; left: 0; pointer-events: none; position: absolute; right: 0; text-align: center; }
 .app-cloud-brand { color: #8295af; font: 700 0.62rem/1.4 var(--font-readable); letter-spacing: 0.18em; }
 .app-cloud-caption strong { color: #edf7ff; font-size: 1.25rem; letter-spacing: -0.05em; }

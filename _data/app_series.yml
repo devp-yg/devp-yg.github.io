@@ -1,0 +1,11 @@
+# Series metadata used by home cards and the icon cloud.
+citybus:
+  id: citybus
+  series: citybus
+  name: 시티버스
+  short_name: 시티버스
+  platform: ios
+  category: public-transit
+  intro_url: /citybus/
+  image: /assets/images/apps/citybus/icon.svg
+  description: 내 도시의 버스 도착정보와 노선, 환승과 여행 정보를 확인하세요. 시티버스 소개 페이지에서 도시별 앱을 선택할 수 있습니다.
