@@ -25,12 +25,12 @@
   },
   "pages": {
     "home": {
-      "title": "Devp-YG | Apps & Projects",
-      "description": "일상과 개발을 더 편리하게 만드는 Devp-YG의 앱과 프로젝트를 소개합니다."
+      "title": "Devp-YG | Apps",
+      "description": "일상과 개발을 더 편리하게 만드는 Devp-YG의 앱을 소개합니다."
     },
     "portfolio": {
-      "title": "앱과 프로젝트 | Devp-YG",
-      "description": "Devp-YG가 개발한 앱과 로컬 데스크톱 프로젝트를 소개합니다."
+      "title": "앱 | Devp-YG",
+      "description": "Devp-YG가 개발한 모바일·데스크톱 앱을 소개합니다."
     },
     "blog": {
       "title": "Blog | Devp-YG",
@@ -42,7 +42,7 @@
     },
     "history": {
       "title": "출시 기록 | Devp-YG",
-      "description": "앱 출시, 개발 프로젝트 공개, App Store 심사 기록을 확인하세요."
+      "description": "앱 출시·공개와 App Store 심사 기록을 확인하세요."
     },
     "contact": {
       "title": "Contact | Devp-YG",
@@ -98,17 +98,17 @@
     },
     "myaioffice": {
       "title": "MyAIOffice | Codex의 작은 사무실",
-      "description": "Codex CLI가 프로젝트에서 일하는 모습을 공용 오피스와 층별 타워 오피스로 둘러보는 로컬 데스크톱 도구입니다."
+      "description": "Codex CLI가 프로젝트에서 일하는 모습을 공용 오피스와 층별 타워 오피스로 둘러보는 데스크톱 앱입니다."
     }
   },
   "header": {
     "home": "홈",
-    "portfolio": "앱·프로젝트",
-    "exploreApps": "앱·프로젝트 둘러보기",
-    "appsHeading": "앱과 프로젝트",
+    "portfolio": "앱",
+    "exploreApps": "앱 둘러보기",
+    "appsHeading": "앱",
     "appsDescription": "필요한 목적에 맞춰 살펴보세요.",
-    "allApps": "앱·프로젝트 전체 보기",
-    "allAppsDescription": "모든 제품을 한곳에서 살펴보세요.",
+    "allApps": "앱 전체 보기",
+    "allAppsDescription": "모든 앱을 한곳에서 살펴보세요.",
     "movlogDescription": "이동과 방문을 자동으로 기록하는 라이프로그",
     "citybusDescription": "도시별 버스와 환승·여행 정보를 한곳에",
     "taghere": "공간기록",
@@ -126,11 +126,11 @@
     "fareflow": "냥미터",
     "fareflowDescription": "GPS 기반 거리·시간·요금 계산",
     "myaioffice": "MyAIOffice",
-    "myaiofficeDescription": "Codex CLI 작업을 오피스처럼 둘러보는 로컬 도구"
+    "myaiofficeDescription": "Codex CLI 작업을 오피스처럼 둘러보는 데스크톱 앱"
   },
   "footer": {
-    "description": "일상과 개발 작업을 돕는<br>앱과 로컬 도구를 만듭니다.",
-    "products": "Products",
+    "description": "일상과 개발 작업을 돕는<br>앱을 만듭니다.",
+    "products": "앱",
     "support": "Support",
     "designed": "Designed & built in Korea."
   },
@@ -141,13 +141,13 @@
   "home": {
     "heroEyebrow": "Independent Software Studio",
     "heroTitle": "일상도, 개발도.<br><em>더 편리하게.</em>",
-    "heroLead": "이동과 기록, 문서와 번역, 개발 도구까지. 필요한 순간에 도움이 되는 앱과 프로젝트를 만듭니다.",
-    "exploreApps": "새로운 제품 보기",
+    "heroLead": "이동과 기록, 문서와 번역, 개발 도구까지. 필요한 순간에 도움이 되는 앱을 만듭니다.",
+    "exploreApps": "새로운 앱 보기",
     "myaiofficeEyebrow": "CODEX를 위한 작은 오피스",
     "myaiofficeTitle": "코덱스가 일하는 모습을<br><em>사무실 구경하듯.</em>",
     "myaiofficeLead": "코덱스 CLI가 프로젝트를 읽고 코드를 만드는 흐름을 공용 오피스와 타워 오피스에서 둘러보세요. 예시 데이터로 먼저 체험할 수 있어요.",
     "myaiofficeAction": "MyAIOffice 구경하기",
-    "myaiofficeGithub": "GitHub 프로젝트",
+    "myaiofficeGithub": "GitHub 저장소",
     "myaiofficePoint1": "공용 오피스와 타워 오피스",
     "myaiofficePoint2": "시간에 따라 바뀌는 낮과 밤",
     "myaiofficePoint3": "DEMO 모드로 가볍게 시작",
@@ -158,8 +158,8 @@
     "apps": "iOS Apps",
     "cities": "Cities",
     "builtNative": "Built native",
-    "visualLabel": "Devp-YG의 앱과 프로젝트 모음",
-    "appCloudLabel": "앱과 프로젝트",
+    "visualLabel": "Devp-YG의 앱 모음",
+    "appCloudLabel": "앱",
     "transitLabel": "대중교통",
     "readingLabel": "문서 읽기",
     "translationLabel": "실시간 번역",
@@ -169,7 +169,7 @@
     "busanAlt": "부산버스 앱 아이콘",
     "featuredApp": "Featured app",
     "movlogIntro": "무블로그 소개 보기",
-    "selectedProducts": "Selected products",
+    "selectedProducts": "Selected apps",
     "featuredTitle": "필요한 순간에<br>바로 쓸 수 있는 앱",
     "featuredLead": "이동과 장소 기록, 대중교통, 문서 읽기와 실시간 번역처럼 앱마다 다른 필요에 맞춰 소개합니다.",
     "movlogDescription": "이동 경로와 머문 장소를 자동으로 기록하고, 평범한 하루를 나만의 이야기로 남겨보세요.",
@@ -193,26 +193,26 @@
     "sendEmail": "이메일 보내기",
     "rtvideoDescription": "실시간 자막 번역 앱입니다. 다른 앱에서 재생 중인 음성을 원하는 언어의 자막으로 읽어보세요.",
     "rtvideoScreenAlt": "보이는말 실시간 자막 번역 화면",
-    "totalProducts": "Apps & projects",
+    "totalProducts": "앱",
     "recentEyebrow": "NEW & NOTEWORTHY",
-    "recentTitle": "새롭게 만나는<br><em>앱과 프로젝트.</em>",
-    "recentLead": "최근 공개·출시한 제품과 출시를 준비 중인 앱을 살펴보세요.",
-    "allProducts": "모든 앱·프로젝트 보기",
+    "recentTitle": "새롭게 만나는<br><em>앱.</em>",
+    "recentLead": "최근 공개·출시한 앱과 출시를 준비 중인 앱을 살펴보세요.",
+    "allProducts": "모든 앱 보기",
     "categoriesEyebrow": "FIND YOUR NEXT TOOL",
     "categoriesTitle": "지금 필요한 것은<br><em>무엇인가요?</em>",
     "categoriesLead": "일상에 쓰는 앱부터 개발을 돕는 도구까지, 사용 목적에 맞춰 둘러보세요.",
-    "catalogCount": "전체 {count}개 앱·프로젝트 둘러보기",
+    "catalogCount": "전체 {count}개 앱 둘러보기",
     "cloudHint": "아이콘을 선택해 둘러보세요"
   },
   "portfolio": {
-    "eyebrow": "Devp-YG Apps & Projects · {count}개",
-    "title": "필요에서 시작된<br><em>앱과 도구.</em>",
-    "lead": "이동과 장소를 기록하고, 음성을 번역하고, 문서를 읽는 앱부터 Codex CLI를 오피스처럼 보여주는 로컬 도구까지 만듭니다.",
-    "ariaLabel": "앱과 개발 프로젝트",
-    "categoryNavLabel": "제품 분류 바로가기",
+    "eyebrow": "Devp-YG Apps · {count}개",
+    "title": "필요에서 시작된<br><em>앱.</em>",
+    "lead": "이동과 장소를 기록하고, 음성을 번역하고, 문서를 읽는 앱부터 Codex CLI를 오피스처럼 보여주는 데스크톱 앱까지 만듭니다.",
+    "ariaLabel": "앱",
+    "categoryNavLabel": "앱 분류 바로가기",
     "categoryNavTitle": "분류별로 살펴보기",
     "categoryKicker": "App category",
-    "categoryCount": "{count}개 제품",
+    "categoryCount": "{count}개 앱",
     "categories": {
       "mobility": {
         "label": "이동과 장소 기록",
@@ -236,7 +236,7 @@
       },
       "developer-tools": {
         "label": "개발 도구",
-        "description": "개발 작업을 시작하고 진행 상황을 살펴볼 수 있는 로컬 도구입니다."
+        "description": "개발 작업을 시작하고 진행 상황을 살펴볼 수 있는 앱입니다."
       }
     }
   },
@@ -251,12 +251,12 @@
     "rights": "All rights reserved."
   },
   "history": {
-    "eyebrow": "출시와 공개 기록 · {count}개 제품",
-    "title": "앱과 프로젝트가 쌓아온<br><em>작은 변화.</em>",
-    "description": "앱의 App Store 출시와 개발 프로젝트의 공개 시점을 함께 기록했습니다. 심사 중인 앱도 확인해보세요.",
-    "kicker": "Release & project history",
-    "heading": "앱 출시와 프로젝트 공개 타임라인",
-    "basis": "출시일 · 프로젝트 공개일 · 심사 접수일 기준",
+    "eyebrow": "출시와 공개 기록 · {count}개 앱",
+    "title": "앱이 쌓아온<br><em>작은 변화.</em>",
+    "description": "앱의 출시·공개 시점과 App Store 심사 기록을 함께 기록했습니다. 심사 중인 앱도 확인해보세요.",
+    "kicker": "App release history",
+    "heading": "앱 출시·공개 타임라인",
+    "basis": "출시일 · 공개일 · 심사 접수일 기준",
     "sortLabel": "정렬 방식",
     "latest": "최신순",
     "oldest": "오래된순",
@@ -269,7 +269,7 @@
     "pendingKicker": "출시 준비 중",
     "pendingTitle": "App Store 심사 중",
     "pendingDescription": "App Store 심사 중인 앱과 플랫폼 버전을 소개합니다.",
-    "developerProject": "개발 프로젝트 공개"
+    "desktopApp": "데스크톱 앱"
   },
   "contact": {
     "title": "문의하기",
@@ -277,7 +277,7 @@
   },
   "legacy": {
     "title": "이전 샘플 페이지입니다.",
-    "description": "현재 운영 중인 앱은 모든 앱 페이지에서 확인할 수 있습니다.",
+    "description": "현재 공개된 앱은 전체 목록에서 확인할 수 있습니다.",
     "viewPortfolio": "모든 앱 보기"
   },
   "citybus": {
@@ -326,7 +326,7 @@
     "downloadApp": "App Store에서 다운로드",
     "finalTitle": "더 편한 이동을 시작해 보세요",
     "finalDescription": "시티버스는 도시마다 필요한 교통 정보를 차곡차곡 만들어가고 있습니다.",
-    "allApps": "전체 앱 보기",
+    "allApps": "앱 전체 보기",
     "appStoreLabel": "App Store 페이지",
     "locationKicker": "02 · 위치 확인하기",
     "locationTitle": "버스가 지금 어디에 있는지 봐요",
@@ -440,7 +440,7 @@
     "finalKicker": "TRACE YOUR PATH, TELL YOUR STORY",
     "finalTitle": "오늘의 이동부터<br><em>나만의 이야기를 시작해요.</em>",
     "finalDescription": "무블로그는 App Store에서 무료로 다운로드할 수 있습니다.",
-    "allApps": "전체 앱 보기"
+    "allApps": "앱 전체 보기"
   },
   "apps": {
     "snapqr": {
@@ -960,11 +960,11 @@
     "finalTitle": "다음 이동에는<br><em>냥미터와 함께.</em>"
   },
   "myaioffice": {
-    "back": "← 앱과 프로젝트",
+    "back": "← 앱",
     "eyebrow": "CODEX CLI, BUT MAKE IT COZY",
     "title": "코덱스의 하루,<br><em>오피스에서 구경해요.</em>",
     "lead": "Codex CLI는 컴퓨터의 프로젝트 파일을 살펴보고, 코드를 고치고, 명령을 실행하는 AI 개발 도구예요. MyAIOffice는 그 작업을 캐릭터와 방이 있는 3D 오피스로 보여줍니다. 낯선 터미널 화면 대신, 팀이 어디서 무엇을 하는지 편하게 둘러보세요.",
-    "github": "GitHub에서 프로젝트 보기",
+    "github": "GitHub 저장소 보기",
     "platform": "macOS · Windows · 내 컴퓨터에서 실행",
     "fact1": "작업 세션 → 친구들",
     "fact2": "프로젝트 → 방 또는 층",
@@ -1015,11 +1015,11 @@
     "friendly3Body": "무엇을 하고 있는지 상태만 보여줘요. 프롬프트나 대화 내용은 사무실에 표시하지 않습니다.",
     "localEyebrow": "YOUR WORKSPACE, YOUR COMPUTER",
     "localTitle": "내 컴퓨터 안에서<br /><em>가볍게 열어보는 오피스</em>",
-    "localBody": "MyAIOffice는 내 컴퓨터에서 실행되는 로컬 도구예요. Codex 프로젝트와 작업 세션 상태를 읽어 사무실 풍경으로 바꾸고, 대화 내용은 화면에 보여주지 않아요. 처음이라면 예시 둘러보기로 시작하고, 준비되면 공식 저장소의 설치 안내를 따라 연결해 보세요.",
+    "localBody": "MyAIOffice는 내 컴퓨터에서 실행되는 앱이에요. Codex 프로젝트와 작업 세션 상태를 읽어 사무실 풍경으로 바꾸고, 대화 내용은 화면에 보여주지 않아요. 처음이라면 예시 둘러보기로 시작하고, 준비되면 공식 저장소의 설치 안내를 따라 연결해 보세요.",
     "install": "README에서 시작 방법 보기",
     "finalEyebrow": "YOUR CODE. YOUR TEAM. YOUR LITTLE OFFICE.",
     "finalTitle": "오늘은 무슨 일이 있었는지,<br /><em>오피스에 놀러 와서 볼까요?</em>",
-    "finalAction": "MyAIOffice 프로젝트 보기",
-    "allProjects": "다른 프로젝트도 보기"
+    "finalAction": "MyAIOffice GitHub 보기",
+    "allProjects": "다른 앱도 보기"
   }
 }

@@ -20,12 +20,12 @@
                         </summary>
                         <div class="nav-products-panel">
                             <div class="nav-products-heading">
-                                <span data-i18n="header.appsHeading">앱과 프로젝트</span>
+                                <span data-i18n="header.appsHeading">앱</span>
                                 <small data-i18n="header.appsDescription">필요한 목적에 맞춰 살펴보세요</small>
                             </div>
                             <a class="nav-products-all" href="{{ '/portfolio/' | relative_url }}">
                                 <span aria-hidden="true" class="nav-product-mark nav-product-mark-all"><i></i><i></i><i></i></span>
-                                <span class="nav-product-copy"><strong data-i18n="header.allApps">앱·프로젝트 전체 보기</strong><small data-i18n="header.allAppsDescription">모든 제품을 한곳에서 살펴보세요.</small></span>
+                                <span class="nav-product-copy"><strong data-i18n="header.allApps">앱 전체 보기</strong><small data-i18n="header.allAppsDescription">모든 앱을 한곳에서 살펴보세요.</small></span>
                                 <span aria-hidden="true" class="nav-product-arrow">↗</span>
                             </a>
                             <ul class="nav-products-list">
@@ -36,7 +36,7 @@
                                         <li>
                                             <a href="{{ '/portfolio/' | relative_url }}#app-category-{{ category.id }}">
                                                 <span aria-hidden="true" class="nav-product-mark"><img src="{{ category_icon.image | relative_url }}" alt="" /></span>
-                                                <span class="nav-product-copy"><strong data-i18n="portfolio.categories.{{ category.id }}.label">{{ category.label }}</strong><small data-i18n="portfolio.categoryCount" data-i18n-count="{{ category_apps.size }}">{{ category_apps.size }}개 제품</small></span>
+                                                <span class="nav-product-copy"><strong data-i18n="portfolio.categories.{{ category.id }}.label">{{ category.label }}</strong><small data-i18n="portfolio.categoryCount" data-i18n-count="{{ category_apps.size }}">{{ category_apps.size }}개 앱</small></span>
                                             </a>
                                         </li>
                                     {% endif %}

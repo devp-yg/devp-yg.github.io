@@ -1,8 +1,8 @@
 # Site settings
-title: Devp-YG | Apps & Projects
+title: Devp-YG | Apps
 email: devp.yg@gmail.com
 description: >-
-  Devp-YG builds practical apps and projects for everyday life and development.
+  Devp-YG builds practical apps for everyday life and development.
 lang: ko
 timezone: Asia/Seoul
 baseurl: ""

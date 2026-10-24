@@ -3,7 +3,7 @@ layout: default
 lang: ko
 i18n_key: history
 title: 출시 기록 | Devp-YG
-description: Devp-YG 앱의 출시와 개발 프로젝트 공개, 플랫폼별 App Store 심사 기록을 소개합니다.
+description: Devp-YG 앱의 출시·공개, 플랫폼별 App Store 심사 기록을 소개합니다.
 permalink: /history/
 styles:
   - /assets/css/pages/history.css
@@ -23,16 +23,16 @@ scripts:
     {% assign release_dates = ios_release_dates | concat: macos_release_dates | concat: project_release_dates | compact | uniq | sort | reverse %}
 
     <header class="history-hero site-shell">
-        <p class="history-eyebrow" data-i18n="history.eyebrow" data-i18n-count="{{ all_apps | size }}">The timeline · {{ all_apps | size }} products</p>
-        <h1 data-i18n-html="history.title">필요에서 시작된<br /><em>앱의 시간.</em></h1>
-        <p data-i18n="history.description">앱이 처음 출시된 시점과 현재 App Store 심사 중인 앱을 함께 기록했습니다. 작은 아이디어가 제품이 되어온 흐름을 만나보세요.</p>
+        <p class="history-eyebrow" data-i18n="history.eyebrow" data-i18n-count="{{ all_apps | size }}">출시와 공개 기록 · {{ all_apps | size }}개 앱</p>
+        <h1 data-i18n-html="history.title">앱이 쌓아온<br /><em>작은 변화.</em></h1>
+        <p data-i18n="history.description">앱의 출시·공개 시점과 App Store 심사 기록을 함께 기록했습니다. 심사 중인 앱도 확인해보세요.</p>
     </header>
 
     <section class="site-shell history-content" aria-labelledby="history-title">
         <div class="history-intro">
             <div>
-                <p class="history-kicker" data-i18n="history.kicker">Release history</p>
-                <h2 id="history-title" data-i18n="history.heading">앱 출시 타임라인</h2>
+                <p class="history-kicker" data-i18n="history.kicker">App release history</p>
+                <h2 id="history-title" data-i18n="history.heading">앱 출시·공개 타임라인</h2>
             </div>
             <div class="history-tools">
                 <p class="history-basis" data-i18n="history.basis">출시일 · 공개일 · 심사 접수일 기준</p>
@@ -86,7 +86,7 @@ scripts:
                 {% endfor %}
                 {% for app in all_apps %}
                     {% if app.published_at == event_date %}
-                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date show_full_date=true is_pending=false platform='project' platform_label='developerProject' platform_name='개발 프로젝트' project_url=app.project_url %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date show_full_date=true is_pending=false platform='desktop' platform_label='desktopApp' platform_name='데스크톱 앱' project_url=app.project_url %}
                         {% assign previous_event_date = event_date %}
                     {% endif %}
                 {% endfor %}

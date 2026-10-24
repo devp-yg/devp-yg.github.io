@@ -25,12 +25,12 @@
   },
   "pages": {
     "home": {
-      "title": "Devp-YG | Apps & Projects",
-      "description": "Explore Devp-YG apps and projects for everyday life and development."
+      "title": "Devp-YG | Apps",
+      "description": "Explore Devp-YG apps for everyday life and development."
     },
     "portfolio": {
-      "title": "Apps & Projects | Devp-YG",
-      "description": "Explore apps and local desktop projects built by Devp-YG."
+      "title": "Apps | Devp-YG",
+      "description": "Explore mobile and desktop apps built by Devp-YG."
     },
     "blog": {
       "title": "Blog | Devp-YG",
@@ -50,7 +50,7 @@
     },
     "history": {
       "title": "Release history | Devp-YG",
-      "description": "Explore app releases, public developer projects, and App Store review updates."
+      "description": "Explore app releases, public launches, and App Store review updates."
     },
     "citybus": {
       "title": "CityBus | City bus apps",
@@ -98,17 +98,17 @@
     },
     "myaioffice": {
       "title": "MyAIOffice | Codex’s Little Office",
-      "description": "Explore Codex CLI work in a shared office or a project-by-floor tower with this local desktop tool."
+      "description": "Explore Codex CLI work in a shared office or a project-by-floor tower with this desktop app."
     }
   },
   "header": {
     "home": "Home",
-    "portfolio": "Apps & Projects",
-    "exploreApps": "Apps & projects",
-    "appsHeading": "Apps & projects",
+    "portfolio": "Apps",
+    "exploreApps": "Explore apps",
+    "appsHeading": "Apps",
     "appsDescription": "Browse by what you need.",
-    "allApps": "View all apps & projects",
-    "allAppsDescription": "Explore every product in one place.",
+    "allApps": "View all apps",
+    "allAppsDescription": "Explore every app in one place.",
     "movlogDescription": "A life log that records movement and visits",
     "citybusDescription": "Bus, transfer, and travel information by city",
     "taghere": "TagHere",
@@ -126,11 +126,11 @@
     "fareflow": "FareFlow",
     "fareflowDescription": "GPS distance, time, and fare meter",
     "myaioffice": "MyAIOffice",
-    "myaiofficeDescription": "A local office view of Codex CLI work"
+    "myaiofficeDescription": "A desktop app with an office view of Codex CLI work"
   },
   "footer": {
-    "description": "Apps and local tools for<br>everyday life and developer workflows.",
-    "products": "Products",
+    "description": "Apps for<br>everyday life and developer workflows.",
+    "products": "Apps",
     "support": "Support",
     "designed": "Designed & built in Korea."
   },
@@ -141,13 +141,13 @@
   "home": {
     "heroEyebrow": "Independent Software Studio",
     "heroTitle": "Everyday life.<br>Developer life.<br><em>Made easier.</em>",
-    "heroLead": "From movement and memories to documents, translation, and developer tools. Discover apps and projects that help when you need them.",
-    "exploreApps": "Explore what’s new",
+    "heroLead": "From movement and memories to documents, translation, and developer tools. Discover apps that help when you need them.",
+    "exploreApps": "Explore new apps",
     "myaiofficeEyebrow": "A LITTLE OFFICE FOR CODEX",
     "myaiofficeTitle": "Watch Codex work<br><em>like a little office tour.</em>",
     "myaiofficeLead": "See how Codex CLI reads a project and writes code in a shared office or a tower office. Start by exploring the sample data.",
     "myaiofficeAction": "Explore MyAIOffice",
-    "myaiofficeGithub": "GitHub project",
+    "myaiofficeGithub": "GitHub repository",
     "myaiofficePoint1": "Shared office and tower office",
     "myaiofficePoint2": "Day and night that follow the time",
     "myaiofficePoint3": "Start with DEMO mode",
@@ -158,8 +158,8 @@
     "apps": "iOS Apps",
     "cities": "Cities",
     "builtNative": "Built native",
-    "visualLabel": "Devp-YG apps and projects",
-    "appCloudLabel": "Apps & projects",
+    "visualLabel": "Devp-YG apps",
+    "appCloudLabel": "Apps",
     "transitLabel": "Public transit",
     "readingLabel": "Reading",
     "translationLabel": "Live translation",
@@ -169,7 +169,7 @@
     "busanAlt": "Busan Bus app icon",
     "featuredApp": "Featured app",
     "movlogIntro": "View Movlog introduction",
-    "selectedProducts": "Selected products",
+    "selectedProducts": "Selected apps",
     "featuredTitle": "Apps ready when<br>you need them",
     "featuredLead": "Explore apps for movement and place logs, public transit, document reading, live translation, and everyday tools.",
     "movlogDescription": "Automatically record routes and places you visit, and turn an ordinary day into your own story.",
@@ -193,26 +193,26 @@
     "sendEmail": "Send an email",
     "rtvideoDescription": "Live translation captions for audio playing in another app. Read along in your preferred language.",
     "rtvideoScreenAlt": "RTVideo live translation captions screen",
-    "totalProducts": "Apps & projects",
+    "totalProducts": "Apps",
     "recentEyebrow": "NEW & NOTEWORTHY",
-    "recentTitle": "Meet your next<br><em>app or tool.</em>",
-    "recentLead": "Explore recent releases, newly shared projects, and apps preparing for launch.",
-    "allProducts": "View all apps & projects",
+    "recentTitle": "Meet your next<br><em>app.</em>",
+    "recentLead": "Explore recently released apps and apps preparing for launch.",
+    "allProducts": "View all apps",
     "categoriesEyebrow": "FIND YOUR NEXT TOOL",
     "categoriesTitle": "What would you<br><em>like to do?</em>",
     "categoriesLead": "Find everyday apps and developer tools by what you want to accomplish.",
-    "catalogCount": "Explore all {count} apps & projects",
+    "catalogCount": "Explore all {count} apps",
     "cloudHint": "Choose an icon to explore"
   },
   "portfolio": {
-    "eyebrow": "Devp-YG Apps & Projects · {count} items",
+    "eyebrow": "Devp-YG Apps · {count} items",
     "title": "Small ideas<br><em>made useful.</em>",
-    "lead": "From apps for movement, translation, and reading to a local tool that turns Codex CLI work into an office tour.",
-    "ariaLabel": "Apps and developer projects",
-    "categoryNavLabel": "Product categories",
+    "lead": "Discover mobile and desktop apps for movement, translation, reading, and viewing Codex CLI work as an office tour.",
+    "ariaLabel": "Apps",
+    "categoryNavLabel": "App categories",
     "categoryNavTitle": "Browse by category",
     "categoryKicker": "App category",
-    "categoryCount": "{count} available",
+    "categoryCount": "{count} apps",
     "categories": {
       "mobility": {
         "label": "Movement & place logs",
@@ -236,7 +236,7 @@
       },
       "developer-tools": {
         "label": "Developer tools",
-        "description": "Local tools that help you get started and follow along with developer workflows."
+        "description": "Apps that help you get started and follow along with developer workflows."
       }
     }
   },
@@ -251,12 +251,12 @@
     "rights": "All rights reserved."
   },
   "history": {
-    "eyebrow": "Releases & projects · {count} products",
+    "eyebrow": "App releases · {count} apps",
     "title": "Small ideas, growing<br><em>one release at a time.</em>",
-    "description": "Follow App Store releases and the public introductions of developer projects, along with apps currently awaiting review.",
-    "kicker": "Release & project history",
-    "heading": "App releases & project launches",
-    "basis": "Release dates · Project publication · Review submissions",
+    "description": "Follow app releases and public launches, along with apps currently awaiting App Store review.",
+    "kicker": "App release history",
+    "heading": "App releases & launches",
+    "basis": "Release dates · Publication dates · Review submissions",
     "sortLabel": "Sort order",
     "latest": "Newest",
     "oldest": "Oldest",
@@ -269,7 +269,7 @@
     "pendingKicker": "Coming soon",
     "pendingTitle": "Awaiting App Store review",
     "pendingDescription": "Apps and platform versions currently awaiting App Store review.",
-    "developerProject": "Public developer project"
+    "desktopApp": "Desktop app"
   },
   "contact": {
     "title": "Contact",
@@ -961,11 +961,11 @@
     "finalTitle": "Take FareFlow<br><em>on your next trip.</em>"
   },
   "myaioffice": {
-    "back": "← Apps & projects",
+    "back": "← Apps",
     "eyebrow": "CODEX CLI, BUT MAKE IT COZY",
     "title": "Codex at work,<br><em>in a cozy little office.</em>",
     "lead": "Codex CLI is an AI development tool that can look through project files on your computer, edit code, and run commands. MyAIOffice turns that work into a 3D office with rooms and little coworkers. Instead of deciphering a terminal, take a friendly look at where the team is and what it is doing.",
-    "github": "Explore the project on GitHub",
+    "github": "View the GitHub repository",
     "platform": "macOS · Windows · Runs on your computer",
     "fact1": "Work sessions → coworkers",
     "fact2": "Projects → rooms or floors",
@@ -1016,11 +1016,11 @@
     "friendly3Body": "MyAIOffice shows activity status only. Prompts and conversation text do not appear in the office.",
     "localEyebrow": "YOUR WORKSPACE, YOUR COMPUTER",
     "localTitle": "An office you can open<br /><em>right on your computer</em>",
-    "localBody": "MyAIOffice is a local tool that runs on your computer. It reads Codex projects and work-session status to create an office view, without showing conversation text. Start with the sample tour, then follow the official repository’s setup guide when you are ready.",
+    "localBody": "MyAIOffice is a desktop app that runs on your computer. It reads Codex projects and work-session status to create an office view, without showing conversation text. Start with the sample tour, then follow the official repository’s setup guide when you are ready.",
     "install": "Read the README to get started",
     "finalEyebrow": "YOUR CODE. YOUR TEAM. YOUR LITTLE OFFICE.",
     "finalTitle": "Curious what happened today?<br /><em>Come visit the office.</em>",
     "finalAction": "Explore MyAIOffice on GitHub",
-    "allProjects": "See other projects"
+    "allProjects": "See other apps"
   }
 }
