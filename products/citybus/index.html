@@ -13,17 +13,29 @@ styles:
 <article id="main" class="citybus-page">
     {% assign citybus_apps = site.data.apps | where: "series", "citybus" | sort: "citybus_order" %}
     <section class="citybus-hero">
-        <div class="eyebrow" data-i18n="citybus.eyebrow">시티버스 시리즈</div>
-        <h1 data-i18n-html="citybus.title">내 도시의 버스를<br />더 쉽게 만나는 방법</h1>
-        <p data-i18n="citybus.description">버스가 언제 오는지, 지금 어디에 있는지 확인하고 주변 관광지까지 살펴보세요. 시티버스는 모든 도시 앱에 도착정보·버스 위치·환승·관광 기능을 함께 담았습니다.</p>
-        <ul class="citybus-common-highlights" aria-label="모든 도시 앱의 공통 기능" data-i18n-aria-label="citybus.commonFeaturesLabel">
-            <li data-i18n="citybus.commonArrival">실시간 도착정보</li>
-            <li data-i18n="citybus.commonLocation">지도 위 버스 위치</li>
-            <li data-i18n="citybus.commonTravel">관광지 정보·길찾기</li>
-        </ul>
-        <div class="citybus-actions">
-            <a href="#citybus-apps" class="button special scrolly" data-i18n="citybus.findApp">내 도시 앱 찾기</a>
-            <a href="{{ '/blog/' | relative_url }}" class="button" data-i18n="citybus.readStory">개발 이야기 보기</a>
+        <div class="citybus-hero-inner">
+            <div class="citybus-hero-copy">
+                <div class="eyebrow" data-i18n="citybus.eyebrow">시티버스 시리즈</div>
+                <h1 data-i18n-html="citybus.title">내 도시의 버스를<br />더 쉽게 만나는 방법</h1>
+                <p data-i18n="citybus.description">버스가 언제 오는지, 지금 어디에 있는지 확인하고 주변 관광지까지 살펴보세요. 시티버스는 모든 도시 앱에 도착정보·버스 위치·환승·관광 기능을 함께 담았습니다.</p>
+                <ul class="citybus-common-highlights" aria-label="모든 도시 앱의 공통 기능" data-i18n-aria-label="citybus.commonFeaturesLabel">
+                    <li data-i18n="citybus.commonArrival">실시간 도착정보</li>
+                    <li data-i18n="citybus.commonLocation">지도 위 버스 위치</li>
+                    <li data-i18n="citybus.commonTravel">관광지 정보·길찾기</li>
+                </ul>
+                <div class="citybus-actions">
+                    <a href="#citybus-apps" class="button special scrolly" data-i18n="citybus.findApp">내 도시 앱 찾기</a>
+                    <a href="{{ '/blog/' | relative_url }}" class="button" data-i18n="citybus.readStory">개발 이야기 보기</a>
+                </div>
+            </div>
+            <div class="citybus-hero-visual">
+                <div class="citybus-hero-screens">
+                    <figure class="citybus-hero-screen citybus-hero-screen-arrivals"><img src="{{ '/assets/images/apps/citybus/screenshots/daejeon-arrivals.webp' | relative_url }}" alt="" width="620" height="1342" decoding="async" /></figure>
+                    <figure class="citybus-hero-screen citybus-hero-screen-home"><img src="{{ '/assets/images/apps/citybus/screenshots/daejeon-home.webp' | relative_url }}" alt="시티버스의 첫 앱, 대전버스의 주변 정류장 지도" data-i18n-alt="citybus.heroAlt" width="620" height="1342" fetchpriority="high" /></figure>
+                    <figure class="citybus-hero-screen citybus-hero-screen-tourism"><img src="{{ '/assets/images/apps/citybus/screenshots/yeosu-tourism.webp' | relative_url }}" alt="" width="620" height="1342" decoding="async" /></figure>
+                </div>
+                <p class="citybus-origin" data-i18n="citybus.origin">시티버스의 시작, 대전버스</p>
+            </div>
         </div>
     </section>
 
@@ -33,76 +45,145 @@ styles:
             <p data-i18n="citybus.featuresDescription">도시를 바꿔도 필요한 정보는 익숙하게. 모든 시티버스 앱에서 버스를 찾고, 이동하고, 주변을 둘러보는 공통 기능을 제공합니다.</p>
         </div>
         <div class="citybus-feature-grid">
-            <article class="citybus-feature citybus-feature-wide">
-                <div class="citybus-feature-kicker" data-i18n="citybus.arrivalKicker">01 · 바로 타기</div>
-                <span class="icon fa-clock-o" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.arrivalTitle">버스가 언제 오는지 확인해요</h3>
-                <p data-i18n="citybus.arrivalDescription">주변 정류소나 검색한 정류소에서 버스 도착 예정 정보를 확인합니다. 정류소에 오는 노선을 살펴보고, 원하는 버스를 얼마나 기다려야 할지 미리 알아보세요.</p>
-                <div class="citybus-feature-tags">
-                    <span data-i18n="citybus.arrivalTag1">주변 정류소</span>
-                    <span data-i18n="citybus.arrivalTag2">도착 예정 정보</span>
-                    <span data-i18n="citybus.arrivalTag3">정류소별 노선</span>
+            <article class="citybus-feature">
+                <div class="citybus-feature-copy">
+                    <div class="citybus-feature-kicker" data-i18n="citybus.arrivalKicker">01 · 바로 타기</div>
+                    <h3 data-i18n="citybus.arrivalTitle">버스가 언제 오는지 확인해요</h3>
+                    <p data-i18n="citybus.arrivalDescription">주변 정류소나 검색한 정류소에서 버스 도착 예정 정보를 확인합니다. 정류소에 오는 노선을 살펴보고, 원하는 버스를 얼마나 기다려야 할지 미리 알아보세요.</p>
+                    <div class="citybus-feature-tags">
+                        <span data-i18n="citybus.arrivalTag1">주변 정류소</span>
+                        <span data-i18n="citybus.arrivalTag2">도착 예정 정보</span>
+                        <span data-i18n="citybus.arrivalTag3">정류소별 노선</span>
+                    </div>
                 </div>
-            </article>
-            <article class="citybus-feature citybus-feature-wide">
-                <div class="citybus-feature-kicker" data-i18n="citybus.locationKicker">02 · 위치 확인하기</div>
-                <span class="icon fa-location-arrow" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.locationTitle">버스가 지금 어디에 있는지 봐요</h3>
-                <p data-i18n="citybus.locationDescription">노선을 따라 이동 중인 버스의 현재 위치를 지도에서 확인합니다. 경유 정류소와 운행 방향을 함께 살펴보며 내가 기다리는 버스가 어디쯤 오고 있는지 파악하세요.</p>
-                <div class="citybus-feature-tags">
-                    <span data-i18n="citybus.locationTag1">지도 위 버스 위치</span>
-                    <span data-i18n="citybus.locationTag2">경유 정류소</span>
-                    <span data-i18n="citybus.locationTag3">운행 방향</span>
-                </div>
+                <figure class="citybus-screenshot">
+                    <a class="citybus-screen-link" href="{{ '/assets/images/apps/citybus/screenshots/busan-arrivals.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="화면 크게 보기 (새 탭)" data-i18n-aria-label="citybus.openScreenshot">
+                        <img src="{{ '/assets/images/apps/citybus/screenshots/busan-arrivals.webp' | relative_url }}" alt="부산버스에서 정류장별 버스 도착 예정 정보를 보여주는 화면" data-i18n-alt="citybus.arrivalAlt" width="620" height="1342" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span data-i18n="citybus.arrivalCaption">부산버스 · 정류장 도착정보</span><span class="citybus-expand" aria-hidden="true">↗</span></figcaption>
+                </figure>
             </article>
             <article class="citybus-feature">
-                <div class="citybus-feature-kicker" data-i18n="citybus.routeKicker">03 · 노선 살펴보기</div>
-                <span class="icon fa-map-marker" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.mapTitle">정류소와 노선을 쉽게 찾아요</h3>
-                <p data-i18n="citybus.mapDescription">정류소 이름이나 노선 번호로 검색하고, 버스가 지나는 정류소와 전체 경로를 지도에서 살펴봅니다. 처음 가는 곳에서도 어디서 타고 내려야 할지 확인하세요.</p>
-                <div class="citybus-feature-tags">
-                    <span data-i18n="citybus.routeTag1">노선·정류소 검색</span>
-                    <span data-i18n="citybus.routeTag2">경유 정류소</span>
-                    <span data-i18n="citybus.locationTag3">운행 방향</span>
+                <div class="citybus-feature-copy">
+                    <div class="citybus-feature-kicker" data-i18n="citybus.locationKicker">02 · 위치 확인하기</div>
+                    <h3 data-i18n="citybus.locationTitle">버스가 지금 어디에 있는지 봐요</h3>
+                    <p data-i18n="citybus.locationDescription">노선을 따라 이동 중인 버스의 현재 위치를 지도에서 확인합니다. 경유 정류소와 운행 방향을 함께 살펴보며 내가 기다리는 버스가 어디쯤 오고 있는지 파악하세요.</p>
+                    <div class="citybus-feature-tags">
+                        <span data-i18n="citybus.locationTag1">지도 위 버스 위치</span>
+                        <span data-i18n="citybus.locationTag2">경유 정류소</span>
+                        <span data-i18n="citybus.locationTag3">운행 방향</span>
+                    </div>
                 </div>
+                <figure class="citybus-screenshot">
+                    <a class="citybus-screen-link" href="{{ '/assets/images/apps/citybus/screenshots/gwangju-route.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="화면 크게 보기 (새 탭)" data-i18n-aria-label="citybus.openScreenshot">
+                        <img src="{{ '/assets/images/apps/citybus/screenshots/gwangju-route.webp' | relative_url }}" alt="광주버스에서 경유 정류소와 운행 중인 버스 위치를 보여주는 화면" data-i18n-alt="citybus.locationAlt" width="620" height="1342" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span data-i18n="citybus.locationCaption">광주버스 · 노선별 버스 위치</span><span class="citybus-expand" aria-hidden="true">↗</span></figcaption>
+                </figure>
             </article>
             <article class="citybus-feature">
-                <div class="citybus-feature-kicker" data-i18n="citybus.transferKicker">04 · 갈아타기</div>
-                <span class="icon fa-exchange" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.transferTitle">환승 경로를 확인해요</h3>
-                <p data-i18n="citybus.transferDescription">출발지와 목적지를 정하면 환승 경로와 이동 구간을 지도에서 확인합니다. 어디에서 갈아타야 하는지 살펴보고 목적지까지의 이동을 준비하세요.</p>
-                <div class="citybus-feature-tags">
-                    <span data-i18n="citybus.transferTag1">출발지·목적지</span>
-                    <span data-i18n="citybus.transferTag2">환승 경로</span>
+                <div class="citybus-feature-copy">
+                    <div class="citybus-feature-kicker" data-i18n="citybus.routeKicker">03 · 노선 살펴보기</div>
+                    <h3 data-i18n="citybus.mapTitle">정류소와 노선을 쉽게 찾아요</h3>
+                    <p data-i18n="citybus.mapDescription">정류소 이름이나 노선 번호로 검색하고, 버스가 지나는 정류소와 전체 경로를 지도에서 살펴봅니다. 처음 가는 곳에서도 어디서 타고 내려야 할지 확인하세요.</p>
+                    <div class="citybus-feature-tags">
+                        <span data-i18n="citybus.routeTag1">노선·정류소 검색</span>
+                        <span data-i18n="citybus.routeTag2">경유 정류소</span>
+                        <span data-i18n="citybus.locationTag3">운행 방향</span>
+                    </div>
                 </div>
+                <figure class="citybus-screenshot">
+                    <a class="citybus-screen-link" href="{{ '/assets/images/apps/citybus/screenshots/incheon-routes.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="화면 크게 보기 (새 탭)" data-i18n-aria-label="citybus.openScreenshot">
+                        <img src="{{ '/assets/images/apps/citybus/screenshots/incheon-routes.webp' | relative_url }}" alt="인천버스에서 노선 번호를 검색하고 운행 구간을 살펴보는 화면" data-i18n-alt="citybus.routeAlt" width="620" height="1342" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span data-i18n="citybus.routeCaption">인천버스 · 노선 검색</span><span class="citybus-expand" aria-hidden="true">↗</span></figcaption>
+                </figure>
             </article>
             <article class="citybus-feature">
-                <div class="citybus-feature-kicker" data-i18n="citybus.travelKicker">05 · 도시 알아가기</div>
-                <span class="icon fa-compass" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.travelTitle">주변 관광지와 가는 길을 살펴봐요</h3>
-                <p data-i18n="citybus.travelDescription">도시의 관광지 위치와 상세 정보를 지도에서 살펴보고 길찾기로 이동을 이어갑니다. 익숙한 동네의 새로운 장소부터 여행지의 가볼 만한 곳까지 찾아보세요.</p>
-                <div class="citybus-feature-tags">
-                    <span data-i18n="citybus.travelTag1">관광지 지도</span>
-                    <span data-i18n="citybus.travelTag2">관광지 상세</span>
-                    <span data-i18n="citybus.travelTag3">길찾기</span>
+                <div class="citybus-feature-copy">
+                    <div class="citybus-feature-kicker" data-i18n="citybus.transferKicker">04 · 갈아타기</div>
+                    <h3 data-i18n="citybus.transferTitle">환승 경로를 확인해요</h3>
+                    <p data-i18n="citybus.transferDescription">출발지와 목적지를 정하면 환승 경로와 이동 구간을 지도에서 확인합니다. 어디에서 갈아타야 하는지 살펴보고 목적지까지의 이동을 준비하세요.</p>
+                    <div class="citybus-feature-tags">
+                        <span data-i18n="citybus.transferTag1">출발지·목적지</span>
+                        <span data-i18n="citybus.transferTag2">환승 경로</span>
+                    </div>
                 </div>
+                <figure class="citybus-screenshot">
+                    <a class="citybus-screen-link" href="{{ '/assets/images/apps/citybus/screenshots/yeosu-transfer.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="화면 크게 보기 (새 탭)" data-i18n-aria-label="citybus.openScreenshot">
+                        <img src="{{ '/assets/images/apps/citybus/screenshots/yeosu-transfer.webp' | relative_url }}" alt="여수버스에서 출발지부터 목적지까지 환승 경로를 지도에 표시한 화면" data-i18n-alt="citybus.transferAlt" width="620" height="1342" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span data-i18n="citybus.transferCaption">여수버스 · 환승 경로</span><span class="citybus-expand" aria-hidden="true">↗</span></figcaption>
+                </figure>
             </article>
             <article class="citybus-feature">
-                <div class="citybus-feature-kicker" data-i18n="citybus.personalKicker">06 · 나에게 맞추기</div>
-                <span class="icon fa-star" aria-hidden="true"></span>
-                <h3 data-i18n="citybus.favoriteTitle">자주 쓰는 정보를 모아둬요</h3>
-                <p data-i18n="citybus.favoriteDescription">자주 이용하는 정류소와 노선을 즐겨찾기하고 메모·도착 알림·날씨 등 나의 이동에 필요한 정보를 챙깁니다.</p>
-                <div class="citybus-feature-tags">
-                    <span data-i18n="citybus.personalTag1">즐겨찾기·메모</span>
-                    <span data-i18n="citybus.personalTag2">도착 알림</span>
-                    <span data-i18n="citybus.personalTag3">날씨</span>
+                <div class="citybus-feature-copy">
+                    <div class="citybus-feature-kicker" data-i18n="citybus.travelKicker">05 · 도시 알아가기</div>
+                    <h3 data-i18n="citybus.travelTitle">주변 관광지와 가는 길을 살펴봐요</h3>
+                    <p data-i18n="citybus.travelDescription">도시의 관광지 위치와 상세 정보를 지도에서 살펴보고 길찾기로 이동을 이어갑니다. 익숙한 동네의 새로운 장소부터 여행지의 가볼 만한 곳까지 찾아보세요.</p>
+                    <div class="citybus-feature-tags">
+                        <span data-i18n="citybus.travelTag1">관광지 지도</span>
+                        <span data-i18n="citybus.travelTag2">관광지 상세</span>
+                        <span data-i18n="citybus.travelTag3">길찾기</span>
+                    </div>
                 </div>
+                <figure class="citybus-screenshot">
+                    <a class="citybus-screen-link" href="{{ '/assets/images/apps/citybus/screenshots/yeosu-tourism.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="화면 크게 보기 (새 탭)" data-i18n-aria-label="citybus.openScreenshot">
+                        <img src="{{ '/assets/images/apps/citybus/screenshots/yeosu-tourism.webp' | relative_url }}" alt="여수버스에서 해상케이블카 관광지 정보와 길찾기 버튼을 보여주는 화면" data-i18n-alt="citybus.travelAlt" width="620" height="1342" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span data-i18n="citybus.travelCaption">여수버스 · 관광지와 길찾기</span><span class="citybus-expand" aria-hidden="true">↗</span></figcaption>
+                </figure>
+            </article>
+            <article class="citybus-feature">
+                <div class="citybus-feature-copy">
+                    <div class="citybus-feature-kicker" data-i18n="citybus.personalKicker">06 · 나에게 맞추기</div>
+                    <h3 data-i18n="citybus.favoriteTitle">자주 쓰는 정보를 모아둬요</h3>
+                    <p data-i18n="citybus.favoriteDescription">자주 이용하는 정류소와 노선을 즐겨찾기하고 메모·도착 알림·날씨 등 나의 이동에 필요한 정보를 챙깁니다.</p>
+                    <div class="citybus-feature-tags">
+                        <span data-i18n="citybus.personalTag1">즐겨찾기·메모</span>
+                        <span data-i18n="citybus.personalTag2">도착 알림</span>
+                        <span data-i18n="citybus.personalTag3">날씨</span>
+                    </div>
+                </div>
+                <figure class="citybus-screenshot">
+                    <a class="citybus-screen-link" href="{{ '/assets/images/apps/citybus/screenshots/andong-favorites.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="화면 크게 보기 (새 탭)" data-i18n-aria-label="citybus.openScreenshot">
+                        <img src="{{ '/assets/images/apps/citybus/screenshots/andong-favorites.webp' | relative_url }}" alt="안동버스에서 즐겨찾는 정류장과 노선, 정류장 메모를 모아 보여주는 화면" data-i18n-alt="citybus.personalAlt" width="620" height="1342" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span data-i18n="citybus.personalCaption">안동버스 · 즐겨찾기와 메모</span><span class="citybus-expand" aria-hidden="true">↗</span></figcaption>
+                </figure>
             </article>
         </div>
-        <aside class="citybus-local-features" aria-labelledby="citybus-local-title">
-            <h3 id="citybus-local-title" data-i18n="citybus.localTitle">도시의 특성에 맞춘 정보도 함께</h3>
-            <p data-i18n="citybus.localDescription">공통 기능에 더해, 지원 도시에서는 도시철도 도착·시간표, 저상버스·잔여 좌석·혼잡도, 지역 행사 정보도 확인할 수 있습니다. 아래에서 내 도시의 앱과 제공 정보를 살펴보세요.</p>
-        </aside>
+        <p class="citybus-screenshot-note" data-i18n="citybus.screenshotNote">각 도시 앱의 한국어 화면입니다. 화면을 누르면 크게 볼 수 있으며, 표시 정보와 디자인은 도시·앱 버전에 따라 다를 수 있습니다.</p>
+    </section>
+
+    <section class="citybus-section citybus-local-section" aria-labelledby="citybus-local-title">
+        <div class="citybus-local-inner">
+            <div class="citybus-local-copy">
+                <div class="eyebrow" data-i18n="citybus.localEyebrow">도시별 추가 기능</div>
+                <h2 id="citybus-local-title" data-i18n="citybus.localTitle">도시의 특성에 맞춘 정보도 함께</h2>
+                <h3 data-i18n="citybus.railTitle">도시철도까지 이어서 봐요</h3>
+                <p data-i18n="citybus.railDescription">지원하는 도시에서는 지하철역 위치와 실시간 도착, 상·하행 시간표, 첫차·막차와 역사 정보를 함께 제공합니다.</p>
+                <div class="citybus-feature-tags"><span data-i18n="citybus.railTag1">지하철역 검색</span><span data-i18n="citybus.railTag2">도착·시간표</span></div>
+                <aside class="citybus-local-features">
+                    <h3 data-i18n="citybus.localMoreTitle">내 도시에서 필요한 정보까지</h3>
+                    <p data-i18n="citybus.localMoreDescription">지원 도시에서는 저상버스·잔여 좌석·혼잡도, 지역 행사 정보도 확인할 수 있습니다. 도시별 제공 기능은 아래 앱 소개에서 살펴보세요.</p>
+                </aside>
+            </div>
+            <div class="citybus-local-screens">
+                <figure class="citybus-screenshot">
+                    <a class="citybus-screen-link" href="{{ '/assets/images/apps/citybus/screenshots/daejeon-subway.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="화면 크게 보기 (새 탭)" data-i18n-aria-label="citybus.openScreenshot">
+                        <img src="{{ '/assets/images/apps/citybus/screenshots/daejeon-subway.webp' | relative_url }}" alt="대전버스에서 도시철도 노선과 역 위치를 지도에 표시한 화면" data-i18n-alt="citybus.railMapAlt" width="620" height="1342" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span data-i18n="citybus.railMapCaption">대전버스 · 도시철도 지도</span><span class="citybus-expand" aria-hidden="true">↗</span></figcaption>
+                </figure>
+                <figure class="citybus-screenshot">
+                    <a class="citybus-screen-link" href="{{ '/assets/images/apps/citybus/screenshots/daejeon-station.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="화면 크게 보기 (새 탭)" data-i18n-aria-label="citybus.openScreenshot">
+                        <img src="{{ '/assets/images/apps/citybus/screenshots/daejeon-station.webp' | relative_url }}" alt="대전버스에서 정부청사역의 첫차와 막차, 연락처와 시설 정보를 보여주는 화면" data-i18n-alt="citybus.railStationAlt" width="620" height="1342" loading="lazy" decoding="async" />
+                    </a>
+                    <figcaption><span data-i18n="citybus.railStationCaption">대전버스 · 역 정보와 시간표</span><span class="citybus-expand" aria-hidden="true">↗</span></figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 
     <section id="citybus-apps" class="citybus-section citybus-soft">
