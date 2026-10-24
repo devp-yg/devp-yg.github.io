@@ -54,7 +54,7 @@
     },
     "citybus": {
       "title": "CityBus | City bus apps",
-      "description": "The CityBus app series brings bus, transfers, urban rail, and travel information for Busan, Daejeon, Gwangju, Incheon, Andong, and Yeosu together."
+      "description": "Explore the CityBus series: bus arrivals, live bus locations, stop and route search, transfers, attractions, and directions."
     },
     "movlog": {
       "title": "Movlog | Turn your movement into a story",
@@ -104,10 +104,10 @@
   "header": {
     "home": "Home",
     "portfolio": "Apps & Projects",
-    "exploreApps": "Explore apps & projects",
-    "appsHeading": "Devp-YG Apps & Projects",
+    "exploreApps": "Apps",
+    "appsHeading": "Devp-YG Apps",
     "appsDescription": "Explore apps and developer tools.",
-    "allApps": "All apps & projects",
+    "allApps": "All apps",
     "allAppsDescription": "Explore apps and desktop projects in one place.",
     "movlogDescription": "A life log that records movement and visits",
     "citybusDescription": "Bus, transfer, and travel information by city",
@@ -174,7 +174,7 @@
     "featuredLead": "Explore apps for movement and place logs, public transit, document reading, live translation, and everyday tools.",
     "movlogDescription": "Automatically record routes and places you visit, and turn an ordinary day into your own story.",
     "movlogInsightsAlt": "Movlog insights screen",
-    "citybusDescription": "Check bus arrivals plus transfers, urban rail, and travel information across six cities.",
+    "citybusDescription": "From live arrivals and bus locations on the map to stop and route search, transfers, attractions, and directions. Plan your daily commute or explore a new city with CityBus.",
     "arrivalPreviewLabel": "Live arrival information",
     "arrivalPreviewMinutes": "min to arrival",
     "taghereScreenAlt": "TagHere saved places list",
@@ -220,7 +220,7 @@
       },
       "public-transit": {
         "label": "Public transit",
-        "description": "CityBus apps for quickly checking local arrivals and routes, plus transfers, attraction maps, weather, and city transit information."
+        "description": "CityBus apps for bus arrivals and locations on the map, stop and route search, transfers, attraction information, and directions."
       },
       "everyday-tools": {
         "label": "Everyday tools",
@@ -283,26 +283,26 @@
   "citybus": {
     "eyebrow": "CityBus Series",
     "title": "A simpler way to<br>meet your city’s buses",
-    "description": "From finding a bus to transferring and exploring a city, CityBus brings the transit information each city needs into one place.",
+    "description": "Check when your bus will arrive, see where it is now, and explore nearby attractions. Every CityBus app includes arrival information, bus locations, transfers, and tourism features.",
     "findApp": "Find your city app",
     "readStory": "Read the development story",
-    "featuresTitle": "Information for every part of the journey",
-    "featuresDescription": "CityBus features follow the way people move through a city, rather than sitting in a flat list. Availability varies by city.",
+    "featuresTitle": "Familiar features in every city",
+    "featuresDescription": "Change cities and keep the tools you know. Every CityBus app helps you find a bus, plan your journey, and explore the places around you.",
     "arrivalKicker": "01 · Catch a bus",
-    "arrivalTitle": "Find the bus you can take now",
-    "arrivalDescription": "See nearby stops, arrival estimates, service status, and the live location of buses in one place.",
+    "arrivalTitle": "Know when your bus is coming",
+    "arrivalDescription": "Check expected arrivals at nearby stops or a stop you search for. See which routes serve the stop and find out how long you need to wait for your bus.",
     "arrivalTag1": "Nearby stops",
-    "arrivalTag2": "Arrival estimates",
-    "arrivalTag3": "Bus locations",
-    "routeKicker": "02 · Plan ahead",
-    "mapTitle": "See the whole route",
-    "mapDescription": "Search stops and routes, then follow stops along the way, direction, first and last buses, and service intervals on the map.",
+    "arrivalTag2": "Expected arrivals",
+    "arrivalTag3": "Routes at each stop",
+    "routeKicker": "03 · Explore routes",
+    "mapTitle": "Find stops and routes easily",
+    "mapDescription": "Search by stop name or route number, then explore the stops and complete route on the map. Find where to board and get off, even on your first visit.",
     "routeTag1": "Stop & route search",
     "routeTag2": "Stops along the way",
     "routeTag3": "First & last buses",
-    "transferKicker": "03 · Transfer",
+    "transferKicker": "04 · Make a connection",
     "transferTitle": "Check a transfer route",
-    "transferDescription": "Every CityBus app lets you choose a start and destination to see transfer points and walking segments on the map.",
+    "transferDescription": "Set your start and destination to see transfer routes and journey segments on the map. Find where to change buses and prepare for the journey ahead.",
     "transferTag1": "Start & destination",
     "transferTag2": "Transfer route",
     "railKicker": "04 · Connect modes",
@@ -311,10 +311,10 @@
     "railTag1": "Station search",
     "railTag2": "Arrivals & timetables",
     "travelKicker": "05 · Explore the city",
-    "travelTitle": "Let transit lead to travel",
-    "travelDescription": "Every CityBus app includes attraction locations, details, and directions on the map, along with city-specific events and tourism content.",
-    "travelTag1": "Attractions",
-    "travelTag2": "Events",
+    "travelTitle": "Explore attractions and how to get there",
+    "travelDescription": "Find attractions on the map, read their details, and continue with directions. Discover somewhere new in your neighbourhood or places to visit on a trip.",
+    "travelTag1": "Attraction maps",
+    "travelTag2": "Attraction details",
     "travelTag3": "Directions",
     "personalKicker": "06 · Make it yours",
     "favoriteTitle": "Keep the information you use most",
@@ -323,12 +323,24 @@
     "personalTag2": "Arrival alerts",
     "personalTag3": "Weather",
     "citiesTitle": "Choose your city",
-    "citiesDescription": "Every app includes essential bus information plus transfers, an attraction map, and weather, with city-specific additions such as urban rail, seat information, and events.",
+    "citiesDescription": "Every city app includes arrivals, bus locations, stop and route search, transfers, attraction information, and directions. Explore the additional features for each city and choose your app.",
     "downloadApp": "Download on the App Store",
     "finalTitle": "Start moving around<br>your city more easily",
     "finalDescription": "CityBus keeps building the transit information each city needs, one step at a time.",
     "allApps": "View all apps",
-    "appStoreLabel": "App Store page"
+    "appStoreLabel": "App Store page",
+    "locationKicker": "02 · Locate your bus",
+    "locationTitle": "See where your bus is now",
+    "locationDescription": "Follow buses along their routes on the map. Check the stops and direction of travel to see where the bus you are waiting for is now.",
+    "locationTag1": "Bus locations on the map",
+    "locationTag2": "Stops along the route",
+    "locationTag3": "Direction of travel",
+    "localTitle": "More information for each city",
+    "localDescription": "In supported cities, you can also check urban rail arrivals and timetables, low-floor buses, available seats, crowding, and local events. Explore your city’s app and its features below.",
+    "commonFeaturesLabel": "Features shared by every city app",
+    "commonArrival": "Live arrivals",
+    "commonLocation": "Bus locations on the map",
+    "commonTravel": "Attractions & directions"
   },
   "movlog": {
     "eyebrow": "Movlog · Daily Movement Journal",
@@ -519,7 +531,7 @@
     "citybus": {
       "name": "CityBus",
       "shortName": "CityBus",
-      "description": "Check local bus arrivals, routes, transfers, and travel information. Explore the CityBus series and choose the app for your city."
+      "description": "From live arrivals and bus locations on the map to stop and route search, transfers, attractions, and directions. Plan your daily commute or explore a new city with CityBus."
     }
   },
   "taghere": {

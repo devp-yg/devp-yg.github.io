@@ -20,17 +20,15 @@
                         </summary>
                         <div class="nav-products-panel">
                             <div class="nav-products-heading">
-                                <span data-i18n="header.appsHeading">Devp-YG Apps</span>
-                                <small data-i18n="header.appsDescription">필요한 순간에 바로 쓸 수 있는 앱</small>
+                                <span data-i18n="header.appsHeading">앱과 프로젝트</span>
+                                <small data-i18n="header.appsDescription">필요한 목적에 맞춰 살펴보세요</small>
                             </div>
+                            <a class="nav-products-all" href="{{ '/portfolio/' | relative_url }}">
+                                <span aria-hidden="true" class="nav-product-mark nav-product-mark-all"><i></i><i></i><i></i></span>
+                                <span class="nav-product-copy"><strong data-i18n="header.allApps">앱·프로젝트 전체 보기</strong><small data-i18n="header.allAppsDescription">모든 제품을 한곳에서 살펴보세요.</small></span>
+                                <span aria-hidden="true" class="nav-product-arrow">↗</span>
+                            </a>
                             <ul class="nav-products-list">
-                                <li>
-                                    <a href="{{ '/portfolio/' | relative_url }}">
-                                        <span aria-hidden="true" class="nav-product-mark nav-product-mark-all"><i></i><i></i><i></i></span>
-                                        <span class="nav-product-copy"><strong data-i18n="header.allApps">앱·프로젝트 보기</strong><small data-i18n="header.allAppsDescription">앱과 데스크톱 프로젝트를 한곳에서 살펴보세요.</small></span>
-                                        <span aria-hidden="true" class="nav-product-arrow">↗</span>
-                                    </a>
-                                </li>
                                 {% for category in site.data.app_categories %}
                                     {% assign category_apps = site.data.apps | where: "category", category.id | sort: "portfolio_order" %}
                                     {% if category_apps.size > 0 %}
@@ -39,7 +37,6 @@
                                             <a href="{{ '/portfolio/' | relative_url }}#app-category-{{ category.id }}">
                                                 <span aria-hidden="true" class="nav-product-mark"><img src="{{ category_icon.image | relative_url }}" alt="" /></span>
                                                 <span class="nav-product-copy"><strong data-i18n="portfolio.categories.{{ category.id }}.label">{{ category.label }}</strong><small data-i18n="portfolio.categoryCount" data-i18n-count="{{ category_apps.size }}">{{ category_apps.size }}개 제품</small></span>
-                                                <span aria-hidden="true" class="nav-product-arrow">↗</span>
                                             </a>
                                         </li>
                                     {% endif %}

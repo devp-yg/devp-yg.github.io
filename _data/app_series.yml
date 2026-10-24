@@ -8,4 +8,4 @@ citybus:
   category: public-transit
   intro_url: /citybus/
   image: /assets/images/apps/citybus/icon.svg
-  description: 내 도시의 버스 도착정보와 노선, 환승과 여행 정보를 확인하세요. 시티버스 소개 페이지에서 도시별 앱을 선택할 수 있습니다.
+  description: 실시간 도착정보와 지도 위 버스 위치부터 정류소·노선 검색, 환승 경로, 관광지 정보와 길찾기까지. 매일 타는 버스도 낯선 도시의 여행도 시티버스로 준비하세요.
