@@ -26,13 +26,12 @@
 
 .movlog-kicker {
     color: #9a5135;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.76rem;
     font-weight: 700;
     letter-spacing: 0.13em;
     line-height: 1.5;
     margin: 0 0 18px;
-    text-transform: uppercase;
 }
 
 .movlog-page h2 {
@@ -64,7 +63,7 @@
 .movlog-hero::before {
     color: rgba(63, 43, 32, 0.045);
     content: "MOVE · REMEMBER · REPEAT";
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: clamp(6rem, 13vw, 12rem);
     font-weight: 700;
     left: 50%;
@@ -110,7 +109,7 @@
 
 .movlog-brand-lockup strong {
     color: var(--movlog-ink);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 1.18rem;
     letter-spacing: -0.03em;
 }
@@ -130,7 +129,6 @@
     gap: 10px;
     letter-spacing: 0.13em;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
 .movlog-eyebrow::before {
@@ -385,7 +383,7 @@
     border-radius: 50%;
     color: #a75d3d;
     display: flex;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.75rem;
     font-weight: 700;
     height: 38px;
@@ -476,7 +474,7 @@
 }
 
 .movlog-float-distance strong {
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 1.22rem;
 }
 
@@ -613,7 +611,6 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 .movlog-moment-card h3 {

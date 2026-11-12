@@ -10,12 +10,11 @@
 
 .portfolio-eyebrow {
     color: var(--mint-dark);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     margin-bottom: 24px;
-    text-transform: uppercase;
 }
 
 .portfolio-hero h1 {
@@ -43,6 +42,53 @@
 .portfolio-content {
     border-top: 1px solid var(--line);
     padding-top: 54px;
+}
+
+.portfolio-projects {
+    border-top: 1px solid var(--line);
+    margin-top: 16px;
+    padding-top: 54px;
+}
+
+.portfolio-project-card {
+    min-height: 360px;
+}
+
+.portfolio-project-mark {
+    align-items: center;
+    background: linear-gradient(145deg, #16243c, #476b80);
+    border-radius: 22px;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.13);
+    color: #e5f8ef;
+    display: flex;
+    font-family: var(--font-readable);
+    font-size: 1.35rem;
+    font-weight: 800;
+    height: 88px;
+    justify-content: center;
+    letter-spacing: -0.06em;
+    position: relative;
+    width: 88px;
+}
+
+.portfolio-project-mark::before,
+.portfolio-project-mark::after,
+.portfolio-project-mark i {
+    background: rgba(193, 231, 218, 0.82);
+    border-radius: 2px;
+    content: "";
+    height: 5px;
+    position: absolute;
+    right: 13px;
+    width: 5px;
+}
+
+.portfolio-project-mark::before { top: 16px; }
+.portfolio-project-mark::after { top: 25px; }
+.portfolio-project-mark i { top: 34px; }
+
+.portfolio-project-mark span {
+    transform: translateX(-3px);
 }
 
 .portfolio-category-nav {
@@ -95,7 +141,7 @@
     background: #edf1f7;
     border-radius: 999px;
     color: var(--muted);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.7rem;
     line-height: 1;
     padding: 4px 6px;
@@ -121,12 +167,11 @@
 
 .portfolio-category-kicker {
     color: var(--mint-dark);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     margin: 0 0 8px;
-    text-transform: uppercase;
 }
 
 .portfolio-category-heading h2 {
@@ -147,7 +192,7 @@
 
 .portfolio-category-count {
     color: var(--muted);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.78rem;
     font-weight: 700;
     white-space: nowrap;
@@ -196,10 +241,18 @@
     background: #edf1f7;
     border-radius: 999px;
     color: var(--muted);
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-readable);
     font-size: 0.68rem;
     font-weight: 700;
     padding: 6px 10px;
+}
+
+.portfolio-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-end;
+    margin-left: 12px;
 }
 
 .portfolio-card-copy {
@@ -236,6 +289,7 @@
     align-items: center;
     border-top: 1px solid var(--line);
     display: flex;
+    flex-wrap: wrap;
     gap: 14px;
     justify-content: flex-end;
     padding-top: 18px;
@@ -283,6 +337,7 @@
     .portfolio-page { padding-bottom: 80px; }
     .portfolio-hero { padding-bottom: 56px; padding-top: 72px; }
     .portfolio-content { padding-top: 34px; }
+    .portfolio-projects { margin-top: 4px; padding-top: 38px; }
     .portfolio-category-nav { align-items: flex-start; flex-direction: column; gap: 14px; }
     .portfolio-category-nav ul { justify-content: flex-start; }
     .portfolio-category { padding: 42px 0; }

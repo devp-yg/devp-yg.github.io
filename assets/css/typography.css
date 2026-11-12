@@ -1,0 +1,22 @@
+/* Keep English readable in both the translated site and mixed-language text. */
+html:lang(en) body {
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+html:lang(en) body :is(h1, h2, h3, h4) {
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+}
+
+html:lang(en) body :is(p, li, dt, dd, a, button, small, figcaption) {
+    letter-spacing: normal;
+}
+
+html:lang(en) .app-hero h1 {
+    font-size: clamp(2.7rem, 4.8vw, 4.7rem);
+}
+
+html:lang(en) .app-section-heading h2 {
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+}

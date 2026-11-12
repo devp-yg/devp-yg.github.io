@@ -13,20 +13,24 @@
     "viewIntro": "소개 보기",
     "appStorePage": "App Store 페이지 열기",
     "reviewPending": "App Store 심사 중",
+    "downloadIOSApp": "iOS 앱 다운로드",
     "allApps": "모든 앱",
     "contact": "문의하기",
     "blog": "개발 기록",
     "privacy": "개인정보 처리방침",
-    "history": "출시 기록"
+    "history": "출시 기록",
+    "downloadApp": "App Store에서 다운로드",
+    "browseFeatures": "기능 둘러보기 ↓",
+    "githubRepository": "GitHub 저장소 열기"
   },
   "pages": {
     "home": {
-      "title": "Devp-YG | Mobile Apps",
-      "description": "일상과 이동을 더 편리하게 만드는 Devp-YG의 모바일 애플리케이션을 소개합니다."
+      "title": "Devp-YG | Apps",
+      "description": "일상과 개발을 더 편리하게 만드는 Devp-YG의 앱을 소개합니다."
     },
     "portfolio": {
-      "title": "모든 앱 | Devp-YG",
-      "description": "Devp-YG가 개발하고 운영하는 iOS 애플리케이션을 소개합니다."
+      "title": "앱 | Devp-YG",
+      "description": "Devp-YG가 개발한 모바일·데스크톱 앱을 소개합니다."
     },
     "blog": {
       "title": "Blog | Devp-YG",
@@ -38,7 +42,7 @@
     },
     "history": {
       "title": "출시 기록 | Devp-YG",
-      "description": "Devp-YG 앱의 출시 기록과 App Store 심사 중인 앱을 소개합니다."
+      "description": "앱 출시·공개와 App Store 심사 기록을 확인하세요."
     },
     "contact": {
       "title": "Contact | Devp-YG",
@@ -50,7 +54,7 @@
     },
     "citybus": {
       "title": "시티버스 | 도시별 버스 앱",
-      "description": "부산, 대전, 광주, 인천, 안동, 여수에서 버스와 환승, 도시철도, 여행 정보를 확인하는 시티버스 앱 시리즈입니다."
+      "description": "도시별 시티버스 앱의 공통 기능인 버스 도착정보, 실시간 버스 위치, 정류소·노선 검색, 환승 경로, 관광지 정보와 길찾기를 소개합니다."
     },
     "movlog": {
       "title": "무블로그 | 당신의 이동을, 당신의 이야기로",
@@ -62,7 +66,7 @@
     },
     "markdam": {
       "title": "마크담 - 마크다운 뷰어 | Devp-YG",
-      "description": "Mac, iPhone, iPad에서 Markdown 문서를 읽고 PDF로 저장하는 오프라인 문서 뷰어, 마크담을 소개합니다."
+      "description": "iPhone·iPad와 Mac에서 Markdown 문서를 읽고 PDF로 저장하는 오프라인 문서 뷰어, 마크담을 소개합니다. iOS와 macOS에서 사용할 수 있습니다."
     },
     "privacy": {
       "title": "개인정보 처리방침 | Devp-YG",
@@ -83,16 +87,28 @@
     "privacyIndex": {
       "title": "개인정보 처리방침 | Devp-YG",
       "description": "Devp-YG 앱별 개인정보 처리방침을 확인할 수 있습니다."
+    },
+    "snapqr": {
+      "title": "SnapQR | Devp-YG",
+      "description": "짧은 메모부터 웹사이트 주소, Wi-Fi 접속 정보와 연락처까지. SnapQR로 필요한 정보를 간편하게 QR 코드로 만들어보세요."
+    },
+    "fareflow": {
+      "title": "냥미터 | Devp-YG",
+      "description": "GPS로 이동 거리와 시간을 실시간으로 측정하고 택시·카풀 요금을 자동으로 계산합니다. 냥미터와 함께 이동의 흐름을 요금으로 확인해보세요."
+    },
+    "myaioffice": {
+      "title": "MyAIOffice | Codex의 작은 사무실",
+      "description": "Codex CLI가 프로젝트에서 일하는 모습을 공용 오피스와 층별 타워 오피스로 둘러보는 데스크톱 앱입니다."
     }
   },
   "header": {
     "home": "홈",
-    "portfolio": "모든 앱",
+    "portfolio": "앱",
     "exploreApps": "앱 둘러보기",
-    "appsHeading": "Devp-YG Apps",
-    "appsDescription": "필요한 순간에 바로 쓸 수 있는 앱",
-    "allApps": "모든 앱 보기",
-    "allAppsDescription": "운영 중인 iOS 앱을 한곳에서 살펴보세요.",
+    "appsHeading": "앱",
+    "appsDescription": "필요한 목적에 맞춰 살펴보세요.",
+    "allApps": "앱 전체 보기",
+    "allAppsDescription": "모든 앱을 한곳에서 살펴보세요.",
     "movlogDescription": "이동과 방문을 자동으로 기록하는 라이프로그",
     "citybusDescription": "도시별 버스와 환승·여행 정보를 한곳에",
     "taghere": "공간기록",
@@ -104,11 +120,17 @@
     "movlog": "무블로그",
     "contact": "문의하기",
     "rtvideo": "보이는말",
-    "rtvideoDescription": "음성을 실시간으로 번역해 자막으로 표시"
+    "rtvideoDescription": "음성을 실시간으로 번역해 자막으로 표시",
+    "snapqr": "SnapQR",
+    "snapqrDescription": "간편한 QR 코드 생성",
+    "fareflow": "냥미터",
+    "fareflowDescription": "GPS 기반 거리·시간·요금 계산",
+    "myaioffice": "MyAIOffice",
+    "myaiofficeDescription": "Codex CLI 작업을 오피스처럼 둘러보는 데스크톱 앱"
   },
   "footer": {
-    "description": "일상과 이동을 조금 더 편리하게 만드는<br>독립 iOS 앱 스튜디오입니다.",
-    "products": "Products",
+    "description": "일상과 개발 작업을 돕는<br>앱을 만듭니다.",
+    "products": "앱",
     "support": "Support",
     "designed": "Designed & built in Korea."
   },
@@ -117,16 +139,27 @@
     "explore": "앱 둘러보기"
   },
   "home": {
-    "heroEyebrow": "Independent App Studio",
-    "heroTitle": "일상 곳곳에<br>필요한 앱을<br><em>더 편리하게.</em>",
-    "heroLead": "이동과 대중교통부터 문서 읽기와 번역, 생활 도구까지. 매일 필요한 순간을 더 간편하게 만드는 앱을 만듭니다.",
-    "exploreApps": "앱 둘러보기",
+    "heroEyebrow": "Independent Software Studio",
+    "heroTitle": "일상도, 개발도.<br><em>더 편리하게.</em>",
+    "heroLead": "이동과 기록, 문서와 번역, 개발 도구까지. 필요한 순간에 도움이 되는 앱을 만듭니다.",
+    "exploreApps": "새로운 앱 보기",
+    "myaiofficeEyebrow": "CODEX를 위한 작은 오피스",
+    "myaiofficeTitle": "코덱스가 일하는 모습을<br><em>사무실 구경하듯.</em>",
+    "myaiofficeLead": "코덱스 CLI가 프로젝트를 읽고 코드를 만드는 흐름을 공용 오피스와 타워 오피스에서 둘러보세요. 예시 데이터로 먼저 체험할 수 있어요.",
+    "myaiofficeAction": "MyAIOffice 구경하기",
+    "myaiofficeGithub": "GitHub 저장소",
+    "myaiofficePoint1": "공용 오피스와 타워 오피스",
+    "myaiofficePoint2": "시간에 따라 바뀌는 낮과 밤",
+    "myaiofficePoint3": "DEMO 모드로 가볍게 시작",
+    "myaiofficeImageLink": "MyAIOffice 소개 페이지 보기",
+    "myaiofficeImageAlt": "MyAIOffice 공용 오피스 예시 화면",
+    "myaiofficeImageLabel": "Codex CLI · Demo office",
     "statsLabel": "Devp-YG 앱 현황",
     "apps": "iOS Apps",
     "cities": "Cities",
     "builtNative": "Built native",
-    "visualLabel": "이동, 대중교통, 문서, 번역, 생활 도구 앱 모음",
-    "appCloudLabel": "매일을 위한 앱",
+    "visualLabel": "Devp-YG의 앱 모음",
+    "appCloudLabel": "앱",
     "transitLabel": "대중교통",
     "readingLabel": "문서 읽기",
     "translationLabel": "실시간 번역",
@@ -136,12 +169,12 @@
     "busanAlt": "부산버스 앱 아이콘",
     "featuredApp": "Featured app",
     "movlogIntro": "무블로그 소개 보기",
-    "selectedProducts": "Selected products",
+    "selectedProducts": "Selected apps",
     "featuredTitle": "필요한 순간에<br>바로 쓸 수 있는 앱",
     "featuredLead": "이동과 장소 기록, 대중교통, 문서 읽기와 실시간 번역처럼 앱마다 다른 필요에 맞춰 소개합니다.",
     "movlogDescription": "이동 경로와 머문 장소를 자동으로 기록하고, 평범한 하루를 나만의 이야기로 남겨보세요.",
     "movlogInsightsAlt": "무블로그 인사이트 화면",
-    "citybusDescription": "부산부터 여수까지, 버스 도착정보와 환승·도시철도·여행 정보를 도시별로 확인하세요.",
+    "citybusDescription": "실시간 도착정보와 지도 위 버스 위치부터 정류소·노선 검색, 환승 경로, 관광지 정보와 길찾기까지. 매일 타는 버스도 낯선 도시의 여행도 시티버스로 준비하세요.",
     "arrivalPreviewLabel": "실시간 도착 정보",
     "arrivalPreviewMinutes": "분 후 도착",
     "taghereScreenAlt": "공간기록 장소 목록 화면",
@@ -159,13 +192,23 @@
     "supportLead": "사용 중 발견한 문제, 필요한 기능, 새로운 제안을 들려주세요.",
     "sendEmail": "이메일 보내기",
     "rtvideoDescription": "실시간 자막 번역 앱입니다. 다른 앱에서 재생 중인 음성을 원하는 언어의 자막으로 읽어보세요.",
-    "rtvideoScreenAlt": "보이는말 실시간 자막 번역 화면"
+    "rtvideoScreenAlt": "보이는말 실시간 자막 번역 화면",
+    "totalProducts": "앱",
+    "recentEyebrow": "NEW & NOTEWORTHY",
+    "recentTitle": "새롭게 만나는<br><em>앱.</em>",
+    "recentLead": "최근 공개·출시한 앱과 출시를 준비 중인 앱을 살펴보세요.",
+    "allProducts": "모든 앱 보기",
+    "categoriesEyebrow": "FIND YOUR NEXT TOOL",
+    "categoriesTitle": "지금 필요한 것은<br><em>무엇인가요?</em>",
+    "categoriesLead": "일상에 쓰는 앱부터 개발을 돕는 도구까지, 사용 목적에 맞춰 둘러보세요.",
+    "catalogCount": "전체 {count}개 앱 둘러보기",
+    "cloudHint": "아이콘을 선택해 둘러보세요"
   },
   "portfolio": {
     "eyebrow": "Devp-YG Apps · {count}개",
-    "title": "일상의 작은 불편을<br><em>앱으로 해결합니다.</em>",
-    "lead": "이동과 장소를 기록하고, 재생 음성을 번역하고, 문서를 읽는 iOS 앱을 만듭니다.",
-    "ariaLabel": "iOS 애플리케이션",
+    "title": "필요에서 시작된<br><em>앱.</em>",
+    "lead": "이동과 장소를 기록하고, 음성을 번역하고, 문서를 읽는 앱부터 Codex CLI를 오피스처럼 보여주는 데스크톱 앱까지 만듭니다.",
+    "ariaLabel": "앱",
     "categoryNavLabel": "앱 분류 바로가기",
     "categoryNavTitle": "분류별로 살펴보기",
     "categoryKicker": "App category",
@@ -177,7 +220,7 @@
       },
       "public-transit": {
         "label": "대중교통",
-        "description": "내 지역의 버스 도착·노선부터 환승·관광지 지도·날씨까지 빠르게 확인하고, 도시별 교통 정보를 살펴볼 수 있는 시티버스 앱입니다."
+        "description": "버스 도착정보와 지도 위 버스 위치를 확인하고, 정류소·노선 검색부터 환승·관광지 정보와 길찾기까지 이용하는 시티버스 앱입니다."
       },
       "everyday-tools": {
         "label": "생활 도구",
@@ -190,6 +233,10 @@
       "translation-tools": {
         "label": "실시간 번역",
         "description": "재생 중인 음성을 인식해 다른 언어의 자막으로 보여주는 앱입니다."
+      },
+      "developer-tools": {
+        "label": "개발 도구",
+        "description": "개발 작업을 시작하고 진행 상황을 살펴볼 수 있는 앱입니다."
       }
     }
   },
@@ -204,21 +251,25 @@
     "rights": "All rights reserved."
   },
   "history": {
-    "eyebrow": "The timeline · {count} apps",
-    "title": "필요에서 시작된<br><em>앱의 시간.</em>",
-    "description": "앱이 처음 출시된 시점과 현재 App Store 심사 중인 앱을 함께 기록했습니다. 작은 아이디어가 제품이 되어온 흐름을 만나보세요.",
-    "kicker": "Release history",
-    "heading": "앱 출시 타임라인",
-    "basis": "App Store 최초 버전 출시 기준",
+    "eyebrow": "출시와 공개 기록 · {count}개 앱",
+    "title": "앱이 쌓아온<br><em>작은 변화.</em>",
+    "description": "앱의 출시·공개 시점과 App Store 심사 기록을 함께 기록했습니다. 심사 중인 앱도 확인해보세요.",
+    "kicker": "App release history",
+    "heading": "앱 출시·공개 타임라인",
+    "basis": "출시일 · 공개일 · 심사 접수일 기준",
     "sortLabel": "정렬 방식",
     "latest": "최신순",
     "oldest": "오래된순",
     "monthSuffix": "월",
     "citybusSeries": "시티버스 시리즈",
     "iosApp": "iOS 앱",
-    "pendingKicker": "출시 전 앱",
+    "macosApp": "macOS 앱",
+    "iosMacosApp": "iOS · macOS 앱",
+    "reviewPending": "심사 중",
+    "pendingKicker": "출시 준비 중",
     "pendingTitle": "App Store 심사 중",
-    "pendingDescription": "출시일이 정해지기 전인 앱도 함께 소개합니다."
+    "pendingDescription": "App Store 심사 중인 앱과 플랫폼 버전을 소개합니다.",
+    "desktopApp": "데스크톱 앱"
   },
   "contact": {
     "title": "문의하기",
@@ -226,32 +277,31 @@
   },
   "legacy": {
     "title": "이전 샘플 페이지입니다.",
-    "description": "현재 운영 중인 앱은 모든 앱 페이지에서 확인할 수 있습니다.",
+    "description": "현재 공개된 앱은 전체 목록에서 확인할 수 있습니다.",
     "viewPortfolio": "모든 앱 보기"
   },
   "citybus": {
     "eyebrow": "시티버스 시리즈",
     "title": "내 도시의 버스를<br>더 쉽게 만나는 방법",
-    "description": "버스를 찾고, 환승하고, 도시를 여행하는 순간까지. 시티버스는 도시마다 필요한 교통 정보를 한곳에 담습니다.",
+    "description": "버스가 언제 오는지, 지금 어디에 있는지 확인하고 주변 관광지까지 살펴보세요. 시티버스는 모든 도시 앱에 도착정보·버스 위치·환승·관광 기능을 함께 담았습니다.",
     "findApp": "내 도시 앱 찾기",
-    "readStory": "개발 이야기 보기",
-    "featuresTitle": "이동의 순간마다 필요한 정보",
-    "featuresDescription": "시티버스의 기능은 단순한 목록이 아니라, 버스를 타고 도시를 이동하는 흐름에 맞춰 나뉩니다. 제공 범위는 도시별로 다를 수 있습니다.",
+    "featuresTitle": "어느 도시에서나 함께하는 기능",
+    "featuresDescription": "도시를 바꿔도 필요한 정보는 익숙하게. 모든 시티버스 앱에서 버스를 찾고, 이동하고, 주변을 둘러보는 공통 기능을 제공합니다.",
     "arrivalKicker": "01 · 바로 타기",
-    "arrivalTitle": "지금 탈 버스를 찾아요",
-    "arrivalDescription": "현재 위치 주변의 정류소부터 도착 예정 시간, 운행 상태와 버스 위치까지 한 번에 확인합니다.",
+    "arrivalTitle": "버스가 언제 오는지 확인해요",
+    "arrivalDescription": "주변 정류소나 검색한 정류소에서 버스 도착 예정 정보를 확인합니다. 정류소에 오는 노선을 살펴보고, 원하는 버스를 얼마나 기다려야 할지 미리 알아보세요.",
     "arrivalTag1": "주변 정류소",
-    "arrivalTag2": "도착 예정",
-    "arrivalTag3": "버스 위치",
-    "routeKicker": "02 · 미리 계획하기",
-    "mapTitle": "노선의 전체 흐름을 살펴봐요",
-    "mapDescription": "정류소와 노선을 검색하고, 경유 정류소·운행 방향·첫차와 막차·배차 간격을 지도와 함께 확인합니다.",
+    "arrivalTag2": "도착 예정 정보",
+    "arrivalTag3": "정류소별 노선",
+    "routeKicker": "03 · 노선 살펴보기",
+    "mapTitle": "정류소와 노선을 쉽게 찾아요",
+    "mapDescription": "정류소 이름이나 노선 번호로 검색하고, 버스가 지나는 정류소와 전체 경로를 지도에서 살펴봅니다. 처음 가는 곳에서도 어디서 타고 내려야 할지 확인하세요.",
     "routeTag1": "노선·정류소 검색",
     "routeTag2": "경유 정류소",
     "routeTag3": "첫차·막차",
-    "transferKicker": "03 · 갈아타기",
+    "transferKicker": "04 · 갈아타기",
     "transferTitle": "환승 경로를 확인해요",
-    "transferDescription": "모든 버스 앱에서 출발지와 목적지를 정하면 환승 위치와 이동 구간을 지도에서 살펴봅니다.",
+    "transferDescription": "출발지와 목적지를 정하면 환승 경로와 이동 구간을 지도에서 확인합니다. 어디에서 갈아타야 하는지 살펴보고 목적지까지의 이동을 준비하세요.",
     "transferTag1": "출발지·목적지",
     "transferTag2": "환승 경로",
     "railKicker": "04 · 다른 교통수단",
@@ -260,10 +310,10 @@
     "railTag1": "지하철역 검색",
     "railTag2": "도착·시간표",
     "travelKicker": "05 · 도시 알아가기",
-    "travelTitle": "버스에서 여행으로 이어져요",
-    "travelDescription": "모든 버스 앱에서 관광지 위치·상세·길찾기를 지도에서 확인하고, 도시별 행사·관광 콘텐츠도 살펴봅니다.",
-    "travelTag1": "관광지",
-    "travelTag2": "행사 정보",
+    "travelTitle": "주변 관광지와 가는 길을 살펴봐요",
+    "travelDescription": "도시의 관광지 위치와 상세 정보를 지도에서 살펴보고 길찾기로 이동을 이어갑니다. 익숙한 동네의 새로운 장소부터 여행지의 가볼 만한 곳까지 찾아보세요.",
+    "travelTag1": "관광지 지도",
+    "travelTag2": "관광지 상세",
     "travelTag3": "길찾기",
     "personalKicker": "06 · 나에게 맞추기",
     "favoriteTitle": "자주 쓰는 정보를 모아둬요",
@@ -272,12 +322,46 @@
     "personalTag2": "도착 알림",
     "personalTag3": "날씨",
     "citiesTitle": "당신의 도시를 선택하세요",
-    "citiesDescription": "기본적인 버스 정보와 환승·관광지 지도·날씨는 모든 앱에서 제공하고, 도시별로 도시철도·좌석·행사 정보 등을 더했습니다.",
+    "citiesDescription": "모든 도시 앱에서 도착정보·버스 위치·정류소와 노선 검색·환승·관광지 정보와 길찾기를 이용할 수 있습니다. 도시별로 더해지는 기능을 살펴보고 내게 맞는 앱을 선택하세요.",
     "downloadApp": "App Store에서 다운로드",
     "finalTitle": "더 편한 이동을 시작해 보세요",
     "finalDescription": "시티버스는 도시마다 필요한 교통 정보를 차곡차곡 만들어가고 있습니다.",
-    "allApps": "전체 앱 보기",
-    "appStoreLabel": "App Store 페이지"
+    "allApps": "앱 전체 보기",
+    "appStoreLabel": "App Store 페이지",
+    "locationKicker": "02 · 위치 확인하기",
+    "locationTitle": "버스가 지금 어디에 있는지 봐요",
+    "locationDescription": "노선을 따라 이동 중인 버스의 현재 위치를 지도에서 확인합니다. 경유 정류소와 운행 방향을 함께 살펴보며 내가 기다리는 버스가 어디쯤 오고 있는지 파악하세요.",
+    "locationTag1": "지도 위 버스 위치",
+    "locationTag2": "경유 정류소",
+    "locationTag3": "운행 방향",
+    "localTitle": "도시의 특성에 맞춘 정보도 함께",
+    "localDescription": "공통 기능에 더해, 지원 도시에서는 도시철도 도착·시간표, 저상버스·잔여 좌석·혼잡도, 지역 행사 정보도 확인할 수 있습니다. 아래에서 내 도시의 앱과 제공 정보를 살펴보세요.",
+    "commonFeaturesLabel": "모든 도시 앱의 공통 기능",
+    "commonArrival": "실시간 도착정보",
+    "commonLocation": "지도 위 버스 위치",
+    "commonTravel": "관광지 정보·길찾기",
+    "localEyebrow": "도시별 추가 기능",
+    "localMoreTitle": "내 도시에서 필요한 정보까지",
+    "localMoreDescription": "지원 도시에서는 저상버스·잔여 좌석·혼잡도, 지역 행사 정보도 확인할 수 있습니다. 도시별 제공 기능은 아래 앱 소개에서 살펴보세요.",
+    "openScreenshot": "화면 크게 보기 (새 탭)",
+    "screenshotNote": "각 도시 앱의 한국어 화면입니다. 화면을 누르면 크게 볼 수 있으며, 표시 정보와 디자인은 도시·앱 버전에 따라 다를 수 있습니다.",
+    "arrivalCaption": "부산버스 · 정류장 도착정보",
+    "arrivalAlt": "부산버스에서 정류장별 버스 도착 예정 정보를 보여주는 화면",
+    "locationCaption": "광주버스 · 노선별 버스 위치",
+    "locationAlt": "광주버스에서 경유 정류소와 운행 중인 버스 위치를 보여주는 화면",
+    "routeCaption": "인천버스 · 노선 검색",
+    "routeAlt": "인천버스에서 노선 번호를 검색하고 운행 구간을 살펴보는 화면",
+    "transferCaption": "여수버스 · 환승 경로",
+    "transferAlt": "여수버스에서 출발지부터 목적지까지 환승 경로를 지도에 표시한 화면",
+    "travelCaption": "여수버스 · 관광지와 길찾기",
+    "travelAlt": "여수버스에서 해상케이블카 관광지 정보와 길찾기 버튼을 보여주는 화면",
+    "personalCaption": "안동버스 · 즐겨찾기와 메모",
+    "personalAlt": "안동버스에서 즐겨찾는 정류장과 노선, 정류장 메모를 모아 보여주는 화면",
+    "railMapCaption": "대전버스 · 도시철도 지도",
+    "railMapAlt": "대전버스에서 도시철도 노선과 역 위치를 지도에 표시한 화면",
+    "railStationCaption": "대전버스 · 역 정보와 시간표",
+    "railStationAlt": "대전버스에서 정부청사역의 첫차와 막차, 연락처와 시설 정보를 보여주는 화면",
+    "heroAlt": "시티버스의 첫 앱, 대전버스의 주변 정류장 지도"
   },
   "movlog": {
     "eyebrow": "무블로그 · 매일의 이동 기록",
@@ -342,7 +426,7 @@
     "insightStat2Detail": "거리와 시간의 새로운 기록",
     "insightStat3": "업적과 레벨",
     "insightStat3Detail": "기록할수록 커지는 성취감",
-    "galleryKicker": "INSIDE MOVLOG",
+    "galleryKicker": "Inside Movlog",
     "galleryTitle": "하루의 시작부터 돌아보기까지,<br><em>하나의 흐름으로.</em>",
     "galleryMain": "오늘의 지도",
     "galleryArchive": "기록보관함",
@@ -356,23 +440,26 @@
     "finalKicker": "TRACE YOUR PATH, TELL YOUR STORY",
     "finalTitle": "오늘의 이동부터<br><em>나만의 이야기를 시작해요.</em>",
     "finalDescription": "무블로그는 App Store에서 무료로 다운로드할 수 있습니다.",
-    "allApps": "전체 앱 보기"
+    "allApps": "앱 전체 보기"
   },
   "apps": {
     "snapqr": {
       "name": "SnapQR",
       "description": "텍스트, URL, Wi-Fi, 연락처 정보를 손쉽게 QR 코드로 만들 수 있는 간편한 QR 생성 앱입니다.",
-      "imageAlt": "SnapQR 앱 아이콘"
+      "imageAlt": "SnapQR 앱 아이콘",
+      "shortName": "SnapQR"
     },
     "fareflow": {
       "name": "냥미터 - 나만의 요금제",
       "description": "GPS 기반으로 실시간 이동 거리와 시간을 측정하여 택시·카풀 요금을 자동으로 계산해주는 스마트 요금 미터기 앱입니다.",
-      "imageAlt": "냥미터 앱 아이콘"
+      "imageAlt": "냥미터 앱 아이콘",
+      "shortName": "냥미터"
     },
     "movlog": {
       "name": "무블로그: 당신의 이야기를 지도에 담다",
       "description": "무블로그는 이동 경로와 방문·체류, 주차 위치, 날씨와 사진을 자동으로 기록하고 월간·연간 보관함, 인사이트와 업적으로 일상을 돌아보게 해주는 라이프로그 앱입니다.",
-      "imageAlt": "무블로그 앱 아이콘"
+      "imageAlt": "무블로그 앱 아이콘",
+      "shortName": "무블로그"
     },
     "incheon-bus": {
       "name": "인천 버스",
@@ -425,7 +512,8 @@
     "tplus-mobile": {
       "name": "알뜰폰 티플 실시간 사용량 위젯",
       "description": "티플러스 모바일의 실시간 사용량 조회 정보를 위젯으로 확인할 수 있는 앱입니다. 아이폰과 아이패드에서 사용할 수 있습니다.",
-      "imageAlt": "티플 실시간 사용량 위젯 앱 아이콘"
+      "imageAlt": "티플 실시간 사용량 위젯 앱 아이콘",
+      "shortName": "티플 사용량 위젯"
     },
     "taghere": {
       "name": "공간기록 - 여기를 기억해",
@@ -433,7 +521,8 @@
       "description": "자주 가는 장소와 그 안의 공간을 등록하고, 위치와 Bluetooth 기기로 방문·공간 인식을 기록합니다. 날짜별 기록과 위젯으로 어디에 머물렀는지 돌아보세요.",
       "imageAlt": "공간기록 앱 아이콘",
       "brandName": "공간기록",
-      "brandDescription": "여기를 기억해"
+      "brandDescription": "여기를 기억해",
+      "shortName": "공간기록"
     },
     "markdam": {
       "name": "마크담 - 마크다운 뷰어",
@@ -441,14 +530,28 @@
       "description": "Mac·iPhone·iPad에서 Markdown 문서를 편안하게 읽고 PDF로 저장하세요. 표·코드·이미지·SVG·Mermaid 다이어그램과 수식을 오프라인으로 표시합니다.",
       "imageAlt": "마크담 앱 아이콘",
       "brandName": "마크담",
-      "brandDescription": "마크다운 뷰어"
+      "brandDescription": "마크다운 뷰어",
+      "shortName": "마크담"
     },
     "rtvideo": {
       "name": "보이는말 - 실시간 자막 번역",
       "description": "iPhone·iPad에서 재생 중인 영상과 오디오의 음성을 인식해 선택한 언어의 번역 자막으로 보여줍니다. 앱 창이나 PiP 자막 창에서 원문과 번역을 확인하세요.",
       "imageAlt": "보이는말 앱 아이콘",
       "brandName": "보이는말",
-      "brandDescription": "실시간 자막 번역"
+      "brandDescription": "실시간 자막 번역",
+      "shortName": "보이는말"
+    },
+    "myaioffice": {
+      "name": "MyAIOffice",
+      "subtitle": "Codex CLI 작업을 보여주는 로컬 오피스",
+      "description": "Codex CLI가 프로젝트에서 파일을 읽고 코드를 만드는 흐름을 공용 오피스나 층별 타워 오피스에서 둘러보세요. 예시 데이터로 먼저 체험할 수 있습니다.",
+      "imageAlt": "MyAIOffice 앱 아이콘",
+      "shortName": "MyAIOffice"
+    },
+    "citybus": {
+      "name": "시티버스",
+      "shortName": "시티버스",
+      "description": "실시간 도착정보와 지도 위 버스 위치부터 정류소·노선 검색, 환승 경로, 관광지 정보와 길찾기까지. 매일 타는 버스도 낯선 도시의 여행도 시티버스로 준비하세요."
     }
   },
   "taghere": {
@@ -469,7 +572,7 @@
     "feature2Body": "장소마다 방이나 층을 공간으로 등록하고 Bluetooth 기기를 연결해 가까운 공간을 구분합니다.",
     "feature3Title": "날짜별 방문 기록",
     "feature3Body": "인식된 장소와 공간을 기록 화면에서 날짜별로 확인하고, 장소·공간 이름으로 찾아볼 수 있습니다.",
-    "galleryEyebrow": "INSIDE TAGHERE",
+    "galleryEyebrow": "Inside TagHere",
     "galleryTitle": "장소와 공간, 방문 기록을<br><em>한 흐름으로 살펴보세요.</em>",
     "placesAlt": "공간기록의 등록 장소 목록",
     "detailAlt": "공간과 위치 반경이 표시된 장소 상세",
@@ -486,14 +589,15 @@
     "allApps": "다른 앱 둘러보기 ↗"
   },
   "markdam": {
-    "eyebrow": "MARKDOWN, CLEARLY",
+    "eyebrow": "Markdown, clearly",
     "title": "글과 그림, 다이어그램까지<br><em>편안하게 읽으세요.</em>",
-    "description": "Mac·iPhone·iPad에서 Markdown 문서를 열어 읽고 PDF로 저장합니다. 표, 코드, 로컬 이미지, SVG, Mermaid 다이어그램과 수식을 오프라인으로 살펴보세요.",
-    "platformNote": "Mac · iPhone · iPad",
+    "description": "iPhone·iPad와 Mac에서 Markdown 문서를 열어 읽고 PDF로 저장합니다. 표, 코드, 로컬 이미지, SVG, Mermaid 다이어그램과 수식을 오프라인으로 살펴보세요.",
+    "platformNote": "iOS · macOS 출시",
     "metaReadingLabel": "읽기",
     "metaReading": "목차 · 검색 · 보기 설정",
     "metaExportLabel": "내보내기",
     "metaExport": "A4 · US Letter PDF",
+    "metaReleaseLabel": "출시일",
     "featureEyebrow": "READ THE WHOLE DOCUMENT",
     "featureTitle": "구조는 선명하게,<br><em>읽기는 나답게.</em>",
     "featureLead": "문서의 구조와 시각 자료를 함께 보여주고, 읽기 설정과 PDF 내보내기를 한곳에 담았습니다.",
@@ -503,7 +607,7 @@
     "feature2Body": "문서와 함께 둔 이미지와 안전한 SVG, Mermaid 다이어그램, LaTeX 수식을 표시합니다.",
     "feature3Title": "읽던 모습 그대로 PDF로",
     "feature3Body": "A4 또는 US Letter 용지, 세로·가로 방향과 여백을 정해 다중 페이지 PDF로 저장합니다.",
-    "galleryEyebrow": "INSIDE MARKDAM",
+    "galleryEyebrow": "Inside Markdam",
     "galleryTitle": "읽기부터 PDF 저장까지,<br><em>문서 작업을 이어서.</em>",
     "readerAlt": "마크담에서 Markdown 문서를 읽는 화면",
     "pdfAlt": "PDF 만들기와 미리보기 흐름",
@@ -774,5 +878,148 @@
       "<p>이 방침은 앱 이용 분석 동의 기능이 포함된 버전의 출시일부터 적용합니다.</p>",
       "<p>처리 목적·항목, 외부 서비스, 보유기간 또는 동의 관리 방법이 변경되면 변경 내용과 적용일을 이 페이지에 안내합니다. 변경 전 방침은 별도 이력으로 관리하며, 추가 동의가 필요한 변경은 적용 전에 동의를 받습니다.</p>"
     ]
+  },
+  "snapqr": {
+    "brandName": "SnapQR",
+    "brandDescription": "간편한 QR 코드 생성",
+    "eyebrow": "A SMALL CODE, A SIMPLE CONNECTION",
+    "title": "전하고 싶은 정보를<br><em>하나의 QR 코드로.</em>",
+    "description": "짧은 메모부터 웹사이트 주소, Wi-Fi 접속 정보와 연락처까지. SnapQR로 필요한 정보를 간편하게 QR 코드로 만들어보세요.",
+    "meta1Label": "만들 수 있는 정보",
+    "meta1": "텍스트 · URL · Wi-Fi · 연락처",
+    "meta2Label": "플랫폼",
+    "meta2": "iOS",
+    "visualLabel": "SnapQR로 만들 수 있는 QR 코드 종류",
+    "visualTitle": "무엇을 담아볼까요?",
+    "visualNote": "전할 정보에 맞는 유형을 선택하세요.",
+    "type1": "텍스트",
+    "type2": "웹사이트",
+    "type3": "Wi-Fi",
+    "type4": "연락처",
+    "featureEyebrow": "FOUR WAYS TO CONNECT",
+    "featureTitle": "필요한 정보에 맞춰,<br><em>알맞은 QR 코드를.</em>",
+    "featureLead": "입력할 정보가 달라도 만드는 과정은 간단하게. 자주 전하는 정보를 QR 코드 한 장에 담습니다.",
+    "feature1Title": "글과 링크를 간편하게",
+    "feature1Body": "텍스트나 URL을 입력해 QR 코드로 만듭니다. 짧은 안내 문구나 방문할 웹사이트를 전할 때 활용해보세요.",
+    "feature2Title": "Wi-Fi 접속 정보를 한곳에",
+    "feature2Body": "Wi-Fi 정보를 QR 코드에 담습니다. 접속 정보를 안내해야 하는 순간에 필요한 코드를 만들어보세요.",
+    "feature3Title": "연락처도 QR 코드로",
+    "feature3Body": "연락처 정보를 담은 QR 코드를 만듭니다. 사람을 만나는 자리에서 필요한 정보를 간결하게 준비해보세요.",
+    "flowEyebrow": "FROM INFORMATION TO QR",
+    "flowTitle": "정보를 고르고, 입력하고,<br><em>QR 코드로 완성하세요.</em>",
+    "step1Title": "유형 선택",
+    "step1Body": "텍스트, URL, Wi-Fi, 연락처 중 담을 정보의 유형을 고릅니다.",
+    "step2Title": "정보 입력",
+    "step2Body": "선택한 유형에 맞는 내용을 입력하고 다시 확인합니다.",
+    "step3Title": "QR 코드 생성",
+    "step3Body": "입력한 정보를 QR 코드로 만들어 필요한 순간에 활용합니다.",
+    "infoEyebrow": "A LITTLE TOOL FOR EVERYDAY",
+    "infoTitle": "작은 안내부터\n새로운 만남까지.",
+    "infoBody": "카페의 Wi-Fi 안내, 웹사이트 주소, 행사장의 짧은 안내 문구, 새로 만난 사람에게 전할 연락처. 매번 길게 설명하던 정보를 작은 QR 코드로 정리해보세요.",
+    "finalEyebrow": "MAKE YOUR NEXT CONNECTION",
+    "finalTitle": "다음에 전할 정보는<br><em>QR 코드에 담아보세요.</em>"
+  },
+  "fareflow": {
+    "brandName": "냥미터",
+    "brandDescription": "나만의 요금제 · FareFlow",
+    "eyebrow": "YOUR TRIP, YOUR FARE",
+    "title": "움직인 만큼,<br><em>내 요금제로 계산해요.</em>",
+    "description": "GPS로 이동 거리와 시간을 실시간으로 측정하고 택시·카풀 요금을 자동으로 계산합니다. 냥미터와 함께 이동의 흐름을 요금으로 확인해보세요.",
+    "meta1Label": "측정 방식",
+    "meta1": "GPS · 이동 거리 · 시간",
+    "meta2Label": "활용",
+    "meta2": "택시 · 카풀 요금 계산",
+    "visualLabel": "이동 거리와 시간에 따른 요금 구성 예시",
+    "visualTitle": "이동을 요금으로, 한눈에",
+    "visualNote": "요금 구성을 설명하는 예시이며 실제 앱 화면이나 적용 요금이 아닙니다.",
+    "receiptBase": "기본 요금",
+    "receiptDistance": "거리 요금",
+    "receiptTime": "시간 요금",
+    "receiptTotal": "계산된 요금",
+    "featureEyebrow": "FOLLOW THE TRIP",
+    "featureTitle": "거리와 시간을 따라,<br><em>요금도 함께.</em>",
+    "featureLead": "이동 중 확인해야 하는 거리, 시간, 요금을 하나의 흐름으로 연결합니다.",
+    "feature1Title": "GPS 기반 이동 거리",
+    "feature1Body": "이동하는 동안 GPS를 기반으로 거리를 실시간 측정합니다. 지금까지 얼마나 이동했는지 확인해보세요.",
+    "feature2Title": "이동 시간도 함께",
+    "feature2Body": "거리와 함께 이동 시간을 측정합니다. 이동에 걸린 시간을 요금 계산에 함께 반영합니다.",
+    "feature3Title": "나만의 요금 계산",
+    "feature3Body": "택시나 카풀처럼 요금을 계산해야 하는 이동에 활용해보세요. 이동 거리와 시간에 따라 요금을 자동으로 계산합니다.",
+    "flowEyebrow": "FROM DEPARTURE TO ARRIVAL",
+    "flowTitle": "출발부터 도착까지,<br><em>이동을 따라 계산해요.</em>",
+    "step1Title": "내 요금제로 준비",
+    "step1Body": "이동에 사용할 요금제를 준비합니다.",
+    "step2Title": "이동 거리와 시간 측정",
+    "step2Body": "GPS를 기반으로 이동 거리와 시간을 실시간으로 측정합니다.",
+    "step3Title": "계산된 요금 확인",
+    "step3Body": "측정한 거리와 시간에 따라 자동으로 계산된 요금을 확인합니다.",
+    "infoEyebrow": "MADE FOR YOUR JOURNEY",
+    "infoTitle": "내 이동에 맞는\n요금 확인 도구.",
+    "infoBody": "택시 요금을 살펴보거나 함께 이동한 카풀의 요금을 계산할 때. 냥미터는 이동 거리와 시간을 기준으로 요금을 확인할 수 있게 도와줍니다.",
+    "finalEyebrow": "LET THE METER FOLLOW",
+    "finalTitle": "다음 이동에는<br><em>냥미터와 함께.</em>"
+  },
+  "myaioffice": {
+    "back": "← 앱",
+    "eyebrow": "CODEX CLI, BUT MAKE IT COZY",
+    "title": "코덱스의 하루,<br><em>오피스에서 구경해요.</em>",
+    "lead": "Codex CLI는 컴퓨터의 프로젝트 파일을 살펴보고, 코드를 고치고, 명령을 실행하는 AI 개발 도구예요. MyAIOffice는 그 작업을 캐릭터와 방이 있는 3D 오피스로 보여줍니다. 낯선 터미널 화면 대신, 팀이 어디서 무엇을 하는지 편하게 둘러보세요.",
+    "github": "GitHub 저장소 보기",
+    "platform": "macOS · Windows · 내 컴퓨터에서 실행",
+    "fact1": "작업 세션 → 친구들",
+    "fact2": "프로젝트 → 방 또는 층",
+    "fact3": "대화 내용은 표시하지 않아요",
+    "towerAlt": "타워 오피스 예시 화면: 프로젝트별 층과 방에서 캐릭터들이 일하는 모습",
+    "demoPill": "예시 화면",
+    "heroCaption": "Atlas Web 층에서 자료를 읽고 코드를 만드는 친구들",
+    "explainerEyebrow": "FIRST TIME WITH CODEX?",
+    "explainerTitle": "터미널이 낯설어도<br /><em>일하는 흐름은 보이게.</em>",
+    "explainerBody": "Codex에 “이 프로젝트의 버튼을 고쳐줘”라고 부탁하면, Codex는 파일을 읽고 코드를 바꾸고 필요한 명령을 실행해요. 여러 작업이 동시에 돌아갈 때 MyAIOffice를 열면 누가 자료를 찾는지, 누가 코드를 쓰는지, 누가 잠깐 쉬는지 한눈에 보여요. 개발자가 아니어도 작은 팀을 구경하듯 살펴볼 수 있습니다.",
+    "stepsLabel": "MyAIOffice에서 보는 작업 흐름",
+    "step1Title": "Codex에게 부탁해요",
+    "step1Body": "프로젝트 폴더에서 원하는 일을 말해요.",
+    "step2Title": "친구들이 움직여요",
+    "step2Body": "작업 세션과 보조 에이전트가 각자 일해요.",
+    "step3Title": "오피스를 둘러봐요",
+    "step3Body": "방과 층을 누르며 진행 상황을 살펴봐요.",
+    "officeEyebrow": "TWO WAYS TO LOOK AROUND",
+    "officeTitle": "같은 팀, 다른 풍경<br /><em>공용 오피스와 타워 오피스</em>",
+    "officeLead": "프로젝트를 하나의 넓은 사무실에 모아 볼 수도, 각 프로젝트를 건물의 층마다 나눠 볼 수도 있어요.",
+    "sharedAlt": "공용 오피스 예시 화면: 하나의 넓은 사무실에서 여러 작업 친구들이 움직이는 모습",
+    "sharedCaption": "예시 데이터 · 공용 오피스",
+    "sharedTitle": "모두 한곳에, 공용 오피스",
+    "sharedBody": "방마다 자료 읽기, 코드 작성, 명령 실행처럼 하는 일이 나뉘어요. 여러 프로젝트의 흐름을 한 화면에서 보거나, 방을 눌러 누가 있는지 살펴보세요.",
+    "sharedPoint1": "하나의 큰 사무실에서 작업 흐름 비교",
+    "sharedPoint2": "공간을 눌러 현재 활동 확인",
+    "towerCaption": "예시 화면 · 프로젝트마다 한 층",
+    "towerTitle": "프로젝트마다 한 층, 타워 오피스",
+    "towerBody": "프로젝트가 늘어나도 층별 안내에서 바로 찾아갈 수 있어요. 층을 바꾸면 그 프로젝트의 방과 친구들이 나타나고, 오피스 안에서 이동하는 모습도 볼 수 있습니다.",
+    "towerPoint1": "프로젝트를 층별로 정리",
+    "towerPoint2": "작업 중인 층만 모아보기",
+    "sunsetEyebrow": "A LITTLE LIGHT, A LITTLE TIME",
+    "sunsetTitle": "해가 기울면<br /><em>사무실도 저녁 분위기로.</em>",
+    "sunsetBody": "설정한 위치와 지금 시각을 바탕으로 해 뜨고 지는 시간을 계산해요. 낮에는 햇살이 들어오고, 해 질 무렵부터 조명이 부드럽게 어두워져요. 실제 시간에 맞춰 풍경이 바뀌니 잠깐 켜두고 하루의 변화를 구경해도 좋아요.",
+    "sunsetNote": "위치는 브라우저에 저장돼요. 위치 권한을 허용하지 않으면 기본 시각으로도 둘러볼 수 있습니다.",
+    "sunClockLabel": "아침부터 밤까지 변하는 사무실 빛",
+    "morning": "아침",
+    "sunset": "해 질 무렵",
+    "night": "밤",
+    "clockCaption": "내 위치의 해 뜨고 지는 시간에 따라 조명 변화",
+    "friendlyEyebrow": "MADE TO BE EASY TO PEEK IN",
+    "friendlyTitle": "개발을 몰라도 괜찮아요.<br /><em>그냥 구경부터 시작해요.</em>",
+    "friendly1Title": "게임처럼 둘러보기",
+    "friendly1Body": "방을 누르고, 캐릭터를 따라가고, 카메라를 움직여 보세요. 정답 없이 천천히 둘러보면 됩니다.",
+    "friendly2Title": "예시 사무실부터",
+    "friendly2Body": "DEMO 모드에는 가상의 프로젝트와 작업이 준비돼 있어요. 내 Codex가 연결되지 않아도 먼저 체험할 수 있습니다.",
+    "friendly3Title": "대화는 화면에 나오지 않아요",
+    "friendly3Body": "무엇을 하고 있는지 상태만 보여줘요. 프롬프트나 대화 내용은 사무실에 표시하지 않습니다.",
+    "localEyebrow": "YOUR WORKSPACE, YOUR COMPUTER",
+    "localTitle": "내 컴퓨터 안에서<br /><em>가볍게 열어보는 오피스</em>",
+    "localBody": "MyAIOffice는 내 컴퓨터에서 실행되는 앱이에요. Codex 프로젝트와 작업 세션 상태를 읽어 사무실 풍경으로 바꾸고, 대화 내용은 화면에 보여주지 않아요. 처음이라면 예시 둘러보기로 시작하고, 준비되면 공식 저장소의 설치 안내를 따라 연결해 보세요.",
+    "install": "README에서 시작 방법 보기",
+    "finalEyebrow": "YOUR CODE. YOUR TEAM. YOUR LITTLE OFFICE.",
+    "finalTitle": "오늘은 무슨 일이 있었는지,<br /><em>오피스에 놀러 와서 볼까요?</em>",
+    "finalAction": "MyAIOffice GitHub 보기",
+    "allProjects": "다른 앱도 보기"
   }
 }

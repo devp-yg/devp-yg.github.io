@@ -3,8 +3,8 @@ layout: default
 lang: ko
 i18n_key: history
 title: 출시 기록 | Devp-YG
-description: Devp-YG가 현재 운영 중인 iOS 애플리케이션의 출시 월을 시간순으로 소개합니다.
-permalink: /history.html
+description: Devp-YG 앱의 출시·공개, 플랫폼별 App Store 심사 기록을 소개합니다.
+permalink: /history/
 styles:
   - /assets/css/pages/history.css
 scripts:
@@ -13,24 +13,29 @@ scripts:
 
 <main id="main" class="history-page">
     {% assign all_ios_apps = site.data.apps | where: "platform", "ios" %}
-    {% assign ios_apps = all_ios_apps | where_exp: "app", "app.launched_at != nil" %}
-    {% assign pending_apps = all_ios_apps | where: "review_status", "pending" %}
-    {% assign sorted_apps = ios_apps | sort: "launched_at" | reverse %}
+    {% assign all_apps = site.data.apps %}
+    {% assign ios_review_dates = all_ios_apps | map: 'review_submitted_at' %}
+    {% assign macos_review_dates = all_ios_apps | map: 'macos_review_submitted_at' %}
+    {% assign review_dates = ios_review_dates | concat: macos_review_dates | compact | uniq | sort | reverse %}
+    {% assign ios_release_dates = all_ios_apps | map: 'launched_at' %}
+    {% assign macos_release_dates = all_ios_apps | map: 'macos_launched_at' %}
+    {% assign project_release_dates = all_apps | map: 'published_at' %}
+    {% assign release_dates = ios_release_dates | concat: macos_release_dates | concat: project_release_dates | compact | uniq | sort | reverse %}
 
     <header class="history-hero site-shell">
-        <p class="history-eyebrow" data-i18n="history.eyebrow" data-i18n-count="{{ all_ios_apps | size }}">The timeline · {{ all_ios_apps | size }} apps</p>
-        <h1 data-i18n-html="history.title">필요에서 시작된<br /><em>앱의 시간.</em></h1>
-        <p data-i18n="history.description">앱이 처음 출시된 시점과 현재 App Store 심사 중인 앱을 함께 기록했습니다. 작은 아이디어가 제품이 되어온 흐름을 만나보세요.</p>
+        <p class="history-eyebrow" data-i18n="history.eyebrow" data-i18n-count="{{ all_apps | size }}">출시와 공개 기록 · {{ all_apps | size }}개 앱</p>
+        <h1 data-i18n-html="history.title">앱이 쌓아온<br /><em>작은 변화.</em></h1>
+        <p data-i18n="history.description">앱의 출시·공개 시점과 App Store 심사 기록을 함께 기록했습니다. 심사 중인 앱도 확인해보세요.</p>
     </header>
 
     <section class="site-shell history-content" aria-labelledby="history-title">
         <div class="history-intro">
             <div>
-                <p class="history-kicker" data-i18n="history.kicker">Release history</p>
-                <h2 id="history-title" data-i18n="history.heading">앱 출시 타임라인</h2>
+                <p class="history-kicker" data-i18n="history.kicker">App release history</p>
+                <h2 id="history-title" data-i18n="history.heading">앱 출시·공개 타임라인</h2>
             </div>
             <div class="history-tools">
-                <p class="history-basis" data-i18n="history.basis">App Store 최초 버전 출시 기준</p>
+                <p class="history-basis" data-i18n="history.basis">출시일 · 공개일 · 심사 접수일 기준</p>
                 <div class="history-sort" role="group" aria-label="정렬 방식" data-i18n-aria-label="history.sortLabel">
                     <button type="button" class="history-sort-button is-active" data-history-sort="latest" aria-pressed="true" data-i18n="history.latest">최신순</button>
                     <button type="button" class="history-sort-button" data-history-sort="oldest" aria-pressed="false" data-i18n="history.oldest">오래된순</button>
@@ -38,64 +43,53 @@ scripts:
             </div>
         </div>
 
-        {% if pending_apps.size > 0 %}
-        <section class="history-pending" aria-labelledby="history-pending-title">
-            <div class="history-pending-heading">
-                <div>
-                    <p class="history-kicker" data-i18n="history.pendingKicker">출시 전 앱</p>
-                    <h2 id="history-pending-title" data-i18n="history.pendingTitle">App Store 심사 중</h2>
-                </div>
-                <p data-i18n="history.pendingDescription">출시일이 정해지기 전인 앱도 함께 소개합니다.</p>
-            </div>
-            <ul class="history-pending-list">
-                {% for app in pending_apps %}
-                <li>
-                    <a class="history-pending-link" href="{{ app.id | prepend: '/' | append: '/' | relative_url }}">
-                        <img src="{{ app.image | relative_url }}" alt="{{ app.image_alt | escape }}" data-i18n-alt="apps.{{ app.id }}.imageAlt" loading="lazy" decoding="async" width="68" height="68" />
-                        <span class="history-pending-copy">
-                            <span class="history-card-label" data-i18n="history.iosApp">iOS 앱</span>
-                            <strong data-i18n="apps.{{ app.id }}.name">{{ app.name }}</strong>
-                            {% if app.subtitle %}<span class="history-card-subtitle" data-i18n="apps.{{ app.id }}.subtitle">{{ app.subtitle }}</span>{% endif %}
-                        </span>
-                        <span class="history-pending-status" data-i18n="common.reviewPending">App Store 심사 중</span>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
-        {% endif %}
-
         <ol class="history-timeline" data-history-timeline>
-            {% assign last_year = '' %}
-            {% assign last_month = '' %}
-            {% for app in sorted_apps %}
-                {% assign launch_parts = app.launched_at | split: '-' %}
-                {% assign show_year = true %}
-                {% assign show_month = true %}
-                {% if launch_parts[0] == last_year %}{% assign show_year = false %}{% endif %}
-                {% if launch_parts[0] == last_year and launch_parts[1] == last_month %}{% assign show_month = false %}{% endif %}
-                <li class="history-item" data-launch-date="{{ app.launched_at }}">
-                    <a class="history-item-link" href="{{ app.store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ app.name | escape }} App Store 페이지 열기" data-i18n-aria-label="common.appStorePage">
-                        <span class="history-marker{% unless show_month %} is-hidden{% endunless %}" data-history-marker aria-hidden="true"></span>
-                        <time class="history-date" datetime="{{ app.launched_at }}">
-                            <span data-history-year{% unless show_year %} class="is-hidden"{% endunless %}>{% if show_year %}{{ launch_parts[0] }}{% endif %}</span>
-                            <strong data-history-month{% unless show_month %} class="is-hidden"{% endunless %}><span data-history-month-number>{{ launch_parts[1] }}</span><span data-i18n="history.monthSuffix">월</span></strong>
-                        </time>
-                        <div class="history-card">
-                        <div class="history-card-main">
-                            <img src="{{ app.image | relative_url }}" alt="{{ app.image_alt | escape }}" data-i18n-alt="apps.{{ app.id }}.imageAlt" loading="lazy" decoding="async" width="68" height="68" />
-                            <div>
-                                <p class="history-card-label" data-i18n="{% if app.series == 'citybus' %}history.citybusSeries{% else %}history.iosApp{% endif %}">{% if app.series == "citybus" %}시티버스 시리즈{% else %}iOS 앱{% endif %}</p>
-                                <h3 data-i18n="apps.{{ app.id }}.name">{{ app.name }}</h3>
-                                {% if app.subtitle %}<p class="history-card-subtitle" data-i18n="apps.{{ app.id }}.subtitle">{{ app.subtitle }}</p>{% endif %}
-                            </div>
-                        </div>
-                        <span class="history-card-link" aria-hidden="true">App Store <span>↗</span></span>
-                        </div>
-                    </a>
-                </li>
-                {% assign last_year = launch_parts[0] %}
-                {% assign last_month = launch_parts[1] %}
+            {% assign previous_event_date = '' %}
+            {% for event_date in review_dates %}
+                {% for app in all_ios_apps %}
+                    {% if app.review_status == 'pending' and app.review_submitted_at == event_date %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=true platform='ios' platform_label='iosApp' platform_name='iOS 앱' %}
+                        {% assign previous_event_date = event_date %}
+                    {% endif %}
+                    {% if app.macos_review_status == 'pending' and app.macos_review_submitted_at == event_date %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=true platform='macos' platform_label='macosApp' platform_name='macOS 앱' %}
+                        {% assign previous_event_date = event_date %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            {% for event_date in release_dates %}
+                {% for app in all_ios_apps %}
+                    {% assign ios_release_month = app.launched_at | slice: 0, 7 %}
+                    {% assign macos_release_month = app.macos_launched_at | slice: 0, 7 %}
+                    {% assign group_same_month_releases = false %}
+                    {% if app.launched_at and app.macos_launched_at and ios_release_month == macos_release_month and app.review_status != 'pending' and app.macos_review_status != 'pending' %}
+                        {% assign group_same_month_releases = true %}
+                    {% endif %}
+                    {% assign grouped_release_date = app.launched_at %}
+                    {% if app.launched_at and app.macos_launched_at and app.macos_launched_at < app.launched_at %}
+                        {% assign grouped_release_date = app.macos_launched_at %}
+                    {% endif %}
+                    {% if app.launched_at == event_date and group_same_month_releases == false %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='ios' platform_label='iosApp' platform_name='iOS 앱' store_url=app.store_url %}
+                        {% assign previous_event_date = event_date %}
+                    {% endif %}
+                    {% if group_same_month_releases and grouped_release_date == event_date %}
+                        {% assign macos_store_url = app.macos_store_url | default: app.store_url %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='ios-macos' platform_label='iosMacosApp' platform_name='iOS · macOS 앱' store_url=macos_store_url ios_launch_date=app.launched_at macos_launch_date=app.macos_launched_at %}
+                        {% assign previous_event_date = event_date %}
+                    {% endif %}
+                    {% if app.macos_launched_at == event_date and group_same_month_releases == false %}
+                        {% assign macos_store_url = app.macos_store_url | default: app.store_url %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date is_pending=false platform='macos' platform_label='macosApp' platform_name='macOS 앱' store_url=macos_store_url %}
+                        {% assign previous_event_date = event_date %}
+                    {% endif %}
+                {% endfor %}
+                {% for app in all_apps %}
+                    {% if app.published_at == event_date %}
+                        {% include history-item.html app=app event_date=event_date previous_date=previous_event_date show_full_date=true is_pending=false platform='desktop' platform_label='desktopApp' platform_name='데스크톱 앱' project_url=app.project_url %}
+                        {% assign previous_event_date = event_date %}
+                    {% endif %}
+                {% endfor %}
             {% endfor %}
         </ol>
     </section>
