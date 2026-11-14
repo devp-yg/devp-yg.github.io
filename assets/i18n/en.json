@@ -73,8 +73,12 @@
       "description": "Privacy policy for Devp-YG applications."
     },
     "rtvideo": {
-      "title": "RTVideo - Live Translation Captions | Devp-YG",
-      "description": "Meet RTVideo, which turns audio playing in other apps into translated captions on iPhone and iPad."
+      "title": "Bomal - Live Translation Captions | Devp-YG",
+      "description": "Meet Bomal, which turns audio playing in other apps into translated captions on iPhone and iPad."
+    },
+    "rtvideoPrivacy": {
+      "title": "Privacy Policy | Bomal",
+      "description": "Information about the processing and use of personal information by the Bomal app."
     },
     "markdamPrivacy": {
       "title": "Privacy Policy | Markdam",
@@ -119,7 +123,7 @@
     "citybus": "CityBus",
     "movlog": "Movlog",
     "contact": "Contact",
-    "rtvideo": "RTVideo",
+    "rtvideo": "Bomal",
     "rtvideoDescription": "Translates speech into captions in real time",
     "snapqr": "SnapQR",
     "snapqrDescription": "Simple QR code creation",
@@ -182,7 +186,7 @@
     "taghereDescription": "Remember this place and the spaces within it. Save places, record visits with location and Bluetooth, and look back by date.",
     "markdamName": "Markdam",
     "markdamDescription": "A Markdown viewer for reading text, tables, images, and diagrams, with PDF export for the same document.",
-    "rtvideoName": "RTVideo",
+    "rtvideoName": "Bomal",
     "markdamScreenAlt": "Markdam Markdown reading screen",
     "findMyCity": "Find my city",
     "toolsTitle": "Small tools<br>that make a difference",
@@ -192,7 +196,7 @@
     "supportLead": "Tell us about a problem, a feature you need, or an idea for something new.",
     "sendEmail": "Send an email",
     "rtvideoDescription": "Live translation captions for audio playing in another app. Read along in your preferred language.",
-    "rtvideoScreenAlt": "RTVideo live translation captions screen",
+    "rtvideoScreenAlt": "Bomal live translation captions screen",
     "totalProducts": "Apps",
     "recentEyebrow": "NEW & NOTEWORTHY",
     "recentTitle": "Meet your next<br><em>app.</em>",
@@ -534,13 +538,13 @@
       "shortName": "Markdam"
     },
     "rtvideo": {
-      "name": "RTVideo",
+      "name": "Bomal",
       "subtitle": "Live Translation Captions",
       "description": "Turn audio from videos and other content playing on iPhone or iPad into translated captions. Follow the original and translation in the app or a floating PiP caption window.",
-      "imageAlt": "RTVideo app icon",
-      "brandName": "RTVideo",
+      "imageAlt": "Bomal app icon",
+      "brandName": "Bomal",
       "brandDescription": "Live Translation Captions",
-      "shortName": "Visible Voice"
+      "shortName": "Bomal"
     },
     "myaioffice": {
       "name": "MyAIOffice",
@@ -628,7 +632,7 @@
     "targetLabel": "Applies to",
     "intro": "Devp-YG distributes the following applications (collectively, the \"Devp-YG Applications\").",
     "applies": "The privacy policy for the Devp-YG Applications listed above is as follows.",
-    "specificPolicies": "See the app-specific privacy policies for TagHere, Markdam, and RTVideo: <a href=\"/privacy/taghere/\">TagHere</a> · <a href=\"/privacy/markdam/\">Markdam</a> · <a href=\"/privacy/rtvideo/\">RTVideo</a>",
+    "specificPolicies": "See the app-specific privacy policies for TagHere, Markdam, and Bomal: <a href=\"/privacy/taghere/\">TagHere</a> · <a href=\"/privacy/markdam/\">Markdam</a> · <a href=\"/privacy/rtvideo/\">Bomal</a>",
     "articleHeading": "Privacy Policy",
     "appList": "<li>Daejeon Bus – Daejeon Metropolitan City</li><li>Busan Bus – Busan Metropolitan City</li><li>Gwangju Bus – Gwangju Metropolitan City</li><li>Andong Bus – Andong, Gyeongsangbuk-do</li><li>Yeosu Bus – Yeosu, Jeollanam-do</li><li>Incheon Bus – Incheon Metropolitan City</li><li>Tplus Mobile real-time usage widget</li><li>Movlog: Map Your Story</li><li>FareFlow</li><li>SnapQR</li>",
     "articles": [
@@ -677,7 +681,7 @@
   "rtvideo": {
     "eyebrow": "LISTEN TO IT. READ IT.",
     "title": "Audio in playback,<br><em>captions you can read.</em>",
-    "description": "RTVideo recognizes speech from video and audio playing in another app, then translates it into your chosen language. Follow along in the app or a floating PiP caption window.",
+    "description": "Bomal recognizes speech from video and audio playing in another app, then translates it into your chosen language. Follow along in the app or a floating PiP caption window.",
     "privacyLink": "Privacy policy ↗",
     "metaPlatformLabel": "Platform",
     "metaPlatform": "iPhone · iPad",
@@ -687,27 +691,28 @@
     "metaDisplay": "App window · PiP",
     "metaProcessingLabel": "Processing",
     "metaProcessing": "On-device speech and translation",
-    "captionsAlt": "RTVideo translated captions screen",
+    "captionsAlt": "Bomal translated captions screen",
+    "mascotAlt": "Bomal mascot",
     "featureEyebrow": "CAPTIONS FOR PLAYING AUDIO",
     "featureTitle": "Listen to content.<br><em>Read it in your language.</em>",
     "featureLead": "Follow the original speech and translation while playing videos, online lessons, podcasts, and other audio content.",
     "feature1Title": "Captions from playing audio",
-    "feature1Body": "Start playback in an app that supports audio sharing and allow RTVideo to receive shared system audio. It recognizes speech and displays translated captions.",
+    "feature1Body": "Start playback in an app that supports audio sharing and allow Bomal to receive shared system audio. It recognizes speech and displays translated captions.",
     "feature2Title": "Original and translation together",
     "feature2Body": "Choose speech and translation languages, then adjust whether the original appears and how large the captions are.",
     "feature3Title": "Captions over your content",
     "feature3Body": "Follow translations in the app caption view or a PiP window. For supported combinations, captions can be separated by speaker.",
-    "galleryEyebrow": "Inside RTVideo",
+    "galleryEyebrow": "Inside Bomal",
     "galleryTitle": "See translated captions<br><em>and the controls at a glance.</em>",
     "originalAlt": "Original speech and speaker-separated translated captions",
     "settingsAlt": "Language and caption display settings",
     "galleryCaptions": "Captions translated from playback audio",
     "galleryOriginal": "Original and speaker captions",
     "gallerySettings": "Language and caption appearance settings",
-    "galleryNote": "Screens illustrate the features. Recognition and speaker separation depend on the audio and device support.",
+    "galleryNote": "Screens illustrate the features; the layout may vary by app version. Recognition and speaker separation depend on the audio and device support.",
     "scopeEyebrow": "A FEW THINGS TO KNOW",
     "scopeTitle": "Before you start",
-    "scopeBody": "Audio is received through system audio sharing. Available language pairs depend on speech recognition and translation support on your device and operating system; language models may need to download on first use. Audio may not come through if the playback app does not support sharing or the content is protected. Captions take time to recognize and translate, and are not synchronized to playback position. In app-window mode, keep RTVideo visible alongside the playback app. In PiP mode, use the floating translation caption window.",
+    "scopeBody": "Audio is received through system audio sharing. Available language pairs depend on speech recognition and translation support on your device and operating system; language models may need to download on first use. Audio may not come through if the playback app does not support sharing or the content is protected. Captions take time to recognize and translate, and are not synchronized to playback position. In app-window mode, keep Bomal visible alongside the playback app. In PiP mode, use the floating translation caption window.",
     "finalEyebrow": "AUDIO IN. CAPTIONS OUT.",
     "finalTitle": "Follow the words in your content<br><em>one caption at a time.</em>",
     "allApps": "Explore other apps ↗"
@@ -827,7 +832,7 @@
   "rtvideoPrivacy": {
     "title": "Privacy Policy",
     "targetLabel": "Scope",
-    "appName": "RTVideo",
+    "appName": "Bomal",
     "appDescription": "Real-time speech captions and translation",
     "platformsLabel": "Platforms",
     "content": [
@@ -844,7 +849,7 @@
       "<p>The operator does not provide personal information to third parties for their independent use. App analytics entrusted to Google LLC is described in Article 4.</p>",
       "<p><strong>App version checks</strong></p>",
       "<p>To check for the latest version, the app sends its bundle ID to Apple’s App Store lookup service.</p>",
-      "<p>RTVideo also sends the current Store country code for its App Store version lookup. Audio and caption information are not included in this request.</p>",
+      "<p>Bomal also sends the current Store country code for its App Store version lookup. Audio and caption information are not included in this request.</p>",
       "<p>Apple may process network connection information when handling service requests. See <a href=\"https://www.apple.com/legal/privacy/\">Apple’s Privacy Policy</a> for details.</p>",
       "<p>Speech recognition and translation use Apple’s on-device features. Required language models may be downloaded from Apple’s servers. Apple may receive usage and performance metrics for translation, including the app bundle ID and source and target languages, but does not receive audio, recognized captions, or translated text. <a href=\"https://www.apple.com/legal/privacy/\">Apple’s Privacy Policy governs retention and deletion of these metrics and network request information; the app cannot access or delete individual records on Apple’s servers. See <a href=\"https://developer.apple.com/documentation/translation/translationsession\">Apple Translation</a> and <a href=\"https://developer.apple.com/documentation/speech/assetinventory\">Speech model documentation</a>.</p>",
       "<p>When users start a speaker identification model download in Settings, the app downloads model files from Hugging Face. The request may include network connection information and the requested model repository. Audio and captions are not included. Hugging Face’s policies govern retention and deletion of request information; the app cannot access or delete individual records on Hugging Face’s servers. See <a href=\"https://huggingface.co/privacy\">Hugging Face’s Privacy Policy</a>.</p>",

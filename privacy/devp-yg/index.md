@@ -34,7 +34,7 @@ styles:
                 <li>SnapQR</li>
             </ul>
         </div>
-        <p data-i18n-html="privacy.specificPolicies">공간기록, 마크담, 보이는말은 각각의 개인정보 처리방침을 확인해 주세요: <a href="/privacy/taghere/">공간기록</a> · <a href="/privacy/markdam/">마크담</a> · <a href="/privacy/rtvideo/">보이는말</a></p>
+        <p data-i18n-html="privacy.specificPolicies">공간기록, 마크담, 보말은 각각의 개인정보 처리방침을 확인해 주세요: <a href="/privacy/taghere/">공간기록</a> · <a href="/privacy/markdam/">마크담</a> · <a href="/privacy/rtvideo/">보말</a></p>
         <p data-i18n="privacy.applies">위 Devp-YG 애플리케이션들에 대한 개인정보 처리 방침은 다음과 같습니다.</p>
 
         <h2 data-i18n="privacy.articleHeading">개인정보 처리 방침</h2>

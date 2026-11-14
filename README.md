@@ -48,6 +48,7 @@ The former `.html` addresses remain as redirect pages using `_layouts/redirect.h
 - 전체 제품 화면의 상위 분류와 노출 순서는 `_data/app_categories.yml`에서 관리합니다. 분류는 제품의 기능 하나보다 사용 목적을 기준으로 넓고 오래 유지하며, `series`(예: CityBus)는 별도로 관리합니다. 생활 도구 목록은 해당 분류 데이터에서 자동으로 구성됩니다. 새 분류를 추가할 때는 두 언어팩의 `portfolio.categories`에 이름과 설명도 추가합니다.
 - 공통 문서 구조는 `_layouts/default.html`, 제품 탐색 메뉴는 앱·분류 데이터에서 자동 생성하고, 기타 내비게이션 링크는 `_data/navigation.yml`에서 관리합니다.
 - 한국어·영어 문구는 `assets/i18n/ko.json`, `assets/i18n/en.json` 언어팩에서 관리하며, 헤더의 `KO / EN` 전환 버튼으로 전체 페이지에 적용됩니다. 선택 언어는 브라우저의 `localStorage`에 저장됩니다.
+- 보말(Bomal)은 이전 보이는말(RTVideo)의 새 이름입니다. 기존 앱 내 링크와 외부 링크가 계속 동작하도록 제품 ID와 `/rtvideo/`, `/privacy/rtvideo/` 주소는 유지합니다. `bomal-icon.png`와 `bomal-mascot.png`는 Bomal 앱 프로젝트의 기본 AppIcon과 BrandMark 원본을 사용합니다. 갤러리에는 기존 기능 예시 캡처를 사용하며, 최신 UI 캡처를 확보하면 함께 교체합니다.
 - 영문은 Source Sans 3, 한국어는 Noto Sans KR을 사용합니다. 언어별 자간과 줄 간격은 `assets/css/typography.css`에서 관리합니다.
 - 제품별 스타일은 `assets/css/pages/`에 두고 각 페이지의 `styles` front matter에서 불러옵니다.
 - 들여쓰기와 줄바꿈 규칙은 `.editorconfig`를 따릅니다. IntelliJ IDEA에서 EditorConfig 지원을 활성화하면 자동으로 적용됩니다.

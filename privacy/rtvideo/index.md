@@ -2,8 +2,8 @@
 layout: default
 lang: ko
 i18n_key: rtvideoPrivacy
-title: "개인정보 처리방침 | 보이는말"
-description: "보이는말 앱의 개인정보 처리 및 이용에 관한 안내입니다."
+title: "개인정보 처리방침 | 보말"
+description: "보말 앱의 개인정보 처리 및 이용에 관한 안내입니다."
 permalink: /privacy/rtvideo/
 styles:
   - /assets/css/pages/legal.css
@@ -19,7 +19,7 @@ styles:
     <div class="policy-app-target policy-app-target--compact" aria-label="적용 대상" data-i18n-aria-label="rtvideoPrivacy.targetLabel">
       <span class="policy-app-target-label" data-i18n="rtvideoPrivacy.targetLabel">적용 대상</span>
       <div class="policy-app-target-details">
-        <strong class="policy-app-target-name" data-i18n="rtvideoPrivacy.appName">보이는말</strong>
+        <strong class="policy-app-target-name" data-i18n="rtvideoPrivacy.appName">보말</strong>
         <span class="policy-app-target-description" data-i18n="rtvideoPrivacy.appDescription">실시간 자막 번역</span>
       </div>
       <ul class="policy-app-platforms" aria-label="지원 플랫폼" data-i18n-aria-label="rtvideoPrivacy.platformsLabel">
@@ -54,7 +54,7 @@ styles:
 
 <p>앱은 최신 버전을 확인하기 위해 Apple App Store 조회 서비스에 앱 번들 ID를 전송합니다.</p>
 
-<p>보이는말은 App Store 버전 조회 요청에 현재 스토어 국가 코드도 함께 전송합니다. 음성·자막 정보는 이 요청에 포함하지 않습니다.</p>
+<p>보말은 App Store 버전 조회 요청에 현재 스토어 국가 코드도 함께 전송합니다. 음성·자막 정보는 이 요청에 포함하지 않습니다.</p>
 
 <p>Apple이 서비스 요청을 처리하면서 네트워크 연결 정보를 처리할 수 있으며, 자세한 내용은 <a href="https://www.apple.com/legal/privacy/kr/">Apple 개인정보 처리방침</a>을 확인해 주세요.</p>
 
