@@ -185,7 +185,7 @@
 
 - id: rtvideo
   short_name: 보말
-  home_screenshot: /assets/images/apps/rtvideo/screenshots/captions.png
+  home_screenshot: /assets/images/apps/rtvideo/screenshots/bomal-captions.png
   intro_url: /rtvideo/
   platform: ios
   category: translation-tools
