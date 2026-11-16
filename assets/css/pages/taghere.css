@@ -1,0 +1,54 @@
+.taghere-widget-section {
+    background: #fbfaf8;
+    padding: 100px 0;
+}
+
+.taghere-widget-grid {
+    align-items: center;
+    display: grid;
+    gap: 48px;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+}
+
+.taghere-widget-examples { margin: 0; min-width: 0; }
+.taghere-widget-sizes { align-items: start; display: flex; flex-wrap: wrap; gap: 24px; }
+.taghere-widget-example { max-width: 100%; }
+.taghere-widget-example h3 { font-size: .9rem; margin: 0 0 14px; }
+.taghere-widget-card {
+    background: #966f5b;
+    border-radius: 24px;
+    box-shadow: 0 14px 30px rgba(var(--app-rgb), .15);
+    color: #faf5ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 170px;
+    padding: 20px;
+    text-align: center;
+}
+
+.taghere-widget-small { width: 170px; }
+.taghere-widget-medium { max-width: 100%; width: 310px; }
+.taghere-widget-card strong { display: block; font-size: 1rem; line-height: 1.5; }
+.taghere-widget-space { display: block; font-size: 1.6rem; font-weight: 700; line-height: 1.5; }
+.taghere-widget-card i { font-size: 1.8rem; }
+.taghere-widget-recognition { align-items: center; display: flex; gap: 22px; justify-content: center; }
+.taghere-widget-footer { align-items: center; display: flex; gap: 10px; justify-content: center; margin-top: 12px; }
+.taghere-widget-footer span { color: #f5df4d; display: block; font-size: .8rem; line-height: 1.5; }
+.taghere-widget-examples figcaption { color: var(--app-muted); font-size: .8rem; line-height: 1.7; margin-top: 22px; }
+.taghere-widget-setup h3 { font-size: 1.3rem; margin: 0 0 20px; }
+.taghere-widget-setup ol { color: var(--app-muted); line-height: 1.85; margin: 0; padding-left: 24px; }
+.taghere-widget-setup li { padding-left: 6px; }
+.taghere-widget-setup li + li { margin-top: 16px; }
+.taghere-widget-setup li::marker { color: var(--app-accent); font-weight: 700; }
+.taghere-widget-note { background: var(--app-soft); border-left: 3px solid var(--app-accent); color: var(--app-muted); font-size: .9rem; line-height: 1.8; margin: 36px 0 0; padding: 18px 22px; }
+.app-page-taghere .app-info-copy p + p { margin-top: 18px; }
+
+@media (max-width: 1000px) {
+    .taghere-widget-grid { gap: 36px; grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+    .taghere-widget-section { padding: 76px 0; }
+    .taghere-widget-sizes { gap: 24px; }
+}
